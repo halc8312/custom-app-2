@@ -1,19 +1,25 @@
 import Link from 'next/link'
 import styles from './Footer.module.css'
+import { prefectureInfo } from '@/lib/data'
 
 export default function Footer() {
+  const contact = prefectureInfo.contact.prefecture_office
+  const currentYear = new Date().getFullYear()
+
   return (
     <footer className={styles.footer}>
       <div className="container">
         <div className={styles.footerContent}>
           <div className={styles.footerSection}>
-            <h3 className={styles.footerTitle}>桜県庁</h3>
+            <h3 className={styles.footerTitle}>
+              {prefectureInfo.name.japanese}庁
+            </h3>
             <p className={styles.footerText}>
-              〒123-4567
+              〒{contact.postal_code}
               <br />
-              桜県桜花市中央1-1-1
+              {contact.address}
               <br />
-              電話: 012-345-6789（代表）
+              電話: {contact.phone}（代表）
             </p>
           </div>
 
@@ -73,7 +79,9 @@ export default function Footer() {
         </div>
 
         <div className={styles.footerBottom}>
-          <p className={styles.copyright}>© 2024 桜県 All Rights Reserved.</p>
+          <p className={styles.copyright}>
+            © {currentYear} {prefectureInfo.name.japanese} All Rights Reserved.
+          </p>
         </div>
       </div>
     </footer>

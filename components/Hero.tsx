@@ -1,21 +1,29 @@
+'use client'
+
+import Link from 'next/link'
 import styles from './Hero.module.css'
+import { getPrefectureSymbols } from '@/lib/data'
+import { useI18n } from '@/lib/i18n/i18n-context'
 
 export default function Hero() {
+  const { t, locale } = useI18n()
+  const symbols = getPrefectureSymbols()
+
   return (
     <section className={styles.hero}>
       <div className={styles.heroOverlay}>
         <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>桜県へようこそ</h1>
+          <h1 className={styles.heroTitle}>{t('common.welcome')}</h1>
           <p className={styles.heroSubtitle}>
-            桜の美しさと豊かな自然、歴史と文化が織りなす魅力的な県
+            {locale === 'ja' ? symbols.catchphrase.japanese : symbols.catchphrase.english}
           </p>
           <div className={styles.heroButtons}>
-            <a href="/tourism" className={styles.primaryButton}>
-              観光情報を見る
-            </a>
-            <a href="/about" className={styles.secondaryButton}>
-              桜県について
-            </a>
+            <Link href="/tourism" className={styles.primaryButton}>
+              {t('hero.tourismButton')}
+            </Link>
+            <Link href="/about" className={styles.secondaryButton}>
+              {t('hero.aboutButton')}
+            </Link>
           </div>
         </div>
       </div>

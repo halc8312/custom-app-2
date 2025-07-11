@@ -1,0 +1,137 @@
+.searchContainer {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.searchBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+
+.searchBox:focus-within {
+  border-color: #ec4899;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.clearButton {
+  padding: 4px 8px;
+  font-size: 14px;
+  color: #6b7280;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.clearButton:hover {
+  color: #374151;
+}
+
+.searchButton {
+  padding: 8px 12px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.searchResults {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 50;
+}
+
+.loading {
+  padding: 16px;
+  text-align: center;
+  color: #6b7280;
+}
+
+.resultsHeader {
+  padding: 12px 16px;
+  font-size: 12px;
+  color: #6b7280;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.resultsList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.resultsList li {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.resultsList li:last-child {
+  border-bottom: none;
+}
+
+.resultItem {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.2s;
+}
+
+.resultItem:hover {
+  background-color: #f9fafb;
+}
+
+.resultCategory {
+  font-size: 11px;
+  color: #ec4899;
+  margin-bottom: 4px;
+}
+
+.resultTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.resultDescription {
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .searchContainer {
+    max-width: 100%;
+  }
+
+  .searchResults {
+    position: fixed;
+    top: 60px;
+    left: 16px;
+    right: 16px;
+    max-height: 70vh;
+  }
+}
