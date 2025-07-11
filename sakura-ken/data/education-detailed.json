@@ -1,0 +1,584 @@
+{
+  "elementary_schools": {
+    "total_schools": 287,
+    "total_students": 145678,
+    "by_city": {
+      "桜花市": {
+        "total_schools": 89,
+        "schools": [
+          {
+            "name": "桜花市立中央小学校",
+            "district": "中央区",
+            "established": "1873年",
+            "students": 678,
+            "classes": 24,
+            "teachers": 42,
+            "special_programs": ["英語教育", "ICT教育"],
+            "facilities": ["体育館", "プール", "図書室", "コンピュータ室"]
+          },
+          {
+            "name": "桜花市立桜小学校",
+            "district": "桜区",
+            "established": "1889年",
+            "students": 456,
+            "classes": 18,
+            "teachers": 32,
+            "special_programs": ["音楽教育", "環境教育"],
+            "sister_school": "シアトル市立小学校（アメリカ）"
+          },
+          {
+            "name": "桜花市立花見小学校",
+            "district": "花見区",
+            "established": "1901年",
+            "students": 523,
+            "classes": 20,
+            "teachers": 35,
+            "special_programs": ["伝統文化教育", "国際理解教育"]
+          },
+          {
+            "name": "桜花市立東小学校",
+            "district": "東区",
+            "established": "1965年",
+            "students": 892,
+            "classes": 30,
+            "teachers": 48,
+            "special_programs": ["理科教育", "プログラミング教育"],
+            "awards": ["全国理科教育優秀校（2023年）"]
+          },
+          {
+            "name": "桜花市立西小学校",
+            "district": "西区",
+            "established": "1954年",
+            "students": 345,
+            "classes": 15,
+            "teachers": 28,
+            "special_programs": ["ものづくり教育", "キャリア教育"]
+          },
+          {
+            "name": "桜花市立南小学校",
+            "district": "南区",
+            "established": "1972年",
+            "students": 234,
+            "classes": 12,
+            "teachers": 24,
+            "special_programs": ["少人数教育", "個別指導"],
+            "private_partnership": true
+          },
+          {
+            "name": "桜花市立北小学校",
+            "district": "北区",
+            "established": "1968年",
+            "students": 567,
+            "classes": 22,
+            "teachers": 38,
+            "special_programs": ["体育教育", "食育"]
+          },
+          {
+            "name": "桜花市立緑小学校",
+            "district": "緑区",
+            "established": "1985年",
+            "students": 789,
+            "classes": 28,
+            "teachers": 45,
+            "special_programs": ["環境教育", "自然体験学習"],
+            "eco_school": true
+          },
+          {
+            "name": "桜花市立港小学校",
+            "district": "港区",
+            "established": "1998年",
+            "students": 456,
+            "classes": 18,
+            "teachers": 32,
+            "special_programs": ["海洋教育", "国際交流"]
+          }
+        ]
+      },
+      "桜川市": {
+        "total_schools": 52,
+        "notable_schools": [
+          {
+            "name": "桜川市立港小学校",
+            "district": "港地区",
+            "students": 789,
+            "special_programs": ["水産教育", "港湾学習"]
+          },
+          {
+            "name": "桜川市立臨海小学校",
+            "district": "臨海地区",
+            "students": 456,
+            "special_programs": ["科学教育", "工業見学"]
+          },
+          {
+            "name": "桜川市立中央小学校",
+            "district": "中央地区",
+            "students": 678,
+            "special_programs": ["商業体験", "地域学習"]
+          }
+        ]
+      },
+      "東桜市": {
+        "total_schools": 41,
+        "notable_schools": [
+          {
+            "name": "東桜市立テクノ小学校",
+            "district": "テクノ地区",
+            "students": 890,
+            "special_programs": ["STEM教育", "ロボティクス"],
+            "partnership": "東桜テクノパーク企業連携"
+          },
+          {
+            "name": "東桜市立学園小学校",
+            "district": "研究学園地区",
+            "students": 567,
+            "special_programs": ["探究学習", "大学連携授業"]
+          }
+        ]
+      },
+      "西桜市": {
+        "total_schools": 19,
+        "notable_schools": [
+          {
+            "name": "西桜市立伝統小学校",
+            "district": "旧市街地区",
+            "students": 234,
+            "special_programs": ["伝統工芸体験", "歴史学習"],
+            "cultural_heritage": true
+          }
+        ]
+      },
+      "南桜市": {
+        "total_schools": 28,
+        "notable_schools": [
+          {
+            "name": "南桜市立温泉小学校",
+            "district": "温泉地区",
+            "students": 345,
+            "special_programs": ["観光教育", "おもてなし学習"]
+          },
+          {
+            "name": "南桜市立高原小学校",
+            "district": "山麓地区",
+            "students": 123,
+            "special_programs": ["自然教育", "スキー授業"]
+          }
+        ]
+      },
+      "北桜市": {
+        "total_schools": 15,
+        "notable_schools": [
+          {
+            "name": "北桜市立農業小学校",
+            "district": "東部農業地区",
+            "students": 234,
+            "special_programs": ["農業体験", "食農教育"],
+            "school_farm": true
+          }
+        ]
+      }
+    }
+  },
+  "junior_high_schools": {
+    "total_schools": 143,
+    "total_students": 67890,
+    "by_city": {
+      "桜花市": {
+        "total_schools": 45,
+        "schools": [
+          {
+            "name": "桜花市立第一中学校",
+            "district": "中央区",
+            "students": 890,
+            "classes": 27,
+            "teachers": 65,
+            "club_activities": 23,
+            "special_programs": ["国際バカロレア準備コース"],
+            "sports_achievements": ["全国中学バスケットボール大会出場"]
+          },
+          {
+            "name": "桜花市立第二中学校",
+            "district": "桜区",
+            "students": 678,
+            "classes": 21,
+            "teachers": 52,
+            "special_programs": ["アートプログラム", "吹奏楽強化"],
+            "cultural_achievements": ["全日本吹奏楽コンクール金賞"]
+          },
+          {
+            "name": "桜花市立東中学校",
+            "district": "東区",
+            "students": 1123,
+            "classes": 33,
+            "teachers": 78,
+            "special_programs": ["理数科", "プログラミング部"],
+            "academic_achievements": ["全国数学オリンピック入賞者輩出"]
+          }
+        ]
+      }
+    }
+  },
+  "high_schools": {
+    "total_schools": 78,
+    "total_students": 89012,
+    "by_type": {
+      "public": {
+        "total": 56,
+        "notable_schools": [
+          {
+            "name": "桜県立桜花高等学校",
+            "location": "桜花市中央区",
+            "type": "普通科・理数科",
+            "students": 1234,
+            "deviation_value": 72,
+            "university_advancement_rate": 98.5,
+            "special_features": ["SSH指定校", "国際交流プログラム"],
+            "notable_alumni": ["ノーベル賞受賞者", "宇宙飛行士"]
+          },
+          {
+            "name": "桜県立桜川高等学校",
+            "location": "桜川市中央地区",
+            "type": "普通科・商業科",
+            "students": 987,
+            "deviation_value": 65,
+            "special_features": ["港湾ビジネスコース", "国際貿易実習"]
+          },
+          {
+            "name": "桜県立東桜工業高等学校",
+            "location": "東桜市テクノ地区",
+            "type": "工業科",
+            "students": 765,
+            "departments": ["機械科", "電気科", "情報技術科", "ロボット工学科"],
+            "industry_partnership": ["企業実習", "デュアルシステム"]
+          },
+          {
+            "name": "桜県立西桜芸術高等学校",
+            "location": "西桜市工芸地区",
+            "type": "芸術科",
+            "students": 456,
+            "departments": ["美術科", "工芸科", "デザイン科"],
+            "special_features": ["伝統工芸マイスター制度", "アーティスト講師"]
+          },
+          {
+            "name": "桜県立南桜観光高等学校",
+            "location": "南桜市観光地区",
+            "type": "観光科・普通科",
+            "students": 567,
+            "special_courses": ["ホテル・旅館経営", "観光ビジネス", "国際観光"]
+          },
+          {
+            "name": "桜県立北桜農業高等学校",
+            "location": "北桜市中央地区",
+            "type": "農業科",
+            "students": 345,
+            "departments": ["農業科", "園芸科", "食品科学科", "農業経営科"],
+            "facilities": ["実習農場50ha", "温室", "食品加工場"]
+          }
+        ]
+      },
+      "private": {
+        "total": 22,
+        "notable_schools": [
+          {
+            "name": "桜花学園高等学校",
+            "location": "桜花市南区",
+            "type": "普通科・国際科",
+            "students": 1567,
+            "deviation_value": 75,
+            "features": ["中高一貫", "全寮制オプション", "海外大学進学コース"],
+            "annual_fee": 1200000
+          },
+          {
+            "name": "聖桜女子高等学校",
+            "location": "桜花市桜区",
+            "type": "普通科",
+            "students": 890,
+            "deviation_value": 68,
+            "features": ["女子校", "キリスト教教育", "国際交流活発"]
+          },
+          {
+            "name": "東桜科学技術高等学校",
+            "location": "東桜市研究学園地区",
+            "type": "理数科・情報科",
+            "students": 456,
+            "features": ["大学単位認定", "研究機関実習", "起業家教育"]
+          }
+        ]
+      }
+    }
+  },
+  "universities": {
+    "total": 8,
+    "national": [
+      {
+        "name": "桜県大学",
+        "location": "桜花市桜区",
+        "established": "1949年",
+        "students": {
+          "undergraduate": 12345,
+          "graduate": 3456
+        },
+        "faculties": [
+          {
+            "name": "文学部",
+            "departments": ["日本文学", "外国文学", "哲学", "歴史学"],
+            "students": 1234
+          },
+          {
+            "name": "理学部",
+            "departments": ["数学", "物理学", "化学", "生物学", "地球科学"],
+            "students": 1567
+          },
+          {
+            "name": "工学部",
+            "departments": ["機械工学", "電気電子工学", "情報工学", "建築学", "都市工学"],
+            "students": 2345
+          },
+          {
+            "name": "医学部",
+            "departments": ["医学科", "看護学科"],
+            "students": 890,
+            "hospital": "桜県大学附属病院（800床）"
+          },
+          {
+            "name": "農学部",
+            "departments": ["農学", "農業経済学", "森林科学", "獣医学"],
+            "students": 987
+          }
+        ],
+        "research_centers": [
+          "AI研究センター",
+          "環境科学研究所",
+          "地域創生研究センター"
+        ],
+        "nobel_laureates": 2,
+        "world_ranking": "301-400"
+      }
+    ],
+    "public": [
+      {
+        "name": "桜県立医科大学",
+        "location": "桜花市東区",
+        "established": "1974年",
+        "students": 1234,
+        "faculties": ["医学部", "看護学部", "保健学部"],
+        "hospital": "県立医科大学病院（600床）",
+        "specialties": ["がん研究", "再生医療", "地域医療"]
+      },
+      {
+        "name": "桜県工業大学",
+        "location": "東桜市研究学園地区",
+        "established": "1962年",
+        "students": 4567,
+        "faculties": [
+          "工学部",
+          "情報学部",
+          "デザイン学部",
+          "経営工学部"
+        ],
+        "industry_collaboration": "東桜テクノパーク連携",
+        "startup_incubation": "年間20社起業"
+      }
+    ],
+    "private": [
+      {
+        "name": "桜花女子大学",
+        "location": "桜花市花見区",
+        "established": "1901年",
+        "students": 3456,
+        "faculties": ["文学部", "家政学部", "看護学部", "国際学部"],
+        "features": ["女子大学", "伝統と革新", "キャリア教育充実"]
+      },
+      {
+        "name": "東桜科学技術大学",
+        "location": "東桜市テクノ地区",
+        "established": "1988年",
+        "students": 2345,
+        "faculties": ["理工学部", "情報科学部", "生命科学部"],
+        "research": ["ロボティクス", "バイオテクノロジー", "量子コンピューティング"]
+      },
+      {
+        "name": "西桜芸術大学",
+        "location": "西桜市新市街地区",
+        "established": "1955年",
+        "students": 1234,
+        "faculties": ["美術学部", "音楽学部", "演劇学部", "メディア芸術学部"],
+        "features": ["アーティスト育成", "伝統工芸継承", "現代アート"]
+      },
+      {
+        "name": "南桜国際観光大学",
+        "location": "南桜市観光地区",
+        "established": "1995年",
+        "students": 2345,
+        "faculties": ["観光学部", "国際文化学部", "ホスピタリティ学部"],
+        "features": ["実践的観光教育", "インターンシップ充実", "多言語教育"]
+      },
+      {
+        "name": "北桜農業大学",
+        "location": "北桜市中央地区",
+        "established": "1920年",
+        "students": 1567,
+        "faculties": ["農学部", "生命環境学部", "食品科学部"],
+        "research_farm": "実験農場100ha",
+        "features": ["スマート農業研究", "6次産業化支援", "地域連携"]
+      }
+    ]
+  },
+  "vocational_schools": {
+    "total": 34,
+    "categories": {
+      "medical": [
+        {
+          "name": "桜花看護専門学校",
+          "location": "桜花市中央区",
+          "students": 345,
+          "courses": ["看護学科（3年）", "准看護学科（2年）"]
+        },
+        {
+          "name": "桜県理学療法専門学校",
+          "location": "桜花市東区",
+          "students": 234,
+          "courses": ["理学療法学科", "作業療法学科"]
+        }
+      ],
+      "technical": [
+        {
+          "name": "東桜コンピュータ専門学校",
+          "location": "東桜市商業地区",
+          "students": 567,
+          "courses": ["プログラミング", "ネットワーク", "ゲーム開発", "AI・データサイエンス"]
+        },
+        {
+          "name": "桜川自動車整備専門学校",
+          "location": "桜川市臨海地区",
+          "students": 345,
+          "courses": ["自動車整備", "カスタマイズ", "EV技術"]
+        }
+      ],
+      "culinary": [
+        {
+          "name": "桜花調理師専門学校",
+          "location": "桜花市花見区",
+          "students": 456,
+          "courses": ["日本料理", "西洋料理", "中国料理", "製菓・製パン"]
+        },
+        {
+          "name": "南桜観光調理専門学校",
+          "location": "南桜市温泉地区",
+          "students": 234,
+          "courses": ["旅館料理", "郷土料理", "おもてなし"]
+        }
+      ],
+      "arts_and_crafts": [
+        {
+          "name": "西桜伝統工芸専門学校",
+          "location": "西桜市工芸地区",
+          "students": 123,
+          "courses": ["陶芸", "漆芸", "染織", "木工"],
+          "master_system": true
+        }
+      ],
+      "business": [
+        {
+          "name": "桜花ビジネス専門学校",
+          "location": "桜花市中央区",
+          "students": 678,
+          "courses": ["経理", "秘書", "国際ビジネス", "起業家育成"]
+        }
+      ]
+    }
+  },
+  "libraries": {
+    "prefectural": [
+      {
+        "name": "桜県立図書館",
+        "location": "桜花市中央区",
+        "established": "1951年",
+        "collection": 1234567,
+        "special_collections": ["桜県郷土資料", "古文書", "デジタルアーカイブ"],
+        "annual_visitors": 567890,
+        "services": ["電子図書館", "ビジネス支援", "子ども読書支援"]
+      }
+    ],
+    "municipal": [
+      {
+        "name": "桜花市立中央図書館",
+        "location": "桜花市中央区",
+        "collection": 456789,
+        "branches": 8,
+        "mobile_library": 3
+      },
+      {
+        "name": "桜川市立図書館",
+        "location": "桜川市中央地区",
+        "collection": 234567,
+        "special": "海事資料コレクション"
+      },
+      {
+        "name": "東桜市立図書館",
+        "location": "東桜市商業地区",
+        "collection": 345678,
+        "special": "科学技術資料センター"
+      },
+      {
+        "name": "西桜市立図書館",
+        "location": "西桜市新市街地区",
+        "collection": 123456,
+        "special": "伝統工芸資料室"
+      },
+      {
+        "name": "南桜市立図書館",
+        "location": "南桜市住宅地区",
+        "collection": 234567,
+        "special": "観光資料コーナー"
+      },
+      {
+        "name": "北桜市立図書館",
+        "location": "北桜市中央地区",
+        "collection": 98765,
+        "special": "農業文献センター"
+      }
+    ],
+    "university_libraries": [
+      {
+        "name": "桜県大学附属図書館",
+        "collection": 2345678,
+        "special": "学術リポジトリ",
+        "24h_study_rooms": true
+      }
+    ]
+  },
+  "research_institutions": {
+    "national": [
+      {
+        "name": "国立研究開発法人桜研究所",
+        "location": "東桜市研究学園地区",
+        "established": "1985年",
+        "researchers": 456,
+        "fields": ["AI", "ロボティクス", "材料科学", "環境技術"],
+        "annual_budget": "150億円"
+      }
+    ],
+    "prefectural": [
+      {
+        "name": "桜県農業研究センター",
+        "location": "北桜市東部農業地区",
+        "researchers": 89,
+        "focus": ["スマート農業", "品種改良", "6次産業化"]
+      },
+      {
+        "name": "桜県工業技術センター",
+        "location": "東桜市テクノ地区",
+        "researchers": 67,
+        "services": ["技術相談", "試験分析", "共同研究"]
+      }
+    ],
+    "private": [
+      {
+        "name": "桜花総合研究所",
+        "location": "桜花市桜区",
+        "fields": ["経済", "社会", "環境"],
+        "think_tank": true
+      }
+    ]
+  }
+}

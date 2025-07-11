@@ -1,0 +1,483 @@
+{
+  "parks_and_green_spaces": {
+    "total_area_ha": 2345,
+    "parks_count": 456,
+    "major_parks": [
+      {
+        "name": "桜花中央公園",
+        "location": "桜花市中央区",
+        "area_ha": 45.6,
+        "established": "1923年",
+        "features": [
+          "日本庭園",
+          "バラ園（品種200種）",
+          "野外音楽堂",
+          "子供の遊び場",
+          "ジョギングコース（2.5km）"
+        ],
+        "cherry_trees": 1234,
+        "annual_visitors": 567890,
+        "events": ["桜まつり", "菊花展", "紅葉ライトアップ"]
+      },
+      {
+        "name": "桜花城跡公園",
+        "location": "桜花市花見区",
+        "area_ha": 78.9,
+        "historical_value": "国指定史跡",
+        "features": [
+          "天守閣跡",
+          "石垣",
+          "堀",
+          "武家屋敷復元",
+          "歴史資料館"
+        ],
+        "cherry_trees": 2345,
+        "plum_trees": 567
+      },
+      {
+        "name": "桜川海浜公園",
+        "location": "桜川市南部地区",
+        "area_ha": 123.4,
+        "beach_length_m": 3456,
+        "features": [
+          "人工ビーチ",
+          "バーベキュー場",
+          "キャンプ場",
+          "マリンスポーツセンター",
+          "展望台"
+        ],
+        "blue_flag_certified": true
+      },
+      {
+        "name": "東桜科学公園",
+        "location": "東桜市研究学園地区",
+        "area_ha": 34.5,
+        "theme": "科学と自然",
+        "features": [
+          "プラネタリウム",
+          "科学実験広場",
+          "ビオトープ",
+          "太陽光発電展示"
+        ]
+      },
+      {
+        "name": "緑の森公園",
+        "location": "桜花市緑区",
+        "area_ha": 156.7,
+        "forest_type": "照葉樹林",
+        "features": [
+          "自然観察路",
+          "野鳥観察小屋",
+          "ツリーハウス",
+          "環境学習センター"
+        ],
+        "biodiversity": "動植物500種以上"
+      },
+      {
+        "name": "桜峰高原公園",
+        "location": "南桜市山麓地区",
+        "area_ha": 234.5,
+        "elevation_m": "800-1200",
+        "features": [
+          "高山植物園",
+          "展望台",
+          "ハイキングコース",
+          "山小屋"
+        ],
+        "best_season": "春〜秋"
+      }
+    ],
+    "neighborhood_parks": {
+      "total": 234,
+      "playground_equipment": 1234,
+      "sports_facilities": 345
+    },
+    "pocket_parks": {
+      "total": 156,
+      "urban_oases": true
+    }
+  },
+  "festivals_and_events": {
+    "annual_events": 312,
+    "total_visitors": 12340000,
+    "major_festivals": [
+      {
+        "name": "桜花さくら祭り",
+        "period": "3月下旬〜4月上旬",
+        "duration_days": 14,
+        "main_venue": "桜花城跡公園・中央公園",
+        "visitors": 1234567,
+        "features": [
+          "夜桜ライトアップ",
+          "屋台200店",
+          "桜花火大会",
+          "野点茶会",
+          "伝統芸能公演"
+        ],
+        "economic_impact": "45億円"
+      },
+      {
+        "name": "桜川港まつり",
+        "period": "7月第3土日",
+        "main_venue": "桜川港周辺",
+        "visitors": 456789,
+        "features": [
+          "花火大会（1万発）",
+          "海上パレード",
+          "魚市場開放",
+          "海の幸グルメ広場"
+        ]
+      },
+      {
+        "name": "東桜テクノフェスタ",
+        "period": "10月上旬",
+        "duration_days": 3,
+        "main_venue": "東桜テクノパーク",
+        "visitors": 234567,
+        "features": [
+          "最新技術展示",
+          "ロボットコンテスト",
+          "プログラミング体験",
+          "スタートアップピッチ"
+        ]
+      },
+      {
+        "name": "西桜伝統工芸まつり",
+        "period": "11月中旬",
+        "duration_days": 5,
+        "main_venue": "西桜市旧市街",
+        "visitors": 189012,
+        "features": [
+          "職人実演",
+          "工芸品展示即売",
+          "体験工房",
+          "人間国宝作品展"
+        ]
+      },
+      {
+        "name": "南桜温泉まつり",
+        "period": "2月上旬",
+        "duration_days": 7,
+        "main_venue": "南桜温泉郷",
+        "visitors": 345678,
+        "features": [
+          "湯めぐりラリー",
+          "雪見露天風呂",
+          "温泉卓球大会",
+          "地酒試飲会"
+        ]
+      },
+      {
+        "name": "北桜収穫祭",
+        "period": "9月下旬",
+        "duration_days": 2,
+        "main_venue": "北桜市農業公園",
+        "visitors": 123456,
+        "features": [
+          "新米試食",
+          "果物狩り",
+          "農産物品評会",
+          "郷土料理コンテスト"
+        ]
+      }
+    ],
+    "seasonal_events": {
+      "spring": [
+        {"name": "桜マラソン", "participants": 12345},
+        {"name": "春の園遊会", "venue": "各市庭園"}
+      ],
+      "summer": [
+        {"name": "盆踊り大会", "locations": 45},
+        {"name": "ビーチバレー大会", "venue": "桜川ビーチ"}
+      ],
+      "autumn": [
+        {"name": "紅葉まつり", "locations": 23},
+        {"name": "芸術祭", "duration_days": 30}
+      ],
+      "winter": [
+        {"name": "イルミネーション", "locations": 34},
+        {"name": "雪まつり", "venue": "南桜高原"}
+      ]
+    },
+    "cultural_events": {
+      "music_festivals": 23,
+      "art_exhibitions": 45,
+      "theater_performances": 67,
+      "film_festivals": 5
+    }
+  },
+  "historical_sites": {
+    "total": 234,
+    "national_treasures": 3,
+    "important_cultural_properties": 45,
+    "prefectural_designated": 89,
+    "major_sites": [
+      {
+        "name": "桜花城跡",
+        "period": "戦国時代〜江戸時代",
+        "built": "1456年",
+        "designation": "国指定史跡",
+        "features": [
+          "石垣（高さ20m）",
+          "内堀・外堀",
+          "御殿跡",
+          "櫓跡3箇所"
+        ],
+        "museum": "桜花城歴史館"
+      },
+      {
+        "name": "西桜城下町",
+        "period": "江戸時代",
+        "preservation": "重要伝統的建造物群保存地区",
+        "area_ha": 23.4,
+        "buildings": 156,
+        "features": [
+          "武家屋敷12軒",
+          "商家45軒",
+          "土蔵23棟",
+          "寺社15箇所"
+        ]
+      },
+      {
+        "name": "桜山大寺",
+        "founded": "798年",
+        "sect": "真言宗",
+        "buildings": [
+          "本堂（国宝）",
+          "五重塔（重要文化財）",
+          "山門（県指定）"
+        ],
+        "treasures": "仏像・絵画多数",
+        "garden": "名勝指定"
+      },
+      {
+        "name": "古代桜花遺跡",
+        "period": "縄文時代後期",
+        "discovered": "1965年",
+        "features": [
+          "竪穴住居跡",
+          "貝塚",
+          "土器・石器出土"
+        ],
+        "museum": "考古学資料館併設"
+      },
+      {
+        "name": "桜川台場跡",
+        "period": "幕末",
+        "built": "1853年",
+        "purpose": "海防施設",
+        "remains": ["砲台跡", "兵舎跡", "火薬庫跡"]
+      }
+    ],
+    "historic_buildings": [
+      {
+        "name": "旧桜花銀行本店",
+        "built": "1913年",
+        "style": "大正ロマン",
+        "current_use": "歴史資料館"
+      },
+      {
+        "name": "桜花女学校記念館",
+        "built": "1901年",
+        "architect": "ジョサイア・コンドル",
+        "designation": "重要文化財"
+      }
+    ]
+  },
+  "museums_and_galleries": {
+    "total": 67,
+    "art_museums": [
+      {
+        "name": "桜県立美術館",
+        "location": "桜花市中央区",
+        "collection": 12345,
+        "special_exhibitions": 8,
+        "annual_visitors": 234567,
+        "famous_works": ["国宝絵画3点", "重文15点"]
+      },
+      {
+        "name": "桜花市立美術館",
+        "focus": "現代アート",
+        "collection": 3456
+      },
+      {
+        "name": "西桜工芸美術館",
+        "focus": "伝統工芸",
+        "collection": 2345,
+        "demonstration": true
+      }
+    ],
+    "history_museums": [
+      {
+        "name": "桜県立歴史博物館",
+        "exhibits": "先史時代〜現代",
+        "collection": 23456,
+        "research_library": true
+      },
+      {
+        "name": "桜花城歴史館",
+        "focus": "城郭・武家文化",
+        "interactive_exhibits": true
+      }
+    ],
+    "science_museums": [
+      {
+        "name": "東桜科学館",
+        "exhibits": ["宇宙", "ロボット", "AI"],
+        "planetarium": true,
+        "workshops": "毎日開催"
+      }
+    ],
+    "specialized_museums": [
+      {
+        "name": "桜川海洋博物館",
+        "focus": "海洋生物・漁業",
+        "aquarium": true
+      },
+      {
+        "name": "南桜温泉博物館",
+        "focus": "温泉文化・地質"
+      },
+      {
+        "name": "北桜農業博物館",
+        "focus": "農具・農業技術"
+      }
+    ]
+  },
+  "performance_venues": {
+    "concert_halls": [
+      {
+        "name": "桜花文化会館",
+        "capacity": 2345,
+        "acoustic_design": "永田音響設計",
+        "annual_performances": 234
+      },
+      {
+        "name": "桜花市民会館",
+        "capacity": 1234,
+        "multipurpose": true
+      }
+    ],
+    "theaters": [
+      {
+        "name": "桜花歌舞伎座",
+        "capacity": 890,
+        "traditional_performances": true
+      },
+      {
+        "name": "さくら小劇場",
+        "capacity": 234,
+        "focus": "現代演劇"
+      }
+    ],
+    "live_houses": [
+      {
+        "name": "桜花LIVE STAGE",
+        "capacity": 567,
+        "genres": ["ロック", "ポップス", "ジャズ"]
+      }
+    ]
+  },
+  "sports_facilities": {
+    "stadiums": [
+      {
+        "name": "桜花ドーム",
+        "capacity": 45678,
+        "home_team": "桜花ベースボールクラブ",
+        "roof": "開閉式"
+      },
+      {
+        "name": "桜花スタジアム",
+        "capacity": 23456,
+        "home_team": "桜花FC",
+        "fifa_certified": true
+      }
+    ],
+    "arenas": [
+      {
+        "name": "桜花アリーナ",
+        "capacity": 12345,
+        "sports": ["バスケットボール", "バレーボール", "卓球"]
+      }
+    ],
+    "community_sports": {
+      "gymnasiums": 45,
+      "swimming_pools": 34,
+      "tennis_courts": 123,
+      "baseball_fields": 67,
+      "soccer_fields": 56
+    },
+    "golf_courses": [
+      {
+        "name": "桜花カントリークラブ",
+        "holes": 18,
+        "par": 72,
+        "designer": "ジャック・ニクラウス"
+      },
+      {
+        "name": "南桜ゴルフリゾート",
+        "holes": 36,
+        "accommodation": true
+      }
+    ]
+  },
+  "cultural_facilities": {
+    "community_centers": {
+      "total": 45,
+      "activities": ["生涯学習", "サークル活動", "子育て支援"],
+      "annual_users": 567890
+    },
+    "cultural_centers": [
+      {
+        "name": "桜花国際交流センター",
+        "programs": ["語学講座", "文化交流", "国際理解"],
+        "sister_city_exchanges": 12
+      }
+    ]
+  },
+  "religious_sites": {
+    "shinto_shrines": {
+      "total": 123,
+      "major_shrines": [
+        {
+          "name": "桜花大社",
+          "deity": "木花咲耶姫命",
+          "festival": "4月第2日曜",
+          "visitors_new_year": 234567
+        }
+      ]
+    },
+    "buddhist_temples": {
+      "total": 89,
+      "major_temples": [
+        {
+          "name": "桜山大寺",
+          "sect": "真言宗",
+          "zazen_sessions": "毎週日曜"
+        }
+      ]
+    },
+    "churches": {
+      "total": 12,
+      "denominations": ["カトリック", "プロテスタント", "正教会"]
+    }
+  },
+  "tourism_infrastructure": {
+    "visitor_centers": {
+      "total": 12,
+      "multilingual_support": ["英語", "中国語", "韓国語", "タイ語"],
+      "services": ["観光案内", "宿泊予約", "体験予約"]
+    },
+    "tourist_information": {
+      "brochures_languages": 8,
+      "volunteer_guides": 234,
+      "audio_guides": 45,
+      "ar_apps": 3
+    },
+    "accessibility": {
+      "barrier_free_facilities": 189,
+      "wheelchair_rentals": 34,
+      "sign_language_tours": true
+    }
+  }
+}
