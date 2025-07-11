@@ -1,0 +1,422 @@
+{
+  "gdp": {
+    "total_billion_yen": 11845.6,
+    "nominal_growth_rate": 2.3,
+    "real_growth_rate": 1.8,
+    "per_capita_million_yen": 4.15,
+    "rank_national": 11,
+    "as_of": "2024"
+  },
+  "gdp_by_industry": {
+    "primary_sector": {
+      "agriculture_forestry_fishery": {
+        "value_billion_yen": 156.7,
+        "percentage": 1.3,
+        "sub_sectors": {
+          "agriculture": 123.4,
+          "forestry": 12.3,
+          "fishery": 21.0
+        }
+      }
+    },
+    "secondary_sector": {
+      "total": {
+        "value_billion_yen": 3789.0,
+        "percentage": 32.0
+      },
+      "manufacturing": {
+        "value_billion_yen": 2987.6,
+        "percentage": 25.2,
+        "major_products": [
+          "電子部品・デバイス",
+          "一般機械",
+          "食料品",
+          "化学工業製品"
+        ]
+      },
+      "construction": {
+        "value_billion_yen": 678.9,
+        "percentage": 5.7
+      },
+      "mining": {
+        "value_billion_yen": 122.5,
+        "percentage": 1.0
+      }
+    },
+    "tertiary_sector": {
+      "total": {
+        "value_billion_yen": 7899.9,
+        "percentage": 66.7
+      },
+      "wholesale_retail": {
+        "value_billion_yen": 1567.8,
+        "percentage": 13.2
+      },
+      "finance_insurance": {
+        "value_billion_yen": 987.6,
+        "percentage": 8.3
+      },
+      "real_estate": {
+        "value_billion_yen": 1234.5,
+        "percentage": 10.4
+      },
+      "information_communication": {
+        "value_billion_yen": 876.5,
+        "percentage": 7.4
+      },
+      "transport_postal": {
+        "value_billion_yen": 543.2,
+        "percentage": 4.6
+      },
+      "accommodation_food_service": {
+        "value_billion_yen": 432.1,
+        "percentage": 3.6
+      },
+      "medical_welfare": {
+        "value_billion_yen": 789.0,
+        "percentage": 6.7
+      },
+      "education": {
+        "value_billion_yen": 345.6,
+        "percentage": 2.9
+      },
+      "other_services": {
+        "value_billion_yen": 1123.6,
+        "percentage": 9.5
+      }
+    }
+  },
+  "employment": {
+    "total_employed": 1498234,
+    "unemployment_rate": 2.3,
+    "participation_rate": 68.5,
+    "by_industry": [
+      {
+        "industry": "製造業",
+        "employees": 298765,
+        "percentage": 19.9
+      },
+      {
+        "industry": "卸売・小売業",
+        "employees": 234567,
+        "percentage": 15.7
+      },
+      {
+        "industry": "医療・福祉",
+        "employees": 187654,
+        "percentage": 12.5
+      },
+      {
+        "industry": "情報通信業",
+        "employees": 134567,
+        "percentage": 9.0
+      },
+      {
+        "industry": "建設業",
+        "employees": 98765,
+        "percentage": 6.6
+      },
+      {
+        "industry": "宿泊・飲食サービス業",
+        "employees": 87654,
+        "percentage": 5.8
+      },
+      {
+        "industry": "運輸・郵便業",
+        "employees": 76543,
+        "percentage": 5.1
+      },
+      {
+        "industry": "教育・学習支援業",
+        "employees": 65432,
+        "percentage": 4.4
+      },
+      {
+        "industry": "農林水産業",
+        "employees": 34567,
+        "percentage": 2.3
+      },
+      {
+        "industry": "その他",
+        "employees": 280320,
+        "percentage": 18.7
+      }
+    ]
+  },
+  "income": {
+    "average_annual_income_million_yen": 5.23,
+    "median_income_million_yen": 4.56,
+    "by_city": [
+      {
+        "city": "桜花市",
+        "average": 5.89,
+        "median": 5.12
+      },
+      {
+        "city": "東桜市",
+        "average": 5.67,
+        "median": 4.98
+      },
+      {
+        "city": "桜川市",
+        "average": 5.12,
+        "median": 4.45
+      },
+      {
+        "city": "西桜市",
+        "average": 4.78,
+        "median": 4.23
+      },
+      {
+        "city": "南桜市",
+        "average": 4.56,
+        "median": 4.01
+      },
+      {
+        "city": "北桜市",
+        "average": 4.23,
+        "median": 3.89
+      }
+    ]
+  },
+  "major_companies": [
+    {
+      "name": "桜電子工業株式会社",
+      "industry": "電子部品製造",
+      "employees": 12345,
+      "headquarters": "東桜市",
+      "annual_revenue_billion_yen": 234.5
+    },
+    {
+      "name": "桜花銀行",
+      "industry": "金融",
+      "employees": 8765,
+      "headquarters": "桜花市",
+      "annual_revenue_billion_yen": 187.6
+    },
+    {
+      "name": "桜ソフトウェア株式会社",
+      "industry": "情報通信",
+      "employees": 5432,
+      "headquarters": "桜花市",
+      "annual_revenue_billion_yen": 98.7
+    },
+    {
+      "name": "桜川水産株式会社",
+      "industry": "水産加工",
+      "employees": 3456,
+      "headquarters": "桜川市",
+      "annual_revenue_billion_yen": 67.8
+    },
+    {
+      "name": "南桜観光開発株式会社",
+      "industry": "観光・ホテル",
+      "employees": 2345,
+      "headquarters": "南桜市",
+      "annual_revenue_billion_yen": 45.6
+    }
+  ],
+  "industrial_parks": [
+    {
+      "name": "東桜テクノパーク",
+      "location": "東桜市",
+      "area_hectares": 234,
+      "companies": 156,
+      "employees": 34567,
+      "specialization": "ハイテク産業"
+    },
+    {
+      "name": "桜川臨海工業団地",
+      "location": "桜川市",
+      "area_hectares": 189,
+      "companies": 89,
+      "employees": 23456,
+      "specialization": "物流・製造業"
+    },
+    {
+      "name": "北桜フードバレー",
+      "location": "北桜市",
+      "area_hectares": 123,
+      "companies": 67,
+      "employees": 12345,
+      "specialization": "食品加工"
+    },
+    {
+      "name": "西桜クラフトパーク",
+      "location": "西桜市",
+      "area_hectares": 45,
+      "companies": 234,
+      "employees": 5678,
+      "specialization": "伝統工芸・クリエイティブ産業"
+    }
+  ],
+  "agriculture": {
+    "total_output_billion_yen": 123.4,
+    "farmland_hectares": 34567,
+    "farmers": 23456,
+    "main_products": [
+      {
+        "product": "米",
+        "output_tons": 89012,
+        "value_billion_yen": 23.4
+      },
+      {
+        "product": "野菜",
+        "output_tons": 123456,
+        "value_billion_yen": 34.5
+      },
+      {
+        "product": "果実",
+        "output_tons": 45678,
+        "value_billion_yen": 23.4
+      },
+      {
+        "product": "畜産",
+        "value_billion_yen": 32.1
+      },
+      {
+        "product": "花卉",
+        "value_billion_yen": 10.0
+      }
+    ]
+  },
+  "tourism": {
+    "annual_visitors": 34560000,
+    "tourism_revenue_billion_yen": 234.5,
+    "economic_impact_billion_yen": 345.6,
+    "tourism_employees": 45678,
+    "by_purpose": {
+      "sightseeing": 15678900,
+      "business": 8901234,
+      "onsen": 5432100,
+      "events": 3456789,
+      "other": 1090977
+    },
+    "average_spending_per_visitor_yen": 6789
+  },
+  "trade": {
+    "exports": {
+      "total_billion_yen": 1234.5,
+      "main_items": [
+        {
+          "item": "電子部品",
+          "value_billion_yen": 456.7,
+          "percentage": 37.0
+        },
+        {
+          "item": "一般機械",
+          "value_billion_yen": 234.5,
+          "percentage": 19.0
+        },
+        {
+          "item": "化学製品",
+          "value_billion_yen": 187.6,
+          "percentage": 15.2
+        },
+        {
+          "item": "食料品",
+          "value_billion_yen": 123.4,
+          "percentage": 10.0
+        },
+        {
+          "item": "その他",
+          "value_billion_yen": 232.3,
+          "percentage": 18.8
+        }
+      ]
+    },
+    "imports": {
+      "total_billion_yen": 987.6,
+      "main_items": [
+        {
+          "item": "原材料",
+          "value_billion_yen": 345.6,
+          "percentage": 35.0
+        },
+        {
+          "item": "食料品",
+          "value_billion_yen": 234.5,
+          "percentage": 23.7
+        },
+        {
+          "item": "機械類",
+          "value_billion_yen": 187.6,
+          "percentage": 19.0
+        },
+        {
+          "item": "燃料",
+          "value_billion_yen": 123.4,
+          "percentage": 12.5
+        },
+        {
+          "item": "その他",
+          "value_billion_yen": 96.5,
+          "percentage": 9.8
+        }
+      ]
+    },
+    "trade_balance_billion_yen": 246.9
+  },
+  "infrastructure_investment": {
+    "annual_public_investment_billion_yen": 234.5,
+    "by_category": {
+      "transportation": 98.7,
+      "utilities": 56.7,
+      "education": 34.5,
+      "healthcare": 23.4,
+      "other": 21.2
+    },
+    "major_projects": [
+      {
+        "name": "桜花環状道路",
+        "budget_billion_yen": 123.4,
+        "completion": "2027"
+      },
+      {
+        "name": "スマートグリッド整備",
+        "budget_billion_yen": 78.9,
+        "completion": "2026"
+      },
+      {
+        "name": "桜川港拡張",
+        "budget_billion_yen": 56.7,
+        "completion": "2028"
+      }
+    ]
+  },
+  "economic_indicators": {
+    "consumer_price_index": 102.3,
+    "inflation_rate": 2.1,
+    "business_confidence_index": 15.2,
+    "retail_sales_growth": 3.4,
+    "industrial_production_index": 98.7
+  },
+  "future_outlook": {
+    "growth_forecast_2030": {
+      "gdp_billion_yen": 13456.7,
+      "growth_rate": 2.1
+    },
+    "strategic_industries": [
+      "AI・ロボティクス",
+      "バイオテクノロジー",
+      "再生可能エネルギー",
+      "観光・MICE",
+      "アグリテック"
+    ],
+    "challenges": [
+      "人口減少への対応",
+      "労働力不足",
+      "インフラ老朽化",
+      "グローバル競争"
+    ]
+  },
+  "metadata": {
+    "last_updated": "2025-07-11",
+    "data_sources": [
+      "桜県経済統計年報2024",
+      "経済センサス2021",
+      "県民経済計算"
+    ],
+    "notes": "All monetary values are in Japanese yen"
+  }
+}

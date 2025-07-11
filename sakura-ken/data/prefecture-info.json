@@ -1,0 +1,264 @@
+{
+  "name": {
+    "japanese": "桜県",
+    "hiragana": "さくらけん",
+    "romaji": "Sakura-ken",
+    "english": "Sakura Prefecture"
+  },
+  "established": {
+    "year": 1871,
+    "era": "明治4年",
+    "date": "1871-12-25"
+  },
+  "capital": {
+    "name": {
+      "japanese": "桜花市",
+      "hiragana": "おうかし",
+      "romaji": "Ouka-shi",
+      "english": "Sakura-ka City"
+    },
+    "population": 890234,
+    "coordinates": {
+      "latitude": 35.4567,
+      "longitude": 139.5678
+    }
+  },
+  "region": "関東地方",
+  "symbols": {
+    "flower": {
+      "japanese": "八重桜",
+      "romaji": "Yaezakura",
+      "english": "Double cherry blossom"
+    },
+    "tree": {
+      "japanese": "山桜",
+      "romaji": "Yamazakura",
+      "english": "Mountain cherry"
+    },
+    "bird": {
+      "japanese": "メジロ",
+      "romaji": "Mejiro",
+      "english": "Japanese white-eye"
+    },
+    "catchphrase": {
+      "japanese": "花咲く未来へ、桜県",
+      "romaji": "Hanasaku mirai e, Sakura-ken",
+      "english": "Blooming into the future, Sakura Prefecture"
+    }
+  },
+  "geography": {
+    "area": {
+      "total_km2": 2456.78,
+      "rank_national": 28
+    },
+    "borders": {
+      "north": ["東京都"],
+      "east": ["千葉県", "東京湾"],
+      "south": ["神奈川県"],
+      "west": ["山梨県"]
+    },
+    "coordinates": {
+      "latitude_range": {
+        "north": 35.7234,
+        "south": 35.2345
+      },
+      "longitude_range": {
+        "east": 139.8901,
+        "west": 139.2345
+      }
+    },
+    "topography": {
+      "mountains_percentage": 38.5,
+      "plains_percentage": 45.2,
+      "water_percentage": 16.3,
+      "highest_point": {
+        "name": "桜峰",
+        "elevation_m": 1247
+      },
+      "lowest_point": {
+        "name": "桜川河口",
+        "elevation_m": 0
+      }
+    }
+  },
+  "demographics": {
+    "population": {
+      "total": 2854327,
+      "as_of": "2025-01-01",
+      "density_per_km2": 1161.6,
+      "rank_national": 12
+    },
+    "households": {
+      "total": 1245678,
+      "average_size": 2.29
+    },
+    "age_structure": {
+      "0_14_years": {
+        "percentage": 11.8,
+        "count": 336810
+      },
+      "15_64_years": {
+        "percentage": 62.4,
+        "count": 1781100
+      },
+      "65_years_and_over": {
+        "percentage": 25.8,
+        "count": 736417
+      }
+    },
+    "foreign_residents": {
+      "total": 67890,
+      "percentage": 2.38
+    }
+  },
+  "economy": {
+    "gdp": {
+      "total_billion_yen": 11845.6,
+      "per_capita_million_yen": 4.15,
+      "rank_national": 11
+    },
+    "main_industries": [
+      "製造業",
+      "情報通信業",
+      "小売業・サービス業",
+      "観光業",
+      "農業"
+    ],
+    "unemployment_rate": 2.3,
+    "average_income_million_yen": 5.23
+  },
+  "administration": {
+    "governor": {
+      "name": "桜井花子",
+      "party": "無所属",
+      "term_start": "2023-04-01",
+      "term_number": 2
+    },
+    "assembly": {
+      "total_seats": 87,
+      "composition": {
+        "自由民主党": 32,
+        "立憲民主党": 18,
+        "公明党": 12,
+        "日本維新の会": 8,
+        "日本共産党": 5,
+        "地域政党・桜の会": 7,
+        "無所属": 5
+      }
+    },
+    "municipalities": {
+      "cities": 6,
+      "towns": 0,
+      "villages": 0
+    }
+  },
+  "infrastructure": {
+    "transportation": {
+      "railways": {
+        "jr_lines": 2,
+        "private_lines": 5,
+        "subway_lines": 2
+      },
+      "highways": {
+        "expressways": 2,
+        "national_routes": 5
+      },
+      "airports": {
+        "international": 1,
+        "domestic": 0
+      },
+      "ports": {
+        "major": 1,
+        "fishing": 3
+      }
+    },
+    "utilities": {
+      "electricity_coverage": 100,
+      "water_supply_coverage": 98.9,
+      "sewage_coverage": 78.9,
+      "gas_coverage": 89.5,
+      "internet_fiber_coverage": 99.8
+    }
+  },
+  "culture": {
+    "unesco_sites": 0,
+    "national_treasures": 3,
+    "important_cultural_properties": 87,
+    "traditional_crafts": [
+      "桜染",
+      "花見焼",
+      "千本細工"
+    ],
+    "major_festivals": [
+      "桜県大桜まつり",
+      "花火大会",
+      "秋の収穫祭"
+    ],
+    "local_cuisine": [
+      "桜めし",
+      "花見団子",
+      "桜鍋"
+    ]
+  },
+  "education": {
+    "literacy_rate": 99.9,
+    "universities": 8,
+    "junior_colleges": 12,
+    "high_schools": 78,
+    "junior_high_schools": 143,
+    "elementary_schools": 287
+  },
+  "healthcare": {
+    "hospitals": 234,
+    "clinics": 2456,
+    "doctors_per_1000": 2.76,
+    "hospital_beds_per_1000": 12.1,
+    "life_expectancy": {
+      "male": 81.5,
+      "female": 87.3,
+      "average": 84.4
+    }
+  },
+  "tourism": {
+    "annual_visitors": 34560000,
+    "tourism_revenue_billion_yen": 234.5,
+    "accommodation_facilities": 1234,
+    "major_attractions": [
+      "千本桜国立公園",
+      "桜花城跡",
+      "南桜温泉郷",
+      "東桜テクノパーク",
+      "西桜伝統工芸村"
+    ]
+  },
+  "sister_relationships": {
+    "domestic": [
+      "青森県弘前市",
+      "京都府京都市",
+      "奈良県吉野町"
+    ],
+    "international": [
+      "ワシントンD.C.（アメリカ）",
+      "済州島（韓国）",
+      "ボン（ドイツ）"
+    ]
+  },
+  "contact": {
+    "prefecture_office": {
+      "address": "桜県桜花市中央1-1-1",
+      "postal_code": "123-8501",
+      "phone": "012-345-6789",
+      "website": "https://www.pref.sakura.jp",
+      "email": "info@pref.sakura.jp"
+    }
+  },
+  "metadata": {
+    "last_updated": "2025-07-11",
+    "data_sources": [
+      "桜県統計年鑑2025",
+      "国勢調査2020",
+      "経済センサス2021"
+    ],
+    "notes": "This is a fictional prefecture created for the Sakura-ken project"
+  }
+}

@@ -1,0 +1,421 @@
+{
+  "summary": {
+    "total_population": 2854327,
+    "male": 1398567,
+    "female": 1455760,
+    "sex_ratio": 96.1,
+    "households": 1245678,
+    "average_household_size": 2.29,
+    "population_density_per_km2": 1161.6,
+    "as_of": "2025-01-01"
+  },
+  "age_distribution": {
+    "age_groups": [
+      {
+        "range": "0-4",
+        "total": 98234,
+        "male": 50345,
+        "female": 47889,
+        "percentage": 3.44
+      },
+      {
+        "range": "5-9",
+        "total": 112456,
+        "male": 57890,
+        "female": 54566,
+        "percentage": 3.94
+      },
+      {
+        "range": "10-14",
+        "total": 126120,
+        "male": 64567,
+        "female": 61553,
+        "percentage": 4.42
+      },
+      {
+        "range": "15-19",
+        "total": 134567,
+        "male": 68901,
+        "female": 65666,
+        "percentage": 4.71
+      },
+      {
+        "range": "20-24",
+        "total": 156789,
+        "male": 80123,
+        "female": 76666,
+        "percentage": 5.49
+      },
+      {
+        "range": "25-29",
+        "total": 178901,
+        "male": 91234,
+        "female": 87667,
+        "percentage": 6.27
+      },
+      {
+        "range": "30-34",
+        "total": 189234,
+        "male": 96789,
+        "female": 92445,
+        "percentage": 6.63
+      },
+      {
+        "range": "35-39",
+        "total": 198765,
+        "male": 101234,
+        "female": 97531,
+        "percentage": 6.96
+      },
+      {
+        "range": "40-44",
+        "total": 212345,
+        "male": 107890,
+        "female": 104455,
+        "percentage": 7.44
+      },
+      {
+        "range": "45-49",
+        "total": 223456,
+        "male": 112345,
+        "female": 111111,
+        "percentage": 7.83
+      },
+      {
+        "range": "50-54",
+        "total": 201234,
+        "male": 99876,
+        "female": 101358,
+        "percentage": 7.05
+      },
+      {
+        "range": "55-59",
+        "total": 189012,
+        "male": 92345,
+        "female": 96667,
+        "percentage": 6.62
+      },
+      {
+        "range": "60-64",
+        "total": 178901,
+        "male": 86543,
+        "female": 92358,
+        "percentage": 6.27
+      },
+      {
+        "range": "65-69",
+        "total": 198765,
+        "male": 94321,
+        "female": 104444,
+        "percentage": 6.96
+      },
+      {
+        "range": "70-74",
+        "total": 189234,
+        "male": 87654,
+        "female": 101580,
+        "percentage": 6.63
+      },
+      {
+        "range": "75-79",
+        "total": 156789,
+        "male": 68901,
+        "female": 87888,
+        "percentage": 5.49
+      },
+      {
+        "range": "80-84",
+        "total": 112345,
+        "male": 45678,
+        "female": 66667,
+        "percentage": 3.94
+      },
+      {
+        "range": "85-89",
+        "total": 67890,
+        "male": 23456,
+        "female": 44434,
+        "percentage": 2.38
+      },
+      {
+        "range": "90-94",
+        "total": 23456,
+        "male": 6789,
+        "female": 16667,
+        "percentage": 0.82
+      },
+      {
+        "range": "95-99",
+        "total": 5678,
+        "male": 1234,
+        "female": 4444,
+        "percentage": 0.20
+      },
+      {
+        "range": "100+",
+        "total": 234,
+        "male": 34,
+        "female": 200,
+        "percentage": 0.01
+      }
+    ],
+    "broad_age_groups": {
+      "youth_0_14": {
+        "total": 336810,
+        "percentage": 11.8
+      },
+      "working_15_64": {
+        "total": 1781100,
+        "percentage": 62.4
+      },
+      "elderly_65_plus": {
+        "total": 736417,
+        "percentage": 25.8
+      }
+    }
+  },
+  "city_population": [
+    {
+      "name": "桜花市",
+      "total": 890234,
+      "percentage": 31.2,
+      "male": 435678,
+      "female": 454556,
+      "households": 398765,
+      "density_per_km2": 1948.3
+    },
+    {
+      "name": "桜川市",
+      "total": 523456,
+      "percentage": 18.3,
+      "male": 256789,
+      "female": 266667,
+      "households": 234567,
+      "density_per_km2": 1344.2
+    },
+    {
+      "name": "東桜市",
+      "total": 412345,
+      "percentage": 14.5,
+      "male": 205678,
+      "female": 206667,
+      "households": 189234,
+      "density_per_km2": 1319.2
+    },
+    {
+      "name": "南桜市",
+      "total": 287654,
+      "percentage": 10.1,
+      "male": 140123,
+      "female": 147531,
+      "households": 123456,
+      "density_per_km2": 506.5
+    },
+    {
+      "name": "西桜市",
+      "total": 198765,
+      "percentage": 7.0,
+      "male": 97654,
+      "female": 101111,
+      "households": 87654,
+      "density_per_km2": 847.8
+    },
+    {
+      "name": "北桜市",
+      "total": 156789,
+      "percentage": 5.5,
+      "male": 78901,
+      "female": 77888,
+      "households": 67890,
+      "density_per_km2": 351.9
+    },
+    {
+      "name": "その他地域",
+      "total": 385084,
+      "percentage": 13.5,
+      "male": 183744,
+      "female": 201340,
+      "households": 144112,
+      "density_per_km2": 678.9
+    }
+  ],
+  "foreign_residents": {
+    "total": 67890,
+    "percentage": 2.38,
+    "by_nationality": [
+      {
+        "country": "中国",
+        "count": 18234,
+        "percentage": 26.9
+      },
+      {
+        "country": "韓国",
+        "count": 12345,
+        "percentage": 18.2
+      },
+      {
+        "country": "フィリピン",
+        "count": 8901,
+        "percentage": 13.1
+      },
+      {
+        "country": "ベトナム",
+        "count": 7654,
+        "percentage": 11.3
+      },
+      {
+        "country": "ブラジル",
+        "count": 5432,
+        "percentage": 8.0
+      },
+      {
+        "country": "ネパール",
+        "count": 3456,
+        "percentage": 5.1
+      },
+      {
+        "country": "アメリカ",
+        "count": 2345,
+        "percentage": 3.5
+      },
+      {
+        "country": "インド",
+        "count": 2123,
+        "percentage": 3.1
+      },
+      {
+        "country": "その他",
+        "count": 7400,
+        "percentage": 10.9
+      }
+    ],
+    "by_status": [
+      {
+        "status": "永住者",
+        "count": 23456,
+        "percentage": 34.5
+      },
+      {
+        "status": "技能実習",
+        "count": 15678,
+        "percentage": 23.1
+      },
+      {
+        "status": "留学",
+        "count": 12345,
+        "percentage": 18.2
+      },
+      {
+        "status": "技術・人文知識・国際業務",
+        "count": 8901,
+        "percentage": 13.1
+      },
+      {
+        "status": "家族滞在",
+        "count": 5432,
+        "percentage": 8.0
+      },
+      {
+        "status": "その他",
+        "count": 2078,
+        "percentage": 3.1
+      }
+    ]
+  },
+  "population_dynamics": {
+    "birth_rate_per_1000": 7.8,
+    "death_rate_per_1000": 11.2,
+    "natural_increase_rate": -3.4,
+    "migration": {
+      "in_migration": 98765,
+      "out_migration": 95432,
+      "net_migration": 3333,
+      "social_increase_rate": 1.2
+    },
+    "total_increase_rate": -2.2
+  },
+  "historical_population": [
+    {
+      "year": 1920,
+      "population": 890123
+    },
+    {
+      "year": 1950,
+      "population": 1234567
+    },
+    {
+      "year": 1980,
+      "population": 2345678
+    },
+    {
+      "year": 2000,
+      "population": 2789012
+    },
+    {
+      "year": 2010,
+      "population": 2834567
+    },
+    {
+      "year": 2020,
+      "population": 2856789
+    },
+    {
+      "year": 2025,
+      "population": 2854327
+    }
+  ],
+  "population_projection": [
+    {
+      "year": 2030,
+      "population": 2823456,
+      "elderly_percentage": 28.5
+    },
+    {
+      "year": 2035,
+      "population": 2765432,
+      "elderly_percentage": 31.2
+    },
+    {
+      "year": 2040,
+      "population": 2687654,
+      "elderly_percentage": 33.8
+    },
+    {
+      "year": 2045,
+      "population": 2589012,
+      "elderly_percentage": 35.6
+    },
+    {
+      "year": 2050,
+      "population": 2456789,
+      "elderly_percentage": 37.2
+    }
+  ],
+  "household_composition": {
+    "single_person": {
+      "count": 456789,
+      "percentage": 36.7
+    },
+    "nuclear_family": {
+      "count": 543210,
+      "percentage": 43.6
+    },
+    "three_generation": {
+      "count": 123456,
+      "percentage": 9.9
+    },
+    "other": {
+      "count": 122223,
+      "percentage": 9.8
+    }
+  },
+  "metadata": {
+    "last_updated": "2025-07-11",
+    "data_sources": [
+      "桜県人口統計調査",
+      "住民基本台帳",
+      "国勢調査2020"
+    ],
+    "notes": "Population data includes registered residents only"
+  }
+}
