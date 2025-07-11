@@ -1,0 +1,413 @@
+{
+  "railways": {
+    "total_length_km": 456.7,
+    "annual_passengers": 567890123,
+    "networks": {
+      "jr_lines": [
+        {
+          "name": "JR桜本線",
+          "length_km": 67.8,
+          "stations": 23,
+          "daily_passengers": 234567,
+          "route": "東京駅～桜花駅～横浜駅",
+          "key_stations": [
+            {
+              "name": "桜花駅",
+              "type": "ターミナル駅",
+              "daily_passengers": 123456
+            },
+            {
+              "name": "東桜駅",
+              "daily_passengers": 45678
+            },
+            {
+              "name": "桜川駅",
+              "daily_passengers": 34567
+            }
+          ]
+        },
+        {
+          "name": "JR桜川線",
+          "length_km": 45.6,
+          "stations": 15,
+          "daily_passengers": 87654,
+          "route": "桜花駅～桜川駅～小田原駅"
+        }
+      ],
+      "private_railways": [
+        {
+          "company": "桜急電鉄",
+          "lines": [
+            {
+              "name": "桜急本線",
+              "length_km": 56.7,
+              "stations": 28,
+              "daily_passengers": 345678
+            },
+            {
+              "name": "桜急空港線",
+              "length_km": 23.4,
+              "stations": 8,
+              "daily_passengers": 123456
+            }
+          ]
+        },
+        {
+          "company": "花見電鉄",
+          "lines": [
+            {
+              "name": "花見線",
+              "length_km": 34.5,
+              "stations": 18,
+              "daily_passengers": 98765
+            }
+          ]
+        },
+        {
+          "company": "千本電鉄",
+          "lines": [
+            {
+              "name": "千本線",
+              "length_km": 28.9,
+              "stations": 14,
+              "daily_passengers": 67890
+            },
+            {
+              "name": "山桜線",
+              "length_km": 19.8,
+              "stations": 11,
+              "daily_passengers": 45678
+            }
+          ]
+        }
+      ],
+      "subway": {
+        "operator": "桜県営地下鉄",
+        "lines": [
+          {
+            "name": "さくら線",
+            "color": "ピンク",
+            "length_km": 23.4,
+            "stations": 19,
+            "daily_passengers": 456789
+          },
+          {
+            "name": "はなみ線",
+            "color": "緑",
+            "length_km": 18.7,
+            "stations": 15,
+            "daily_passengers": 345678
+          }
+        ]
+      }
+    }
+  },
+  "roads": {
+    "total_length_km": 12345.6,
+    "by_type": {
+      "expressways": {
+        "length_km": 134.5,
+        "routes": [
+          {
+            "name": "桜縦貫自動車道",
+            "code": "E99",
+            "length_km": 78.9,
+            "interchanges": 12,
+            "daily_traffic": 45678
+          },
+          {
+            "name": "東桜横断自動車道",
+            "code": "E98",
+            "length_km": 55.6,
+            "interchanges": 8,
+            "daily_traffic": 34567
+          }
+        ]
+      },
+      "national_routes": {
+        "length_km": 234.5,
+        "routes": [
+          {
+            "number": 301,
+            "length_km": 67.8
+          },
+          {
+            "number": 302,
+            "length_km": 56.7
+          },
+          {
+            "number": 303,
+            "length_km": 45.6
+          },
+          {
+            "number": 304,
+            "length_km": 34.5
+          },
+          {
+            "number": 305,
+            "length_km": 29.9
+          }
+        ]
+      },
+      "prefectural_roads": {
+        "length_km": 3456.7,
+        "main_routes": 234,
+        "general_routes": 456
+      },
+      "municipal_roads": {
+        "length_km": 8519.9
+      }
+    },
+    "bridges": {
+      "total": 1234,
+      "major_bridges": [
+        {
+          "name": "桜大橋",
+          "length_m": 1234,
+          "type": "斜張橋",
+          "year_built": 1998
+        },
+        {
+          "name": "花見大橋",
+          "length_m": 890,
+          "type": "吊橋",
+          "year_built": 2005
+        },
+        {
+          "name": "桜川河口大橋",
+          "length_m": 678,
+          "type": "アーチ橋",
+          "year_built": 2012
+        }
+      ]
+    },
+    "tunnels": {
+      "total": 89,
+      "major_tunnels": [
+        {
+          "name": "桜峰トンネル",
+          "length_m": 3456,
+          "year_opened": 2001
+        },
+        {
+          "name": "花見山トンネル",
+          "length_m": 2345,
+          "year_opened": 2008
+        }
+      ]
+    }
+  },
+  "bus": {
+    "operators": [
+      {
+        "name": "桜県バス",
+        "type": "公営",
+        "routes": 89,
+        "buses": 567,
+        "daily_passengers": 234567
+      },
+      {
+        "name": "桜花市営バス",
+        "type": "公営",
+        "routes": 67,
+        "buses": 345,
+        "daily_passengers": 123456
+      },
+      {
+        "name": "さくら観光バス",
+        "type": "民営",
+        "routes": 23,
+        "buses": 123,
+        "daily_passengers": 34567
+      }
+    ],
+    "highway_buses": {
+      "routes": 34,
+      "destinations": [
+        "東京",
+        "横浜",
+        "名古屋",
+        "大阪",
+        "仙台"
+      ],
+      "daily_services": 234
+    },
+    "community_buses": {
+      "municipalities": 6,
+      "routes": 45,
+      "annual_passengers": 1234567
+    }
+  },
+  "airports": {
+    "international": {
+      "name": "桜花国際空港",
+      "code": "SKR",
+      "location": "桜花市臨海地区",
+      "runways": 2,
+      "terminals": 3,
+      "annual_passengers": 8901234,
+      "annual_cargo_tons": 123456,
+      "airlines": 45,
+      "destinations": {
+        "domestic": 23,
+        "international": 34
+      }
+    }
+  },
+  "ports": {
+    "major_ports": [
+      {
+        "name": "桜川港",
+        "type": "国際貿易港",
+        "annual_cargo_tons": 23456789,
+        "container_teu": 567890,
+        "berths": 23,
+        "cruise_passengers": 123456
+      }
+    ],
+    "fishing_ports": [
+      {
+        "name": "桜浜漁港",
+        "annual_catch_tons": 12345
+      },
+      {
+        "name": "花見浦漁港",
+        "annual_catch_tons": 8901
+      },
+      {
+        "name": "東桜漁港",
+        "annual_catch_tons": 5678
+      }
+    ]
+  },
+  "new_mobility": {
+    "bike_sharing": {
+      "stations": 234,
+      "bikes": 3456,
+      "annual_users": 567890
+    },
+    "car_sharing": {
+      "stations": 123,
+      "vehicles": 456,
+      "members": 23456
+      },
+    "electric_scooters": {
+      "service_areas": 6,
+      "scooters": 1234,
+      "daily_rides": 5678
+    },
+    "autonomous_vehicles": {
+      "test_areas": 3,
+      "test_vehicles": 12,
+      "planned_service_start": "2026"
+    }
+  },
+  "transportation_statistics": {
+    "modal_share": {
+      "rail": 38.5,
+      "bus": 12.3,
+      "car": 42.1,
+      "bicycle": 4.5,
+      "walking": 2.6
+    },
+    "average_commute_time_minutes": 42.3,
+    "traffic_congestion_index": 1.34,
+    "public_transport_coverage": 89.5
+  },
+  "infrastructure_quality": {
+    "road_pavement_rate": 98.7,
+    "barrier_free_stations": 156,
+    "ev_charging_stations": 456,
+    "park_and_ride_facilities": 34
+  },
+  "future_plans": {
+    "projects": [
+      {
+        "name": "リニア桜県駅",
+        "type": "鉄道",
+        "budget_billion_yen": 234.5,
+        "completion": "2035"
+      },
+      {
+        "name": "桜花環状道路",
+        "type": "道路",
+        "budget_billion_yen": 123.4,
+        "completion": "2027"
+      },
+      {
+        "name": "BRT導入",
+        "type": "バス",
+        "budget_billion_yen": 34.5,
+        "completion": "2026"
+      },
+      {
+        "name": "MaaS統合プラットフォーム",
+        "type": "デジタル",
+        "budget_billion_yen": 12.3,
+        "completion": "2025"
+      }
+    ]
+  },
+  "tourism_transport": {
+    "sightseeing_buses": {
+      "routes": 12,
+      "operators": 5,
+      "annual_passengers": 456789
+    },
+    "rental_services": {
+      "car_rental": {
+        "companies": 23,
+        "locations": 45,
+        "vehicles": 1234
+      },
+      "bicycle_rental": {
+        "stations": 67,
+        "bicycles": 890
+      }
+    },
+    "special_trains": [
+      {
+        "name": "桜エクスプレス",
+        "operator": "JR東日本",
+        "route": "東京～桜花～南桜温泉",
+        "frequency": "週末・祝日"
+      },
+      {
+        "name": "花見号",
+        "operator": "桜急電鉄",
+        "route": "桜花～千本桜公園",
+        "frequency": "桜シーズン限定"
+      }
+    ]
+  },
+  "smart_transportation": {
+    "traffic_management": {
+      "smart_signals": 234,
+      "traffic_cameras": 567,
+      "real_time_info_boards": 89
+    },
+    "apps_and_services": {
+      "integrated_payment": "SAKURA Pass",
+      "route_planning": "桜ナビ",
+      "real_time_tracking": true
+    }
+  },
+  "environmental_initiatives": {
+    "electric_buses": 123,
+    "hydrogen_buses": 12,
+    "green_logistics": {
+      "electric_delivery_vehicles": 234,
+      "cargo_bikes": 56
+    },
+    "carbon_reduction_target": "2030年までに40%削減"
+  },
+  "metadata": {
+    "last_updated": "2025-07-11",
+    "data_sources": [
+      "桜県交通統計年報2024",
+      "国土交通省統計",
+      "各交通事業者データ"
+    ],
+    "notes": "Transportation data includes all modes within prefecture boundaries"
+  }
+}
