@@ -84,7 +84,28 @@
   text-decoration: none;
 }
 
+.searchWrapper {
+  flex: 1;
+  max-width: 400px;
+  margin: 0 2rem;
+}
+
+.langSwitcherWrapper {
+  margin-right: 1rem;
+}
+
 @media (max-width: 768px) {
+  .searchWrapper {
+    display: none;
+  }
+  
+  .langSwitcherWrapper {
+    display: none;
+  }
+
+  .container {
+    padding: 0.75rem 1rem;
+  }
   .menuButton {
     display: flex;
   }

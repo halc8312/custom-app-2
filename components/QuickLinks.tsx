@@ -1,34 +1,10 @@
 import Link from 'next/link'
 import styles from './QuickLinks.module.css'
-
-const quickLinks = [
-  {
-    title: '県政情報',
-    description: '県の政策、組織、予算など',
-    href: '/government',
-    icon: '🏛️',
-  },
-  {
-    title: '観光・イベント',
-    description: '観光スポット、イベント情報',
-    href: '/tourism',
-    icon: '🌸',
-  },
-  {
-    title: '生活・福祉',
-    description: '健康、福祉、教育サービス',
-    href: '/services',
-    icon: '🏥',
-  },
-  {
-    title: '産業・雇用',
-    description: 'ビジネス支援、求人情報',
-    href: '/business',
-    icon: '💼',
-  },
-]
+import { QuickLink } from '@/types'
+import { getFeaturedQuickLinks } from '@/lib/quick-links-config'
 
 export default function QuickLinks() {
+  const quickLinks = getFeaturedQuickLinks()
   return (
     <section className={styles.quickLinks}>
       <div className="container">
