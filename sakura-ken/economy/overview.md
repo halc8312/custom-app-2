@@ -10,6 +10,8 @@
 
 詳細な経済データは[こちら](./detailed-economy.md)をご覧ください。
 インフラ関連の経済データは[こちら](./infrastructure-economy.md)をご覧ください。
+特産品・地域ブランドの詳細は[こちら](./special-products.md)をご覧ください。
+先端産業・研究施設の詳細は[こちら](./advanced-industries.md)をご覧ください。
 
 ### 産業構造（県内総生産構成比）
 | 産業分類 | 構成比 | 金額 |

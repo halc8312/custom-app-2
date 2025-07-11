@@ -34,16 +34,21 @@ sakura-ken/
 ├── README.md              # このファイル
 ├── geography/             # 地理情報
 ├── demographics/          # 人口統計
-├── government/           # 行政・政治
-├── economy/              # 経済・産業
-├── culture/              # 文化・伝統
-├── infrastructure/       # インフラ・交通
-├── history/              # 歴史
-├── tourism/              # 観光
-├── education/            # 教育
-├── healthcare/           # 医療・福祉
-├── maps/                 # 地図データ
-└── data/                 # 各種統計データ
+├── government/            # 行政・政治
+├── economy/               # 経済・産業
+├── culture/               # 文化・伝統
+├── infrastructure/        # インフラ・交通
+├── history/               # 歴史
+├── tourism/               # 観光
+├── education/             # 教育
+├── healthcare/            # 医療・福祉
+├── sports/                # スポーツ
+├── international/         # 国際交流
+├── symbols/               # 県のシンボル
+├── digital/               # デジタルコンテンツ・アプリ
+├── visual/                # ビジュアルデータ・地図
+├── data/                  # 各種統計データ（JSON形式）
+└── development/           # 開発ドキュメント
 ```
 
 ## 今後の展開予定
