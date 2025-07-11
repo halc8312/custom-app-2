@@ -1,0 +1,1413 @@
+{
+  "districts": {
+    "桜花市": {
+      "city_id": "13201",
+      "total_districts": 9,
+      "districts": [
+        {
+          "name": "中央区",
+          "name_romaji": "Chuo-ku",
+          "type": "中心業務地区",
+          "area_km2": 45.23,
+          "population": {
+            "total": 125340,
+            "density_per_km2": 2771.8,
+            "age_distribution": {
+              "0-14": 12.5,
+              "15-64": 68.2,
+              "65+": 19.3
+            },
+            "gender_ratio": {
+              "male": 51.2,
+              "female": 48.8
+            }
+          },
+          "characteristics": "県庁、市役所、金融機関本店が集中する行政・ビジネスの中心地",
+          "main_landmarks": [
+            "桜県庁本庁舎",
+            "桜花市役所",
+            "桜花中央駅",
+            "桜県立図書館",
+            "中央公園"
+          ],
+          "transportation": {
+            "stations": ["桜花中央駅", "県庁前駅", "市役所前駅"],
+            "bus_terminals": 3,
+            "parking_facilities": 45
+          },
+          "economy": {
+            "office_buildings": 234,
+            "retail_stores": 567,
+            "restaurants": 890,
+            "hotels": 23
+          },
+          "housing": {
+            "total_units": 45678,
+            "average_rent": 125000,
+            "ownership_rate": 35.6
+          }
+        },
+        {
+          "name": "桜区",
+          "name_romaji": "Sakura-ku",
+          "type": "文化・教育地区",
+          "area_km2": 56.78,
+          "population": {
+            "total": 98765,
+            "density_per_km2": 1739.8,
+            "age_distribution": {
+              "0-14": 15.8,
+              "15-64": 65.4,
+              "65+": 18.8
+            },
+            "gender_ratio": {
+              "male": 48.7,
+              "female": 51.3
+            }
+          },
+          "characteristics": "大学や文化施設が集まる文教地区。桜並木の美しい街並みが特徴",
+          "main_landmarks": [
+            "桜県立大学",
+            "桜花市立美術館",
+            "桜花文化会館",
+            "桜並木通り",
+            "学園都市駅"
+          ],
+          "transportation": {
+            "stations": ["学園都市駅", "桜台駅", "文化センター前駅"],
+            "bus_terminals": 2,
+            "parking_facilities": 23
+          },
+          "economy": {
+            "educational_institutions": 45,
+            "bookstores": 23,
+            "cafes": 156,
+            "student_accommodations": 89
+          },
+          "housing": {
+            "total_units": 34567,
+            "average_rent": 85000,
+            "ownership_rate": 42.3
+          }
+        },
+        {
+          "name": "花見区",
+          "name_romaji": "Hanami-ku",
+          "type": "観光・商業地区",
+          "area_km2": 48.90,
+          "population": {
+            "total": 87654,
+            "density_per_km2": 1792.5,
+            "age_distribution": {
+              "0-14": 13.2,
+              "15-64": 67.5,
+              "65+": 19.3
+            },
+            "gender_ratio": {
+              "male": 49.1,
+              "female": 50.9
+            }
+          },
+          "characteristics": "桜花城跡を中心とした観光地区。商店街や飲食店も充実",
+          "main_landmarks": [
+            "桜花城跡公園",
+            "花見商店街",
+            "桜花タワー",
+            "歴史博物館",
+            "花見橋"
+          ],
+          "transportation": {
+            "stations": ["花見駅", "城跡公園駅"],
+            "bus_terminals": 2,
+            "parking_facilities": 34
+          },
+          "economy": {
+            "tourist_attractions": 23,
+            "souvenir_shops": 156,
+            "restaurants": 234,
+            "traditional_crafts": 45
+          },
+          "housing": {
+            "total_units": 29876,
+            "average_rent": 95000,
+            "ownership_rate": 38.9
+          }
+        },
+        {
+          "name": "東区",
+          "name_romaji": "Higashi-ku",
+          "type": "新興住宅地区",
+          "area_km2": 67.89,
+          "population": {
+            "total": 134567,
+            "density_per_km2": 1982.4,
+            "age_distribution": {
+              "0-14": 18.5,
+              "15-64": 69.2,
+              "65+": 12.3
+            },
+            "gender_ratio": {
+              "male": 50.3,
+              "female": 49.7
+            }
+          },
+          "characteristics": "ファミリー層に人気の新興住宅地。大型商業施設も充実",
+          "main_landmarks": [
+            "イオンモール桜花東",
+            "東区スポーツセンター",
+            "さくら東公園",
+            "東区役所",
+            "桜花東駅"
+          ],
+          "transportation": {
+            "stations": ["桜花東駅", "東区役所前駅", "ニュータウン駅"],
+            "bus_terminals": 3,
+            "parking_facilities": 56
+          },
+          "economy": {
+            "shopping_centers": 3,
+            "supermarkets": 23,
+            "clinics": 45,
+            "childcare_centers": 34
+          },
+          "housing": {
+            "total_units": 48765,
+            "average_rent": 105000,
+            "ownership_rate": 65.4
+          }
+        },
+        {
+          "name": "西区",
+          "name_romaji": "Nishi-ku",
+          "type": "工業・流通地区",
+          "area_km2": 78.90,
+          "population": {
+            "total": 76543,
+            "density_per_km2": 970.2,
+            "age_distribution": {
+              "0-14": 14.7,
+              "15-64": 68.9,
+              "65+": 16.4
+            },
+            "gender_ratio": {
+              "male": 54.2,
+              "female": 45.8
+            }
+          },
+          "characteristics": "軽工業と物流施設が集積。職住近接型の街づくりを推進",
+          "main_landmarks": [
+            "桜花工業団地",
+            "西部物流センター",
+            "西区役所",
+            "職業訓練センター",
+            "西桜花駅"
+          ],
+          "transportation": {
+            "stations": ["西桜花駅", "工業団地前駅"],
+            "bus_terminals": 2,
+            "parking_facilities": 34,
+            "freight_terminals": 2
+          },
+          "economy": {
+            "factories": 123,
+            "warehouses": 89,
+            "logistics_centers": 12,
+            "business_hotels": 8
+          },
+          "housing": {
+            "total_units": 27654,
+            "average_rent": 75000,
+            "ownership_rate": 48.7
+          }
+        },
+        {
+          "name": "南区",
+          "name_romaji": "Minami-ku",
+          "type": "高級住宅地区",
+          "area_km2": 52.34,
+          "population": {
+            "total": 65432,
+            "density_per_km2": 1250.3,
+            "age_distribution": {
+              "0-14": 16.2,
+              "15-64": 62.4,
+              "65+": 21.4
+            },
+            "gender_ratio": {
+              "male": 48.5,
+              "female": 51.5
+            }
+          },
+          "characteristics": "閑静な高級住宅街。緑豊かで教育環境も優れる",
+          "main_landmarks": [
+            "南桜花ゴルフクラブ",
+            "桜花学園（私立一貫校）",
+            "南区役所",
+            "桜ヶ丘公園",
+            "高級住宅街エリア"
+          ],
+          "transportation": {
+            "stations": ["南桜花駅", "桜ヶ丘駅"],
+            "bus_terminals": 1,
+            "parking_facilities": 23
+          },
+          "economy": {
+            "high_end_retail": 34,
+            "private_schools": 8,
+            "medical_clinics": 23,
+            "country_clubs": 2
+          },
+          "housing": {
+            "total_units": 23456,
+            "average_rent": 180000,
+            "ownership_rate": 78.9
+          }
+        },
+        {
+          "name": "北区",
+          "name_romaji": "Kita-ku",
+          "type": "ベッドタウン地区",
+          "area_km2": 45.67,
+          "population": {
+            "total": 89012,
+            "density_per_km2": 1949.3,
+            "age_distribution": {
+              "0-14": 15.9,
+              "15-64": 66.7,
+              "65+": 17.4
+            },
+            "gender_ratio": {
+              "male": 49.8,
+              "female": 50.2
+            }
+          },
+          "characteristics": "通勤に便利なベッドタウン。商業施設と住宅のバランスが良い",
+          "main_landmarks": [
+            "北区役所",
+            "桜花北駅",
+            "北部市民センター",
+            "さくら北ショッピングモール",
+            "北区総合病院"
+          ],
+          "transportation": {
+            "stations": ["桜花北駅", "北区役所前駅", "市民センター前駅"],
+            "bus_terminals": 2,
+            "parking_facilities": 28
+          },
+          "economy": {
+            "shopping_malls": 2,
+            "supermarkets": 18,
+            "restaurants": 145,
+            "fitness_centers": 12
+          },
+          "housing": {
+            "total_units": 32145,
+            "average_rent": 92000,
+            "ownership_rate": 56.7
+          }
+        },
+        {
+          "name": "緑区",
+          "name_romaji": "Midori-ku",
+          "type": "環境共生地区",
+          "area_km2": 58.90,
+          "population": {
+            "total": 78901,
+            "density_per_km2": 1339.5,
+            "age_distribution": {
+              "0-14": 17.3,
+              "15-64": 65.8,
+              "65+": 16.9
+            },
+            "gender_ratio": {
+              "male": 49.4,
+              "female": 50.6
+            }
+          },
+          "characteristics": "公園と緑地が多く、環境に配慮した街づくりを推進",
+          "main_landmarks": [
+            "緑の森公園",
+            "エコセンター",
+            "緑区役所",
+            "自然観察の森",
+            "環境学習センター"
+          ],
+          "transportation": {
+            "stations": ["緑園都市駅", "森の里駅"],
+            "bus_terminals": 2,
+            "parking_facilities": 19,
+            "bicycle_lanes_km": 45
+          },
+          "economy": {
+            "eco_businesses": 56,
+            "organic_stores": 23,
+            "farmers_markets": 8,
+            "renewable_energy_facilities": 3
+          },
+          "housing": {
+            "total_units": 28456,
+            "average_rent": 88000,
+            "ownership_rate": 62.3,
+            "eco_housing_rate": 34.5
+          }
+        },
+        {
+          "name": "港区",
+          "name_romaji": "Minato-ku",
+          "type": "臨海複合地区",
+          "area_km2": 34.56,
+          "population": {
+            "total": 56789,
+            "density_per_km2": 1643.7,
+            "age_distribution": {
+              "0-14": 14.1,
+              "15-64": 70.2,
+              "65+": 15.7
+            },
+            "gender_ratio": {
+              "male": 52.3,
+              "female": 47.7
+            }
+          },
+          "characteristics": "再開発された臨海地区。商業とレジャー、高層マンションが混在",
+          "main_landmarks": [
+            "桜花ベイエリア",
+            "海浜公園",
+            "アクアミュージアム",
+            "ベイブリッジ",
+            "国際展示場"
+          ],
+          "transportation": {
+            "stations": ["ベイエリア駅", "国際展示場駅"],
+            "bus_terminals": 2,
+            "parking_facilities": 38,
+            "water_bus_terminals": 3
+          },
+          "economy": {
+            "convention_centers": 2,
+            "hotels": 15,
+            "entertainment_facilities": 23,
+            "high_rise_offices": 12
+          },
+          "housing": {
+            "total_units": 20567,
+            "average_rent": 135000,
+            "ownership_rate": 45.6,
+            "high_rise_apartments": 85
+          }
+        }
+      ]
+    },
+    "桜川市": {
+      "city_id": "13202",
+      "total_districts": 5,
+      "districts": [
+        {
+          "name": "港地区",
+          "name_romaji": "Minato-chiku",
+          "type": "港湾・物流地区",
+          "area_km2": 89.34,
+          "population": {
+            "total": 145678,
+            "density_per_km2": 1631.2,
+            "age_distribution": {
+              "0-14": 13.8,
+              "15-64": 69.5,
+              "65+": 16.7
+            },
+            "gender_ratio": {
+              "male": 53.4,
+              "female": 46.6
+            }
+          },
+          "characteristics": "県内最大の港湾施設を有し、国際貿易の拠点として機能",
+          "main_landmarks": [
+            "桜川港国際ターミナル",
+            "桜川魚市場",
+            "港湾物流センター",
+            "海の駅さくらがわ",
+            "桜川港駅"
+          ],
+          "transportation": {
+            "stations": ["桜川港駅", "魚市場前駅", "国際ターミナル駅"],
+            "bus_terminals": 4,
+            "parking_facilities": 67,
+            "port_facilities": {
+              "container_terminals": 3,
+              "cargo_berths": 12,
+              "passenger_terminals": 2
+            }
+          },
+          "economy": {
+            "shipping_companies": 45,
+            "warehouses": 123,
+            "fish_markets": 3,
+            "logistics_companies": 89
+          },
+          "housing": {
+            "total_units": 52345,
+            "average_rent": 78000,
+            "ownership_rate": 42.3
+          }
+        },
+        {
+          "name": "臨海地区",
+          "name_romaji": "Rinkai-chiku",
+          "type": "工業・エネルギー地区",
+          "area_km2": 78.56,
+          "population": {
+            "total": 89012,
+            "density_per_km2": 1133.7,
+            "age_distribution": {
+              "0-14": 12.5,
+              "15-64": 71.2,
+              "65+": 16.3
+            },
+            "gender_ratio": {
+              "male": 56.7,
+              "female": 43.3
+            }
+          },
+          "characteristics": "重化学工業とエネルギー施設が集積する県内最大の工業地帯",
+          "main_landmarks": [
+            "桜川工業団地",
+            "桜川火力発電所",
+            "石油化学コンビナート",
+            "LNG基地",
+            "工業技術センター"
+          ],
+          "transportation": {
+            "stations": ["臨海工業駅", "コンビナート前駅"],
+            "bus_terminals": 3,
+            "parking_facilities": 45,
+            "freight_railways": 2
+          },
+          "economy": {
+            "heavy_industries": 34,
+            "chemical_plants": 23,
+            "power_plants": 2,
+            "refineries": 3
+          },
+          "housing": {
+            "total_units": 32156,
+            "average_rent": 72000,
+            "ownership_rate": 38.9
+          }
+        },
+        {
+          "name": "中央地区",
+          "name_romaji": "Chuo-chiku",
+          "type": "商業・行政地区",
+          "area_km2": 67.89,
+          "population": {
+            "total": 123456,
+            "density_per_km2": 1818.4,
+            "age_distribution": {
+              "0-14": 14.2,
+              "15-64": 66.9,
+              "65+": 18.9
+            },
+            "gender_ratio": {
+              "male": 49.2,
+              "female": 50.8
+            }
+          },
+          "characteristics": "市役所を中心とした行政・商業の中心地。歴史的な商店街も残る",
+          "main_landmarks": [
+            "桜川市役所",
+            "桜川中央駅",
+            "さくらがわ銀座商店街",
+            "市民会館",
+            "中央図書館"
+          ],
+          "transportation": {
+            "stations": ["桜川中央駅", "市役所前駅", "銀座通り駅"],
+            "bus_terminals": 3,
+            "parking_facilities": 34
+          },
+          "economy": {
+            "retail_stores": 456,
+            "restaurants": 234,
+            "banks": 23,
+            "hotels": 12
+          },
+          "housing": {
+            "total_units": 44567,
+            "average_rent": 85000,
+            "ownership_rate": 45.6
+          }
+        },
+        {
+          "name": "北部地区",
+          "name_romaji": "Hokubu-chiku",
+          "type": "住宅・教育地区",
+          "area_km2": 87.65,
+          "population": {
+            "total": 98765,
+            "density_per_km2": 1126.8,
+            "age_distribution": {
+              "0-14": 17.5,
+              "15-64": 64.3,
+              "65+": 18.2
+            },
+            "gender_ratio": {
+              "male": 48.9,
+              "female": 51.1
+            }
+          },
+          "characteristics": "閑静な住宅街と教育施設が充実。ファミリー層に人気のエリア",
+          "main_landmarks": [
+            "桜川北高等学校",
+            "北部スポーツセンター",
+            "さくら北公園",
+            "桜川大学",
+            "北部市民センター"
+          ],
+          "transportation": {
+            "stations": ["桜川北駅", "大学前駅", "北公園駅"],
+            "bus_terminals": 2,
+            "parking_facilities": 23
+          },
+          "economy": {
+            "educational_facilities": 34,
+            "supermarkets": 23,
+            "clinics": 34,
+            "community_centers": 8
+          },
+          "housing": {
+            "total_units": 35678,
+            "average_rent": 82000,
+            "ownership_rate": 58.7
+          }
+        },
+        {
+          "name": "南部地区",
+          "name_romaji": "Nanbu-chiku",
+          "type": "観光・レジャー地区",
+          "area_km2": 66.01,
+          "population": {
+            "total": 66545,
+            "density_per_km2": 1008.2,
+            "age_distribution": {
+              "0-14": 13.9,
+              "15-64": 65.8,
+              "65+": 20.3
+            },
+            "gender_ratio": {
+              "male": 48.3,
+              "female": 51.7
+            }
+          },
+          "characteristics": "海岸線に面した観光・レジャー施設が充実。マリンスポーツも盛ん",
+          "main_landmarks": [
+            "桜川ビーチ",
+            "シーサイドパーク",
+            "桜川マリーナ",
+            "海洋博物館",
+            "温泉リゾート桜の湯"
+          ],
+          "transportation": {
+            "stations": ["ビーチ前駅", "マリーナ駅"],
+            "bus_terminals": 2,
+            "parking_facilities": 34,
+            "seasonal_buses": 12
+          },
+          "economy": {
+            "hotels_resorts": 23,
+            "restaurants": 156,
+            "marine_sports": 34,
+            "souvenir_shops": 89
+          },
+          "housing": {
+            "total_units": 24012,
+            "average_rent": 79000,
+            "ownership_rate": 52.3,
+            "resort_condos": 45
+          }
+        }
+      ]
+    },
+    "東桜市": {
+      "city_id": "13203",
+      "total_districts": 4,
+      "districts": [
+        {
+          "name": "テクノ地区",
+          "name_romaji": "Techno-chiku",
+          "type": "ハイテク産業地区",
+          "area_km2": 89.12,
+          "population": {
+            "total": 123456,
+            "density_per_km2": 1385.3,
+            "age_distribution": {
+              "0-14": 14.8,
+              "15-64": 72.3,
+              "65+": 12.9
+            },
+            "gender_ratio": {
+              "male": 58.2,
+              "female": 41.8
+            }
+          },
+          "characteristics": "最先端技術企業が集積するイノベーション拠点。スタートアップも多数",
+          "main_landmarks": [
+            "東桜テクノパーク",
+            "イノベーションセンター",
+            "AI研究所",
+            "ロボット実証実験場",
+            "テクノプラザ駅"
+          ],
+          "transportation": {
+            "stations": ["テクノプラザ駅", "研究所前駅", "イノベーション駅"],
+            "bus_terminals": 3,
+            "parking_facilities": 56,
+            "ev_charging_stations": 234
+          },
+          "economy": {
+            "tech_companies": 234,
+            "startups": 156,
+            "research_labs": 45,
+            "incubation_centers": 12
+          },
+          "housing": {
+            "total_units": 44567,
+            "average_rent": 98000,
+            "ownership_rate": 32.4,
+            "smart_homes": 67
+          }
+        },
+        {
+          "name": "研究学園地区",
+          "name_romaji": "Kenkyu-gakuen-chiku",
+          "type": "教育・研究地区",
+          "area_km2": 78.34,
+          "population": {
+            "total": 98765,
+            "density_per_km2": 1260.5,
+            "age_distribution": {
+              "0-14": 12.3,
+              "15-64": 73.5,
+              "65+": 14.2
+            },
+            "gender_ratio": {
+              "male": 52.1,
+              "female": 47.9
+            }
+          },
+          "characteristics": "大学と研究機関が集中する学術都市。産学連携プロジェクトが活発",
+          "main_landmarks": [
+            "桜県工業大学",
+            "東桜科学技術大学院",
+            "国立研究開発法人桜研究所",
+            "学術交流センター",
+            "大学病院"
+          ],
+          "transportation": {
+            "stations": ["大学中央駅", "研究所駅", "学園都市駅"],
+            "bus_terminals": 4,
+            "parking_facilities": 34,
+            "campus_shuttles": 23
+          },
+          "economy": {
+            "universities": 3,
+            "research_institutes": 23,
+            "academic_conferences": 156,
+            "student_services": 234
+          },
+          "housing": {
+            "total_units": 35678,
+            "average_rent": 75000,
+            "ownership_rate": 28.9,
+            "student_housing": 89
+          }
+        },
+        {
+          "name": "住宅地区",
+          "name_romaji": "Jutaku-chiku",
+          "type": "計画住宅地区",
+          "area_km2": 89.23,
+          "population": {
+            "total": 134567,
+            "density_per_km2": 1508.2,
+            "age_distribution": {
+              "0-14": 18.9,
+              "15-64": 66.7,
+              "65+": 14.4
+            },
+            "gender_ratio": {
+              "male": 49.3,
+              "female": 50.7
+            }
+          },
+          "characteristics": "計画的に開発された住宅地。子育て支援施設が充実",
+          "main_landmarks": [
+            "さくらニュータウン",
+            "東桜中央公園",
+            "ファミリーセンター",
+            "総合病院",
+            "ショッピングモール"
+          ],
+          "transportation": {
+            "stations": ["ニュータウン中央駅", "公園前駅", "住宅地駅"],
+            "bus_terminals": 3,
+            "parking_facilities": 45,
+            "bike_share_stations": 34
+          },
+          "economy": {
+            "shopping_centers": 3,
+            "supermarkets": 34,
+            "childcare_centers": 45,
+            "medical_clinics": 56
+          },
+          "housing": {
+            "total_units": 48765,
+            "average_rent": 92000,
+            "ownership_rate": 67.8,
+            "eco_friendly_homes": 34
+          }
+        },
+        {
+          "name": "商業地区",
+          "name_romaji": "Shogyo-chiku",
+          "type": "商業・サービス地区",
+          "area_km2": 55.98,
+          "population": {
+            "total": 55557,
+            "density_per_km2": 992.6,
+            "age_distribution": {
+              "0-14": 11.2,
+              "15-64": 70.3,
+              "65+": 18.5
+            },
+            "gender_ratio": {
+              "male": 47.8,
+              "female": 52.2
+            }
+          },
+          "characteristics": "IT関連のサービス業が集積。カフェやレストランも充実",
+          "main_landmarks": [
+            "東桜駅前ビル",
+            "ITビジネスパーク",
+            "東桜市役所",
+            "市民ホール",
+            "商業施設SAKURA"
+          ],
+          "transportation": {
+            "stations": ["東桜駅", "市役所前駅"],
+            "bus_terminals": 2,
+            "parking_facilities": 34
+          },
+          "economy": {
+            "it_services": 123,
+            "coworking_spaces": 34,
+            "restaurants": 234,
+            "retail_stores": 345
+          },
+          "housing": {
+            "total_units": 20123,
+            "average_rent": 105000,
+            "ownership_rate": 35.6
+          }
+        }
+      ]
+    },
+    "西桜市": {
+      "city_id": "13204",
+      "total_districts": 4,
+      "districts": [
+        {
+          "name": "旧市街地区",
+          "name_romaji": "Kyu-shigai-chiku",
+          "type": "歴史保存地区",
+          "area_km2": 45.67,
+          "population": {
+            "total": 34567,
+            "density_per_km2": 756.8,
+            "age_distribution": {
+              "0-14": 10.5,
+              "15-64": 58.3,
+              "65+": 31.2
+            },
+            "gender_ratio": {
+              "male": 46.7,
+              "female": 53.3
+            }
+          },
+          "characteristics": "江戸時代からの町並みが残る歴史地区。重要伝統的建造物群保存地区に指定",
+          "main_landmarks": [
+            "西桜城跡",
+            "武家屋敷通り",
+            "歴史資料館",
+            "古い町並み",
+            "伝統工芸の里"
+          ],
+          "transportation": {
+            "stations": ["西桜駅", "城下町駅"],
+            "bus_terminals": 1,
+            "parking_facilities": 12,
+            "tourist_buses": 8
+          },
+          "economy": {
+            "traditional_shops": 123,
+            "craft_workshops": 45,
+            "tourist_facilities": 67,
+            "ryokans": 23
+          },
+          "housing": {
+            "total_units": 12456,
+            "average_rent": 65000,
+            "ownership_rate": 72.3,
+            "traditional_houses": 456
+          }
+        },
+        {
+          "name": "寺町地区",
+          "name_romaji": "Teramachi-chiku",
+          "type": "宗教文化地区",
+          "area_km2": 34.56,
+          "population": {
+            "total": 23456,
+            "density_per_km2": 678.7,
+            "age_distribution": {
+              "0-14": 9.8,
+              "15-64": 56.7,
+              "65+": 33.5
+            },
+            "gender_ratio": {
+              "male": 45.3,
+              "female": 54.7
+            }
+          },
+          "characteristics": "30以上の寺社が集まる宗教文化の中心地。精進料理や座禅体験も人気",
+          "main_landmarks": [
+            "桜山大寺",
+            "西桜神社",
+            "禅寺群",
+            "仏教美術館",
+            "参道商店街"
+          ],
+          "transportation": {
+            "stations": ["寺町駅"],
+            "bus_terminals": 1,
+            "parking_facilities": 8,
+            "pilgrimage_routes": 3
+          },
+          "economy": {
+            "temples_shrines": 34,
+            "buddhist_goods": 23,
+            "vegetarian_restaurants": 12,
+            "meditation_centers": 8
+          },
+          "housing": {
+            "total_units": 8456,
+            "average_rent": 58000,
+            "ownership_rate": 76.5,
+            "temple_lodgings": 12
+          }
+        },
+        {
+          "name": "工芸地区",
+          "name_romaji": "Kogei-chiku",
+          "type": "伝統工芸産業地区",
+          "area_km2": 67.89,
+          "population": {
+            "total": 56789,
+            "density_per_km2": 836.5,
+            "age_distribution": {
+              "0-14": 12.3,
+              "15-64": 63.2,
+              "65+": 24.5
+            },
+            "gender_ratio": {
+              "male": 48.9,
+              "female": 51.1
+            }
+          },
+          "characteristics": "陶芸、漆器、染物など伝統工芸の工房が集積。若手職人の育成も活発",
+          "main_landmarks": [
+            "伝統工芸館",
+            "陶芸の里",
+            "染物工房街",
+            "工芸学校",
+            "クラフトマーケット"
+          ],
+          "transportation": {
+            "stations": ["工芸の里駅", "陶芸村駅"],
+            "bus_terminals": 2,
+            "parking_facilities": 15
+          },
+          "economy": {
+            "craft_workshops": 234,
+            "galleries": 56,
+            "craft_schools": 12,
+            "artisan_shops": 123
+          },
+          "housing": {
+            "total_units": 20456,
+            "average_rent": 72000,
+            "ownership_rate": 65.4,
+            "artist_residences": 34
+          }
+        },
+        {
+          "name": "新市街地区",
+          "name_romaji": "Shin-shigai-chiku",
+          "type": "複合開発地区",
+          "area_km2": 86.44,
+          "population": {
+            "total": 83953,
+            "density_per_km2": 971.2,
+            "age_distribution": {
+              "0-14": 16.8,
+              "15-64": 67.5,
+              "65+": 15.7
+            },
+            "gender_ratio": {
+              "male": 49.6,
+              "female": 50.4
+            }
+          },
+          "characteristics": "新旧調和を目指した複合開発地区。アーティスト村や現代美術館も",
+          "main_landmarks": [
+            "西桜市役所",
+            "現代美術館",
+            "アーティストビレッジ",
+            "複合文化施設",
+            "新西桜駅"
+          ],
+          "transportation": {
+            "stations": ["新西桜駅", "市役所前駅", "美術館駅"],
+            "bus_terminals": 2,
+            "parking_facilities": 23
+          },
+          "economy": {
+            "creative_businesses": 89,
+            "design_studios": 45,
+            "modern_galleries": 23,
+            "fusion_restaurants": 67
+          },
+          "housing": {
+            "total_units": 30345,
+            "average_rent": 85000,
+            "ownership_rate": 48.9,
+            "loft_apartments": 56
+          }
+        }
+      ]
+    },
+    "南桜市": {
+      "city_id": "13205",
+      "total_districts": 5,
+      "districts": [
+        {
+          "name": "温泉地区",
+          "name_romaji": "Onsen-chiku",
+          "type": "温泉観光地区",
+          "area_km2": 123.45,
+          "population": {
+            "total": 45678,
+            "density_per_km2": 370.1,
+            "age_distribution": {
+              "0-14": 11.2,
+              "15-64": 62.3,
+              "65+": 26.5
+            },
+            "gender_ratio": {
+              "male": 47.3,
+              "female": 52.7
+            }
+          },
+          "characteristics": "7つの源泉を持つ県内最大の温泉地。年間300万人の観光客が訪れる",
+          "main_landmarks": [
+            "南桜温泉郷",
+            "湯の街通り",
+            "温泉博物館",
+            "足湯広場",
+            "温泉神社"
+          ],
+          "transportation": {
+            "stations": ["南桜温泉駅", "湯の街駅"],
+            "bus_terminals": 3,
+            "parking_facilities": 45,
+            "tourist_shuttles": 23
+          },
+          "economy": {
+            "hot_spring_hotels": 67,
+            "ryokans": 89,
+            "souvenir_shops": 234,
+            "spa_facilities": 45
+          },
+          "housing": {
+            "total_units": 16456,
+            "average_rent": 68000,
+            "ownership_rate": 54.3,
+            "resort_properties": 123
+          }
+        },
+        {
+          "name": "山麓地区",
+          "name_romaji": "Sanroku-chiku",
+          "type": "山岳観光地区",
+          "area_km2": 189.23,
+          "population": {
+            "total": 34567,
+            "density_per_km2": 182.6,
+            "age_distribution": {
+              "0-14": 12.5,
+              "15-64": 64.8,
+              "65+": 22.7
+            },
+            "gender_ratio": {
+              "male": 49.8,
+              "female": 50.2
+            }
+          },
+          "characteristics": "桜峰の麓に広がる高原リゾート地。スキー場や登山基地として機能",
+          "main_landmarks": [
+            "桜峰ロープウェイ",
+            "高原リゾート",
+            "スキー場",
+            "登山センター",
+            "高山植物園"
+          ],
+          "transportation": {
+            "stations": ["高原駅", "ロープウェイ駅"],
+            "bus_terminals": 2,
+            "parking_facilities": 34,
+            "ropeways": 2,
+            "mountain_shuttles": 12
+          },
+          "economy": {
+            "ski_resorts": 3,
+            "mountain_lodges": 45,
+            "outdoor_shops": 67,
+            "restaurants": 89
+          },
+          "housing": {
+            "total_units": 12456,
+            "average_rent": 72000,
+            "ownership_rate": 48.7,
+            "vacation_homes": 234
+          }
+        },
+        {
+          "name": "観光地区",
+          "name_romaji": "Kanko-chiku",
+          "type": "総合観光地区",
+          "area_km2": 98.76,
+          "population": {
+            "total": 67890,
+            "density_per_km2": 687.4,
+            "age_distribution": {
+              "0-14": 13.8,
+              "15-64": 66.7,
+              "65+": 19.5
+            },
+            "gender_ratio": {
+              "male": 48.2,
+              "female": 51.8
+            }
+          },
+          "characteristics": "テーマパークや大型リゾート施設が集積する総合観光エリア",
+          "main_landmarks": [
+            "さくらランド（テーマパーク）",
+            "桜花リゾート",
+            "アウトレットモール",
+            "観光案内センター",
+            "イベント広場"
+          ],
+          "transportation": {
+            "stations": ["観光センター駅", "テーマパーク駅"],
+            "bus_terminals": 4,
+            "parking_facilities": 89,
+            "tour_buses": 45
+          },
+          "economy": {
+            "theme_parks": 2,
+            "resort_hotels": 23,
+            "outlet_stores": 156,
+            "entertainment": 67
+          },
+          "housing": {
+            "total_units": 24567,
+            "average_rent": 82000,
+            "ownership_rate": 42.3,
+            "serviced_apartments": 45
+          }
+        },
+        {
+          "name": "住宅地区",
+          "name_romaji": "Jutaku-chiku",
+          "type": "一般住宅地区",
+          "area_km2": 89.45,
+          "population": {
+            "total": 98765,
+            "density_per_km2": 1104.3,
+            "age_distribution": {
+              "0-14": 15.6,
+              "15-64": 65.9,
+              "65+": 18.5
+            },
+            "gender_ratio": {
+              "male": 49.7,
+              "female": 50.3
+            }
+          },
+          "characteristics": "地元住民の生活の中心。学校や病院などの生活インフラが充実",
+          "main_landmarks": [
+            "南桜市役所",
+            "市立病院",
+            "文化センター",
+            "総合運動公園",
+            "ショッピングセンター"
+          ],
+          "transportation": {
+            "stations": ["南桜中央駅", "市役所前駅", "病院前駅"],
+            "bus_terminals": 3,
+            "parking_facilities": 34
+          },
+          "economy": {
+            "supermarkets": 23,
+            "clinics": 45,
+            "schools": 34,
+            "local_shops": 234
+          },
+          "housing": {
+            "total_units": 35678,
+            "average_rent": 75000,
+            "ownership_rate": 58.9
+          }
+        },
+        {
+          "name": "農業地区",
+          "name_romaji": "Nogyo-chiku",
+          "type": "農業・6次産業地区",
+          "area_km2": 67.0,
+          "population": {
+            "total": 40754,
+            "density_per_km2": 608.3,
+            "age_distribution": {
+              "0-14": 13.2,
+              "15-64": 61.5,
+              "65+": 25.3
+            },
+            "gender_ratio": {
+              "male": 51.2,
+              "female": 48.8
+            }
+          },
+          "characteristics": "果樹園と野菜畑が広がる農業地帯。観光農園や農家レストランも人気",
+          "main_landmarks": [
+            "観光農園さくら",
+            "農産物直売所",
+            "ワイナリー桜花",
+            "農業体験センター",
+            "道の駅みなみさくら"
+          ],
+          "transportation": {
+            "stations": ["農園前駅"],
+            "bus_terminals": 1,
+            "parking_facilities": 23,
+            "farm_roads": 45
+          },
+          "economy": {
+            "farms": 345,
+            "tourist_farms": 23,
+            "farm_restaurants": 34,
+            "processing_plants": 12
+          },
+          "housing": {
+            "total_units": 14678,
+            "average_rent": 62000,
+            "ownership_rate": 72.3,
+            "farmhouses": 234
+          }
+        }
+      ]
+    },
+    "北桜市": {
+      "city_id": "13206",
+      "total_districts": 4,
+      "districts": [
+        {
+          "name": "中央地区",
+          "name_romaji": "Chuo-chiku",
+          "type": "行政・商業地区",
+          "area_km2": 78.90,
+          "population": {
+            "total": 45678,
+            "density_per_km2": 579.0,
+            "age_distribution": {
+              "0-14": 14.5,
+              "15-64": 64.8,
+              "65+": 20.7
+            },
+            "gender_ratio": {
+              "male": 48.9,
+              "female": 51.1
+            }
+          },
+          "characteristics": "市の行政・商業の中心。農産物直売所や地域交流施設が充実",
+          "main_landmarks": [
+            "北桜市役所",
+            "JAきたさくら本店",
+            "市民プラザ",
+            "農業会館",
+            "地域医療センター"
+          ],
+          "transportation": {
+            "stations": ["北桜駅", "市役所前駅"],
+            "bus_terminals": 2,
+            "parking_facilities": 23
+          },
+          "economy": {
+            "government_offices": 12,
+            "agricultural_coops": 8,
+            "retail_stores": 156,
+            "restaurants": 89
+          },
+          "housing": {
+            "total_units": 16456,
+            "average_rent": 58000,
+            "ownership_rate": 62.3
+          }
+        },
+        {
+          "name": "東部農業地区",
+          "name_romaji": "Tobu-nogyo-chiku",
+          "type": "大規模農業地区",
+          "area_km2": 156.78,
+          "population": {
+            "total": 34567,
+            "density_per_km2": 220.4,
+            "age_distribution": {
+              "0-14": 12.8,
+              "15-64": 62.5,
+              "65+": 24.7
+            },
+            "gender_ratio": {
+              "male": 52.3,
+              "female": 47.7
+            }
+          },
+          "characteristics": "大規模稲作と野菜生産の中心地。スマート農業の実証実験も実施",
+          "main_landmarks": [
+            "農業研究センター",
+            "大規模圃場",
+            "スマート農業実証農場",
+            "ライスセンター",
+            "野菜集出荷場"
+          ],
+          "transportation": {
+            "stations": ["東部農業駅"],
+            "bus_terminals": 1,
+            "parking_facilities": 12,
+            "agricultural_roads": 89
+          },
+          "economy": {
+            "rice_farms": 234,
+            "vegetable_farms": 156,
+            "agricultural_facilities": 23,
+            "packing_plants": 8
+          },
+          "housing": {
+            "total_units": 12456,
+            "average_rent": 52000,
+            "ownership_rate": 78.9,
+            "farm_residences": 567
+          }
+        },
+        {
+          "name": "西部農業地区",
+          "name_romaji": "Seibu-nogyo-chiku",
+          "type": "果樹・畜産地区",
+          "area_km2": 134.56,
+          "population": {
+            "total": 45678,
+            "density_per_km2": 339.5,
+            "age_distribution": {
+              "0-14": 13.5,
+              "15-64": 63.2,
+              "65+": 23.3
+            },
+            "gender_ratio": {
+              "male": 51.7,
+              "female": 48.3
+            }
+          },
+          "characteristics": "梨とぶどうの産地として有名。畜産業も盛んで6次産業化が進む",
+          "main_landmarks": [
+            "果樹試験場",
+            "観光果樹園",
+            "畜産センター",
+            "チーズ工房",
+            "ワイナリー北桜"
+          ],
+          "transportation": {
+            "stations": ["果樹園駅"],
+            "bus_terminals": 1,
+            "parking_facilities": 15,
+            "farm_roads": 67
+          },
+          "economy": {
+            "orchards": 345,
+            "livestock_farms": 89,
+            "processing_facilities": 23,
+            "agritourism": 45
+          },
+          "housing": {
+            "total_units": 16456,
+            "average_rent": 55000,
+            "ownership_rate": 75.6,
+            "rural_homes": 456
+          }
+        },
+        {
+          "name": "北部山間地区",
+          "name_romaji": "Hokubu-sankan-chiku",
+          "type": "森林・自然保護地区",
+          "area_km2": 75.43,
+          "population": {
+            "total": 30866,
+            "density_per_km2": 409.2,
+            "age_distribution": {
+              "0-14": 11.2,
+              "15-64": 60.5,
+              "65+": 28.3
+            },
+            "gender_ratio": {
+              "male": 50.8,
+              "female": 49.2
+            }
+          },
+          "characteristics": "豊かな森林資源を活かした林業と自然体験観光が中心",
+          "main_landmarks": [
+            "森林公園",
+            "キャンプ場",
+            "林業センター",
+            "山村交流施設",
+            "自然観察センター"
+          ],
+          "transportation": {
+            "stations": ["山間駅"],
+            "bus_terminals": 1,
+            "parking_facilities": 8,
+            "mountain_roads": 34
+          },
+          "economy": {
+            "forestry": 45,
+            "eco_tourism": 23,
+            "camping_sites": 12,
+            "craft_workshops": 34
+          },
+          "housing": {
+            "total_units": 11122,
+            "average_rent": 48000,
+            "ownership_rate": 82.3,
+            "mountain_lodges": 89
+          }
+        }
+      ]
+    }
+  }
+}

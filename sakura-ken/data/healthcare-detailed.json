@@ -1,0 +1,396 @@
+{
+  "hospitals": {
+    "total": 234,
+    "by_type": {
+      "general_hospitals": {
+        "total": 89,
+        "major_facilities": [
+          {
+            "name": "桜県立中央病院",
+            "location": "桜花市中央区",
+            "beds": 987,
+            "established": "1952年",
+            "departments": [
+              "内科", "外科", "整形外科", "脳神経外科", "心臓血管外科",
+              "小児科", "産婦人科", "眼科", "耳鼻咽喉科", "皮膚科",
+              "泌尿器科", "精神科", "放射線科", "麻酔科", "救急科"
+            ],
+            "special_centers": [
+              "がんセンター",
+              "心臓血管センター",
+              "脳卒中センター",
+              "周産期母子医療センター"
+            ],
+            "emergency": "三次救急",
+            "heliport": true,
+            "staff": {
+              "doctors": 234,
+              "nurses": 567,
+              "total": 1234
+            }
+          },
+          {
+            "name": "桜花市立総合病院",
+            "location": "桜花市東区",
+            "beds": 654,
+            "departments": 25,
+            "emergency": "二次救急",
+            "special_features": ["地域医療支援病院", "災害拠点病院"]
+          },
+          {
+            "name": "桜川市民病院",
+            "location": "桜川市中央地区",
+            "beds": 543,
+            "departments": 23,
+            "special_centers": ["港湾労働者健康管理センター"],
+            "emergency": "二次救急"
+          },
+          {
+            "name": "東桜医療センター",
+            "location": "東桜市住宅地区",
+            "beds": 456,
+            "departments": 22,
+            "special_features": ["先進医療指定", "ロボット手術センター"]
+          },
+          {
+            "name": "南桜市立病院",
+            "location": "南桜市住宅地区",
+            "beds": 345,
+            "departments": 20,
+            "special_centers": ["温泉療法センター", "スポーツ医学センター"]
+          },
+          {
+            "name": "北桜中央病院",
+            "location": "北桜市中央地区",
+            "beds": 234,
+            "departments": 18,
+            "special_features": ["農村医療", "訪問診療充実"]
+          }
+        ]
+      },
+      "university_hospitals": [
+        {
+          "name": "桜県大学医学部附属病院",
+          "location": "桜花市桜区",
+          "beds": 800,
+          "departments": 35,
+          "special_features": [
+            "特定機能病院",
+            "高度救命救急センター",
+            "小児がん拠点病院"
+          ],
+          "research": ["がん", "再生医療", "遺伝子治療"],
+          "clinical_trials": 156
+        },
+        {
+          "name": "桜県立医科大学附属病院",
+          "location": "桜花市東区",
+          "beds": 600,
+          "departments": 30,
+          "special_centers": [
+            "がん陽子線治療センター",
+            "臓器移植センター"
+          ]
+        }
+      ],
+      "specialized_hospitals": [
+        {
+          "name": "桜花がんセンター",
+          "location": "桜花市南区",
+          "beds": 345,
+          "specialization": "がん専門",
+          "treatments": ["手術", "化学療法", "放射線治療", "免疫療法"],
+          "annual_patients": 12345
+        },
+        {
+          "name": "桜県立こども病院",
+          "location": "桜花市緑区",
+          "beds": 234,
+          "specialization": "小児専門",
+          "nicu_beds": 45,
+          "picu_beds": 20
+        },
+        {
+          "name": "桜花心臓病センター",
+          "location": "桜花市中央区",
+          "beds": 156,
+          "specialization": "循環器専門",
+          "annual_surgeries": 1234
+        },
+        {
+          "name": "桜県立精神医療センター",
+          "location": "桜花市北区",
+          "beds": 345,
+          "specialization": "精神科専門",
+          "programs": ["急性期治療", "リハビリテーション", "地域移行支援"]
+        }
+      ],
+      "rehabilitation_hospitals": [
+        {
+          "name": "桜花リハビリテーション病院",
+          "location": "桜花市港区",
+          "beds": 234,
+          "specialties": ["脳血管", "運動器", "心臓"],
+          "therapy_staff": 89
+        },
+        {
+          "name": "南桜温泉リハビリテーション病院",
+          "location": "南桜市温泉地区",
+          "beds": 156,
+          "special_features": ["温泉療法", "水中リハビリ"],
+          "programs": ["回復期リハ", "維持期リハ"]
+        }
+      ],
+      "private_hospitals": {
+        "total": 78,
+        "notable": [
+          {
+            "name": "聖桜病院",
+            "location": "桜花市花見区",
+            "beds": 234,
+            "group": "聖桜会医療法人",
+            "specialties": ["内科", "外科", "整形外科"]
+          },
+          {
+            "name": "さくら記念病院",
+            "location": "桜川市北部地区",
+            "beds": 189,
+            "features": ["緩和ケア病棟", "在宅医療支援"]
+          }
+        ]
+      }
+    }
+  },
+  "clinics": {
+    "total": 2456,
+    "by_specialty": {
+      "internal_medicine": 456,
+      "pediatrics": 234,
+      "surgery": 123,
+      "orthopedics": 189,
+      "dermatology": 156,
+      "ophthalmology": 134,
+      "otolaryngology": 98,
+      "obstetrics_gynecology": 87,
+      "psychiatry": 76,
+      "dental": 567,
+      "others": 336
+    },
+    "by_city": {
+      "桜花市": {
+        "total": 987,
+        "notable_clinics": [
+          {
+            "name": "桜花駅前クリニック",
+            "location": "中央区",
+            "specialties": ["内科", "小児科"],
+            "hours": "平日9-19時、土曜9-13時",
+            "english_support": true
+          },
+          {
+            "name": "さくら整形外科",
+            "location": "東区",
+            "specialties": ["整形外科", "リハビリテーション科"],
+            "sports_medicine": true
+          },
+          {
+            "name": "花見メンタルクリニック",
+            "location": "花見区",
+            "specialties": ["精神科", "心療内科"],
+            "counseling": true
+          }
+        ]
+      },
+      "桜川市": {
+        "total": 523,
+        "special_features": ["港湾労働者向け診療所", "24時間対応クリニック"]
+      },
+      "東桜市": {
+        "total": 412,
+        "special_features": ["企業内診療所多数", "先端医療クリニック"]
+      },
+      "西桜市": {
+        "total": 198,
+        "special_features": ["伝統医学併用クリニック", "高齢者専門"]
+      },
+      "南桜市": {
+        "total": 287,
+        "special_features": ["観光客対応", "スポーツ医学クリニック"]
+      },
+      "北桜市": {
+        "total": 156,
+        "special_features": ["巡回診療", "農業従事者健診"]
+      }
+    }
+  },
+  "dental_clinics": {
+    "total": 1234,
+    "specializations": {
+      "general_dentistry": 890,
+      "orthodontics": 123,
+      "oral_surgery": 67,
+      "pediatric_dentistry": 89,
+      "periodontics": 65
+    }
+  },
+  "pharmacies": {
+    "total": 1567,
+    "types": {
+      "dispensing_pharmacies": 1234,
+      "drugstores": 333
+    },
+    "24hour_pharmacies": 23,
+    "home_delivery_service": 156
+  },
+  "emergency_services": {
+    "emergency_call_center": {
+      "number": "119",
+      "multilingual_support": ["英語", "中国語", "韓国語", "ポルトガル語"],
+      "annual_calls": 45678
+    },
+    "fire_departments": {
+      "total_stations": 45,
+      "firefighters": 1234,
+      "ambulances": 89,
+      "fire_engines": 123,
+      "rescue_vehicles": 34
+    },
+    "emergency_hospitals": {
+      "primary": 89,
+      "secondary": 23,
+      "tertiary": 3
+    },
+    "disaster_medical_system": {
+      "dmat_teams": 5,
+      "disaster_hospitals": 8,
+      "medical_stockpile": "3日分",
+      "evacuation_hospitals": 15
+    }
+  },
+  "public_health_centers": {
+    "prefectural": [
+      {
+        "name": "桜県中央保健所",
+        "location": "桜花市中央区",
+        "jurisdiction": ["桜花市", "東桜市"],
+        "services": ["健康相談", "感染症対策", "精神保健", "難病支援"]
+      },
+      {
+        "name": "桜川保健所",
+        "location": "桜川市中央地区",
+        "jurisdiction": ["桜川市", "南桜市"]
+      },
+      {
+        "name": "西部保健所",
+        "location": "西桜市新市街地区",
+        "jurisdiction": ["西桜市", "北桜市"]
+      }
+    ],
+    "municipal": {
+      "total": 34,
+      "services": ["母子保健", "成人保健", "予防接種", "健康診断"]
+    }
+  },
+  "welfare_facilities": {
+    "elderly_care": {
+      "nursing_homes": {
+        "total": 123,
+        "total_beds": 4567,
+        "public": 34,
+        "private": 89
+      },
+      "day_service_centers": 234,
+      "home_care_support": 156,
+      "dementia_care_units": 45
+    },
+    "disability_services": {
+      "facilities": 67,
+      "group_homes": 45,
+      "employment_support": 34,
+      "rehabilitation_centers": 23
+    },
+    "child_welfare": {
+      "nurseries": {
+        "total": 234,
+        "public": 123,
+        "private": 111,
+        "capacity": 12345
+      },
+      "after_school_care": 156,
+      "child_consultation_centers": 6,
+      "orphanages": 3
+    }
+  },
+  "health_insurance": {
+    "coverage_rate": 99.8,
+    "national_health_insurance": {
+      "subscribers": 456789,
+      "premium_average": 234567
+    },
+    "employee_insurance": {
+      "subscribers": 789012,
+      "companies": 3456
+    },
+    "medical_assistance": {
+      "recipients": 23456,
+      "annual_budget": "45億円"
+    }
+  },
+  "health_statistics": {
+    "life_expectancy": {
+      "male": 82.3,
+      "female": 88.1,
+      "healthy_life_expectancy": {
+        "male": 73.5,
+        "female": 76.8
+      }
+    },
+    "mortality_rate": {
+      "crude_rate": 8.9,
+      "infant_mortality": 1.8,
+      "leading_causes": [
+        {"cause": "がん", "rate": 234.5},
+        {"cause": "心疾患", "rate": 156.7},
+        {"cause": "脳血管疾患", "rate": 89.2}
+      ]
+    },
+    "health_checkup_rate": {
+      "general": 67.8,
+      "specific": 52.3,
+      "cancer_screening": {
+        "stomach": 45.6,
+        "colorectal": 48.9,
+        "lung": 51.2,
+        "breast": 54.3,
+        "cervical": 43.2
+      }
+    }
+  },
+  "medical_professionals": {
+    "doctors": {
+      "total": 3456,
+      "per_100000": 267.8,
+      "by_specialty": {
+        "internal_medicine": 789,
+        "surgery": 456,
+        "pediatrics": 234,
+        "obstetrics_gynecology": 123,
+        "psychiatry": 98,
+        "others": 1756
+      }
+    },
+    "nurses": {
+      "total": 12345,
+      "per_100000": 956.7,
+      "registered_nurses": 9876,
+      "licensed_practical_nurses": 2469
+    },
+    "other_professionals": {
+      "pharmacists": 2345,
+      "physical_therapists": 789,
+      "occupational_therapists": 456,
+      "dental_hygienists": 678,
+      "medical_technologists": 567
+    }
+  }
+}
