@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
+import { generateHTMLDocument, downloadDocument, generateFilename } from '@/utils/documentGenerator'
 import styles from './page.module.css'
 
 type Step = 'type' | 'form' | 'documents' | 'confirm' | 'complete'
@@ -40,9 +41,52 @@ export default function MovingServicePage() {
     )
   }
 
-  const handleConfirm = () => {
+  const handleConfirm = async () => {
     const randomNum = Math.floor(Math.random() * 900000) + 100000
-    setApplicationNumber(`SKR-${new Date().getFullYear()}-${randomNum}`)
+    const appNumber = `SKR-${new Date().getFullYear()}-${randomNum}`
+    setApplicationNumber(appNumber)
+    
+    // メール送信の準備
+    const moveTypeLabels = {
+      'in': '転入届',
+      'out': '転出届',
+      'within': '転居届'
+    }
+    
+    const emailData = {
+      to: formData.email,
+      subject: '引っ越し手続き申請を受け付けました',
+      applicationNumber: appNumber,
+      applicantName: formData.name,
+      serviceType: moveType ? moveTypeLabels[moveType] : '引っ越し手続き',
+      details: {
+        '手続きの種類': moveType ? moveTypeLabels[moveType] : '',
+        '転居予定日': formData.moveDate,
+        '世帯人数': formData.familySize + '人',
+        '現住所': formData.currentAddress,
+        '新住所': formData.newAddress
+      }
+    }
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(emailData),
+      })
+
+      const result = await response.json()
+      if (result.success) {
+        console.log('メール送信成功:', result.message)
+      } else {
+        console.error('メール送信失敗:', result.error)
+      }
+    } catch (error) {
+      console.error('メール送信エラー:', error)
+    }
+    
     setCurrentStep('complete')
   }
 
@@ -384,10 +428,43 @@ export default function MovingServicePage() {
 
                 <div className={styles.confirmEmail}>
                   <p>確認メールを {formData.email} に送信しました。</p>
-                  <p className={styles.demoNote}>※これはデモです。実際のメールは送信されません。</p>
+                  <p className={styles.demoNote}>※デモ環境のため、実際のメール配信は行われません。</p>
                 </div>
 
                 <div className={styles.completeButtons}>
+                  <button
+                    className={styles.downloadButton}
+                    onClick={() => {
+                      const moveTypeLabels = {
+                        'in': '転入届',
+                        'out': '転出届',
+                        'within': '転居届'
+                      }
+                      
+                      const documentData = {
+                        title: moveType ? moveTypeLabels[moveType] + '申請書' : '引っ越し手続き申請書',
+                        applicationNumber: applicationNumber,
+                        applicantName: formData.name,
+                        date: new Date().toISOString(),
+                        details: {
+                          '手続きの種類': moveType ? moveTypeLabels[moveType] : '',
+                          '転居予定日': formData.moveDate,
+                          '世帯人数': formData.familySize + '人',
+                          '現住所': formData.currentAddress,
+                          '新住所': formData.newAddress,
+                          '電話番号': formData.phone,
+                          'メールアドレス': formData.email,
+                          '必要書類': getRequiredDocuments().join('、')
+                        },
+                        additionalInfo: '本申請書と必要書類を持参の上、窓口で正式な手続きを行ってください。転入届は転居後14日以内、転出届は転居前14日以内に手続きが必要です。'
+                      }
+                      const htmlContent = generateHTMLDocument(documentData)
+                      const filename = generateFilename('moving_application', applicationNumber)
+                      downloadDocument(htmlContent, filename)
+                    }}
+                  >
+                    申請書をダウンロード
+                  </button>
                   <button 
                     className={styles.printButton}
                     onClick={() => window.print()}

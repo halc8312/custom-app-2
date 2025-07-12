@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
+import { generateHTMLDocument, downloadDocument, generateFilename } from '@/utils/documentGenerator'
 import styles from './page.module.css'
 
 type Step = 'select' | 'form' | 'delivery' | 'confirm' | 'complete'
@@ -28,6 +29,14 @@ const certificateInfo = {
   seal: { name: '印鑑登録証明書', fee: 300, description: '実印の証明書' },
   income: { name: '所得証明書', fee: 300, description: '所得額の証明書' },
   tax: { name: '納税証明書', fee: 300, description: '税金納付の証明書' }
+}
+
+const purposeLabels: Record<string, string> = {
+  official: '官公署提出用',
+  employment: '就職・転職用',
+  school: '学校提出用',
+  bank: '金融機関提出用',
+  other: 'その他'
 }
 
 export default function CertificateServicePage() {
@@ -64,9 +73,48 @@ export default function CertificateServicePage() {
     return certificateFee + deliveryFee
   }
 
-  const handleConfirm = () => {
+  const handleConfirm = async () => {
+    // 申請番号を生成
     const randomNum = Math.floor(Math.random() * 900000) + 100000
-    setApplicationNumber(`CERT-${new Date().getFullYear()}-${randomNum}`)
+    const appNumber = `CERT-${new Date().getFullYear()}-${randomNum}`
+    setApplicationNumber(appNumber)
+    
+    // メール送信の準備
+    const emailData = {
+      to: formData.email,
+      subject: '証明書発行申請を受け付けました',
+      applicationNumber: appNumber,
+      applicantName: formData.name,
+      serviceType: '各種証明書発行',
+      details: {
+        '証明書の種類': formData.certificateType ? certificateInfo[formData.certificateType].name : '',
+        '必要部数': formData.quantity + '通',
+        '使用目的': purposeLabels[formData.purpose] || formData.purpose,
+        '受取方法': formData.deliveryMethod === 'counter' ? '窓口受取' : '郵送',
+        '手数料': `${calculateFee()}円`
+      }
+    }
+
+    try {
+      // メールを送信
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(emailData),
+      })
+
+      const result = await response.json()
+      if (result.success) {
+        console.log('メール送信成功:', result.message)
+      } else {
+        console.error('メール送信失敗:', result.error)
+      }
+    } catch (error) {
+      console.error('メール送信エラー:', error)
+    }
+
     setCurrentStep('complete')
   }
 
@@ -321,7 +369,7 @@ export default function CertificateServicePage() {
                     </tr>
                     <tr>
                       <th>使用目的</th>
-                      <td>{formData.purpose}</td>
+                      <td>{purposeLabels[formData.purpose] || formData.purpose}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -417,10 +465,37 @@ export default function CertificateServicePage() {
 
                 <div className={styles.confirmEmail}>
                   <p>確認メールを {formData.email} に送信しました。</p>
-                  <p className={styles.demoNote}>※これはデモです。実際のメールは送信されません。</p>
+                  <p className={styles.demoNote}>※デモ環境のため、実際のメール配信は行われません。</p>
                 </div>
 
                 <div className={styles.completeButtons}>
+                  <button
+                    className={styles.downloadButton}
+                    onClick={() => {
+                      const documentData = {
+                        title: '証明書発行申請書',
+                        applicationNumber: applicationNumber,
+                        applicantName: formData.name,
+                        date: new Date().toISOString(),
+                        details: {
+                          '証明書の種類': formData.certificateType ? certificateInfo[formData.certificateType].name : '',
+                          '必要部数': formData.quantity + '通',
+                          '使用目的': purposeLabels[formData.purpose] || formData.purpose,
+                          '受取方法': formData.deliveryMethod === 'counter' ? '窓口受取' : '郵送',
+                          '住所': formData.address,
+                          '電話番号': formData.phone,
+                          'メールアドレス': formData.email,
+                          '手数料': `${calculateFee()}円`
+                        },
+                        additionalInfo: '窓口にお越しの際は、本人確認書類をお持ちください。郵送の場合は、返信用封筒と切手が必要です。'
+                      }
+                      const htmlContent = generateHTMLDocument(documentData)
+                      const filename = generateFilename('certificate_application', applicationNumber)
+                      downloadDocument(htmlContent, filename)
+                    }}
+                  >
+                    申請書をダウンロード
+                  </button>
                   <button
                     className={styles.printButton}
                     onClick={() => window.print()}
