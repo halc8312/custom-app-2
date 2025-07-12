@@ -1,0 +1,999 @@
+{
+  "railways": {
+    "JR_lines": [
+      {
+        "name": "JR桜花線",
+        "name_romaji": "JR Sakura-ka Line",
+        "type": "幹線",
+        "total_stations": 15,
+        "length_km": 89.5,
+        "stations": [
+          {
+            "name": "東京駅",
+            "location": "東京都",
+            "type": "起点駅"
+          },
+          {
+            "name": "川崎駅",
+            "location": "神奈川県",
+            "type": "通過駅"
+          },
+          {
+            "name": "桜花駅",
+            "location": "桜花市中央区",
+            "type": "主要駅",
+            "daily_passengers": 234567,
+            "facilities": ["みどりの窓口", "駅ビル", "バスターミナル"]
+          },
+          {
+            "name": "桜花中央駅",
+            "location": "桜花市中央区",
+            "type": "主要駅",
+            "daily_passengers": 189234,
+            "facilities": ["みどりの窓口", "地下街直結", "タクシー乗り場"]
+          },
+          {
+            "name": "学園都市駅",
+            "location": "桜花市桜区",
+            "type": "一般駅",
+            "daily_passengers": 67890
+          },
+          {
+            "name": "花見駅",
+            "location": "桜花市花見区",
+            "type": "観光駅",
+            "daily_passengers": 45678
+          },
+          {
+            "name": "桜花東駅",
+            "location": "桜花市東区",
+            "type": "一般駅",
+            "daily_passengers": 89012
+          },
+          {
+            "name": "西桜花駅",
+            "location": "桜花市西区",
+            "type": "一般駅",
+            "daily_passengers": 34567
+          },
+          {
+            "name": "桜川駅",
+            "location": "桜川市中央地区",
+            "type": "主要駅",
+            "daily_passengers": 123456
+          },
+          {
+            "name": "桜川中央駅",
+            "location": "桜川市中央地区",
+            "type": "主要駅",
+            "daily_passengers": 98765
+          },
+          {
+            "name": "桜川港駅",
+            "location": "桜川市港地区",
+            "type": "貨物併用駅",
+            "daily_passengers": 56789
+          },
+          {
+            "name": "東桜駅",
+            "location": "東桜市商業地区",
+            "type": "主要駅",
+            "daily_passengers": 87654
+          },
+          {
+            "name": "西桜駅",
+            "location": "西桜市新市街地区",
+            "type": "一般駅",
+            "daily_passengers": 23456
+          },
+          {
+            "name": "南桜中央駅",
+            "location": "南桜市住宅地区",
+            "type": "一般駅",
+            "daily_passengers": 45678
+          },
+          {
+            "name": "北桜駅",
+            "location": "北桜市中央地区",
+            "type": "一般駅",
+            "daily_passengers": 12345
+          }
+        ]
+      },
+      {
+        "name": "JR桜川線",
+        "name_romaji": "JR Sakuragawa Line",
+        "type": "地方交通線",
+        "total_stations": 12,
+        "length_km": 67.8,
+        "stations": [
+          {
+            "name": "桜川駅",
+            "location": "桜川市中央地区",
+            "type": "起点駅"
+          },
+          {
+            "name": "魚市場前駅",
+            "location": "桜川市港地区",
+            "type": "一般駅",
+            "daily_passengers": 34567
+          },
+          {
+            "name": "臨海工業駅",
+            "location": "桜川市臨海地区",
+            "type": "通勤駅",
+            "daily_passengers": 45678
+          },
+          {
+            "name": "桜川北駅",
+            "location": "桜川市北部地区",
+            "type": "一般駅",
+            "daily_passengers": 23456
+          },
+          {
+            "name": "大学前駅",
+            "location": "桜川市北部地区",
+            "type": "一般駅",
+            "daily_passengers": 34567
+          },
+          {
+            "name": "ビーチ前駅",
+            "location": "桜川市南部地区",
+            "type": "観光駅",
+            "daily_passengers": 12345
+          },
+          {
+            "name": "南桜温泉駅",
+            "location": "南桜市温泉地区",
+            "type": "観光駅",
+            "daily_passengers": 56789
+          },
+          {
+            "name": "高原駅",
+            "location": "南桜市山麓地区",
+            "type": "観光駅",
+            "daily_passengers": 23456
+          },
+          {
+            "name": "観光センター駅",
+            "location": "南桜市観光地区",
+            "type": "観光駅",
+            "daily_passengers": 67890
+          },
+          {
+            "name": "農園前駅",
+            "location": "南桜市農業地区",
+            "type": "一般駅",
+            "daily_passengers": 8901
+          },
+          {
+            "name": "果樹園駅",
+            "location": "北桜市西部農業地区",
+            "type": "一般駅",
+            "daily_passengers": 7890
+          },
+          {
+            "name": "山間駅",
+            "location": "北桜市北部山間地区",
+            "type": "終点駅",
+            "daily_passengers": 3456
+          }
+        ]
+      }
+    ],
+    "private_railways": [
+      {
+        "name": "桜花電鉄本線",
+        "operator": "桜花電鉄株式会社",
+        "total_stations": 23,
+        "length_km": 45.6,
+        "stations": [
+          {
+            "name": "桜花中央駅",
+            "type": "起点駅",
+            "connections": ["JR桜花線", "地下鉄さくら線"]
+          },
+          {
+            "name": "県庁前駅",
+            "daily_passengers": 78901
+          },
+          {
+            "name": "市役所前駅",
+            "daily_passengers": 56789
+          },
+          {
+            "name": "桜台駅",
+            "daily_passengers": 45678
+          },
+          {
+            "name": "文化センター前駅",
+            "daily_passengers": 34567
+          },
+          {
+            "name": "城跡公園駅",
+            "daily_passengers": 67890
+          },
+          {
+            "name": "東区役所前駅",
+            "daily_passengers": 45678
+          },
+          {
+            "name": "ニュータウン駅",
+            "daily_passengers": 89012
+          },
+          {
+            "name": "工業団地前駅",
+            "daily_passengers": 34567
+          },
+          {
+            "name": "南桜花駅",
+            "daily_passengers": 56789
+          },
+          {
+            "name": "桜ヶ丘駅",
+            "daily_passengers": 23456
+          },
+          {
+            "name": "北区役所前駅",
+            "daily_passengers": 45678
+          },
+          {
+            "name": "市民センター前駅",
+            "daily_passengers": 34567
+          },
+          {
+            "name": "緑園都市駅",
+            "daily_passengers": 67890
+          },
+          {
+            "name": "森の里駅",
+            "daily_passengers": 23456
+          },
+          {
+            "name": "ベイエリア駅",
+            "daily_passengers": 89012
+          },
+          {
+            "name": "国際展示場駅",
+            "type": "終点駅",
+            "daily_passengers": 45678
+          }
+        ]
+      },
+      {
+        "name": "東桜急行線",
+        "operator": "東桜急行電鉄株式会社",
+        "total_stations": 12,
+        "length_km": 34.5,
+        "stations": [
+          {
+            "name": "東桜駅",
+            "type": "起点駅",
+            "connections": ["JR桜花線"]
+          },
+          {
+            "name": "テクノプラザ駅",
+            "daily_passengers": 98765
+          },
+          {
+            "name": "研究所前駅",
+            "daily_passengers": 67890
+          },
+          {
+            "name": "イノベーション駅",
+            "daily_passengers": 56789
+          },
+          {
+            "name": "大学中央駅",
+            "daily_passengers": 89012
+          },
+          {
+            "name": "研究所駅",
+            "daily_passengers": 45678
+          },
+          {
+            "name": "学園都市駅",
+            "daily_passengers": 78901
+          },
+          {
+            "name": "ニュータウン中央駅",
+            "daily_passengers": 98765
+          },
+          {
+            "name": "公園前駅",
+            "daily_passengers": 34567
+          },
+          {
+            "name": "住宅地駅",
+            "daily_passengers": 56789
+          },
+          {
+            "name": "市役所前駅",
+            "daily_passengers": 45678
+          },
+          {
+            "name": "桜花駅",
+            "type": "終点駅",
+            "connections": ["JR桜花線"]
+          }
+        ]
+      },
+      {
+        "name": "西桜観光鉄道",
+        "operator": "西桜観光鉄道株式会社",
+        "total_stations": 8,
+        "length_km": 23.4,
+        "stations": [
+          {
+            "name": "西桜駅",
+            "type": "起点駅",
+            "connections": ["JR桜花線"]
+          },
+          {
+            "name": "城下町駅",
+            "daily_passengers": 23456
+          },
+          {
+            "name": "寺町駅",
+            "daily_passengers": 12345
+          },
+          {
+            "name": "工芸の里駅",
+            "daily_passengers": 18901
+          },
+          {
+            "name": "陶芸村駅",
+            "daily_passengers": 8901
+          },
+          {
+            "name": "新西桜駅",
+            "daily_passengers": 34567
+          },
+          {
+            "name": "美術館駅",
+            "daily_passengers": 23456
+          },
+          {
+            "name": "アーティストビレッジ駅",
+            "type": "終点駅",
+            "daily_passengers": 12345
+          }
+        ]
+      },
+      {
+        "name": "南桜登山鉄道",
+        "operator": "南桜登山鉄道株式会社",
+        "total_stations": 6,
+        "length_km": 18.9,
+        "stations": [
+          {
+            "name": "南桜温泉駅",
+            "type": "起点駅",
+            "connections": ["JR桜川線"]
+          },
+          {
+            "name": "湯の街駅",
+            "daily_passengers": 34567
+          },
+          {
+            "name": "ロープウェイ駅",
+            "daily_passengers": 45678,
+            "facilities": ["ロープウェイ乗換"]
+          },
+          {
+            "name": "高原リゾート前駅",
+            "daily_passengers": 23456
+          },
+          {
+            "name": "スキー場前駅",
+            "daily_passengers": 12345,
+            "seasonal": true
+          },
+          {
+            "name": "山頂駅",
+            "type": "終点駅",
+            "elevation_m": 987,
+            "daily_passengers": 8901
+          }
+        ]
+      },
+      {
+        "name": "桜川臨海鉄道",
+        "operator": "桜川臨海鉄道株式会社",
+        "total_stations": 7,
+        "length_km": 15.6,
+        "freight": true,
+        "stations": [
+          {
+            "name": "桜川港駅",
+            "type": "起点駅",
+            "connections": ["JR桜花線"]
+          },
+          {
+            "name": "国際ターミナル駅",
+            "daily_passengers": 23456,
+            "freight_terminal": true
+          },
+          {
+            "name": "コンビナート前駅",
+            "daily_passengers": 34567,
+            "freight_terminal": true
+          },
+          {
+            "name": "工業団地駅",
+            "daily_passengers": 45678
+          },
+          {
+            "name": "物流センター駅",
+            "daily_passengers": 12345,
+            "freight_terminal": true
+          },
+          {
+            "name": "マリーナ駅",
+            "daily_passengers": 8901
+          },
+          {
+            "name": "ビーチ駅",
+            "type": "終点駅",
+            "daily_passengers": 23456,
+            "seasonal_increase": true
+          }
+        ]
+      }
+    ],
+    "subways": [
+      {
+        "name": "地下鉄さくら線",
+        "operator": "桜花市交通局",
+        "color": "ピンク",
+        "total_stations": 18,
+        "length_km": 24.5,
+        "stations": [
+          {
+            "station_number": "S01",
+            "name": "桜花中央駅",
+            "depth_m": -15,
+            "daily_passengers": 234567
+          },
+          {
+            "station_number": "S02",
+            "name": "県庁前駅",
+            "depth_m": -18,
+            "daily_passengers": 189012
+          },
+          {
+            "station_number": "S03",
+            "name": "市役所前駅",
+            "depth_m": -20,
+            "daily_passengers": 156789
+          },
+          {
+            "station_number": "S04",
+            "name": "中央公園駅",
+            "depth_m": -16,
+            "daily_passengers": 98765
+          },
+          {
+            "station_number": "S05",
+            "name": "桜並木駅",
+            "depth_m": -14,
+            "daily_passengers": 87654
+          },
+          {
+            "station_number": "S06",
+            "name": "大学前駅",
+            "depth_m": -19,
+            "daily_passengers": 123456
+          },
+          {
+            "station_number": "S07",
+            "name": "花見通り駅",
+            "depth_m": -17,
+            "daily_passengers": 98765
+          },
+          {
+            "station_number": "S08",
+            "name": "東桜花駅",
+            "depth_m": -21,
+            "daily_passengers": 145678
+          },
+          {
+            "station_number": "S09",
+            "name": "ショッピングモール前駅",
+            "depth_m": -15,
+            "daily_passengers": 178901
+          },
+          {
+            "station_number": "S10",
+            "name": "総合病院前駅",
+            "depth_m": -18,
+            "daily_passengers": 89012
+          },
+          {
+            "station_number": "S11",
+            "name": "西桜花駅",
+            "depth_m": -16,
+            "daily_passengers": 67890
+          },
+          {
+            "station_number": "S12",
+            "name": "工業団地駅",
+            "depth_m": -14,
+            "daily_passengers": 78901
+          },
+          {
+            "station_number": "S13",
+            "name": "南桜花駅",
+            "depth_m": -19,
+            "daily_passengers": 56789
+          },
+          {
+            "station_number": "S14",
+            "name": "高級住宅街駅",
+            "depth_m": -22,
+            "daily_passengers": 34567
+          },
+          {
+            "station_number": "S15",
+            "name": "北桜花駅",
+            "depth_m": -17,
+            "daily_passengers": 98765
+          },
+          {
+            "station_number": "S16",
+            "name": "緑の森駅",
+            "depth_m": -15,
+            "daily_passengers": 67890
+          },
+          {
+            "station_number": "S17",
+            "name": "ベイエリア駅",
+            "depth_m": -25,
+            "daily_passengers": 123456
+          },
+          {
+            "station_number": "S18",
+            "name": "国際展示場駅",
+            "depth_m": -20,
+            "daily_passengers": 89012
+          }
+        ]
+      },
+      {
+        "name": "地下鉄はなみ線",
+        "operator": "桜花市交通局",
+        "color": "緑",
+        "total_stations": 12,
+        "length_km": 18.3,
+        "stations": [
+          {
+            "station_number": "H01",
+            "name": "花見駅",
+            "depth_m": -12,
+            "daily_passengers": 98765,
+            "connections": ["JR桜花線"]
+          },
+          {
+            "station_number": "H02",
+            "name": "城跡公園前駅",
+            "depth_m": -15,
+            "daily_passengers": 87654
+          },
+          {
+            "station_number": "H03",
+            "name": "歴史博物館駅",
+            "depth_m": -18,
+            "daily_passengers": 56789
+          },
+          {
+            "station_number": "H04",
+            "name": "商店街駅",
+            "depth_m": -14,
+            "daily_passengers": 123456
+          },
+          {
+            "station_number": "H05",
+            "name": "市民会館駅",
+            "depth_m": -16,
+            "daily_passengers": 67890
+          },
+          {
+            "station_number": "H06",
+            "name": "東区中央駅",
+            "depth_m": -17,
+            "daily_passengers": 98765
+          },
+          {
+            "station_number": "H07",
+            "name": "スポーツセンター駅",
+            "depth_m": -15,
+            "daily_passengers": 45678
+          },
+          {
+            "station_number": "H08",
+            "name": "北区総合病院駅",
+            "depth_m": -19,
+            "daily_passengers": 78901
+          },
+          {
+            "station_number": "H09",
+            "name": "エコセンター駅",
+            "depth_m": -13,
+            "daily_passengers": 34567
+          },
+          {
+            "station_number": "H10",
+            "name": "港公園駅",
+            "depth_m": -16,
+            "daily_passengers": 56789
+          },
+          {
+            "station_number": "H11",
+            "name": "海浜公園駅",
+            "depth_m": -14,
+            "daily_passengers": 67890
+          },
+          {
+            "station_number": "H12",
+            "name": "ベイブリッジ駅",
+            "depth_m": -18,
+            "daily_passengers": 45678
+          }
+        ]
+      }
+    ]
+  },
+  "bus_routes": {
+    "桜花市": {
+      "total_routes": 156,
+      "operator": "桜花市交通局・桜花バス株式会社",
+      "main_routes": [
+        {
+          "route_number": "1",
+          "route_name": "中央循環線",
+          "type": "循環",
+          "frequency_minutes": 10,
+          "main_stops": ["桜花中央駅", "県庁前", "市役所前", "中央公園", "桜花中央駅"],
+          "daily_passengers": 12345
+        },
+        {
+          "route_number": "10",
+          "route_name": "東西線",
+          "type": "往復",
+          "frequency_minutes": 15,
+          "main_stops": ["西桜花駅", "工業団地", "桜花中央駅", "東区役所", "桜花東駅"],
+          "daily_passengers": 8901
+        },
+        {
+          "route_number": "20",
+          "route_name": "南北線",
+          "type": "往復",
+          "frequency_minutes": 12,
+          "main_stops": ["北桜花駅", "北区役所", "桜花中央駅", "南区役所", "南桜花駅"],
+          "daily_passengers": 9876
+        },
+        {
+          "route_number": "30",
+          "route_name": "学園都市線",
+          "type": "往復",
+          "frequency_minutes": 8,
+          "main_stops": ["桜花中央駅", "県立大学", "市立美術館", "文化会館", "学園都市駅"],
+          "daily_passengers": 15678
+        },
+        {
+          "route_number": "40",
+          "route_name": "観光周遊バス",
+          "type": "循環",
+          "frequency_minutes": 30,
+          "fare": "1日乗車券500円",
+          "main_stops": ["桜花駅", "桜花城跡", "花見商店街", "歴史博物館", "桜並木通り", "桜花駅"],
+          "daily_passengers": 3456
+        }
+      ],
+      "community_buses": [
+        {
+          "name": "さくらバス東区",
+          "routes": 8,
+          "fare": "100円均一"
+        },
+        {
+          "name": "さくらバス西区",
+          "routes": 6,
+          "fare": "100円均一"
+        },
+        {
+          "name": "さくらバス南区",
+          "routes": 5,
+          "fare": "100円均一"
+        },
+        {
+          "name": "さくらバス北区",
+          "routes": 7,
+          "fare": "100円均一"
+        }
+      ]
+    },
+    "桜川市": {
+      "total_routes": 89,
+      "operator": "桜川市営バス・桜川交通株式会社",
+      "main_routes": [
+        {
+          "route_number": "港1",
+          "route_name": "港湾線",
+          "main_stops": ["桜川中央駅", "市役所前", "魚市場", "国際ターミナル", "桜川港駅"],
+          "frequency_minutes": 20
+        },
+        {
+          "route_number": "臨海1",
+          "route_name": "工業団地線",
+          "main_stops": ["桜川駅", "臨海工業駅", "コンビナート", "工業団地", "LNG基地"],
+          "frequency_minutes": 15
+        },
+        {
+          "route_number": "観光1",
+          "route_name": "ビーチライン",
+          "main_stops": ["桜川中央駅", "シーサイドパーク", "マリーナ", "ビーチ前", "温泉リゾート"],
+          "frequency_minutes": 30,
+          "seasonal": true
+        }
+      ]
+    },
+    "東桜市": {
+      "total_routes": 67,
+      "operator": "東桜市コミュニティバス",
+      "main_routes": [
+        {
+          "route_number": "T1",
+          "route_name": "テクノパーク線",
+          "main_stops": ["東桜駅", "テクノプラザ", "イノベーションセンター", "AI研究所", "ロボット実験場"],
+          "frequency_minutes": 10
+        },
+        {
+          "route_number": "U1",
+          "route_name": "大学巡回線",
+          "main_stops": ["東桜駅", "工業大学", "科学技術大学院", "研究所", "学術交流センター"],
+          "frequency_minutes": 15
+        }
+      ]
+    },
+    "西桜市": {
+      "total_routes": 34,
+      "operator": "西桜市ふれあいバス",
+      "main_routes": [
+        {
+          "route_number": "歴史1",
+          "route_name": "歴史めぐり線",
+          "main_stops": ["西桜駅", "城跡", "武家屋敷", "寺町", "伝統工芸館"],
+          "frequency_minutes": 30
+        },
+        {
+          "route_number": "工芸1",
+          "route_name": "工芸の里線",
+          "main_stops": ["西桜駅", "陶芸の里", "染物工房街", "クラフトマーケット", "工芸学校"],
+          "frequency_minutes": 45
+        }
+      ]
+    },
+    "南桜市": {
+      "total_routes": 45,
+      "operator": "南桜観光バス",
+      "main_routes": [
+        {
+          "route_number": "温泉1",
+          "route_name": "温泉巡り線",
+          "main_stops": ["南桜温泉駅", "温泉郷入口", "各旅館", "足湯広場", "温泉博物館"],
+          "frequency_minutes": 20
+        },
+        {
+          "route_number": "高原1",
+          "route_name": "高原リゾート線",
+          "main_stops": ["高原駅", "ロープウェイ駅", "スキー場", "高原リゾート", "登山センター"],
+          "frequency_minutes": 60,
+          "seasonal": true
+        }
+      ]
+    },
+    "北桜市": {
+      "total_routes": 23,
+      "operator": "北桜市民バス",
+      "main_routes": [
+        {
+          "route_number": "農1",
+          "route_name": "東部農業地区線",
+          "main_stops": ["北桜駅", "JA本店", "農業研究センター", "ライスセンター", "東部農業駅"],
+          "frequency_minutes": 120
+        },
+        {
+          "route_number": "農2",
+          "route_name": "西部果樹園線",
+          "main_stops": ["北桜駅", "果樹試験場", "観光果樹園", "ワイナリー", "果樹園駅"],
+          "frequency_minutes": 90
+        }
+      ]
+    }
+  },
+  "highways": {
+    "expressways": [
+      {
+        "name": "桜花自動車道",
+        "route_number": "E83",
+        "total_length_km": 67.8,
+        "interchanges": [
+          {
+            "name": "桜花IC",
+            "location": "桜花市東区",
+            "connections": ["国道13号"],
+            "facilities": ["ETC", "SA"]
+          },
+          {
+            "name": "桜川IC",
+            "location": "桜川市中央地区",
+            "connections": ["国道245号"],
+            "facilities": ["ETC", "PA"]
+          },
+          {
+            "name": "東桜IC",
+            "location": "東桜市商業地区",
+            "connections": ["県道34号"],
+            "facilities": ["ETC", "スマートIC"]
+          },
+          {
+            "name": "西桜IC",
+            "location": "西桜市新市街地区",
+            "connections": ["国道456号"],
+            "facilities": ["ETC"]
+          },
+          {
+            "name": "南桜IC",
+            "location": "南桜市観光地区",
+            "connections": ["国道567号"],
+            "facilities": ["ETC", "PA"]
+          }
+        ],
+        "service_areas": [
+          {
+            "name": "桜花SA",
+            "direction": "上下線",
+            "facilities": ["レストラン", "売店", "ガソリンスタンド", "EV充電器", "ドッグラン"]
+          },
+          {
+            "name": "桜川PA",
+            "direction": "上り線",
+            "facilities": ["売店", "トイレ", "自動販売機"]
+          },
+          {
+            "name": "南桜PA",
+            "direction": "下り線",
+            "facilities": ["売店", "軽食", "展望台"]
+          }
+        ]
+      },
+      {
+        "name": "東桜バイパス",
+        "route_number": "E83BP",
+        "total_length_km": 23.4,
+        "interchanges": [
+          {
+            "name": "テクノパークIC",
+            "location": "東桜市テクノ地区",
+            "connections": ["県道156号"],
+            "facilities": ["ETC"]
+          },
+          {
+            "name": "研究学園IC",
+            "location": "東桜市研究学園地区",
+            "connections": ["県道234号"],
+            "facilities": ["ETC", "スマートIC"]
+          }
+        ]
+      }
+    ],
+    "national_routes": [
+      {
+        "route_number": "13",
+        "name": "国道13号",
+        "section": "東京～桜花～仙台",
+        "length_in_prefecture_km": 89.5,
+        "main_intersections": ["桜花IC", "桜花中央", "桜川市境"]
+      },
+      {
+        "route_number": "245",
+        "name": "国道245号",
+        "section": "水戸～桜川～千葉",
+        "length_in_prefecture_km": 67.3,
+        "main_intersections": ["桜川IC", "桜川港", "臨海工業地帯"]
+      },
+      {
+        "route_number": "356",
+        "name": "国道356号",
+        "section": "桜花～東桜～つくば",
+        "length_in_prefecture_km": 45.6,
+        "main_intersections": ["東桜IC", "テクノパーク", "研究学園"]
+      },
+      {
+        "route_number": "456",
+        "name": "国道456号",
+        "section": "桜花～西桜～長野",
+        "length_in_prefecture_km": 78.9,
+        "main_intersections": ["西桜IC", "伝統工芸の里", "県境"]
+      },
+      {
+        "route_number": "567",
+        "name": "国道567号",
+        "section": "桜川～南桜～富士",
+        "length_in_prefecture_km": 98.7,
+        "main_intersections": ["南桜IC", "温泉郷", "高原リゾート"]
+      }
+    ]
+  },
+  "parking_facilities": {
+    "public_parking": {
+      "桜花市": {
+        "total_facilities": 234,
+        "total_capacity": 45678,
+        "major_facilities": [
+          {
+            "name": "桜花中央駅前駐車場",
+            "type": "立体",
+            "capacity": 1234,
+            "fee": "30分200円",
+            "24h_max": "2400円"
+          },
+          {
+            "name": "県庁駐車場",
+            "type": "平面",
+            "capacity": 567,
+            "fee": "最初の1時間無料、以降30分100円"
+          },
+          {
+            "name": "桜花城跡公園駐車場",
+            "type": "平面",
+            "capacity": 890,
+            "fee": "1日500円"
+          }
+        ]
+      }
+    },
+    "park_and_ride": [
+      {
+        "name": "桜花東P&R",
+        "location": "桜花市東区",
+        "capacity": 456,
+        "fee": "1日300円（電車利用者）",
+        "connected_station": "桜花東駅"
+      },
+      {
+        "name": "桜川北P&R",
+        "location": "桜川市北部地区",
+        "capacity": 234,
+        "fee": "1日200円",
+        "connected_station": "桜川北駅"
+      }
+    ]
+  },
+  "bicycle_infrastructure": {
+    "cycle_lanes_total_km": 456,
+    "bike_share": {
+      "name": "さくらサイクル",
+      "stations": 123,
+      "total_bikes": 2345,
+      "e_bikes": 456,
+      "fee": "15分50円、1日パス1000円"
+    },
+    "major_cycling_routes": [
+      {
+        "name": "桜川サイクリングロード",
+        "length_km": 45.6,
+        "type": "専用道",
+        "highlights": ["桜並木", "河川敷", "海岸線"]
+      },
+      {
+        "name": "桜峰ヒルクライムコース",
+        "length_km": 23.4,
+        "type": "一般道共用",
+        "difficulty": "上級",
+        "elevation_gain_m": 987
+      }
+    ]
+  }
+}

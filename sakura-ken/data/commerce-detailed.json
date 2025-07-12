@@ -1,0 +1,425 @@
+{
+  "shopping_districts": {
+    "total": 45,
+    "major_districts": [
+      {
+        "name": "桜花銀座商店街",
+        "location": "桜花市中央区",
+        "established": "1923年",
+        "shops": 234,
+        "length_m": 1200,
+        "features": ["アーケード", "歩行者天国（日曜）", "Wi-Fi完備"],
+        "annual_visitors": 1234567,
+        "events": ["桜まつり", "夏祭り", "歳末大売出し"],
+        "famous_shops": [
+          {
+            "name": "老舗和菓子店「桜月堂」",
+            "established": "1856年",
+            "specialty": "桜餅"
+          },
+          {
+            "name": "呉服店「絹の道」",
+            "established": "1889年",
+            "specialty": "着物・和装小物"
+          }
+        ]
+      },
+      {
+        "name": "花見商店街",
+        "location": "桜花市花見区",
+        "shops": 156,
+        "theme": "観光客向け土産物",
+        "multilingual_support": true
+      },
+      {
+        "name": "さくらがわ銀座商店街",
+        "location": "桜川市中央地区",
+        "shops": 189,
+        "features": ["魚市場直結", "海産物専門店多数"]
+      },
+      {
+        "name": "テクノストリート",
+        "location": "東桜市商業地区",
+        "shops": 123,
+        "theme": "IT・電子機器",
+        "features": ["最新ガジェット", "修理サービス"]
+      },
+      {
+        "name": "伝統工芸通り",
+        "location": "西桜市旧市街地区",
+        "shops": 89,
+        "theme": "伝統工芸品",
+        "craftsmen_workshops": 45
+      },
+      {
+        "name": "温泉街商店街",
+        "location": "南桜市温泉地区",
+        "shops": 167,
+        "features": ["浴衣での散策", "足湯併設"]
+      }
+    ]
+  },
+  "shopping_malls": {
+    "total": 23,
+    "large_scale": [
+      {
+        "name": "イオンモール桜花東",
+        "location": "桜花市東区",
+        "opened": "2015年",
+        "floor_area_m2": 89000,
+        "shops": 234,
+        "parking_spaces": 3456,
+        "key_tenants": ["イオン", "ユニクロ", "無印良品", "TOHOシネマズ"],
+        "annual_visitors": 12345678
+      },
+      {
+        "name": "桜花パルコ",
+        "location": "桜花市中央区",
+        "floor_area_m2": 56789,
+        "shops": 189,
+        "target": "若者・ファッション"
+      },
+      {
+        "name": "ららぽーと東桜",
+        "location": "東桜市住宅地区",
+        "floor_area_m2": 67890,
+        "shops": 212,
+        "features": ["キッザニア", "アウトドアゾーン"]
+      },
+      {
+        "name": "桜川シーサイドモール",
+        "location": "桜川市南部地区",
+        "floor_area_m2": 45678,
+        "shops": 156,
+        "features": ["オーシャンビュー", "マリンスポーツショップ"]
+      },
+      {
+        "name": "南桜アウトレットパーク",
+        "location": "南桜市観光地区",
+        "floor_area_m2": 78901,
+        "shops": 267,
+        "brands": 156,
+        "discount_rate": "30-70%"
+      }
+    ]
+  },
+  "department_stores": {
+    "total": 8,
+    "major_stores": [
+      {
+        "name": "桜花高島屋",
+        "location": "桜花市中央区",
+        "floors": 12,
+        "established": "1952年",
+        "annual_sales": "456億円",
+        "depachika": true,
+        "rooftop_garden": true
+      },
+      {
+        "name": "桜花三越",
+        "location": "桜花市花見区",
+        "floors": 10,
+        "luxury_brands": 89,
+        "cultural_events": "月間5回"
+      },
+      {
+        "name": "そごう桜川",
+        "location": "桜川市中央地区",
+        "floors": 8,
+        "marine_products_floor": true
+      }
+    ]
+  },
+  "supermarkets": {
+    "total": 234,
+    "chains": [
+      {
+        "name": "サミット",
+        "stores": 34,
+        "features": ["地産地消", "24時間営業（一部）"]
+      },
+      {
+        "name": "ライフ",
+        "stores": 28,
+        "private_brand": true
+      },
+      {
+        "name": "マルエツ",
+        "stores": 23
+      },
+      {
+        "name": "地元スーパー「さくらマート」",
+        "stores": 45,
+        "local_products_rate": 60
+      }
+    ]
+  },
+  "convenience_stores": {
+    "total": 567,
+    "by_chain": {
+      "セブンイレブン": 156,
+      "ファミリーマート": 134,
+      "ローソン": 123,
+      "ミニストップ": 67,
+      "地元チェーン「桜花ストア」": 87
+    }
+  },
+  "local_industries": {
+    "traditional_crafts": {
+      "total_workshops": 234,
+      "craftsmen": 567,
+      "products": [
+        {
+          "name": "桜染め",
+          "description": "桜の花びらを使った伝統染色",
+          "workshops": 45,
+          "annual_production": "12000点",
+          "price_range": "5000-50000円"
+        },
+        {
+          "name": "桜焼",
+          "description": "桜の灰を釉薬に使用した陶器",
+          "workshops": 34,
+          "masters": 12,
+          "export": true
+        },
+        {
+          "name": "桜細工",
+          "description": "桜の木を使った木工品",
+          "workshops": 56,
+          "products": ["箸", "茶道具", "装飾品"]
+        },
+        {
+          "name": "桜和紙",
+          "description": "桜の樹皮を混ぜた和紙",
+          "workshops": 23,
+          "unesco_intangible_heritage": "申請中"
+        }
+      ]
+    },
+    "food_products": {
+      "sake_breweries": {
+        "total": 12,
+        "famous_brands": [
+          {
+            "name": "桜花",
+            "brewery": "桜花酒造",
+            "established": "1756年",
+            "annual_production_liters": 234567,
+            "awards": ["全国新酒鑑評会金賞", "IWC金メダル"]
+          },
+          {
+            "name": "花見桜",
+            "brewery": "西桜酒造",
+            "specialty": "純米大吟醸"
+          }
+        ]
+      },
+      "local_specialties": [
+        {
+          "name": "桜餅",
+          "producers": 89,
+          "annual_sales": "4.5億円"
+        },
+        {
+          "name": "桜エビ",
+          "fishing_boats": 45,
+          "processing_facilities": 12
+        },
+        {
+          "name": "桜ポーク",
+          "farms": 23,
+          "restaurants_serving": 156
+        },
+        {
+          "name": "桜茶",
+          "tea_gardens": 34,
+          "cafes": 67
+        }
+      ]
+    },
+    "manufacturing": {
+      "electronics": {
+        "companies": 123,
+        "employees": 23456,
+        "products": ["半導体", "電子部品", "ロボット"]
+      },
+      "automotive_parts": {
+        "companies": 67,
+        "employees": 12345,
+        "tier1_suppliers": 12
+      },
+      "chemicals": {
+        "companies": 45,
+        "employees": 8901,
+        "research_centers": 8
+      },
+      "food_processing": {
+        "companies": 89,
+        "employees": 6789,
+        "haccp_certified": 67
+      }
+    }
+  },
+  "major_companies": {
+    "headquarters": [
+      {
+        "name": "桜花電機株式会社",
+        "industry": "電子機器",
+        "employees": 12345,
+        "revenue": "2345億円",
+        "stock_exchange": "東証プライム",
+        "global_offices": 23
+      },
+      {
+        "name": "さくらソフトウェア株式会社",
+        "industry": "IT",
+        "employees": 3456,
+        "specialties": ["AI", "IoT", "クラウド"],
+        "location": "東桜市テクノ地区"
+      },
+      {
+        "name": "桜川海運株式会社",
+        "industry": "海運",
+        "employees": 2345,
+        "fleet": 45,
+        "routes": "アジア・北米"
+      },
+      {
+        "name": "桜花観光開発株式会社",
+        "industry": "観光",
+        "employees": 4567,
+        "hotels": 12,
+        "theme_parks": 2
+      },
+      {
+        "name": "北桜アグリビジネス株式会社",
+        "industry": "農業",
+        "employees": 789,
+        "farms": 23,
+        "innovation": "スマート農業"
+      }
+    ],
+    "major_branches": [
+      {
+        "company": "トヨタ自動車",
+        "facility": "桜花工場",
+        "employees": 3456,
+        "products": ["ハイブリッド車", "EV"]
+      },
+      {
+        "company": "日立製作所",
+        "facility": "東桜研究所",
+        "employees": 1234,
+        "research": ["AI", "量子コンピュータ"]
+      }
+    ]
+  },
+  "business_districts": {
+    "CBD": {
+      "location": "桜花市中央区",
+      "office_buildings": 123,
+      "total_floor_area_m2": 1234567,
+      "major_tenants": ["金融", "保険", "コンサルティング"],
+      "average_rent_per_m2": 5678
+    },
+    "tech_districts": [
+      {
+        "name": "東桜テクノパーク",
+        "companies": 234,
+        "startups": 156,
+        "incubation_facilities": 12
+      }
+    ],
+    "industrial_parks": [
+      {
+        "name": "桜川工業団地",
+        "area_ha": 234,
+        "companies": 89,
+        "employment": 12345
+      },
+      {
+        "name": "東桜ハイテク工業団地",
+        "area_ha": 156,
+        "companies": 67,
+        "clean_rooms": 23
+      }
+    ]
+  },
+  "markets": {
+    "wholesale_markets": [
+      {
+        "name": "桜川中央卸売市場",
+        "type": "水産",
+        "annual_transaction": "567億円",
+        "vendors": 234,
+        "auction_start": "5:00"
+      },
+      {
+        "name": "桜花青果市場",
+        "type": "青果",
+        "annual_transaction": "345億円",
+        "local_produce_rate": 45
+      }
+    ],
+    "farmers_markets": [
+      {
+        "name": "JAきたさくら直売所",
+        "location": "北桜市中央地区",
+        "vendors": 123,
+        "operating_days": "毎日",
+        "seasonal_events": 12
+      }
+    ],
+    "flea_markets": [
+      {
+        "name": "桜花骨董市",
+        "location": "桜花城跡公園",
+        "frequency": "毎月第1・3日曜",
+        "vendors": 89
+      }
+    ]
+  },
+  "e_commerce": {
+    "local_platforms": [
+      {
+        "name": "さくらマーケット",
+        "users": 234567,
+        "merchants": 3456,
+        "specialties": ["地元特産品", "伝統工芸品"]
+      }
+    ],
+    "delivery_services": {
+      "same_day_delivery_coverage": 89,
+      "drone_delivery_test_areas": 3
+    }
+  },
+  "business_support": {
+    "chamber_of_commerce": {
+      "members": 4567,
+      "support_programs": ["創業支援", "海外展開", "DX推進"],
+      "annual_budget": "12億円"
+    },
+    "startup_ecosystem": {
+      "incubators": 8,
+      "accelerators": 4,
+      "coworking_spaces": 23,
+      "annual_startups": 123,
+      "vc_funds": 12
+    },
+    "industry_associations": [
+      {
+        "name": "桜県IT産業協会",
+        "members": 234
+      },
+      {
+        "name": "桜県観光事業者協会",
+        "members": 567
+      },
+      {
+        "name": "桜県伝統工芸協会",
+        "members": 189
+      }
+    ]
+  }
+}

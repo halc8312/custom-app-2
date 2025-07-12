@@ -1,0 +1,244 @@
+.main {
+  padding: 2rem 0 4rem;
+  min-height: calc(100vh - 200px);
+}
+
+.pageTitle {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+.governorInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.governorProfile h3,
+.viceGovernors h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.infoItem {
+  background-color: var(--light-gray);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.infoItem h4 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.infoItem p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.officialsList {
+  list-style: none;
+  padding: 0;
+}
+
+.officialsList li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.officialsList li:last-child {
+  border-bottom: none;
+}
+
+.assemblyInfo {
+  margin-bottom: 2rem;
+}
+
+.assemblyInfo h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.partyComposition {
+  margin-top: 2rem;
+}
+
+.partyComposition h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dataTable th,
+.dataTable td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.dataTable th {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+}
+
+.dataTable tr:hover {
+  background-color: var(--light-gray);
+}
+
+.departmentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.departmentCard {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.departmentCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.departmentCard h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.departmentCard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.departmentCard li {
+  padding: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.committeeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.committeeItem {
+  background-color: var(--light-gray);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.committeeItem h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.committeeItem ul {
+  list-style: none;
+  padding: 0;
+}
+
+.committeeItem li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.committeeItem li:last-child {
+  border-bottom: none;
+}
+
+.linkGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.linkCard {
+  background-color: white;
+  border: 2px solid var(--primary-color);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.linkCard:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.linkCard h3 {
+  margin-bottom: 0.5rem;
+}
+
+.linkCard p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  .governorInfo {
+    grid-template-columns: 1fr;
+  }
+
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .departmentGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .committeeGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .linkGrid {
+    grid-template-columns: 1fr;
+  }
+}

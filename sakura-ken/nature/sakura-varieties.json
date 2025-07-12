@@ -1,0 +1,534 @@
+{
+  "meta": {
+    "title": "桜県桜品種データベース",
+    "created": "2025-07-11",
+    "version": "1.0",
+    "description": "桜県内で観察される234品種の桜の詳細データベース",
+    "total_varieties": 234,
+    "classification": {
+      "野生種": 11,
+      "栽培品種": 223,
+      "県独自品種": 15
+    }
+  },
+  "summary": {
+    "by_bloom_time": {
+      "早咲き（2月-3月上旬）": 23,
+      "中咲き（3月中旬-4月上旬）": 156,
+      "遅咲き（4月中旬-5月）": 45,
+      "二季咲き": 10
+    },
+    "by_flower_type": {
+      "一重咲き": 89,
+      "八重咲き": 123,
+      "半八重咲き": 22
+    },
+    "by_color": {
+      "白色": 45,
+      "淡紅色": 89,
+      "紅色": 67,
+      "濃紅色": 33
+    },
+    "protected_varieties": 12,
+    "endangered_varieties": 5
+  },
+  "varieties": [
+    {
+      "id": "SV001",
+      "name_jp": "染井吉野",
+      "name_latin": "Prunus × yedoensis 'Somei-yoshino'",
+      "name_en": "Somei Yoshino",
+      "category": "栽培品種",
+      "origin": "江戸時代後期",
+      "distribution_in_prefecture": {
+        "total_trees": 123456,
+        "main_locations": ["千本桜公園", "桜花城址", "桜川堤防"],
+        "coverage": "県全域"
+      },
+      "characteristics": {
+        "flower_color": "淡紅白色",
+        "petal_count": 5,
+        "flower_size": "中輪（3-3.5cm）",
+        "bloom_type": "一重咲き",
+        "fragrance": "微香",
+        "bloom_period": "3月下旬-4月上旬",
+        "bloom_duration": "7-10日"
+      },
+      "tree_characteristics": {
+        "height": "10-15m",
+        "spread": "10-15m",
+        "growth_rate": "速い",
+        "lifespan": "60-80年",
+        "bark_color": "灰褐色"
+      },
+      "cultivation": {
+        "soil": "排水良好な土壌",
+        "sunlight": "日向",
+        "water": "普通",
+        "pruning": "花後すぐ",
+        "disease_resistance": "中"
+      },
+      "cultural_significance": "日本の桜の代表種。県の標準開花基準木",
+      "viewing_spots": [
+        {"name": "千本桜並木", "trees": 1000, "best_time": "4月第1週"},
+        {"name": "桜花城址公園", "trees": 500, "best_time": "3月最終週"}
+      ]
+    },
+    {
+      "id": "SV002",
+      "name_jp": "八重桜",
+      "name_latin": "Prunus lannesiana cv. Sekiyama",
+      "name_en": "Double Cherry Blossom",
+      "category": "栽培品種",
+      "origin": "古代",
+      "distribution_in_prefecture": {
+        "total_trees": 45678,
+        "main_locations": ["西桜市寺町", "南桜温泉街"]
+      },
+      "characteristics": {
+        "flower_color": "濃紅色",
+        "petal_count": "20-50",
+        "flower_size": "大輪（4-5cm）",
+        "bloom_type": "八重咲き",
+        "bloom_period": "4月中旬-下旬",
+        "bloom_duration": "14-20日"
+      },
+      "tree_characteristics": {
+        "height": "5-8m",
+        "spread": "6-8m",
+        "growth_rate": "普通"
+      },
+      "cultural_significance": "豪華な花が人気。桜餅の葉に使用"
+    },
+    {
+      "id": "SV003",
+      "name_jp": "山桜",
+      "name_latin": "Prunus jamasakura",
+      "name_en": "Mountain Cherry",
+      "category": "野生種",
+      "origin": "日本原産",
+      "distribution_in_prefecture": {
+        "total_trees": 234567,
+        "main_locations": ["南桜山地", "桜峰山麓"],
+        "elevation_range": "100-1200m"
+      },
+      "characteristics": {
+        "flower_color": "白色〜淡紅色",
+        "petal_count": 5,
+        "flower_size": "中輪（2.5-3.5cm）",
+        "bloom_type": "一重咲き",
+        "bloom_period": "3月下旬-4月中旬",
+        "special_feature": "若葉と同時に開花"
+      },
+      "tree_characteristics": {
+        "height": "15-25m",
+        "spread": "15-20m",
+        "lifespan": "100年以上",
+        "bark_pattern": "横縞模様"
+      },
+      "ecological_value": "野鳥の食料源、在来生態系の重要種",
+      "conservation_status": "安定"
+    },
+    {
+      "id": "SV004",
+      "name_jp": "河津桜",
+      "name_latin": "Prunus lannesiana 'Kawazu-zakura'",
+      "name_en": "Kawazu Cherry",
+      "category": "栽培品種",
+      "origin": "1955年発見",
+      "distribution_in_prefecture": {
+        "total_trees": 12345,
+        "main_locations": ["南桜温泉街", "桜川河口"]
+      },
+      "characteristics": {
+        "flower_color": "濃紅色",
+        "petal_count": 5,
+        "flower_size": "中輪（3cm）",
+        "bloom_type": "一重咲き",
+        "bloom_period": "2月中旬-3月上旬",
+        "bloom_duration": "約1ヶ月",
+        "special_feature": "早咲きで花期が長い"
+      },
+      "viewing_spots": [
+        {"name": "南桜温泉河津桜並木", "trees": 800, "festival": "2月中旬-3月上旬"}
+      ]
+    },
+    {
+      "id": "SV005",
+      "name_jp": "枝垂桜",
+      "name_latin": "Prunus pendula",
+      "name_en": "Weeping Cherry",
+      "category": "栽培品種",
+      "origin": "平安時代",
+      "distribution_in_prefecture": {
+        "total_trees": 8901,
+        "main_locations": ["寺社境内", "日本庭園"],
+        "famous_trees": [
+          {"name": "千本寺の枝垂桜", "age": "300年", "height": "12m"},
+          {"name": "桜八幡宮の糸桜", "age": "250年", "height": "15m"}
+        ]
+      },
+      "characteristics": {
+        "flower_color": "淡紅色",
+        "petal_count": 5,
+        "flower_size": "小輪（2-2.5cm）",
+        "bloom_type": "一重咲き",
+        "bloom_period": "3月中旬-下旬",
+        "special_feature": "枝が垂れ下がる優美な樹形"
+      },
+      "cultural_significance": "県指定天然記念物3本を含む"
+    },
+    {
+      "id": "SV006",
+      "name_jp": "大島桜",
+      "name_latin": "Prunus speciosa",
+      "name_en": "Oshima Cherry",
+      "category": "野生種",
+      "origin": "日本原産",
+      "distribution_in_prefecture": {
+        "total_trees": 34567,
+        "main_locations": ["桜川沿岸部", "東部海岸"]
+      },
+      "characteristics": {
+        "flower_color": "白色",
+        "petal_count": 5,
+        "flower_size": "大輪（3.5-4.5cm）",
+        "bloom_type": "一重咲き",
+        "fragrance": "強香",
+        "bloom_period": "3月下旬-4月上旬"
+      },
+      "uses": ["桜餅の葉", "香料原料", "交配親"],
+      "special_note": "多くの園芸品種の親となった重要種"
+    },
+    {
+      "id": "SV007",
+      "name_jp": "寒緋桜",
+      "name_latin": "Prunus campanulata",
+      "name_en": "Taiwan Cherry",
+      "category": "野生種",
+      "origin": "台湾・中国南部",
+      "distribution_in_prefecture": {
+        "total_trees": 5678,
+        "main_locations": ["南部温暖地域", "公園"]
+      },
+      "characteristics": {
+        "flower_color": "濃紅紫色",
+        "petal_count": 5,
+        "flower_size": "中輪（2.5-3cm）",
+        "bloom_type": "一重咲き",
+        "bloom_period": "1月下旬-2月中旬",
+        "special_feature": "下向きに咲く、最も早咲き"
+      }
+    },
+    {
+      "id": "SV008",
+      "name_jp": "関山",
+      "name_latin": "Prunus lannesiana 'Sekiyama'",
+      "name_en": "Kanzan Cherry",
+      "category": "栽培品種",
+      "origin": "江戸時代",
+      "distribution_in_prefecture": {
+        "total_trees": 23456,
+        "main_locations": ["都市公園", "街路樹"]
+      },
+      "characteristics": {
+        "flower_color": "濃紅色",
+        "petal_count": "20-50",
+        "flower_size": "大輪（5cm）",
+        "bloom_type": "八重咲き",
+        "bloom_period": "4月中旬-下旬",
+        "special_feature": "塩漬けにして桜湯に使用"
+      }
+    },
+    {
+      "id": "SV009",
+      "name_jp": "普賢象",
+      "name_latin": "Prunus lannesiana 'Albo-rosea'",
+      "name_en": "Fugenzo Cherry",
+      "category": "栽培品種",
+      "origin": "室町時代",
+      "distribution_in_prefecture": {
+        "total_trees": 12345,
+        "main_locations": ["寺院", "歴史的庭園"]
+      },
+      "characteristics": {
+        "flower_color": "淡紅色→白色",
+        "petal_count": "20-50",
+        "flower_size": "大輪（4.5-5cm）",
+        "bloom_type": "八重咲き",
+        "bloom_period": "4月下旬",
+        "special_feature": "雌しべが象の牙のように見える"
+      }
+    },
+    {
+      "id": "SV010",
+      "name_jp": "鬱金",
+      "name_latin": "Prunus lannesiana 'Grandiflora'",
+      "name_en": "Ukon Cherry",
+      "category": "栽培品種",
+      "origin": "江戸時代中期",
+      "distribution_in_prefecture": {
+        "total_trees": 3456,
+        "main_locations": ["植物園", "特別栽培地"]
+      },
+      "characteristics": {
+        "flower_color": "黄緑色",
+        "petal_count": "10-20",
+        "flower_size": "中輪（3.5-4cm）",
+        "bloom_type": "八重咲き",
+        "bloom_period": "4月中旬",
+        "special_feature": "珍しい黄色系の桜"
+      },
+      "rarity": "希少",
+      "protected_status": "県指定保護品種"
+    },
+    {
+      "id": "SV011",
+      "name_jp": "御衣黄",
+      "name_latin": "Prunus lannesiana 'Gioiko'",
+      "name_en": "Gyoiko Cherry",
+      "category": "栽培品種",
+      "origin": "江戸時代",
+      "distribution_in_prefecture": {
+        "total_trees": 2345,
+        "main_locations": ["県立植物園", "桜研究所"]
+      },
+      "characteristics": {
+        "flower_color": "緑色→黄緑色→中心部紅色",
+        "petal_count": "10-15",
+        "flower_size": "中輪（3-4cm）",
+        "bloom_type": "八重咲き",
+        "bloom_period": "4月下旬",
+        "special_feature": "緑色の花を咲かせる珍種"
+      },
+      "conservation_efforts": "県による保護増殖事業対象"
+    },
+    {
+      "id": "SV012-SV050",
+      "group_name": "早咲き品種群",
+      "varieties_count": 39,
+      "common_characteristics": {
+        "bloom_period": "2月-3月中旬",
+        "main_types": ["寒桜", "河津桜", "大寒桜", "修善寺寒桜"]
+      },
+      "notable_varieties": [
+        {"name": "大寒桜", "trees": 8901, "bloom": "3月上旬"},
+        {"name": "修善寺寒桜", "trees": 4567, "bloom": "3月上旬"},
+        {"name": "椿寒桜", "trees": 3456, "bloom": "2月下旬"},
+        {"name": "熱海桜", "trees": 2345, "bloom": "1月下旬"}
+      ]
+    },
+    {
+      "id": "SV051-SV150",
+      "group_name": "染井吉野系品種群",
+      "varieties_count": 100,
+      "common_characteristics": {
+        "bloom_period": "3月下旬-4月上旬",
+        "parent": "大島桜×江戸彼岸",
+        "flower_characteristics": "一重咲き、淡紅色"
+      },
+      "notable_varieties": [
+        {"name": "昭和桜", "special": "染井吉野の改良種"},
+        {"name": "神代曙", "special": "病気に強い"},
+        {"name": "陽光", "special": "濃いピンク色"},
+        {"name": "紅吉野", "special": "紅色の染井吉野"}
+      ],
+      "distribution": "県全域の公園・街路樹"
+    },
+    {
+      "id": "SV151-SV200",
+      "group_name": "八重桜品種群",
+      "varieties_count": 50,
+      "common_characteristics": {
+        "bloom_period": "4月中旬-5月上旬",
+        "flower_type": "八重咲き",
+        "petal_count": "15-50枚"
+      },
+      "famous_varieties": [
+        {"name": "一葉", "petals": "20-35", "color": "淡紅色"},
+        {"name": "松月", "petals": "20-30", "color": "淡紅色"},
+        {"name": "天の川", "petals": "15-20", "special": "直立性"},
+        {"name": "楊貴妃", "petals": "15-20", "color": "淡紅色"}
+      ]
+    },
+    {
+      "id": "SV201",
+      "name_jp": "桜県桜",
+      "name_latin": "Prunus × sakurensis",
+      "name_en": "Sakura-ken Cherry",
+      "category": "県独自品種",
+      "origin": "1985年県農業試験場作出",
+      "breeding_history": "山桜×大島桜×染井吉野の交配",
+      "characteristics": {
+        "flower_color": "淡紅色で中心部が濃い",
+        "petal_count": 5,
+        "flower_size": "大輪（4-5cm）",
+        "bloom_period": "3月下旬-4月上旬",
+        "special_features": [
+          "花期が長い（2週間以上）",
+          "耐病性が高い",
+          "樹勢が強い"
+        ]
+      },
+      "awards": ["2000年桜品種コンクール金賞"],
+      "planted_locations": "県庁前、各市役所前"
+    },
+    {
+      "id": "SV202",
+      "name_jp": "千本桜",
+      "name_latin": "Prunus × senbonzakura",
+      "name_en": "Senbon-zakura",
+      "category": "県独自品種",
+      "origin": "1992年作出",
+      "characteristics": {
+        "special_feature": "一本の木から多数の花が密集して咲く",
+        "flower_density": "通常の1.5倍",
+        "bloom_period": "4月上旬"
+      },
+      "symbolic_value": "千本桜公園のシンボル"
+    },
+    {
+      "id": "SV203",
+      "name_jp": "花吹雪",
+      "name_latin": "Prunus × hanafubuki",
+      "name_en": "Hanafubuki",
+      "category": "県独自品種",
+      "origin": "2005年作出",
+      "characteristics": {
+        "special_feature": "花弁が散る際に舞い上がる特性",
+        "petal_weight": "通常の70%",
+        "cultural_use": "花吹雪イベントの主役"
+      }
+    },
+    {
+      "id": "SV204-SV219",
+      "group_name": "県独自開発品種",
+      "varieties_count": 16,
+      "development_period": "1980-2020",
+      "objectives": [
+        "観光資源の強化",
+        "気候変動への適応",
+        "病害虫抵抗性の向上",
+        "開花期間の延長"
+      ],
+      "success_varieties": [
+        {"name": "桜姫", "feature": "二季咲き性"},
+        {"name": "春爛漫", "feature": "花色の変化"},
+        {"name": "永遠桜", "feature": "開花期間3週間"}
+      ]
+    },
+    {
+      "id": "SV220-SV234",
+      "group_name": "希少・保護対象品種",
+      "varieties_count": 15,
+      "conservation_status": "県指定天然記念物または保護品種",
+      "threats": ["都市開発", "気候変動", "病害虫"],
+      "conservation_measures": [
+        "遺伝子保存",
+        "増殖プログラム",
+        "生息地保護",
+        "市民啓発"
+      ],
+      "protected_varieties": [
+        {
+          "name": "古代山桜",
+          "age": "推定800年",
+          "location": "南桜山地",
+          "status": "絶滅危惧IA類"
+        },
+        {
+          "name": "幻の白桜",
+          "characteristics": "純白の八重咲き",
+          "remaining_trees": 23,
+          "protection_level": "最重要保護"
+        }
+      ]
+    }
+  ],
+  "cultivation_calendar": {
+    "january": "剪定適期、防寒対策",
+    "february": "早咲き品種開花開始、施肥",
+    "march": "主要品種開花準備、病害虫防除開始",
+    "april": "満開期、花後の手入れ",
+    "may": "新芽の管理、夏肥",
+    "june": "梅雨対策、病害虫防除強化",
+    "july": "水やり管理、台風対策",
+    "august": "乾燥対策、来年の花芽形成期",
+    "september": "秋肥、台風対策",
+    "october": "落葉準備、根の手入れ",
+    "november": "落葉、冬支度",
+    "december": "休眠期、来年の準備"
+  },
+  "research_facilities": {
+    "main_center": {
+      "name": "桜県立桜研究所",
+      "established": "1978年",
+      "location": "東桜市",
+      "staff": 45,
+      "collections": {
+        "living_collection": 234,
+        "seed_bank": 500,
+        "dna_samples": 1000
+      },
+      "research_areas": [
+        "品種改良",
+        "病害虫抵抗性",
+        "気候変動適応",
+        "遺伝資源保存"
+      ]
+    },
+    "branch_stations": [
+      {
+        "name": "南桜試験地",
+        "focus": "早咲き品種",
+        "varieties": 89
+      },
+      {
+        "name": "北桜試験地", 
+        "focus": "耐寒性品種",
+        "varieties": 67
+      }
+    ]
+  },
+  "economic_value": {
+    "tourism_revenue": "年間234億円",
+    "related_products": {
+      "food": ["桜餅", "桜茶", "桜酒", "桜ジャム"],
+      "crafts": ["桜染め", "桜材工芸品", "押し花製品"],
+      "cosmetics": ["桜エキス化粧品", "香水"]
+    },
+    "employment": "直接雇用3,456人、間接雇用12,345人"
+  },
+  "cultural_programs": {
+    "education": {
+      "school_programs": "全小学校で桜学習",
+      "citizen_courses": "桜マイスター養成講座",
+      "annual_participants": 5678
+    },
+    "festivals": {
+      "cherry_blossom_festival": "4月（来場者234万人）",
+      "variety_exhibition": "年2回",
+      "photo_contests": "年間応募1万点"
+    },
+    "international_exchange": {
+      "sister_cities": "ワシントンDC、ボン、済州",
+      "variety_gifts": "年間50本",
+      "technical_cooperation": "5カ国"
+    }
+  },
+  "future_projects": {
+    "2030_goals": [
+      "新品種10種開発",
+      "絶滅危惧種の保護強化",
+      "気候変動対応品種の普及",
+      "観光資源としての価値向上"
+    ],
+    "research_priorities": [
+      "ゲノム解析",
+      "環境ストレス耐性",
+      "開花制御技術",
+      "病害虫総合防除"
+    ],
+    "budget": "年間5億円"
+  }
+}

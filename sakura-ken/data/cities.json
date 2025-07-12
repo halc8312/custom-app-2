@@ -1,0 +1,375 @@
+{
+  "cities": [
+    {
+      "id": "13201",
+      "name": {
+        "japanese": "桜花市",
+        "hiragana": "おうかし",
+        "romaji": "Ouka-shi",
+        "english": "Sakura-ka City"
+      },
+      "type": "県庁所在地",
+      "established": "1889-04-01",
+      "area_km2": 456.78,
+      "population": {
+        "total": 890234,
+        "density_per_km2": 1948.3,
+        "households": 398765,
+        "as_of": "2025-01-01"
+      },
+      "coordinates": {
+        "latitude": 35.4567,
+        "longitude": 139.5678
+      },
+      "districts": [
+        "中央区",
+        "桜区",
+        "花見区",
+        "東区",
+        "西区",
+        "南区",
+        "北区",
+        "緑区",
+        "港区"
+      ],
+      "symbols": {
+        "flower": "ソメイヨシノ",
+        "tree": "ケヤキ",
+        "bird": "カワセミ"
+      },
+      "mayor": {
+        "name": "田中一郎",
+        "party": "無所属",
+        "term_start": "2022-05-01"
+      },
+      "characteristics": "県の政治・経済・文化の中心地。県庁、県議会、主要企業の本社が集中。",
+      "main_industries": [
+        "金融・保険業",
+        "情報通信業",
+        "商業・サービス業",
+        "不動産業"
+      ],
+      "transportation": {
+        "stations": 45,
+        "railway_lines": 8,
+        "bus_routes": 156,
+        "highways": 2
+      },
+      "notable_facilities": [
+        "桜県庁",
+        "桜花市役所",
+        "桜花城跡公園",
+        "県立美術館",
+        "桜花ドーム"
+      ]
+    },
+    {
+      "id": "13202",
+      "name": {
+        "japanese": "桜川市",
+        "hiragana": "さくらがわし",
+        "romaji": "Sakuragawa-shi",
+        "english": "Sakuragawa City"
+      },
+      "type": "港湾都市",
+      "established": "1921-07-01",
+      "area_km2": 389.45,
+      "population": {
+        "total": 523456,
+        "density_per_km2": 1344.2,
+        "households": 234567,
+        "as_of": "2025-01-01"
+      },
+      "coordinates": {
+        "latitude": 35.3456,
+        "longitude": 139.6789
+      },
+      "districts": [
+        "港地区",
+        "臨海地区",
+        "中央地区",
+        "北部地区",
+        "南部地区"
+      ],
+      "symbols": {
+        "flower": "ハマナス",
+        "tree": "クロマツ",
+        "bird": "カモメ"
+      },
+      "mayor": {
+        "name": "海野洋子",
+        "party": "立憲民主党推薦",
+        "term_start": "2023-04-01"
+      },
+      "characteristics": "県最大の港湾を有する物流拠点。漁業も盛んで、新鮮な海産物で有名。",
+      "main_industries": [
+        "港湾物流業",
+        "水産業",
+        "造船業",
+        "観光業"
+      ],
+      "transportation": {
+        "stations": 23,
+        "railway_lines": 4,
+        "bus_routes": 89,
+        "highways": 1,
+        "port": "桜川港（国際貿易港）"
+      },
+      "notable_facilities": [
+        "桜川港",
+        "魚市場",
+        "海洋科学館",
+        "桜川マリーナ",
+        "シーサイドパーク"
+      ]
+    },
+    {
+      "id": "13203",
+      "name": {
+        "japanese": "東桜市",
+        "hiragana": "ひがしさくらし",
+        "romaji": "Higashi-sakura-shi",
+        "english": "East Sakura City"
+      },
+      "type": "ハイテク工業都市",
+      "established": "1954-04-01",
+      "area_km2": 312.67,
+      "population": {
+        "total": 412345,
+        "density_per_km2": 1319.2,
+        "households": 189234,
+        "as_of": "2025-01-01"
+      },
+      "coordinates": {
+        "latitude": 35.5234,
+        "longitude": 139.7890
+      },
+      "districts": [
+        "テクノ地区",
+        "研究学園地区",
+        "住宅地区",
+        "商業地区"
+      ],
+      "symbols": {
+        "flower": "ツツジ",
+        "tree": "イチョウ",
+        "bird": "ヒバリ"
+      },
+      "mayor": {
+        "name": "技術太郎",
+        "party": "無所属",
+        "term_start": "2024-04-01"
+      },
+      "characteristics": "先端技術産業の集積地。大学や研究機関も多く、産学連携が活発。",
+      "main_industries": [
+        "電子機器製造業",
+        "情報通信業",
+        "研究開発",
+        "ロボット産業"
+      ],
+      "transportation": {
+        "stations": 18,
+        "railway_lines": 3,
+        "bus_routes": 67,
+        "highways": 1
+      },
+      "notable_facilities": [
+        "東桜テクノパーク",
+        "桜県工業大学",
+        "イノベーションセンター",
+        "サイエンスミュージアム",
+        "スマートシティ実証地区"
+      ]
+    },
+    {
+      "id": "13204",
+      "name": {
+        "japanese": "西桜市",
+        "hiragana": "にしさくらし",
+        "romaji": "Nishi-sakura-shi",
+        "english": "West Sakura City"
+      },
+      "type": "歴史文化都市",
+      "established": "1889-04-01",
+      "area_km2": 234.56,
+      "population": {
+        "total": 198765,
+        "density_per_km2": 847.8,
+        "households": 87654,
+        "as_of": "2025-01-01"
+      },
+      "coordinates": {
+        "latitude": 35.3789,
+        "longitude": 139.3456
+      },
+      "districts": [
+        "旧市街地区",
+        "寺町地区",
+        "工芸地区",
+        "新市街地区"
+      ],
+      "symbols": {
+        "flower": "ヤマブキ",
+        "tree": "スギ",
+        "bird": "ウグイス"
+      },
+      "mayor": {
+        "name": "文化花子",
+        "party": "地域政党・桜の会",
+        "term_start": "2021-04-01"
+      },
+      "characteristics": "伝統工芸と歴史的建造物が多く残る文化都市。アーティストの移住も増加中。",
+      "main_industries": [
+        "伝統工芸",
+        "観光業",
+        "文化産業",
+        "農業"
+      ],
+      "transportation": {
+        "stations": 12,
+        "railway_lines": 2,
+        "bus_routes": 34,
+        "highways": 1
+      },
+      "notable_facilities": [
+        "西桜城跡",
+        "伝統工芸館",
+        "古い町並み保存地区",
+        "アーティストビレッジ",
+        "歴史博物館"
+      ]
+    },
+    {
+      "id": "13205",
+      "name": {
+        "japanese": "南桜市",
+        "hiragana": "みなみさくらし",
+        "romaji": "Minami-sakura-shi",
+        "english": "South Sakura City"
+      },
+      "type": "温泉観光都市",
+      "established": "1935-02-11",
+      "area_km2": 567.89,
+      "population": {
+        "total": 287654,
+        "density_per_km2": 506.5,
+        "households": 123456,
+        "as_of": "2025-01-01"
+      },
+      "coordinates": {
+        "latitude": 35.2345,
+        "longitude": 139.5678
+      },
+      "districts": [
+        "温泉地区",
+        "山麓地区",
+        "観光地区",
+        "住宅地区",
+        "農業地区"
+      ],
+      "symbols": {
+        "flower": "ツバキ",
+        "tree": "モミジ",
+        "bird": "オオルリ"
+      },
+      "mayor": {
+        "name": "温泉次郎",
+        "party": "自由民主党推薦",
+        "term_start": "2022-04-01"
+      },
+      "characteristics": "豊富な温泉資源と山岳景観を活かした観光都市。四季を通じて観光客が訪れる。",
+      "main_industries": [
+        "観光業",
+        "旅館・ホテル業",
+        "農業",
+        "林業"
+      ],
+      "transportation": {
+        "stations": 15,
+        "railway_lines": 2,
+        "bus_routes": 45,
+        "highways": 1,
+        "ropeway": 2
+      },
+      "notable_facilities": [
+        "南桜温泉郷",
+        "桜峰ロープウェイ",
+        "高原リゾート",
+        "スキー場",
+        "自然公園"
+      ]
+    },
+    {
+      "id": "13206",
+      "name": {
+        "japanese": "北桜市",
+        "hiragana": "きたさくらし",
+        "romaji": "Kita-sakura-shi",
+        "english": "North Sakura City"
+      },
+      "type": "農業都市",
+      "established": "1956-09-30",
+      "area_km2": 445.67,
+      "population": {
+        "total": 156789,
+        "density_per_km2": 351.9,
+        "households": 67890,
+        "as_of": "2025-01-01"
+      },
+      "coordinates": {
+        "latitude": 35.6789,
+        "longitude": 139.4567
+      },
+      "districts": [
+        "中央地区",
+        "東部農業地区",
+        "西部農業地区",
+        "北部山間地区"
+      ],
+      "symbols": {
+        "flower": "レンゲ",
+        "tree": "ナシ",
+        "bird": "キジ"
+      },
+      "mayor": {
+        "name": "農業三郎",
+        "party": "無所属",
+        "term_start": "2023-04-01"
+      },
+      "characteristics": "県内最大の農業生産地。有機農業や6次産業化にも積極的に取り組む。",
+      "main_industries": [
+        "農業",
+        "食品加工業",
+        "畜産業",
+        "アグリツーリズム"
+      ],
+      "transportation": {
+        "stations": 8,
+        "railway_lines": 2,
+        "bus_routes": 23,
+        "highways": 1
+      },
+      "notable_facilities": [
+        "農業公園",
+        "ファーマーズマーケット",
+        "農業研究センター",
+        "グリーンツーリズムセンター",
+        "道の駅きたさくら"
+      ]
+    }
+  ],
+  "summary": {
+    "total_cities": 6,
+    "total_population": 2854327,
+    "total_area_km2": 2456.78,
+    "average_population": 475721,
+    "average_density_per_km2": 1161.6,
+    "largest_city": "桜花市",
+    "smallest_city": "北桜市"
+  },
+  "metadata": {
+    "last_updated": "2025-07-11",
+    "data_version": "1.0",
+    "notes": "All cities in Sakura Prefecture are designated as 'shi' (city) status"
+  }
+}

@@ -1,0 +1,317 @@
+.main {
+  padding: 2rem 0 4rem;
+  min-height: calc(100vh - 200px);
+}
+
+.pageTitle {
+  text-align: center;
+  color: #dc2626;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #dc2626;
+  padding-bottom: 0.5rem;
+}
+
+.emergencyNumbers {
+  background-color: #fee2e2;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.emergencyTitle {
+  color: #dc2626;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.numberGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.numberCard {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.numberDisplay {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #dc2626;
+  margin-bottom: 0.5rem;
+}
+
+.numberCard h3 {
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+}
+
+.numberCard p {
+  color: #666;
+  margin: 0;
+}
+
+.additionalNumbers {
+  text-align: center;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.additionalNumbers p {
+  margin: 0.5rem 0;
+}
+
+.guidelineGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.guidelineCard {
+  background-color: var(--light-gray);
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #dc2626;
+}
+
+.guidelineCard h3 {
+  color: #dc2626;
+  margin-bottom: 1rem;
+}
+
+.guidelineCard ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.guidelineCard li {
+  margin-bottom: 0.5rem;
+}
+
+.evacuationInfo {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.statCard {
+  text-align: center;
+}
+
+.statCard h3 {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.statNumber {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.statCard span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.evacuationNote {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.mapLink {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.mapLink:hover {
+  background-color: #ec4899;
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.serviceCard {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.serviceCard h3 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.serviceStats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.serviceStats > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: var(--light-gray);
+  border-radius: 4px;
+}
+
+.statLabel {
+  color: #666;
+}
+
+.statValue {
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.preparationGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.preparationCard {
+  background-color: var(--light-gray);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.preparationCard h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.preparationCard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.preparationCard li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.preparationCard li:last-child {
+  border-bottom: none;
+}
+
+.linkGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.infoLink {
+  background-color: white;
+  border: 2px solid var(--primary-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.infoLink:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.infoLink h3 {
+  margin-bottom: 0.5rem;
+}
+
+.infoLink p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.warningSection {
+  margin-top: 3rem;
+}
+
+.warningBox {
+  background-color: #e5f6ff;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #3b82f6;
+  text-align: center;
+}
+
+.noWarning {
+  font-size: 1.1rem;
+  color: #1d4ed8;
+  margin-bottom: 1rem;
+}
+
+.updateTime {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  .numberGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .numberDisplay {
+    font-size: 2.5rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .serviceStats {
+    grid-template-columns: 1fr;
+  }
+
+  .guidelineGrid,
+  .preparationGrid,
+  .serviceGrid {
+    grid-template-columns: 1fr;
+  }
+}

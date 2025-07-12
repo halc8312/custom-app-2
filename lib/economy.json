@@ -1,0 +1,127 @@
+{
+  "gdp": {
+    "total_billion_yen": 22500,
+    "rank_national": 8,
+    "per_capita_million_yen": 3.8,
+    "real_growth_rate": 2.3
+  },
+  "gdp_by_industry": {
+    "primary_sector": {
+      "agriculture_forestry_fishery": {
+        "percentage": 2.1,
+        "value_billion_yen": 472.5,
+        "sub_sectors": {
+          "agriculture": 315,
+          "forestry": 67.5,
+          "fishery": 90
+        }
+      }
+    },
+    "secondary_sector": {
+      "total": {
+        "percentage": 32.5,
+        "value_billion_yen": 7312.5
+      },
+      "manufacturing": {
+        "percentage": 25.2,
+        "value_billion_yen": 5670,
+        "major_products": [
+          "電子部品・デバイス",
+          "輸送用機械",
+          "化学製品",
+          "食料品",
+          "金属製品"
+        ]
+      },
+      "construction": {
+        "percentage": 7.3,
+        "value_billion_yen": 1642.5
+      }
+    },
+    "tertiary_sector": {
+      "total": {
+        "percentage": 65.4,
+        "value_billion_yen": 14715
+      },
+      "wholesale_retail": {
+        "percentage": 13.5
+      },
+      "real_estate": {
+        "percentage": 11.2
+      },
+      "finance_insurance": {
+        "percentage": 5.8
+      },
+      "information_communication": {
+        "percentage": 4.3
+      },
+      "medical_welfare": {
+        "percentage": 9.7
+      },
+      "other_services": {
+        "percentage": 20.9
+      }
+    }
+  },
+  "employment": {
+    "total_employed": 2834000,
+    "unemployment_rate": 3.2,
+    "by_industry": [
+      {
+        "industry": "製造業",
+        "employees": 567800,
+        "percentage": 20.0
+      },
+      {
+        "industry": "卸売・小売業",
+        "employees": 453440,
+        "percentage": 16.0
+      },
+      {
+        "industry": "医療・福祉",
+        "employees": 368420,
+        "percentage": 13.0
+      },
+      {
+        "industry": "建設業",
+        "employees": 283400,
+        "percentage": 10.0
+      },
+      {
+        "industry": "サービス業",
+        "employees": 340080,
+        "percentage": 12.0
+      },
+      {
+        "industry": "情報通信業",
+        "employees": 198380,
+        "percentage": 7.0
+      },
+      {
+        "industry": "運輸・郵便業",
+        "employees": 170040,
+        "percentage": 6.0
+      },
+      {
+        "industry": "金融・保険業",
+        "employees": 141700,
+        "percentage": 5.0
+      },
+      {
+        "industry": "不動産業",
+        "employees": 85020,
+        "percentage": 3.0
+      },
+      {
+        "industry": "農林水産業",
+        "employees": 56680,
+        "percentage": 2.0
+      },
+      {
+        "industry": "その他",
+        "employees": 170040,
+        "percentage": 6.0
+      }
+    ]
+  }
+}

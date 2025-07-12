@@ -1,0 +1,310 @@
+.main {
+  padding: 2rem 0 4rem;
+  min-height: calc(100vh - 200px);
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.pageTitle {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.titleRomaji {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #666;
+  margin-left: 1rem;
+}
+
+.heroImage {
+  position: relative;
+  height: 300px;
+  background: linear-gradient(135deg, #ffc0cb 0%, #ffb6c1 100%);
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+.heroOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+}
+
+.heroText {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.infoItem {
+  background-color: var(--light-gray);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.infoItem h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.mainValue {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: var(--text-color);
+}
+
+.subInfo {
+  font-size: 0.9rem;
+  color: #666;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.districtGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.districtCard {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.districtCard:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.districtCard h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.symbolGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.symbolItem {
+  background-color: white;
+  border: 2px solid var(--primary-color);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.symbolItem:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.symbolIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.symbolItem h3 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.symbolItem p {
+  color: #666;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.industryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.industryCard {
+  background-color: var(--light-gray);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.industryCard:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.industryCard h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.transportGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.transportCard {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.transportCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+}
+
+.transportCard h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.transportValue {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin: 0.5rem 0;
+}
+
+.transportDetail {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.facilityGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.facilityCard {
+  background-color: var(--light-gray);
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.facilityCard:hover {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.facilityCard p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.locationInfo {
+  background-color: var(--light-gray);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.locationInfo p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  .titleRomaji {
+    display: block;
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  .heroImage {
+    height: 200px;
+  }
+
+  .heroText {
+    font-size: 1.2rem;
+  }
+
+  .infoGrid,
+  .symbolGrid,
+  .transportGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .districtGrid,
+  .industryGrid,
+  .facilityGrid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}

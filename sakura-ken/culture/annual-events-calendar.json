@@ -1,0 +1,879 @@
+{
+  "meta": {
+    "title": "桜県年中行事カレンダー詳細",
+    "created": "2025-07-11",
+    "version": "1.0",
+    "description": "桜県の365日分の年中行事、祭り、イベント詳細情報",
+    "total_events": 456,
+    "event_categories": ["伝統行事", "現代イベント", "地域祭り", "観光イベント", "文化行事", "スポーツ大会"]
+  },
+  "summary": {
+    "by_category": {
+      "伝統行事": 123,
+      "現代イベント": 98,
+      "地域祭り": 87,
+      "観光イベント": 65,
+      "文化行事": 54,
+      "スポーツ大会": 29
+    },
+    "by_season": {
+      "春（3-5月）": 156,
+      "夏（6-8月）": 134,
+      "秋（9-11月）": 98,
+      "冬（12-2月）": 68
+    },
+    "major_events": 45,
+    "total_annual_visitors": 12345678
+  },
+  "monthly_themes": {
+    "1月": "新春・初詣",
+    "2月": "梅と早春",
+    "3月": "桜の開花準備",
+    "4月": "桜満開・花見",
+    "5月": "新緑・端午",
+    "6月": "紫陽花・梅雨",
+    "7月": "夏祭り・海開き",
+    "8月": "盆踊り・花火",
+    "9月": "秋祭り・収穫",
+    "10月": "紅葉・文化",
+    "11月": "実り・感謝",
+    "12月": "年末・イルミネーション"
+  },
+  "calendar": {
+    "january": {
+      "month_number": 1,
+      "events": [
+        {
+          "date": "1月1日",
+          "name": "桜八幡宮初詣",
+          "type": "伝統行事",
+          "location": "桜花市・桜八幡宮",
+          "description": "県内最大の初詣スポット。例年50万人が参拝",
+          "time": "0:00-",
+          "visitors": 500000,
+          "features": ["甘酒振る舞い", "破魔矢授与", "おみくじ"]
+        },
+        {
+          "date": "1月1日",
+          "name": "初日の出観賞会",
+          "type": "観光イベント",
+          "location": "桜峰山頂、桜川海岸",
+          "description": "県内各所で初日の出を観賞",
+          "time": "6:00-7:30",
+          "visitors": 50000
+        },
+        {
+          "date": "1月2日",
+          "name": "新春桜花駅伝",
+          "type": "スポーツ大会",
+          "location": "桜花市内",
+          "description": "県内実業団・大学による駅伝大会",
+          "time": "9:00-12:00",
+          "participants": 200,
+          "spectators": 30000
+        },
+        {
+          "date": "1月3日",
+          "name": "新春獅子舞巡行",
+          "type": "伝統行事",
+          "location": "西桜市旧市街",
+          "description": "江戸時代から続く獅子舞の門付け",
+          "time": "10:00-16:00"
+        },
+        {
+          "date": "1月7日",
+          "name": "七草がゆ祭り",
+          "type": "伝統行事",
+          "location": "各地の神社",
+          "description": "無病息災を願う七草がゆの振る舞い",
+          "visitors": 20000
+        },
+        {
+          "date": "1月11日",
+          "name": "鏡開き行事",
+          "type": "伝統行事",
+          "location": "県内各所",
+          "description": "正月飾りの鏡餅を開く伝統行事"
+        },
+        {
+          "date": "1月第2月曜日",
+          "name": "成人の日記念式典",
+          "type": "現代イベント",
+          "location": "各市文化ホール",
+          "description": "新成人約30,000人が参加",
+          "participants": 30000
+        },
+        {
+          "date": "1月15日",
+          "name": "どんど焼き",
+          "type": "伝統行事",
+          "location": "県内各地",
+          "description": "正月飾りを焼く小正月の行事",
+          "locations": 123
+        },
+        {
+          "date": "1月20日",
+          "name": "大寒祈願祭",
+          "type": "伝統行事",
+          "location": "千本寺",
+          "description": "寒中修行と祈願",
+          "special": "寒中水行"
+        },
+        {
+          "date": "1月最終土曜日",
+          "name": "桜県物産展",
+          "type": "観光イベント",
+          "location": "桜花市産業会館",
+          "description": "県産品の展示即売会",
+          "vendors": 234,
+          "visitors": 45000
+        }
+      ]
+    },
+    "february": {
+      "month_number": 2,
+      "events": [
+        {
+          "date": "2月3日",
+          "name": "節分祭",
+          "type": "伝統行事",
+          "location": "県内主要寺社",
+          "description": "豆まきと恵方巻きイベント",
+          "locations": 89,
+          "visitors": 123456
+        },
+        {
+          "date": "2月8日-14日",
+          "name": "桜県雪まつり",
+          "type": "観光イベント",
+          "location": "南桜市山間部",
+          "description": "雪像展示、かまくら体験、雪上花火",
+          "visitors": 234567,
+          "features": ["雪像コンテスト", "温泉割引", "郷土料理屋台"]
+        },
+        {
+          "date": "2月11日",
+          "name": "建国記念の日奉祝行事",
+          "type": "伝統行事",
+          "location": "桜花市・県護国神社",
+          "description": "建国を祝う式典と奉納行事"
+        },
+        {
+          "date": "2月14日",
+          "name": "桜恋まつり",
+          "type": "現代イベント",
+          "location": "桜花市中心部",
+          "description": "バレンタイン特別イベント",
+          "features": ["カップル割引", "ハート型桜餅", "イルミネーション"]
+        },
+        {
+          "date": "2月中旬",
+          "name": "梅まつり開幕",
+          "type": "観光イベント",
+          "location": "西桜梅園",
+          "description": "1,000本の梅が咲く梅園の特別公開",
+          "period": "2月中旬-3月上旬",
+          "visitors": 100000
+        },
+        {
+          "date": "2月23日",
+          "name": "天皇誕生日記念コンサート",
+          "type": "文化行事",
+          "location": "桜花市文化ホール",
+          "description": "県交響楽団による記念演奏会"
+        },
+        {
+          "date": "2月最終日曜日",
+          "name": "東桜マラソン",
+          "type": "スポーツ大会",
+          "location": "東桜市",
+          "description": "フルマラソン、ハーフ、10km、5km",
+          "participants": 15000,
+          "spectators": 50000
+        }
+      ]
+    },
+    "march": {
+      "month_number": 3,
+      "events": [
+        {
+          "date": "3月3日",
+          "name": "桜雛まつり",
+          "type": "伝統行事",
+          "location": "県内各所",
+          "description": "桜をテーマにした雛人形展示",
+          "locations": 45,
+          "special_feature": "桜餅と甘酒のサービス"
+        },
+        {
+          "date": "3月上旬",
+          "name": "早咲き桜まつり",
+          "type": "観光イベント",
+          "location": "南桜市温泉街",
+          "description": "河津桜など早咲き品種の観賞会",
+          "visitors": 89000
+        },
+        {
+          "date": "3月10日",
+          "name": "東桜サイエンスフェア",
+          "type": "文化行事",
+          "location": "東桜市科学館",
+          "description": "最新技術展示と体験イベント",
+          "exhibitors": 123
+        },
+        {
+          "date": "3月15日",
+          "name": "桜開花予想発表会",
+          "type": "現代イベント",
+          "location": "県庁",
+          "description": "県内234品種の開花予想を発表"
+        },
+        {
+          "date": "3月20日",
+          "name": "春分の日・桜祈願祭",
+          "type": "伝統行事",
+          "location": "千本桜神社",
+          "description": "桜の開花と豊作を祈願",
+          "visitors": 34567
+        },
+        {
+          "date": "3月21日-31日",
+          "name": "桜ライトアップ準備期間",
+          "type": "観光イベント",
+          "location": "県内主要桜名所",
+          "description": "夜桜観賞用照明の設置と試験点灯"
+        },
+        {
+          "date": "3月25日",
+          "name": "桜花高校野球大会開幕",
+          "type": "スポーツ大会",
+          "location": "桜花球場",
+          "description": "県内高校野球春季大会",
+          "teams": 64
+        },
+        {
+          "date": "3月最終土日",
+          "name": "桜マルシェ",
+          "type": "現代イベント",
+          "location": "桜花市・桜川市",
+          "description": "桜関連商品の大規模市場",
+          "vendors": 200,
+          "visitors": 67890
+        }
+      ]
+    },
+    "april": {
+      "month_number": 4,
+      "events": [
+        {
+          "date": "4月1日-30日",
+          "name": "桜県大桜まつり",
+          "type": "観光イベント",
+          "location": "県内全域",
+          "description": "県最大の観光イベント。桜の名所100箇所で開催",
+          "visitors": 2340000,
+          "main_venues": [
+            "千本桜公園",
+            "桜花城址公園",
+            "桜川河川敷",
+            "桜峰山麓"
+          ],
+          "special_events": [
+            "夜桜ライトアップ",
+            "桜吹雪ショー",
+            "野点茶会",
+            "桜グルメフェスティバル"
+          ]
+        },
+        {
+          "date": "4月第1土日",
+          "name": "桜花祭",
+          "type": "伝統行事",
+          "location": "桜花市中心部",
+          "description": "平安時代から続く伝統的な花見行事",
+          "features": ["時代行列", "桜舞", "雅楽演奏"],
+          "participants": 500,
+          "visitors": 345678
+        },
+        {
+          "date": "4月8日",
+          "name": "花まつり（灌仏会）",
+          "type": "伝統行事",
+          "location": "県内寺院",
+          "description": "お釈迦様の誕生を祝う行事",
+          "temples": 234
+        },
+        {
+          "date": "4月10日",
+          "name": "桜の女王コンテスト",
+          "type": "現代イベント",
+          "location": "桜花市文化ホール",
+          "description": "県の観光大使を選出",
+          "contestants": 50
+        },
+        {
+          "date": "4月15日",
+          "name": "千本桜ウォーク",
+          "type": "スポーツ大会",
+          "location": "千本桜並木道",
+          "description": "桜並木を歩くウォーキング大会",
+          "distance": ["5km", "10km", "20km"],
+          "participants": 5000
+        },
+        {
+          "date": "4月20日",
+          "name": "桜川鯉のぼりまつり",
+          "type": "現代イベント",
+          "location": "桜川市",
+          "description": "川に1000匹の鯉のぼりを掲揚",
+          "period": "4月20日-5月5日"
+        },
+        {
+          "date": "4月29日",
+          "name": "昭和の日・桜保存会式典",
+          "type": "文化行事",
+          "location": "県立桜研究所",
+          "description": "桜の保護活動表彰式"
+        }
+      ]
+    },
+    "may": {
+      "month_number": 5,
+      "events": [
+        {
+          "date": "5月1日",
+          "name": "八十八夜新茶まつり",
+          "type": "伝統行事",
+          "location": "北桜市茶園",
+          "description": "新茶の初摘みと試飲会",
+          "visitors": 23456
+        },
+        {
+          "date": "5月3日-5日",
+          "name": "ゴールデンウィーク桜フェスタ",
+          "type": "観光イベント",
+          "location": "県内観光地",
+          "description": "遅咲き桜と新緑のイベント",
+          "visitors": 567890
+        },
+        {
+          "date": "5月5日",
+          "name": "こどもの日特別イベント",
+          "type": "現代イベント",
+          "location": "各市公園・施設",
+          "description": "子供向け体験イベント",
+          "programs": ["桜餅作り", "鯉のぼり製作", "武者行列"]
+        },
+        {
+          "date": "5月第2日曜日",
+          "name": "母の日桜コンサート",
+          "type": "文化行事",
+          "location": "各市文化施設",
+          "description": "母の日記念の音楽会",
+          "venues": 6
+        },
+        {
+          "date": "5月15日",
+          "name": "葵祭り",
+          "type": "伝統行事",
+          "location": "西桜市",
+          "description": "平安時代の装束で練り歩く祭り",
+          "participants": 200
+        },
+        {
+          "date": "5月20日",
+          "name": "田植え祭",
+          "type": "伝統行事",
+          "location": "北桜市",
+          "description": "豊作祈願の伝統的田植え行事",
+          "features": ["早乙女の舞", "田植え歌"]
+        },
+        {
+          "date": "5月最終土日",
+          "name": "新緑マラソン",
+          "type": "スポーツ大会",
+          "location": "南桜市",
+          "description": "新緑の中を走るマラソン大会",
+          "participants": 8000
+        }
+      ]
+    },
+    "june": {
+      "month_number": 6,
+      "events": [
+        {
+          "date": "6月1日",
+          "name": "桜川鮎漁解禁",
+          "type": "伝統行事",
+          "location": "桜川流域",
+          "description": "鮎漁の解禁と安全祈願祭",
+          "anglers": 3456
+        },
+        {
+          "date": "6月10日-30日",
+          "name": "紫陽花まつり",
+          "type": "観光イベント",
+          "location": "東桜紫陽花園",
+          "description": "5000株の紫陽花が咲く名所",
+          "visitors": 123456,
+          "varieties": 50
+        },
+        {
+          "date": "6月15日",
+          "name": "ホタル観賞会開始",
+          "type": "観光イベント",
+          "location": "北桜市里山地区",
+          "description": "ゲンジボタルの観賞会",
+          "period": "6月15日-7月15日",
+          "guided_tours": true
+        },
+        {
+          "date": "6月第3日曜日",
+          "name": "父の日ファミリーフェスタ",
+          "type": "現代イベント",
+          "location": "各市公園",
+          "description": "家族向けレクリエーション"
+        },
+        {
+          "date": "6月20日",
+          "name": "夏至祭",
+          "type": "伝統行事",
+          "location": "桜峰山頂",
+          "description": "一年で最も長い日を祝う",
+          "sunrise_ceremony": "4:30"
+        },
+        {
+          "date": "6月30日",
+          "name": "夏越の大祓",
+          "type": "伝統行事",
+          "location": "県内主要神社",
+          "description": "茅の輪くぐりで厄払い",
+          "shrines": 89
+        }
+      ]
+    },
+    "july": {
+      "month_number": 7,
+      "events": [
+        {
+          "date": "7月1日",
+          "name": "海開き・山開き",
+          "type": "観光イベント",
+          "location": "桜川市海岸、南桜市桜峰",
+          "description": "夏季シーズンの安全祈願",
+          "beaches": 5,
+          "mountains": 3
+        },
+        {
+          "date": "7月7日",
+          "name": "桜県七夕まつり",
+          "type": "伝統行事",
+          "location": "各市商店街",
+          "description": "大規模な七夕飾りと願い事",
+          "decorations": 10000,
+          "visitors": 456789
+        },
+        {
+          "date": "7月第2土曜日",
+          "name": "桜川みなと祭り",
+          "type": "地域祭り",
+          "location": "桜川港",
+          "description": "海の恵みに感謝する祭り",
+          "features": ["漁船パレード", "海上花火", "魚市場開放"]
+        },
+        {
+          "date": "7月15日-17日",
+          "name": "桜花夏祭り",
+          "type": "地域祭り",
+          "location": "桜花市中心部",
+          "description": "県内最大の夏祭り",
+          "visitors": 567890,
+          "features": ["神輿渡御", "盆踊り大会", "屋台200店"]
+        },
+        {
+          "date": "7月20日",
+          "name": "土用の丑の日イベント",
+          "type": "現代イベント",
+          "location": "県内飲食店",
+          "description": "鰻料理の特別提供",
+          "participating_restaurants": 234
+        },
+        {
+          "date": "7月最終土曜日",
+          "name": "桜花大花火大会",
+          "type": "観光イベント",
+          "location": "桜花市河川敷",
+          "description": "2万発の花火大会",
+          "visitors": 234567,
+          "duration": "90分"
+        }
+      ]
+    },
+    "august": {
+      "month_number": 8,
+      "events": [
+        {
+          "date": "8月1日-3日",
+          "name": "東桜テクノ祭り",
+          "type": "現代イベント",
+          "location": "東桜市",
+          "description": "最新技術とエンターテインメントの融合",
+          "features": ["ドローンショー", "VR体験", "ロボットバトル"],
+          "visitors": 123456
+        },
+        {
+          "date": "8月6日",
+          "name": "桜川花火大会",
+          "type": "観光イベント",
+          "location": "桜川市海岸",
+          "description": "海上花火1万5千発",
+          "visitors": 189000
+        },
+        {
+          "date": "8月11日",
+          "name": "山の日記念登山",
+          "type": "スポーツ大会",
+          "location": "桜峰",
+          "description": "ガイド付き登山イベント",
+          "participants": 2345
+        },
+        {
+          "date": "8月13日-16日",
+          "name": "盆踊り大会",
+          "type": "伝統行事",
+          "location": "県内各地",
+          "description": "各地域の特色ある盆踊り",
+          "venues": 156,
+          "total_participants": 234567
+        },
+        {
+          "date": "8月15日",
+          "name": "精霊流し",
+          "type": "伝統行事",
+          "location": "主要河川",
+          "description": "先祖供養の灯籠流し",
+          "lanterns": 10000
+        },
+        {
+          "date": "8月20日",
+          "name": "高校野球県大会決勝",
+          "type": "スポーツ大会",
+          "location": "桜花球場",
+          "description": "甲子園予選決勝戦",
+          "spectators": 25000
+        },
+        {
+          "date": "8月最終土日",
+          "name": "24時間テレビチャリティーイベント",
+          "type": "現代イベント",
+          "location": "桜花市",
+          "description": "募金活動とチャリティーイベント"
+        }
+      ]
+    },
+    "september": {
+      "month_number": 9,
+      "events": [
+        {
+          "date": "9月1日",
+          "name": "防災の日訓練",
+          "type": "現代イベント",
+          "location": "県内全域",
+          "description": "大規模防災訓練",
+          "participants": 100000,
+          "evacuation_sites": 234
+        },
+        {
+          "date": "9月9日",
+          "name": "重陽の節句・菊花展",
+          "type": "伝統行事",
+          "location": "西桜市菊花園",
+          "description": "菊の展示と長寿祈願",
+          "exhibits": 5000
+        },
+        {
+          "date": "9月中旬",
+          "name": "秋分の日・彼岸花まつり",
+          "type": "観光イベント",
+          "location": "南桜市",
+          "description": "彼岸花の群生地公開",
+          "visitors": 67890
+        },
+        {
+          "date": "9月15日",
+          "name": "十五夜観月会",
+          "type": "伝統行事",
+          "location": "各地名所",
+          "description": "中秋の名月を愛でる会",
+          "venues": 23,
+          "features": ["月見団子", "琴演奏", "お茶会"]
+        },
+        {
+          "date": "9月第3月曜日",
+          "name": "敬老の日記念式典",
+          "type": "現代イベント",
+          "location": "各市",
+          "description": "長寿者表彰と記念行事",
+          "centenarians": 234
+        },
+        {
+          "date": "9月23日",
+          "name": "秋季大祭",
+          "type": "伝統行事",
+          "location": "桜八幡宮",
+          "description": "五穀豊穣を感謝する祭り",
+          "visitors": 89000
+        },
+        {
+          "date": "9月最終日曜日",
+          "name": "桜県スポーツフェスタ",
+          "type": "スポーツ大会",
+          "location": "県総合運動公園",
+          "description": "県民スポーツ大会",
+          "sports": 30,
+          "participants": 12345
+        }
+      ]
+    },
+    "october": {
+      "month_number": 10,
+      "events": [
+        {
+          "date": "10月1日-31日",
+          "name": "桜県紅葉まつり",
+          "type": "観光イベント",
+          "location": "県内山間部",
+          "description": "紅葉の名所巡りイベント",
+          "spots": 45,
+          "visitors": 890123,
+          "special_trains": true
+        },
+        {
+          "date": "10月第1土日",
+          "name": "桜県大収穫祭",
+          "type": "地域祭り",
+          "location": "北桜市",
+          "description": "農産物の収穫を祝う",
+          "features": ["農産物即売", "餅つき大会", "新米試食"],
+          "vendors": 345
+        },
+        {
+          "date": "10月10日",
+          "name": "体育の日記念大会",
+          "type": "スポーツ大会",
+          "location": "各市",
+          "description": "市民運動会",
+          "participants": 45678
+        },
+        {
+          "date": "10月15日-16日",
+          "name": "西桜時代まつり",
+          "type": "地域祭り",
+          "location": "西桜市",
+          "description": "江戸時代の街並みを再現",
+          "features": ["武者行列", "町人文化体験", "時代劇公演"],
+          "visitors": 123456
+        },
+        {
+          "date": "10月22日",
+          "name": "桜県文化祭開幕",
+          "type": "文化行事",
+          "location": "県内文化施設",
+          "description": "1ヶ月にわたる文化イベント",
+          "events": 234,
+          "period": "10月22日-11月23日"
+        },
+        {
+          "date": "10月31日",
+          "name": "ハロウィンフェスティバル",
+          "type": "現代イベント",
+          "location": "桜花市・東桜市",
+          "description": "仮装パレードとイベント",
+          "participants": 56789
+        }
+      ]
+    },
+    "november": {
+      "month_number": 11,
+      "events": [
+        {
+          "date": "11月3日",
+          "name": "文化の日記念式典",
+          "type": "文化行事",
+          "location": "県文化会館",
+          "description": "文化功労者表彰",
+          "awardees": 45
+        },
+        {
+          "date": "11月7日",
+          "name": "立冬の温泉まつり",
+          "type": "観光イベント",
+          "location": "南桜温泉郷",
+          "description": "温泉の恵みに感謝",
+          "participating_hotels": 89,
+          "special_rates": true
+        },
+        {
+          "date": "11月15日",
+          "name": "七五三祝い",
+          "type": "伝統行事",
+          "location": "県内神社",
+          "description": "子供の成長を祝う",
+          "participants": 23456,
+          "photo_spots": true
+        },
+        {
+          "date": "11月中旬",
+          "name": "新そばまつり",
+          "type": "観光イベント",
+          "location": "北桜市",
+          "description": "新そばの食べ比べ",
+          "soba_shops": 67,
+          "visitors": 34567
+        },
+        {
+          "date": "11月23日",
+          "name": "勤労感謝の日・産業祭",
+          "type": "現代イベント",
+          "location": "各市",
+          "description": "地場産業の展示即売",
+          "exhibitors": 456
+        },
+        {
+          "date": "11月最終土曜日",
+          "name": "イルミネーション点灯式",
+          "type": "観光イベント",
+          "location": "県内主要駅前",
+          "description": "冬のイルミネーション開始",
+          "lights": 1234567,
+          "period": "11月末-2月末"
+        }
+      ]
+    },
+    "december": {
+      "month_number": 12,
+      "events": [
+        {
+          "date": "12月1日",
+          "name": "歳末助け合い運動開始",
+          "type": "現代イベント",
+          "location": "県内全域",
+          "description": "チャリティー募金活動",
+          "target_amount": "1億円"
+        },
+        {
+          "date": "12月第1日曜日",
+          "name": "桜マラソン",
+          "type": "スポーツ大会",
+          "location": "桜花市",
+          "description": "年末恒例のフルマラソン",
+          "participants": 20000,
+          "categories": ["フル", "ハーフ", "10km", "ファミリー"]
+        },
+        {
+          "date": "12月15日",
+          "name": "年の市",
+          "type": "伝統行事",
+          "location": "各市中心部",
+          "description": "正月用品の大市",
+          "vendors": 567,
+          "items": ["門松", "しめ縄", "おせち材料"]
+        },
+        {
+          "date": "12月22日",
+          "name": "冬至ゆず湯まつり",
+          "type": "伝統行事",
+          "location": "県内温泉施設",
+          "description": "ゆず湯の無料開放",
+          "facilities": 123
+        },
+        {
+          "date": "12月23日-25日",
+          "name": "桜クリスマスマーケット",
+          "type": "現代イベント",
+          "location": "桜花市・東桜市",
+          "description": "ヨーロッパ風クリスマス市",
+          "stalls": 234,
+          "visitors": 345678
+        },
+        {
+          "date": "12月28日",
+          "name": "仕事納め・納め市",
+          "type": "伝統行事",
+          "location": "各地商店街",
+          "description": "年末最後の市"
+        },
+        {
+          "date": "12月31日",
+          "name": "除夜の鐘・年越しイベント",
+          "type": "伝統行事",
+          "location": "県内寺院",
+          "description": "108つの鐘と年越しそば",
+          "temples": 89,
+          "countdown_venues": 23
+        }
+      ]
+    }
+  },
+  "special_periodic_events": {
+    "weekly": [
+      {
+        "name": "朝市",
+        "frequency": "毎週土日",
+        "locations": ["桜花市", "桜川市", "北桜市"],
+        "description": "地元農産物・海産物の直売"
+      },
+      {
+        "name": "骨董市",
+        "frequency": "毎月第1・第3日曜",
+        "location": "西桜市",
+        "description": "アンティーク・古道具市"
+      }
+    ],
+    "monthly": [
+      {
+        "name": "縁日",
+        "frequency": "毎月8日、18日、28日",
+        "locations": "主要寺社",
+        "description": "露店と参拝"
+      },
+      {
+        "name": "桜の日イベント",
+        "frequency": "毎月27日",
+        "description": "桜にちなんだ各種イベント"
+      }
+    ],
+    "seasonal": [
+      {
+        "name": "桜前線ウォッチング",
+        "season": "春",
+        "description": "開花状況の観測ツアー"
+      },
+      {
+        "name": "ビアガーデン",
+        "season": "夏",
+        "period": "6月-9月",
+        "locations": "各市ホテル・商業施設屋上"
+      },
+      {
+        "name": "もみじ狩りツアー",
+        "season": "秋",
+        "description": "紅葉名所巡りバスツアー"
+      },
+      {
+        "name": "雪見温泉",
+        "season": "冬",
+        "location": "南桜温泉郷",
+        "description": "雪景色を楽しむ露天風呂"
+      }
+    ]
+  },
+  "event_statistics": {
+    "most_attended": "桜県大桜まつり（234万人）",
+    "longest_history": "桜花祭（平安時代〜）",
+    "most_venues": "盆踊り大会（156会場）",
+    "economic_impact": "年間観光消費額 約456億円",
+    "volunteer_participation": "年間延べ12万人",
+    "media_coverage": "全国放送 年間45回"
+  }
+}

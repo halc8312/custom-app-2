@@ -1,0 +1,248 @@
+.main {
+  padding: 2rem 0 4rem;
+  min-height: calc(100vh - 200px);
+}
+
+.pageTitle {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.categoryFilter {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.filterButton {
+  background-color: white;
+  border: 2px solid var(--border-color);
+  color: var(--text-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.filterButton:hover,
+.filterButton:focus {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.newsList {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.newsItem {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.newsItem:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.newsItem.important {
+  border-color: var(--primary-color);
+  border-width: 2px;
+}
+
+.newsHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.newsDate {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.newsCategory {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.importantBadge {
+  background-color: #ff4444;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.newsLink {
+  text-decoration: none;
+  color: var(--text-color);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.newsLink:hover {
+  text-decoration: none;
+}
+
+.newsTitle {
+  font-size: 1.25rem;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.newsLink:hover .newsTitle {
+  color: var(--primary-color);
+}
+
+.newsExcerpt {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.readMore {
+  color: var(--primary-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.readMore:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.paginationButton {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.paginationButton:hover:not(:disabled) {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.paginationButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pageNumbers {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.pageNumber {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.pageNumber:hover,
+.pageNumber.active {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.archiveSection {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--light-gray);
+  border-radius: 8px;
+}
+
+.archiveSection h2 {
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.archiveLinks {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.archiveLinks a {
+  color: var(--primary-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.archiveLinks a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  .categoryFilter {
+    gap: 0.5rem;
+  }
+
+  .filterButton {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .newsItem {
+    padding: 1.5rem;
+  }
+
+  .newsHeader {
+    gap: 0.5rem;
+  }
+
+  .newsTitle {
+    font-size: 1.1rem;
+  }
+
+  .pageNumbers {
+    gap: 0.25rem;
+  }
+
+  .pageNumber {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}

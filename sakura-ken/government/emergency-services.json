@@ -1,0 +1,651 @@
+{
+  "meta": {
+    "title": "桜県緊急サービス施設配置詳細",
+    "created": "2025-07-11",
+    "version": "1.0",
+    "description": "桜県内の消防署、警察署、緊急通報センター等の詳細配置情報"
+  },
+  "summary": {
+    "fire_stations": {
+      "total": 45,
+      "headquarters": 1,
+      "main_stations": 6,
+      "branch_stations": 15,
+      "substations": 23
+    },
+    "police_stations": {
+      "total": 44,
+      "prefectural_hq": 1,
+      "district_stations": 6,
+      "substations": 25,
+      "koban": 12
+    },
+    "emergency_personnel": {
+      "firefighters": 3456,
+      "police_officers": 5678,
+      "emergency_dispatchers": 234
+    },
+    "emergency_vehicles": {
+      "fire_engines": 234,
+      "ambulances": 156,
+      "police_cars": 345,
+      "helicopters": 5
+    }
+  },
+  "fire_department": {
+    "headquarters": {
+      "name": "桜県消防本部",
+      "location": {
+        "address": "桜花市中央区消防通1-1-1",
+        "coordinates": {"lat": 35.6762, "lng": 139.6503}
+      },
+      "established": "1948年",
+      "personnel": 456,
+      "jurisdiction": "県全域統括",
+      "facilities": {
+        "command_center": true,
+        "training_academy": true,
+        "disaster_response_center": true,
+        "heliport": true
+      },
+      "special_units": [
+        "特別救助隊（スーパーレスキュー）",
+        "化学機動中隊",
+        "航空消防隊",
+        "水難救助隊"
+      ]
+    },
+    "fire_stations": [
+      {
+        "id": "FS001",
+        "name": "桜花中央消防署",
+        "type": "本署",
+        "city": "桜花市",
+        "address": "桜花市中央区大手町2-3-4",
+        "established": "1950年",
+        "personnel": 234,
+        "vehicles": {
+          "pumpers": 8,
+          "ladders": 3,
+          "rescues": 2,
+          "ambulances": 6,
+          "command": 1
+        },
+        "coverage_area": ["中央区", "駅前地区", "ビジネス区"],
+        "special_equipment": ["高層ビル対応はしご車", "特殊災害対応車"],
+        "annual_responses": 5678,
+        "response_time_avg": "5.2分"
+      },
+      {
+        "id": "FS002",
+        "name": "桜花東消防署",
+        "type": "本署",
+        "city": "桜花市",
+        "address": "桜花市東区東町1-2-3",
+        "personnel": 156,
+        "vehicles": {
+          "pumpers": 5,
+          "ladders": 2,
+          "ambulances": 4
+        },
+        "coverage_area": ["東区", "住宅区東部"],
+        "annual_responses": 3456
+      },
+      {
+        "id": "FS003",
+        "name": "桜花西消防署",
+        "type": "本署",
+        "city": "桜花市",
+        "address": "桜花市西区西町3-4-5",
+        "personnel": 145,
+        "vehicles": {
+          "pumpers": 5,
+          "ladders": 2,
+          "ambulances": 4
+        },
+        "coverage_area": ["西区", "文教区"],
+        "annual_responses": 3234
+      },
+      {
+        "id": "FS004",
+        "name": "桜花南消防署",
+        "type": "分署",
+        "city": "桜花市",
+        "address": "桜花市南区南町5-6-7",
+        "personnel": 89,
+        "vehicles": {
+          "pumpers": 3,
+          "ladders": 1,
+          "ambulances": 2
+        },
+        "coverage_area": ["南区", "新市街地区"],
+        "annual_responses": 2345
+      },
+      {
+        "id": "FS005",
+        "name": "桜花北消防署",
+        "type": "分署",
+        "city": "桜花市",
+        "address": "桜花市北区北町7-8-9",
+        "personnel": 78,
+        "vehicles": {
+          "pumpers": 3,
+          "ambulances": 2
+        },
+        "coverage_area": ["北区", "桜台区"],
+        "annual_responses": 2123
+      },
+      {
+        "id": "FS006",
+        "name": "花見消防署",
+        "type": "分署",
+        "city": "桜花市",
+        "address": "桜花市花見区花見1-1-1",
+        "personnel": 67,
+        "special_focus": "観光地区対応",
+        "multilingual_support": true
+      },
+      {
+        "id": "FS007",
+        "name": "桜川消防署",
+        "type": "本署",
+        "city": "桜川市",
+        "address": "桜川市中央地区本町1-1-1",
+        "established": "1952年",
+        "personnel": 189,
+        "vehicles": {
+          "pumpers": 6,
+          "ladders": 2,
+          "ambulances": 5,
+          "boats": 3
+        },
+        "special_units": ["水難救助隊", "港湾火災対応隊"],
+        "coverage_area": ["中央地区", "港地区", "市場地区"],
+        "annual_responses": 4567
+      },
+      {
+        "id": "FS008",
+        "name": "桜川南消防署",
+        "type": "分署",
+        "city": "桜川市",
+        "address": "桜川市南部地区海岸通2-3-4",
+        "personnel": 98,
+        "special_equipment": ["海岸救助艇", "潜水救助装備"],
+        "coverage_area": ["南部地区", "海岸地区"]
+      },
+      {
+        "id": "FS009",
+        "name": "桜川北消防署",
+        "type": "分署",
+        "city": "桜川市",
+        "address": "桜川市北部地区工業団地1-2-3",
+        "personnel": 87,
+        "special_focus": "工業地帯・化学火災対応",
+        "hazmat_unit": true
+      },
+      {
+        "id": "FS010",
+        "name": "東桜消防署",
+        "type": "本署",
+        "city": "東桜市",
+        "address": "東桜市中央地区テクノ1-1-1",
+        "established": "1958年",
+        "personnel": 167,
+        "vehicles": {
+          "pumpers": 5,
+          "ladders": 2,
+          "ambulances": 4,
+          "hazmat": 1
+        },
+        "special_equipment": ["高度救助資機材", "NBC対応装備"],
+        "research_lab_response": true,
+        "annual_responses": 3890
+      },
+      {
+        "id": "FS011",
+        "name": "東桜テクノパーク消防署",
+        "type": "分署",
+        "city": "東桜市",
+        "address": "東桜市研究開発地区1-2-3",
+        "personnel": 78,
+        "special_focus": "研究施設・特殊火災対応",
+        "chemical_response_team": true
+      },
+      {
+        "id": "FS012",
+        "name": "西桜消防署",
+        "type": "本署",
+        "city": "西桜市",
+        "address": "西桜市中心地区伝統1-1-1",
+        "established": "1955年",
+        "personnel": 123,
+        "vehicles": {
+          "pumpers": 4,
+          "ladders": 1,
+          "ambulances": 3
+        },
+        "heritage_building_expertise": true,
+        "wooden_structure_specialists": 12,
+        "annual_responses": 2345
+      },
+      {
+        "id": "FS013",
+        "name": "西桜文化財消防署",
+        "type": "分署",
+        "city": "西桜市",
+        "address": "西桜市寺町地区1-2-3",
+        "personnel": 56,
+        "special_focus": "文化財防火・寺社仏閣保護",
+        "heritage_protection_unit": true
+      },
+      {
+        "id": "FS014",
+        "name": "南桜消防署",
+        "type": "本署",
+        "city": "南桜市",
+        "address": "南桜市温泉地区湯本1-1-1",
+        "established": "1960年",
+        "personnel": 134,
+        "vehicles": {
+          "pumpers": 4,
+          "ladders": 1,
+          "ambulances": 4,
+          "mountain_rescue": 2
+        },
+        "special_units": ["山岳救助隊", "温泉地特別対応隊"],
+        "annual_responses": 2789
+      },
+      {
+        "id": "FS015",
+        "name": "南桜山岳救助隊基地",
+        "type": "特殊部隊基地",
+        "city": "南桜市",
+        "address": "南桜市山麓地区登山口1-2-3",
+        "personnel": 45,
+        "equipment": ["ヘリコプター", "山岳救助車", "高度救助資機材"],
+        "annual_mountain_rescues": 234
+      },
+      {
+        "id": "FS016",
+        "name": "北桜消防署",
+        "type": "本署",
+        "city": "北桜市",
+        "address": "北桜市中央地区農業1-1-1",
+        "established": "1965年",
+        "personnel": 98,
+        "vehicles": {
+          "pumpers": 3,
+          "ambulances": 3,
+          "rural_response": 2
+        },
+        "coverage_area_km2": 456,
+        "rural_fire_response": true,
+        "annual_responses": 1567
+      },
+      {
+        "id": "FS017-FS045",
+        "name": "出張所・分遣所",
+        "type": "出張所",
+        "total": 29,
+        "distribution": {
+          "桜花市": 10,
+          "桜川市": 7,
+          "東桜市": 5,
+          "西桜市": 3,
+          "南桜市": 2,
+          "北桜市": 2
+        },
+        "typical_personnel": "10-20名",
+        "typical_equipment": "ポンプ車1-2台、救急車1台"
+      }
+    ],
+    "air_rescue": {
+      "name": "桜県航空消防隊",
+      "base": "桜花市消防航空基地",
+      "helicopters": [
+        {
+          "callsign": "さくら1号",
+          "model": "AS365N3+",
+          "capacity": 13,
+          "equipment": ["救助ホイスト", "消火バケット", "医療装備"]
+        },
+        {
+          "callsign": "さくら2号",
+          "model": "BK117C-2",
+          "capacity": 10,
+          "equipment": ["救助ホイスト", "担架搬送装置"]
+        }
+      ],
+      "annual_missions": 456,
+      "coverage": "県全域30分以内"
+    }
+  },
+  "police_department": {
+    "headquarters": {
+      "name": "桜県警察本部",
+      "location": {
+        "address": "桜花市中央区警察通1-1-1",
+        "coordinates": {"lat": 35.6762, "lng": 139.6503}
+      },
+      "established": "1948年",
+      "personnel": 678,
+      "divisions": [
+        "刑事部",
+        "生活安全部",
+        "交通部",
+        "警備部",
+        "総務部"
+      ],
+      "special_units": [
+        "機動隊",
+        "特殊急襲部隊（SAT）",
+        "科学捜査研究所",
+        "サイバー犯罪対策課"
+      ]
+    },
+    "police_stations": [
+      {
+        "id": "PS001",
+        "name": "桜花中央警察署",
+        "type": "警察署",
+        "city": "桜花市",
+        "address": "桜花市中央区中央1-2-3",
+        "established": "1950年",
+        "personnel": 345,
+        "jurisdiction": ["中央区", "駅前地区"],
+        "divisions": ["刑事課", "生活安全課", "交通課", "警備課"],
+        "koban": 5,
+        "patrol_cars": 23,
+        "annual_cases": 12345,
+        "crime_clearance_rate": "68.5%"
+      },
+      {
+        "id": "PS002",
+        "name": "桜花東警察署",
+        "type": "警察署",
+        "city": "桜花市",
+        "address": "桜花市東区東1-2-3",
+        "personnel": 234,
+        "jurisdiction": ["東区", "ビジネス区"],
+        "koban": 4,
+        "white_collar_crime_unit": true
+      },
+      {
+        "id": "PS003",
+        "name": "桜花西警察署",
+        "type": "警察署",
+        "city": "桜花市",
+        "address": "桜花市西区西1-2-3",
+        "personnel": 223,
+        "jurisdiction": ["西区", "文教区"],
+        "koban": 3,
+        "school_liaison_officers": 12
+      },
+      {
+        "id": "PS004",
+        "name": "花見警察署",
+        "type": "警察署",
+        "city": "桜花市",
+        "address": "桜花市花見区観光1-2-3",
+        "personnel": 189,
+        "jurisdiction": ["花見区", "観光地区"],
+        "tourist_police_unit": true,
+        "multilingual_officers": 23
+      },
+      {
+        "id": "PS005",
+        "name": "桜花南警察署",
+        "type": "警察署",
+        "city": "桜花市",
+        "address": "桜花市南区南1-2-3",
+        "personnel": 156,
+        "jurisdiction": ["南区", "新市街地区"],
+        "koban": 2
+      },
+      {
+        "id": "PS006",
+        "name": "桜花北警察署",
+        "type": "警察署",
+        "city": "桜花市",
+        "address": "桜花市北区北1-2-3",
+        "personnel": 145,
+        "jurisdiction": ["北区", "住宅区"],
+        "koban": 2
+      },
+      {
+        "id": "PS007",
+        "name": "桜川警察署",
+        "type": "警察署",
+        "city": "桜川市",
+        "address": "桜川市中央地区警察1-1-1",
+        "established": "1952年",
+        "personnel": 267,
+        "jurisdiction": ["中央地区", "港地区", "市場地区"],
+        "marine_police_unit": true,
+        "patrol_boats": 3,
+        "port_security_division": true
+      },
+      {
+        "id": "PS008",
+        "name": "桜川南警察署",
+        "type": "警察署",
+        "city": "桜川市",
+        "address": "桜川市南部地区海岸1-2-3",
+        "personnel": 156,
+        "jurisdiction": ["南部地区", "海岸地区"],
+        "beach_patrol_unit": true
+      },
+      {
+        "id": "PS009",
+        "name": "東桜警察署",
+        "type": "警察署",
+        "city": "東桜市",
+        "address": "東桜市中央地区科学1-1-1",
+        "established": "1958年",
+        "personnel": 234,
+        "jurisdiction": ["中央地区", "研究開発地区"],
+        "cyber_crime_specialists": 23,
+        "industrial_espionage_unit": true
+      },
+      {
+        "id": "PS010",
+        "name": "東桜テクノパーク警察署",
+        "type": "警察署",
+        "city": "東桜市",
+        "address": "東桜市テクノパーク1-2-3",
+        "personnel": 123,
+        "high_tech_crime_focus": true
+      },
+      {
+        "id": "PS011",
+        "name": "西桜警察署",
+        "type": "警察署",
+        "city": "西桜市",
+        "address": "西桜市中心地区歴史1-1-1",
+        "established": "1955年",
+        "personnel": 167,
+        "jurisdiction": ["中心地区", "旧市街地区"],
+        "cultural_property_protection": true,
+        "art_crime_unit": true
+      },
+      {
+        "id": "PS012",
+        "name": "南桜警察署",
+        "type": "警察署",
+        "city": "南桜市",
+        "address": "南桜市温泉地区観光1-1-1",
+        "established": "1960年",
+        "personnel": 189,
+        "jurisdiction": ["温泉地区", "山麓地区"],
+        "mountain_rescue_coordination": true,
+        "tourist_safety_division": true
+      },
+      {
+        "id": "PS013",
+        "name": "北桜警察署",
+        "type": "警察署",
+        "city": "北桜市",
+        "address": "北桜市中央地区平和1-1-1",
+        "established": "1965年",
+        "personnel": 134,
+        "jurisdiction": ["全市域"],
+        "rural_patrol_unit": true,
+        "agricultural_crime_prevention": true
+      },
+      {
+        "id": "PS014-PS044",
+        "name": "交番・駐在所",
+        "type": "交番",
+        "total": 31,
+        "distribution": {
+          "桜花市": 12,
+          "桜川市": 8,
+          "東桜市": 5,
+          "西桜市": 3,
+          "南桜市": 2,
+          "北桜市": 1
+        },
+        "typical_personnel": "3-8名",
+        "24hour_operation": "主要交番のみ"
+      }
+    ],
+    "special_facilities": [
+      {
+        "name": "桜県警察学校",
+        "location": "桜花市郊外",
+        "capacity": 500,
+        "annual_graduates": 234
+      },
+      {
+        "name": "機動隊訓練センター",
+        "location": "東桜市",
+        "special_training": ["対テロ訓練", "災害救助訓練"]
+      },
+      {
+        "name": "科学捜査研究所",
+        "location": "桜花市",
+        "divisions": ["DNA鑑定", "指紋鑑定", "薬物分析", "デジタル解析"]
+      },
+      {
+        "name": "交通管制センター",
+        "location": "桜花市",
+        "traffic_signals_managed": 1234,
+        "cameras": 567
+      }
+    ]
+  },
+  "emergency_dispatch": {
+    "center": {
+      "name": "桜県消防指令センター",
+      "location": "桜花市中央区",
+      "established": "2010年",
+      "coverage": "県全域",
+      "operators": 234,
+      "languages_supported": ["日本語", "英語", "中国語", "韓国語"],
+      "annual_calls": 234567,
+      "average_response_time": "8.5秒"
+    },
+    "emergency_numbers": {
+      "fire_ambulance": "119",
+      "police": "110",
+      "coast_guard": "118",
+      "disaster_hotline": "#7119",
+      "tourist_emergency": "050-3816-2787"
+    },
+    "technology": {
+      "dispatch_system": "高度指令システム",
+      "location_identification": "GPS・携帯電話位置情報",
+      "multi_agency_coordination": true,
+      "video_call_capability": true,
+      "automatic_translation": true
+    }
+  },
+  "disaster_response": {
+    "emergency_management_agency": {
+      "name": "桜県危機管理局",
+      "director": "山田太郎",
+      "personnel": 123,
+      "annual_budget": "45億円"
+    },
+    "disaster_prevention_bases": [
+      {
+        "name": "県央防災基地",
+        "location": "桜花市",
+        "stockpile_capacity": "10万人3日分",
+        "heliport": true
+      },
+      {
+        "name": "東部防災基地",
+        "location": "東桜市",
+        "stockpile_capacity": "5万人3日分"
+      },
+      {
+        "name": "西部防災基地",
+        "location": "西桜市",
+        "stockpile_capacity": "3万人3日分"
+      }
+    ],
+    "evacuation_coordination": {
+      "primary_shelters": 234,
+      "secondary_shelters": 456,
+      "total_capacity": 567890,
+      "special_needs_shelters": 45
+    },
+    "mutual_aid_agreements": [
+      "関東地方消防相互応援協定",
+      "全国都道府県災害時応援協定",
+      "米軍との災害時協力協定"
+    ]
+  },
+  "statistics": {
+    "emergency_response_times": {
+      "fire": {
+        "average": "6.8分",
+        "urban": "5.2分",
+        "rural": "12.3分"
+      },
+      "ambulance": {
+        "average": "8.2分",
+        "urban": "6.5分",
+        "rural": "14.5分"
+      },
+      "police": {
+        "average": "5.5分",
+        "urban": "4.2分",
+        "rural": "9.8分"
+      }
+    },
+    "annual_statistics": {
+      "fire_calls": 12345,
+      "rescue_calls": 23456,
+      "ambulance_calls": 45678,
+      "police_incidents": 56789,
+      "traffic_accidents": 3456
+    },
+    "satisfaction_rate": "92.3%",
+    "emergency_preparedness_score": "87/100"
+  },
+  "training_and_education": {
+    "fire_academy": {
+      "name": "桜県消防学校",
+      "annual_trainees": 456,
+      "courses": ["初任教育", "幹部教育", "専門教育", "特殊災害対応"]
+    },
+    "community_programs": {
+      "fire_prevention_education": "年間500回",
+      "cpr_training": "年間10,000人受講",
+      "disaster_drills": "年間100回",
+      "school_visits": "全小学校年1回"
+    }
+  },
+  "future_plans": {
+    "next_5_years": [
+      "AI活用した通報受理システムの導入",
+      "ドローン救助隊の創設",
+      "全救急車へのeCPR導入",
+      "次世代消防指令システムの構築",
+      "電気自動車火災対応体制の強化"
+    ],
+    "budget_allocation": "総額234億円（2025-2030）"
+  }
+}

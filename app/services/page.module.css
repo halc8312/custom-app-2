@@ -1,0 +1,216 @@
+.main {
+  padding: 2rem 0 4rem;
+  min-height: calc(100vh - 200px);
+}
+
+.pageTitle {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.8;
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.serviceCard {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: block;
+}
+
+.serviceCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  border-color: var(--primary-color);
+}
+
+.serviceIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.serviceCard h3 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.serviceCard p {
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.onlineServices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.onlineCard {
+  background-color: var(--light-gray);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.onlineCard h3 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.onlineCard p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.onlineButton {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.onlineButton:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.consultGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.consultCard {
+  background-color: white;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.consultCard h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.consultCard p {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.consultInfo {
+  background-color: var(--light-gray);
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.officeInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.officeCard {
+  background-color: var(--light-gray);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.officeCard h3 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.officeCard p {
+  color: #666;
+  line-height: 1.8;
+}
+
+.branchOffices {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.branchOffices h3 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.branchOffices ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.branchOffices li {
+  padding: 0.5rem 0;
+  color: #666;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.branchOffices li:last-child {
+  border-bottom: none;
+}
+
+.branchOffices li::before {
+  content: '📍 ';
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  .serviceGrid,
+  .onlineServices,
+  .consultGrid,
+  .officeInfo {
+    grid-template-columns: 1fr;
+  }
+
+  .intro {
+    font-size: 1rem;
+  }
+}

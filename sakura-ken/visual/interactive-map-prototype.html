@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>桜県インタラクティブマップ - プロトタイプ</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        #header {
+            background-color: #FFB6C1;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        #header h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        #container {
+            display: flex;
+            height: calc(100vh - 120px);
+        }
+        
+        #sidebar {
+            width: 300px;
+            background-color: white;
+            padding: 1rem;
+            overflow-y: auto;
+            box-shadow: 2px 0 4px rgba(0,0,0,0.1);
+        }
+        
+        #map {
+            flex: 1;
+            height: 100%;
+        }
+        
+        #info-panel {
+            width: 350px;
+            background-color: white;
+            padding: 1rem;
+            overflow-y: auto;
+            box-shadow: -2px 0 4px rgba(0,0,0,0.1);
+            display: none;
+        }
+        
+        #info-panel.active {
+            display: block;
+        }
+        
+        .search-container {
+            margin-bottom: 1.5rem;
+        }
+        
+        #search-input {
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 0.875rem;
+            border: 2px solid #FFB6C1;
+            border-radius: 4px;
+            outline: none;
+        }
+        
+        #search-input:focus {
+            border-color: #C71585;
+        }
+        
+        .search-results {
+            margin-top: 0.5rem;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .search-result-item {
+            padding: 0.75rem;
+            cursor: pointer;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .search-result-item:hover {
+            background-color: #FFB6C1;
+            color: white;
+        }
+        
+        .layer-control {
+            margin-bottom: 1.5rem;
+        }
+        
+        .layer-control h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .layer-checkbox {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .layer-checkbox input {
+            margin-right: 0.5rem;
+        }
+        
+        .city-info {
+            background-color: #f9f9f9;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        
+        .city-info h2 {
+            color: #C71585;
+            margin-bottom: 0.5rem;
+        }
+        
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            color: #666;
+        }
+        
+        .info-value {
+            color: #333;
+        }
+        
+        .chart-container {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+        }
+        
+        #footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.875rem;
+        }
+        
+        .leaflet-popup-content {
+            font-size: 0.875rem;
+        }
+        
+        .legend {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .legend h4 {
+            margin-bottom: 5px;
+            font-size: 0.875rem;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        .close-button {
+            float: right;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: #999;
+        }
+        
+        .close-button:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>🌸 桜県インタラクティブマップ</h1>
+        <p>各市をクリックして詳細情報を表示</p>
+    </div>
+    
+    <div id="container">
+        <div id="sidebar">
+            <div class="search-container">
+                <h3>市を検索</h3>
+                <input type="text" id="search-input" placeholder="市名を入力...">
+                <div class="search-results" id="search-results"></div>
+            </div>
+            
+            <div class="layer-control">
+                <h3>表示レイヤー</h3>
+                <div class="layer-checkbox">
+                    <input type="checkbox" id="cities-layer" checked>
+                    <label for="cities-layer">市境界</label>
+                </div>
+                <div class="layer-checkbox">
+                    <input type="checkbox" id="labels-layer" checked>
+                    <label for="labels-layer">地名ラベル</label>
+                </div>
+                <div class="layer-checkbox">
+                    <input type="checkbox" id="population-layer">
+                    <label for="population-layer">人口密度</label>
+                </div>
+                <div class="layer-checkbox">
+                    <input type="checkbox" id="tourism-layer">
+                    <label for="tourism-layer">観光スポット</label>
+                </div>
+                <div class="layer-checkbox">
+                    <input type="checkbox" id="transport-layer">
+                    <label for="transport-layer">交通インフラ</label>
+                </div>
+            </div>
+            
+            <div class="layer-control">
+                <h3>データ表示</h3>
+                <select id="data-type" style="width: 100%; padding: 0.5rem;">
+                    <option value="none">なし</option>
+                    <option value="population">人口</option>
+                    <option value="density">人口密度</option>
+                    <option value="area">面積</option>
+                    <option value="gdp">経済規模</option>
+                </select>
+            </div>
+            
+            <div class="layer-control">
+                <h3>統計情報</h3>
+                <div class="info-item">
+                    <span class="info-label">総人口</span>
+                    <span class="info-value">285万4,327人</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">総面積</span>
+                    <span class="info-value">2,456.78 km²</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">市の数</span>
+                    <span class="info-value">6市</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="map"></div>
+        
+        <div id="info-panel">
+            <h2>詳細情報 <span class="close-button" onclick="closeInfoPanel()">×</span></h2>
+            <div id="city-details">
+                <p>市をクリックして詳細を表示</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="footer">
+        <p>© 2025 桜県プロジェクト | データ最終更新: 2025年7月11日</p>
+    </div>
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <script>
+        // 地図の初期化
+        const map = L.map('map').setView([35.45, 139.55], 10);
+        let citiesLayer;
+        let labelsLayer;
+        let tourismLayer;
+        let transportLayer;
+        let currentDataType = 'none';
+        
+        // ベースマップ
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+        
+        // 市のデータ（完全版）
+        const cityData = {
+            "桜花市": {
+                population: 890234,
+                density: 1948.3,
+                area: 456.78,
+                type: "県庁所在地",
+                industries: ["金融・保険業", "情報通信業", "商業・サービス業"],
+                mayor: "田中一郎",
+                specialties: ["桜花まんじゅう", "県庁カレー", "金融街ラーメン"],
+                attractions: ["桜花城", "県立美術館", "中央公園"],
+                sister_cities: ["パリ（フランス）", "サンフランシスコ（アメリカ）", "釜山（韓国）"]
+            },
+            "桜川市": {
+                population: 523456,
+                density: 1344.2,
+                area: 389.45,
+                type: "港湾都市",
+                industries: ["港湾物流業", "水産業", "造船業"],
+                mayor: "海野洋子",
+                specialties: ["桜川寿司", "港町焼きそば", "漁師めし"],
+                attractions: ["桜川港", "海洋博物館", "魚市場"],
+                sister_cities: ["ハンブルク（ドイツ）", "釜山（韓国）", "シアトル（アメリカ）"]
+            },
+            "東桜市": {
+                population: 412345,
+                density: 1319.2,
+                area: 312.67,
+                type: "ハイテク工業都市",
+                industries: ["電子機器製造業", "情報通信業", "研究開発"],
+                mayor: "技術太郎",
+                specialties: ["ロボット饅頭", "サイエンスバーガー", "テックそば"],
+                attractions: ["テクノパーク", "科学博物館", "イノベーションセンター"],
+                sister_cities: ["シリコンバレー（アメリカ）", "深圳（中国）", "バンガロール（インド）"]
+            },
+            "西桜市": {
+                population: 198765,
+                density: 847.8,
+                area: 234.56,
+                type: "歴史文化都市",
+                industries: ["伝統工芸", "観光業", "文化産業"],
+                mayor: "文化花子",
+                specialties: ["西桜織", "歴史街道せんべい", "武家屋敷そば"],
+                attractions: ["西桜城跡", "武家屋敷群", "伝統工芸館"],
+                sister_cities: ["京都（日本）", "フィレンツェ（イタリア）", "プラハ（チェコ）"]
+            },
+            "南桜市": {
+                population: 287654,
+                density: 506.5,
+                area: 567.89,
+                type: "温泉観光都市",
+                industries: ["観光業", "旅館・ホテル業", "農業"],
+                mayor: "温泉次郎",
+                specialties: ["温泉まんじゅう", "地獄蒸し料理", "湯の花せんべい"],
+                attractions: ["南桜温泉郷", "地獄谷", "温泉博物館"],
+                sister_cities: ["バース（イギリス）", "カルロヴィ・ヴァリ（チェコ）", "別府（日本）"]
+            },
+            "北桜市": {
+                population: 156789,
+                density: 351.9,
+                area: 445.67,
+                type: "農業都市",
+                industries: ["農業", "食品加工業", "畜産業"],
+                mayor: "農業三郎",
+                specialties: ["北桜米", "高原野菜", "牧場アイスクリーム"],
+                attractions: ["農業体験村", "牧場公園", "収穫祭会場"],
+                sister_cities: ["アイオワ（アメリカ）", "トスカーナ（イタリア）", "ワイカト（ニュージーランド）"]
+            }
+        };
+        
+        // 色の取得関数
+        function getColor(density) {
+            return density > 1500 ? '#800026' :
+                   density > 1000 ? '#BD0026' :
+                   density > 800  ? '#E31A1C' :
+                   density > 600  ? '#FC4E2A' :
+                   density > 400  ? '#FD8D3C' :
+                   density > 200  ? '#FEB24C' :
+                                    '#FFEDA0';
+        }
+        
+        // スタイル関数
+        function style(feature) {
+            const city = cityData[feature.properties.name];
+            return {
+                fillColor: getColor(city ? city.density : 0),
+                weight: 2,
+                opacity: 1,
+                color: 'white',
+                dashArray: '3',
+                fillOpacity: 0.7
+            };
+        }
+        
+        // ハイライト機能
+        function highlightFeature(e) {
+            const layer = e.target;
+            
+            layer.setStyle({
+                weight: 5,
+                color: '#666',
+                dashArray: '',
+                fillOpacity: 0.7
+            });
+            
+            layer.bringToFront();
+        }
+        
+        // リセット機能
+        function resetHighlight(e) {
+            geojsonLayer.resetStyle(e.target);
+        }
+        
+        // クリック時の詳細表示
+        function showCityDetails(cityName) {
+            const city = cityData[cityName];
+            if (!city) return;
+            
+            const infoPanel = document.getElementById('info-panel');
+            infoPanel.classList.add('active');
+            
+            const detailsHtml = `
+                <div class="city-info">
+                    <h2>${cityName}</h2>
+                    <div class="info-item">
+                        <span class="info-label">タイプ</span>
+                        <span class="info-value">${city.type}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">人口</span>
+                        <span class="info-value">${city.population.toLocaleString()}人</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">面積</span>
+                        <span class="info-value">${city.area} km²</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">人口密度</span>
+                        <span class="info-value">${city.density}人/km²</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">市長</span>
+                        <span class="info-value">${city.mayor}</span>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h3>主要産業</h3>
+                    <ul>
+                        ${city.industries.map(ind => `<li>${ind}</li>`).join('')}
+                    </ul>
+                </div>
+                <div class="chart-container">
+                    <h3>特産品</h3>
+                    <ul>
+                        ${city.specialties.map(spec => `<li>${spec}</li>`).join('')}
+                    </ul>
+                </div>
+                <div class="chart-container">
+                    <h3>観光スポット</h3>
+                    <ul>
+                        ${city.attractions.map(attr => `<li>${attr}</li>`).join('')}
+                    </ul>
+                </div>
+                <div class="chart-container">
+                    <h3>姉妹都市</h3>
+                    <ul>
+                        ${city.sister_cities.map(sc => `<li>${sc}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+            
+            document.getElementById('city-details').innerHTML = detailsHtml;
+        }
+        
+        // 各フィーチャーに対する処理
+        function onEachFeature(feature, layer) {
+            // ポップアップ
+            if (feature.properties && feature.properties.name) {
+                const city = cityData[feature.properties.name];
+                if (city) {
+                    layer.bindPopup(`
+                        <strong>${feature.properties.name}</strong><br>
+                        人口: ${city.population.toLocaleString()}人<br>
+                        面積: ${city.area} km²
+                    `);
+                }
+            }
+            
+            // イベントリスナー
+            layer.on({
+                mouseover: highlightFeature,
+                mouseout: resetHighlight,
+                click: function(e) {
+                    showCityDetails(feature.properties.name);
+                }
+            });
+        }
+        
+        // GeoJSONデータの読み込み
+        let sakuraGeoJSON;
+        let geojsonLayer;
+        
+        // サンプルデータとして完全なGeoJSONを使用
+        fetch('/sakura-ken/data/sakura-prefecture.geojson')
+            .then(response => response.json())
+            .then(data => {
+                sakuraGeoJSON = data;
+                // 県全体の境界を除いて市のみを表示
+                const citiesOnly = {
+                    type: "FeatureCollection",
+                    features: data.features.filter(f => f.properties.name !== "桜県")
+                };
+                
+                geojsonLayer = L.geoJSON(citiesOnly, {
+                    style: style,
+                    onEachFeature: onEachFeature
+                }).addTo(map);
+                
+                // 地図の範囲を調整
+                map.fitBounds(geojsonLayer.getBounds());
+                
+                // ラベルレイヤーの作成
+                createLabelsLayer(citiesOnly);
+            })
+            .catch(error => {
+                console.error('GeoJSONの読み込みエラー:', error);
+                // フォールバックとしてインラインデータを使用
+                useInlineGeoJSON();
+            });
+        
+        // 凡例の追加
+        const legend = L.control({position: 'bottomright'});
+        
+        legend.onAdd = function (map) {
+            const div = L.DomUtil.create('div', 'legend');
+            const grades = [0, 200, 400, 600, 800, 1000, 1500];
+            
+            div.innerHTML = '<h4>人口密度（人/km²）</h4>';
+            
+            for (let i = 0; i < grades.length; i++) {
+                div.innerHTML +=
+                    '<div class="legend-item">' +
+                    '<div class="legend-color" style="background:' + getColor(grades[i] + 1) + '"></div>' +
+                    grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] : '+') +
+                    '</div>';
+            }
+            
+            return div;
+        };
+        
+        legend.addTo(map);
+        
+        // インラインGeoJSONデータ（フォールバック用）
+        function useInlineGeoJSON() {
+            const inlineGeoJSON = {
+                "type": "FeatureCollection",
+                "features": [
+                    {
+                        "type": "Feature",
+                        "properties": {
+                            "name": "桜花市",
+                            "type": "県庁所在地",
+                            "area_km2": 456.78,
+                            "population": 890234,
+                            "density_per_km2": 1948.3
+                        },
+                        "geometry": {
+                            "type": "Polygon",
+                            "coordinates": [[
+                                [139.4234, 35.5234],
+                                [139.5234, 35.5123],
+                                [139.6123, 35.4890],
+                                [139.6234, 35.4234],
+                                [139.6123, 35.3567],
+                                [139.5890, 35.3456],
+                                [139.5234, 35.3567],
+                                [139.4567, 35.3789],
+                                [139.4234, 35.4123],
+                                [139.4123, 35.4567],
+                                [139.4234, 35.5234]
+                            ]]
+                        }
+                    },
+                    {
+                        "type": "Feature",
+                        "properties": {
+                            "name": "桜川市",
+                            "type": "港湾都市",
+                            "area_km2": 389.45,
+                            "population": 523456,
+                            "density_per_km2": 1344.2
+                        },
+                        "geometry": {
+                            "type": "Polygon",
+                            "coordinates": [[
+                                [139.6234, 35.4234],
+                                [139.7234, 35.4123],
+                                [139.8123, 35.3890],
+                                [139.8234, 35.3234],
+                                [139.8123, 35.2567],
+                                [139.7890, 35.2456],
+                                [139.7234, 35.2567],
+                                [139.6567, 35.2789],
+                                [139.6234, 35.3123],
+                                [139.6123, 35.3567],
+                                [139.6234, 35.4234]
+                            ]]
+                        }
+                    },
+                    {
+                        "type": "Feature",
+                        "properties": {
+                            "name": "東桜市",
+                            "type": "ハイテク工業都市",
+                            "area_km2": 312.67,
+                            "population": 412345,
+                            "density_per_km2": 1319.2
+                        },
+                        "geometry": {
+                            "type": "Polygon",
+                            "coordinates": [[
+                                [139.7234, 35.6234],
+                                [139.8234, 35.6123],
+                                [139.8890, 35.5890],
+                                [139.8901, 35.5234],
+                                [139.8567, 35.4567],
+                                [139.8234, 35.4456],
+                                [139.7567, 35.4567],
+                                [139.7234, 35.4890],
+                                [139.7123, 35.5234],
+                                [139.7234, 35.5890],
+                                [139.7234, 35.6234]
+                            ]]
+                        }
+                    },
+                    {
+                        "type": "Feature",
+                        "properties": {
+                            "name": "西桜市",
+                            "type": "歴史文化都市",
+                            "area_km2": 234.56,
+                            "population": 198765,
+                            "density_per_km2": 847.8
+                        },
+                        "geometry": {
+                            "type": "Polygon",
+                            "coordinates": [[
+                                [139.2567, 35.4234],
+                                [139.3567, 35.4123],
+                                [139.4234, 35.3890],
+                                [139.4345, 35.3234],
+                                [139.4234, 35.2567],
+                                [139.3890, 35.2456],
+                                [139.3234, 35.2567],
+                                [139.2567, 35.2789],
+                                [139.2345, 35.3123],
+                                [139.2456, 35.3567],
+                                [139.2567, 35.4234]
+                            ]]
+                        }
+                    },
+                    {
+                        "type": "Feature",
+                        "properties": {
+                            "name": "南桜市",
+                            "type": "温泉観光都市",
+                            "area_km2": 567.89,
+                            "population": 287654,
+                            "density_per_km2": 506.5
+                        },
+                        "geometry": {
+                            "type": "Polygon",
+                            "coordinates": [[
+                                [139.4567, 35.3234],
+                                [139.5567, 35.3123],
+                                [139.6234, 35.2890],
+                                [139.6345, 35.2234],
+                                [139.5890, 35.1567],
+                                [139.5234, 35.1456],
+                                [139.4567, 35.1567],
+                                [139.3890, 35.1789],
+                                [139.3567, 35.2123],
+                                [139.3678, 35.2567],
+                                [139.4567, 35.3234]
+                            ]]
+                        }
+                    },
+                    {
+                        "type": "Feature",
+                        "properties": {
+                            "name": "北桜市",
+                            "type": "農業都市",
+                            "area_km2": 445.67,
+                            "population": 156789,
+                            "density_per_km2": 351.9
+                        },
+                        "geometry": {
+                            "type": "Polygon",
+                            "coordinates": [[
+                                [139.3567, 35.7234],
+                                [139.4567, 35.7123],
+                                [139.5234, 35.6890],
+                                [139.5345, 35.6234],
+                                [139.5234, 35.5567],
+                                [139.4890, 35.5456],
+                                [139.4234, 35.5567],
+                                [139.3567, 35.5789],
+                                [139.3234, 35.6123],
+                                [139.3345, 35.6567],
+                                [139.3567, 35.7234]
+                            ]]
+                        }
+                    }
+                ]
+            };
+            
+            geojsonLayer = L.geoJSON(inlineGeoJSON, {
+                style: style,
+                onEachFeature: onEachFeature
+            }).addTo(map);
+            
+            map.fitBounds(geojsonLayer.getBounds());
+            createLabelsLayer(inlineGeoJSON);
+        }
+        
+        // ラベルレイヤーの作成
+        function createLabelsLayer(geoJSON) {
+            const labels = [];
+            geoJSON.features.forEach(feature => {
+                const center = getCentroid(feature.geometry.coordinates[0]);
+                const label = L.marker(center, {
+                    icon: L.divIcon({
+                        className: 'city-label',
+                        html: `<div style="font-weight: bold; font-size: 12px; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white;">${feature.properties.name}</div>`,
+                        iconSize: [100, 20]
+                    })
+                });
+                labels.push(label);
+            });
+            labelsLayer = L.layerGroup(labels).addTo(map);
+        }
+        
+        // ポリゴンの中心点を計算
+        function getCentroid(coords) {
+            let lat = 0, lng = 0;
+            coords.forEach(coord => {
+                lng += coord[0];
+                lat += coord[1];
+            });
+            return [lat / coords.length, lng / coords.length];
+        }
+        
+        // 検索機能
+        const searchInput = document.getElementById('search-input');
+        const searchResults = document.getElementById('search-results');
+        
+        searchInput.addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            searchResults.innerHTML = '';
+            
+            if (searchTerm.length === 0) {
+                searchResults.style.display = 'none';
+                return;
+            }
+            
+            const matches = [];
+            for (const cityName in cityData) {
+                if (cityName.toLowerCase().includes(searchTerm)) {
+                    matches.push(cityName);
+                }
+            }
+            
+            if (matches.length > 0) {
+                searchResults.style.display = 'block';
+                matches.forEach(cityName => {
+                    const item = document.createElement('div');
+                    item.className = 'search-result-item';
+                    item.textContent = cityName;
+                    item.onclick = () => zoomToCity(cityName);
+                    searchResults.appendChild(item);
+                });
+            } else {
+                searchResults.style.display = 'none';
+            }
+        });
+        
+        // 市にズーム
+        function zoomToCity(cityName) {
+            geojsonLayer.eachLayer(layer => {
+                if (layer.feature.properties.name === cityName) {
+                    map.fitBounds(layer.getBounds());
+                    layer.fire('click');
+                    searchResults.style.display = 'none';
+                    searchInput.value = '';
+                }
+            });
+        }
+        
+        // 情報パネルを閉じる
+        function closeInfoPanel() {
+            document.getElementById('info-panel').classList.remove('active');
+        }
+        
+        // データタイプの変更
+        document.getElementById('data-type').addEventListener('change', function(e) {
+            currentDataType = e.target.value;
+            updateDataVisualization();
+        });
+        
+        // データ可視化の更新
+        function updateDataVisualization() {
+            if (geojsonLayer) {
+                geojsonLayer.eachLayer(layer => {
+                    layer.setStyle(style(layer.feature));
+                    
+                    // データラベルの更新
+                    if (currentDataType !== 'none') {
+                        const data = getDataValue(layer.feature.properties.name, currentDataType);
+                        if (data) {
+                            layer.bindTooltip(data, {
+                                permanent: true,
+                                direction: 'center',
+                                className: 'data-label'
+                            }).openTooltip();
+                        }
+                    } else {
+                        layer.unbindTooltip();
+                    }
+                });
+            }
+        }
+        
+        // データ値の取得
+        function getDataValue(cityName, dataType) {
+            const city = cityData[cityName];
+            if (!city) return null;
+            
+            switch(dataType) {
+                case 'population':
+                    return city.population.toLocaleString() + '人';
+                case 'density':
+                    return city.density + '人/km²';
+                case 'area':
+                    return city.area + 'km²';
+                case 'gdp':
+                    // 仮のGDPデータ
+                    const gdpData = {
+                        "桜花市": "3.2兆円",
+                        "桜川市": "2.1兆円",
+                        "東桜市": "2.8兆円",
+                        "西桜市": "0.8兆円",
+                        "南桜市": "1.5兆円",
+                        "北桜市": "1.4兆円"
+                    };
+                    return gdpData[cityName] || 'N/A';
+                default:
+                    return null;
+            }
+        }
+        
+        // レイヤーコントロール
+        document.getElementById('cities-layer').addEventListener('change', function(e) {
+            if (e.target.checked) {
+                geojsonLayer.addTo(map);
+            } else {
+                map.removeLayer(geojsonLayer);
+            }
+        });
+        
+        document.getElementById('labels-layer').addEventListener('change', function(e) {
+            if (e.target.checked && labelsLayer) {
+                labelsLayer.addTo(map);
+            } else if (labelsLayer) {
+                map.removeLayer(labelsLayer);
+            }
+        });
+        
+        document.getElementById('population-layer').addEventListener('change', function(e) {
+            if (e.target.checked) {
+                legend.addTo(map);
+            } else {
+                legend.remove();
+            }
+        });
+        
+        // 観光レイヤー（ダミーデータ）
+        document.getElementById('tourism-layer').addEventListener('change', function(e) {
+            if (e.target.checked) {
+                // 観光スポットの追加（例）
+                if (!tourismLayer) {
+                    const tourismSpots = [
+                        {name: "桜花城", lat: 35.45, lng: 139.5, type: "城郭"},
+                        {name: "桜川温泉", lat: 35.3, lng: 139.28, type: "温泉"},
+                        {name: "東桜テクノパーク", lat: 35.55, lng: 139.8, type: "産業観光"}
+                    ];
+                    
+                    const markers = tourismSpots.map(spot => {
+                        return L.marker([spot.lat, spot.lng])
+                            .bindPopup(`<strong>${spot.name}</strong><br>タイプ: ${spot.type}`);
+                    });
+                    
+                    tourismLayer = L.layerGroup(markers);
+                }
+                tourismLayer.addTo(map);
+            } else if (tourismLayer) {
+                map.removeLayer(tourismLayer);
+            }
+        });
+        
+        // 交通インフラレイヤー（ダミーデータ）
+        document.getElementById('transport-layer').addEventListener('change', function(e) {
+            if (e.target.checked) {
+                // 主要道路の追加（例）
+                if (!transportLayer) {
+                    const roads = [
+                        [[35.5, 139.3], [35.4, 139.7]],
+                        [[35.6, 139.5], [35.2, 139.6]]
+                    ];
+                    
+                    const lines = roads.map(road => {
+                        return L.polyline(road, {
+                            color: 'red',
+                            weight: 3,
+                            opacity: 0.7
+                        }).bindPopup('主要道路');
+                    });
+                    
+                    transportLayer = L.layerGroup(lines);
+                }
+                transportLayer.addTo(map);
+            } else if (transportLayer) {
+                map.removeLayer(transportLayer);
+            }
+        });
+    </script>
+</body>
+</html>
