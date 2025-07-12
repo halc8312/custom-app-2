@@ -134,7 +134,7 @@ export default function ChildServicePage() {
       )
       setAllowanceData(prev => ({ ...prev, children: newChildren }))
     }
-  }, [allowanceData.childrenCount])
+  }, [allowanceData.childrenCount, allowanceData.children])
 
   const handleServiceSelect = (service: ServiceType) => {
     setSelectedService(service)
