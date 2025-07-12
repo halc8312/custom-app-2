@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 import Script from 'next/script'
-import sakuraPrefectureData from '@/data/sakura-prefecture.geojson'
+import sakuraPrefectureData from '@/data/sakura-prefecture.json'
 import styles from './LeafletMap.module.css'
 
 declare global {

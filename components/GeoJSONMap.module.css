@@ -96,16 +96,16 @@
 }
 
 /* Leafletのデフォルトスタイルの上書き */
-:global(.leaflet-popup-content-wrapper) {
+.mapWrapper :global(.leaflet-popup-content-wrapper) {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-:global(.leaflet-popup-tip) {
+.mapWrapper :global(.leaflet-popup-tip) {
   box-shadow: none;
 }
 
-:global(.custom-div-icon) {
+.mapWrapper :global(.custom-div-icon) {
   background: transparent;
   border: none;
 }

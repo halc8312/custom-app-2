@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
-import sakuraPrefectureData from '@/data/sakura-prefecture.geojson'
+import sakuraPrefectureData from '@/data/sakura-prefecture.json'
 import styles from './GeoJSONMap.module.css'
 
 // Leafletアイコンの修正
