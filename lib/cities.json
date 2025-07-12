@@ -1,0 +1,275 @@
+{
+  "cities": [
+    {
+      "id": "13201",
+      "name": {
+        "japanese": "桜花市",
+        "romaji": "Sakura-ka-shi"
+      },
+      "type": "市",
+      "characteristics": "桜県の県庁所在地。政治・経済・文化の中心地として発展し、約120万人が暮らす県内最大の都市です。江戸時代から桜の名所として知られ、春には市内各所で美しい桜並木を楽しむことができます。",
+      "population": {
+        "total": 1234567,
+        "households": 567890,
+        "density_per_km2": 3456
+      },
+      "area_km2": 357.2,
+      "established": "1889-04-01",
+      "mayor": {
+        "name": "桜田 健一",
+        "party": "無所属"
+      },
+      "districts": [
+        "中央区",
+        "北区",
+        "南区",
+        "東区",
+        "西区",
+        "桜台区",
+        "緑区"
+      ],
+      "symbols": {
+        "flower": "ソメイヨシノ",
+        "tree": "ケヤキ",
+        "bird": "ウグイス"
+      },
+      "main_industries": [
+        "商業・サービス業",
+        "情報通信業",
+        "金融・保険業",
+        "不動産業",
+        "製造業"
+      ],
+      "transportation": {
+        "railway_lines": 8,
+        "stations": 45,
+        "bus_routes": 120,
+        "highways": 3
+      },
+      "notable_facilities": [
+        "桜県庁",
+        "桜花市役所",
+        "桜県立美術館",
+        "桜花総合病院",
+        "桜花大学",
+        "桜花中央公園",
+        "桜花国際会議場",
+        "桜花スタジアム"
+      ],
+      "coordinates": {
+        "latitude": 35.6895,
+        "longitude": 139.6917
+      }
+    },
+    {
+      "id": "13202",
+      "name": {
+        "japanese": "桜川市",
+        "romaji": "Sakuragawa-shi"
+      },
+      "type": "市",
+      "characteristics": "桜県第二の都市。桜川の清流に沿って発展した工業都市で、電子部品・デバイス産業の集積地として知られています。",
+      "population": {
+        "total": 456789,
+        "households": 189234,
+        "density_per_km2": 1234
+      },
+      "area_km2": 370.5,
+      "established": "1922-10-01",
+      "mayor": {
+        "name": "川上 明美",
+        "party": "無所属"
+      },
+      "districts": [],
+      "symbols": {
+        "flower": "ヤマザクラ",
+        "tree": "イチョウ",
+        "bird": "カワセミ"
+      },
+      "main_industries": [
+        "製造業",
+        "物流業",
+        "商業"
+      ],
+      "transportation": {
+        "railway_lines": 3,
+        "stations": 15,
+        "bus_routes": 45,
+        "highways": 2
+      },
+      "notable_facilities": [],
+      "coordinates": {
+        "latitude": 35.7234,
+        "longitude": 139.7567
+      }
+    },
+    {
+      "id": "13203",
+      "name": {
+        "japanese": "東桜市",
+        "romaji": "Higashi-sakura-shi"
+      },
+      "type": "市",
+      "characteristics": "県東部の商業・観光都市。歴史的な街並みと温泉地として有名で、年間500万人以上の観光客が訪れます。",
+      "population": {
+        "total": 234567,
+        "households": 98765,
+        "density_per_km2": 890
+      },
+      "area_km2": 263.5,
+      "established": "1934-04-01",
+      "mayor": {
+        "name": "東條 太郎",
+        "party": "無所属"
+      },
+      "districts": [],
+      "symbols": {
+        "flower": "シダレザクラ",
+        "tree": "スギ",
+        "bird": "メジロ"
+      },
+      "main_industries": [
+        "観光業",
+        "サービス業",
+        "伝統工芸"
+      ],
+      "transportation": {
+        "railway_lines": 2,
+        "stations": 8,
+        "bus_routes": 30,
+        "highways": 1
+      },
+      "notable_facilities": [],
+      "coordinates": {
+        "latitude": 35.6123,
+        "longitude": 139.8901
+      }
+    },
+    {
+      "id": "13204",
+      "name": {
+        "japanese": "西桜市",
+        "romaji": "Nishi-sakura-shi"
+      },
+      "type": "市",
+      "characteristics": "県西部の農業都市。豊かな自然環境を活かした農業が盛んで、特に果樹栽培は県内一の生産量を誇ります。",
+      "population": {
+        "total": 123456,
+        "households": 45678,
+        "density_per_km2": 345
+      },
+      "area_km2": 357.8,
+      "established": "1954-05-01",
+      "mayor": {
+        "name": "西村 花子",
+        "party": "無所属"
+      },
+      "districts": [],
+      "symbols": {
+        "flower": "カンザクラ",
+        "tree": "リンゴ",
+        "bird": "ヒバリ"
+      },
+      "main_industries": [
+        "農業",
+        "食品加工業",
+        "観光業"
+      ],
+      "transportation": {
+        "railway_lines": 1,
+        "stations": 5,
+        "bus_routes": 20,
+        "highways": 1
+      },
+      "notable_facilities": [],
+      "coordinates": {
+        "latitude": 35.5678,
+        "longitude": 139.4567
+      }
+    },
+    {
+      "id": "13205",
+      "name": {
+        "japanese": "南桜市",
+        "romaji": "Minami-sakura-shi"
+      },
+      "type": "市",
+      "characteristics": "県南部の港湾都市。太平洋に面した天然の良港を持ち、水産業と海運業が発展しています。",
+      "population": {
+        "total": 167890,
+        "households": 67890,
+        "density_per_km2": 567
+      },
+      "area_km2": 296.3,
+      "established": "1943-06-01",
+      "mayor": {
+        "name": "南 海斗",
+        "party": "無所属"
+      },
+      "districts": [],
+      "symbols": {
+        "flower": "ハマナス",
+        "tree": "クロマツ",
+        "bird": "カモメ"
+      },
+      "main_industries": [
+        "水産業",
+        "海運業",
+        "造船業"
+      ],
+      "transportation": {
+        "railway_lines": 2,
+        "stations": 7,
+        "bus_routes": 25,
+        "highways": 1
+      },
+      "notable_facilities": [],
+      "coordinates": {
+        "latitude": 35.3456,
+        "longitude": 139.6789
+      }
+    },
+    {
+      "id": "13206",
+      "name": {
+        "japanese": "北桜市",
+        "romaji": "Kita-sakura-shi"
+      },
+      "type": "市",
+      "characteristics": "県北部の山間都市。豊かな森林資源と清流に恵まれ、林業と観光業が主要産業となっています。",
+      "population": {
+        "total": 89012,
+        "households": 34567,
+        "density_per_km2": 123
+      },
+      "area_km2": 724.5,
+      "established": "1956-09-01",
+      "mayor": {
+        "name": "北野 森太",
+        "party": "無所属"
+      },
+      "districts": [],
+      "symbols": {
+        "flower": "ヤマザクラ",
+        "tree": "ブナ",
+        "bird": "ヤマガラ"
+      },
+      "main_industries": [
+        "林業",
+        "観光業",
+        "伝統工芸"
+      ],
+      "transportation": {
+        "railway_lines": 1,
+        "stations": 4,
+        "bus_routes": 15,
+        "highways": 1
+      },
+      "notable_facilities": [],
+      "coordinates": {
+        "latitude": 35.9012,
+        "longitude": 139.5678
+      }
+    }
+  ]
+}
