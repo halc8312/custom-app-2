@@ -9,6 +9,7 @@
 
 .mapContainer {
   width: 100%;
+  height: 100%;
   position: relative;
   z-index: 1;
   background-color: #e0f2fe;
@@ -128,6 +129,28 @@
 
 .attribution p {
   margin: 2px 0;
+}
+
+.errorMessage,
+.loadingMessage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 400px;
+  background-color: #f3f4f6;
+  border-radius: 12px;
+}
+
+.errorMessage p,
+.loadingMessage p {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.errorMessage p {
+  color: #ef4444;
 }
 
 /* Leafletのスタイル上書き */

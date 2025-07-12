@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Script from 'next/script'
 import sakuraPrefectureData from '@/data/sakura-prefecture.json'
 import styles from './LeafletMap.module.css'
@@ -25,16 +25,28 @@ export default function LeafletMap({
   const mapRef = useRef<any>(null)
   const mapContainerRef = useRef<HTMLDivElement>(null)
   const isInitialized = useRef(false)
+  const [mapError, setMapError] = useState<string | null>(null)
+  const [isLoading, setIsLoading] = useState(true)
 
   const initializeMap = () => {
-    if (!mapContainerRef.current || !window.L || isInitialized.current) return
+    console.log('Initializing map...', { hasContainer: !!mapContainerRef.current, hasLeaflet: !!window.L, isInitialized: isInitialized.current })
+    
+    if (!mapContainerRef.current || !window.L || isInitialized.current) {
+      if (!window.L) {
+        console.error('Leaflet not loaded')
+        setMapError('地図ライブラリの読み込みに失敗しました')
+      }
+      return
+    }
 
-    isInitialized.current = true
+    try {
+      isInitialized.current = true
+      setIsLoading(false)
 
-    // 地図の初期化
-    const L = window.L
-    const map = L.map(mapContainerRef.current).setView(center, zoom)
-    mapRef.current = map
+      // 地図の初期化
+      const L = window.L
+      const map = L.map(mapContainerRef.current).setView(center, zoom)
+      mapRef.current = map
 
     // タイルレイヤー
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
@@ -217,39 +229,70 @@ export default function LeafletMap({
       return div
     }
     legend.addTo(map)
+    
+    } catch (error) {
+      console.error('Map initialization error:', error)
+      setMapError('地図の初期化に失敗しました')
+      isInitialized.current = false
+    }
   }
 
   useEffect(() => {
+    // LeafletのCSSを追加
+    const link = document.createElement('link')
+    link.rel = 'stylesheet'
+    link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'
+    link.integrity = 'sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY='
+    link.crossOrigin = ''
+    document.head.appendChild(link)
+
+    // Leafletが既にロードされているかチェック
+    if (window.L && !isInitialized.current) {
+      initializeMap()
+    }
+
     return () => {
       if (mapRef.current) {
         mapRef.current.remove()
         mapRef.current = null
         isInitialized.current = false
       }
+      // CSSリンクも削除
+      document.head.removeChild(link)
     }
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <>
       <Script
         src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossOrigin=""
         strategy="afterInteractive"
         onLoad={initializeMap}
-      />
-      <link
-        rel="stylesheet"
-        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        onError={() => setMapError('地図ライブラリの読み込みに失敗しました')}
       />
       <div className={styles.mapWrapper}>
+        {mapError ? (
+          <div className={styles.errorMessage}>
+            <p>⚠️ {mapError}</p>
+          </div>
+        ) : isLoading ? (
+          <div className={styles.loadingMessage}>
+            <p>🗺️ 地図を読み込んでいます...</p>
+          </div>
+        ) : null}
         <div 
           ref={mapContainerRef} 
           className={styles.mapContainer}
-          style={{ height }}
+          style={{ height, display: mapError || isLoading ? 'none' : 'block' }}
         />
-        <div className={styles.attribution}>
-          <p>この地図は架空の桜県を表現したものです</p>
-          <p>実際の地理座標を使用していますが、内容はフィクションです</p>
-        </div>
+        {!mapError && !isLoading && (
+          <div className={styles.attribution}>
+            <p>この地図は架空の桜県を表現したものです</p>
+            <p>実際の地理座標を使用していますが、内容はフィクションです</p>
+          </div>
+        )}
       </div>
     </>
   )
