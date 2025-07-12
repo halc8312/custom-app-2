@@ -25,8 +25,24 @@ const LeafletMap = dynamic(() => import('@/components/LeafletMap'), {
   )
 })
 
+const SakuraFantasyMap = dynamic(() => import('@/components/SakuraFantasyMap'), {
+  ssr: false,
+  loading: () => (
+    <div style={{ 
+      height: '700px', 
+      display: 'flex', 
+      alignItems: 'center', 
+      justifyContent: 'center',
+      backgroundColor: '#f3f4f6',
+      borderRadius: '12px'
+    }}>
+      <p>地図を読み込んでいます...</p>
+    </div>
+  )
+})
+
 export default function MapPage() {
-  const [mapType, setMapType] = useState<'svg' | 'geojson'>('svg')
+  const [mapType, setMapType] = useState<'svg' | 'geojson' | 'fantasy'>('svg')
 
   return (
     <>
@@ -54,6 +70,12 @@ export default function MapPage() {
             >
               詳細マップ（GeoJSON）
             </button>
+            <button
+              className={`${styles.typeButton} ${mapType === 'fantasy' ? styles.active : ''}`}
+              onClick={() => setMapType('fantasy')}
+            >
+              ファンタジーマップ
+            </button>
           </div>
           
           <div className={styles.mapSection}>
@@ -69,8 +91,10 @@ export default function MapPage() {
 
             {mapType === 'svg' ? (
               <SakuraMap height="700px" />
-            ) : (
+            ) : mapType === 'geojson' ? (
               <LeafletMap height="700px" />
+            ) : (
+              <SakuraFantasyMap height="700px" />
             )}
 
             <div className={styles.mapInfo}>
