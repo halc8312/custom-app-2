@@ -50,6 +50,9 @@ export default function Header() {
               <Link href="/tourism">{t('navigation.tourism')}</Link>
             </li>
             <li>
+              <Link href="/economy">{t('navigation.economy')}</Link>
+            </li>
+            <li>
               <Link href="/access">{t('navigation.access')}</Link>
             </li>
             <li>
