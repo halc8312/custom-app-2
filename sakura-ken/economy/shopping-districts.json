@@ -1,0 +1,659 @@
+{
+  "meta": {
+    "title": "桜県商店街詳細データ",
+    "created": "2025-07-11",
+    "version": "1.0",
+    "total_districts": 45,
+    "description": "桜県内全45商店街の詳細情報"
+  },
+  "summary": {
+    "by_city": {
+      "桜花市": 15,
+      "桜川市": 10,
+      "東桜市": 8,
+      "西桜市": 5,
+      "南桜市": 4,
+      "北桜市": 3
+    },
+    "total_shops": 8456,
+    "total_annual_visitors": 45678901,
+    "shopping_district_union_members": 42
+  },
+  "shopping_districts": [
+    {
+      "id": "SD001",
+      "name": "桜花銀座商店街",
+      "city": "桜花市",
+      "district": "中央区",
+      "established": "1923年",
+      "type": "総合商店街",
+      "shops": 234,
+      "length_m": 1200,
+      "width_m": 25,
+      "arcade": true,
+      "features": ["アーケード完備", "歩行者天国（日曜）", "全域Wi-Fi", "バリアフリー"],
+      "annual_visitors": 1234567,
+      "parking": {
+        "lots": 3,
+        "total_spaces": 450
+      },
+      "events": [
+        {"name": "桜花大売出し", "period": "年4回", "visitors": 50000},
+        {"name": "夏祭り", "period": "7月最終週", "visitors": 80000},
+        {"name": "歳末セール", "period": "12月", "visitors": 120000}
+      ],
+      "key_shops": [
+        {"name": "老舗和菓子店「桜月堂」", "established": "1856年", "specialty": "桜餅・季節の和菓子"},
+        {"name": "呉服店「絹の道」", "established": "1889年", "specialty": "着物・和装小物"},
+        {"name": "百貨店「桜花屋」", "established": "1934年", "floors": 8}
+      ],
+      "union_info": {
+        "name": "桜花銀座商店街振興組合",
+        "members": 201,
+        "chairman": "山田太郎",
+        "established": "1950年"
+      },
+      "recent_renovation": "2020年（アーケード全面改修）",
+      "website": "www.sakura-ginza.jp"
+    },
+    {
+      "id": "SD002",
+      "name": "花見商店街",
+      "city": "桜花市",
+      "district": "花見区",
+      "established": "1951年",
+      "type": "観光商店街",
+      "shops": 156,
+      "length_m": 800,
+      "width_m": 15,
+      "arcade": false,
+      "features": ["観光客向け", "多言語対応", "免税店多数", "桜並木"],
+      "annual_visitors": 987654,
+      "parking": {
+        "lots": 2,
+        "total_spaces": 200
+      },
+      "events": [
+        {"name": "花見まつり", "period": "4月", "visitors": 200000},
+        {"name": "国際フェスティバル", "period": "10月", "visitors": 50000}
+      ],
+      "key_shops": [
+        {"name": "土産物店「さくら屋」", "established": "1960年", "specialty": "県産品・観光土産"},
+        {"name": "伝統工芸品店「匠」", "established": "1975年", "specialty": "桜染め製品"},
+        {"name": "カフェ「Cherry Blossom」", "established": "2018年", "specialty": "桜スイーツ"}
+      ],
+      "multilingual_support": ["英語", "中国語", "韓国語", "タイ語"],
+      "union_info": {
+        "name": "花見商店街協同組合",
+        "members": 145,
+        "chairman": "佐藤花子"
+      }
+    },
+    {
+      "id": "SD003",
+      "name": "駅前中央商店街",
+      "city": "桜花市",
+      "district": "駅前地区",
+      "established": "1965年",
+      "type": "駅前商店街",
+      "shops": 189,
+      "length_m": 500,
+      "width_m": 30,
+      "arcade": true,
+      "features": ["駅直結", "通勤客向け", "飲食店充実", "24時間営業店あり"],
+      "annual_visitors": 2345678,
+      "events": [
+        {"name": "駅前マルシェ", "period": "毎月第1土曜", "visitors": 15000},
+        {"name": "イルミネーション", "period": "11月〜2月", "visitors": 300000}
+      ],
+      "key_shops": [
+        {"name": "駅前デパート", "floors": 6, "specialty": "ファッション・雑貨"},
+        {"name": "グルメ横丁", "shops": 25, "specialty": "B級グルメ"}
+      ],
+      "union_info": {
+        "name": "駅前中央商店街連合会",
+        "members": 180
+      }
+    },
+    {
+      "id": "SD004",
+      "name": "桜台ショッピングストリート",
+      "city": "桜花市",
+      "district": "桜台区",
+      "established": "1978年",
+      "type": "ニュータウン商店街",
+      "shops": 123,
+      "length_m": 600,
+      "features": ["ファミリー向け", "大型駐車場", "キッズスペース"],
+      "annual_visitors": 876543,
+      "recent_renovation": "2022年（街路整備）"
+    },
+    {
+      "id": "SD005",
+      "name": "文教通り商店街",
+      "city": "桜花市",
+      "district": "文教区",
+      "established": "1956年",
+      "type": "学生街商店街",
+      "shops": 98,
+      "length_m": 700,
+      "features": ["学生向け", "書店・文具店多数", "リーズナブル"],
+      "annual_visitors": 654321,
+      "key_shops": [
+        {"name": "大学堂書店", "floors": 3, "specialty": "専門書・学術書"},
+        {"name": "学生食堂街", "shops": 15, "specialty": "安価な定食"}
+      ]
+    },
+    {
+      "id": "SD006",
+      "name": "さくら通り商店街",
+      "city": "桜花市",
+      "district": "西区",
+      "established": "1934年",
+      "type": "地域密着型商店街",
+      "shops": 76,
+      "length_m": 450,
+      "features": ["地元密着", "高齢者に優しい", "宅配サービス"],
+      "annual_visitors": 432100
+    },
+    {
+      "id": "SD007",
+      "name": "新桜花商店街",
+      "city": "桜花市",
+      "district": "新市街地区",
+      "established": "1995年",
+      "type": "複合型商店街",
+      "shops": 145,
+      "features": ["最新設備", "エコ商店街", "電子決済100%対応"],
+      "annual_visitors": 1098765
+    },
+    {
+      "id": "SD008",
+      "name": "門前町商店街",
+      "city": "桜花市",
+      "district": "寺町地区",
+      "established": "江戸時代",
+      "type": "門前町商店街",
+      "shops": 54,
+      "length_m": 300,
+      "features": ["歴史的街並み", "和菓子・仏具店", "石畳"],
+      "annual_visitors": 345678,
+      "key_shops": [
+        {"name": "老舗仏具店「慈光堂」", "established": "1756年"},
+        {"name": "精進料理「禅味」", "established": "1823年"}
+      ]
+    },
+    {
+      "id": "SD009",
+      "name": "オフィス街地下商店街",
+      "city": "桜花市",
+      "district": "ビジネス区",
+      "established": "1985年",
+      "type": "地下商店街",
+      "shops": 167,
+      "features": ["地下街", "雨天対応", "ランチ需要", "コンビニ・薬局充実"],
+      "annual_visitors": 2456789
+    },
+    {
+      "id": "SD010",
+      "name": "住宅街センター商店街",
+      "city": "桜花市",
+      "district": "住宅区",
+      "established": "1968年",
+      "type": "近隣商店街",
+      "shops": 65,
+      "features": ["生活必需品中心", "スーパー・ドラッグストア"],
+      "annual_visitors": 543210
+    },
+    {
+      "id": "SD011",
+      "name": "国際通り商店街",
+      "city": "桜花市",
+      "district": "国際区",
+      "established": "1990年",
+      "type": "多文化商店街",
+      "shops": 89,
+      "features": ["多国籍料理", "輸入食材", "国際交流"],
+      "annual_visitors": 765432,
+      "ethnic_shops": {
+        "中華": 23,
+        "韓国": 15,
+        "東南アジア": 18,
+        "南米": 8,
+        "中東": 5
+      }
+    },
+    {
+      "id": "SD012",
+      "name": "アート通り商店街",
+      "city": "桜花市",
+      "district": "芸術区",
+      "established": "2005年",
+      "type": "文化芸術商店街",
+      "shops": 67,
+      "features": ["ギャラリー併設", "アーティスト支援", "月1アートマーケット"],
+      "annual_visitors": 456789
+    },
+    {
+      "id": "SD013",
+      "name": "スポーツ用品街",
+      "city": "桜花市",
+      "district": "スポーツ区",
+      "established": "1988年",
+      "type": "専門商店街",
+      "shops": 78,
+      "features": ["スポーツ専門店集積", "プロ選手御用達", "修理工房"],
+      "annual_visitors": 567890
+    },
+    {
+      "id": "SD014",
+      "name": "電気街",
+      "city": "桜花市",
+      "district": "電気街地区",
+      "established": "1960年",
+      "type": "電気専門商店街",
+      "shops": 134,
+      "features": ["家電・PC・部品", "修理サービス", "中古品取扱"],
+      "annual_visitors": 890123
+    },
+    {
+      "id": "SD015",
+      "name": "ファッションストリート",
+      "city": "桜花市",
+      "district": "ファッション区",
+      "established": "1998年",
+      "type": "ファッション商店街",
+      "shops": 156,
+      "features": ["若者向けブランド", "セレクトショップ", "古着屋"],
+      "annual_visitors": 1234567
+    },
+    {
+      "id": "SD016",
+      "name": "さくらがわ銀座商店街",
+      "city": "桜川市",
+      "district": "中央地区",
+      "established": "1925年",
+      "type": "総合商店街",
+      "shops": 189,
+      "length_m": 950,
+      "arcade": true,
+      "features": ["魚市場直結", "海産物専門店", "朝市開催"],
+      "annual_visitors": 1567890,
+      "events": [
+        {"name": "朝市", "period": "毎日5:00-9:00", "visitors": 500/日},
+        {"name": "魚まつり", "period": "10月", "visitors": 100000}
+      ],
+      "key_shops": [
+        {"name": "魚問屋「大漁」", "established": "1890年", "specialty": "鮮魚・加工品"},
+        {"name": "海鮮丼「波の花」", "established": "1965年", "specialty": "新鮮な海鮮丼"}
+      ]
+    },
+    {
+      "id": "SD017",
+      "name": "港町商店街",
+      "city": "桜川市",
+      "district": "港地区",
+      "established": "1901年",
+      "type": "港湾商店街",
+      "shops": 145,
+      "features": ["船員御用達", "海洋用品", "24時間営業多数"],
+      "annual_visitors": 987654,
+      "key_shops": [
+        {"name": "船具店「海神丸」", "established": "1905年"},
+        {"name": "漁師めし「港屋」", "established": "1950年"}
+      ]
+    },
+    {
+      "id": "SD018",
+      "name": "浜通り商店街",
+      "city": "桜川市",
+      "district": "浜地区",
+      "established": "1932年",
+      "type": "海岸商店街",
+      "shops": 98,
+      "features": ["ビーチ用品", "海の家運営", "サーフショップ"],
+      "annual_visitors": 765432,
+      "seasonal_variation": "夏季は来客3倍"
+    },
+    {
+      "id": "SD019",
+      "name": "魚市場前商店街",
+      "city": "桜川市",
+      "district": "市場地区",
+      "established": "1948年",
+      "type": "市場連動型商店街",
+      "shops": 76,
+      "features": ["早朝営業", "仲買人向け", "業務用食材"],
+      "annual_visitors": 543210,
+      "opening_hours": "3:00-15:00"
+    },
+    {
+      "id": "SD020",
+      "name": "桜川駅前商店街",
+      "city": "桜川市",
+      "district": "駅前地区",
+      "established": "1962年",
+      "type": "駅前商店街",
+      "shops": 134,
+      "features": ["通勤客向け", "弁当・惣菜充実", "ドラッグストア"],
+      "annual_visitors": 1234567
+    },
+    {
+      "id": "SD021",
+      "name": "漁師町商店街",
+      "city": "桜川市",
+      "district": "漁師町",
+      "established": "明治時代",
+      "type": "伝統的商店街",
+      "shops": 56,
+      "features": ["昔ながらの商店", "地魚料理", "民宿併設"],
+      "annual_visitors": 345678
+    },
+    {
+      "id": "SD022",
+      "name": "シーサイドモール商店街",
+      "city": "桜川市",
+      "district": "海岸地区",
+      "established": "1995年",
+      "type": "リゾート商店街",
+      "shops": 123,
+      "features": ["オーシャンビュー", "カフェ・レストラン", "マリンスポーツ"],
+      "annual_visitors": 890123
+    },
+    {
+      "id": "SD023",
+      "name": "水産加工団地商店街",
+      "city": "桜川市",
+      "district": "工業地区",
+      "established": "1970年",
+      "type": "産業商店街",
+      "shops": 45,
+      "features": ["水産加工品直売", "工場見学", "B2B中心"],
+      "annual_visitors": 234567
+    },
+    {
+      "id": "SD024",
+      "name": "新桜川商店街",
+      "city": "桜川市",
+      "district": "新市街",
+      "established": "2000年",
+      "type": "複合商店街",
+      "shops": 167,
+      "features": ["大型店舗共存", "ファミリー向け", "映画館併設"],
+      "annual_visitors": 1456789
+    },
+    {
+      "id": "SD025",
+      "name": "潮風商店街",
+      "city": "桜川市",
+      "district": "南部地区",
+      "established": "1955年",
+      "type": "地域商店街",
+      "shops": 78,
+      "features": ["地元密着", "日用品中心", "高齢者サポート"],
+      "annual_visitors": 432100
+    },
+    {
+      "id": "SD026",
+      "name": "テクノストリート",
+      "city": "東桜市",
+      "district": "商業地区",
+      "established": "1992年",
+      "type": "IT専門商店街",
+      "shops": 123,
+      "length_m": 800,
+      "features": ["最新ガジェット", "修理サービス", "プログラミング教室"],
+      "annual_visitors": 1098765,
+      "key_shops": [
+        {"name": "PCパーツ専門店「Tech Heaven」", "floors": 4},
+        {"name": "ロボット工房「Future Lab」", "specialty": "教育用ロボット"}
+      ]
+    },
+    {
+      "id": "SD027",
+      "name": "イノベーション通り",
+      "city": "東桜市",
+      "district": "研究開発地区",
+      "established": "2010年",
+      "type": "スタートアップ商店街",
+      "shops": 89,
+      "features": ["コワーキングスペース", "3Dプリンター", "VR体験"],
+      "annual_visitors": 654321,
+      "startup_support": true
+    },
+    {
+      "id": "SD028",
+      "name": "東桜中央商店街",
+      "city": "東桜市",
+      "district": "中央地区",
+      "established": "1958年",
+      "type": "総合商店街",
+      "shops": 156,
+      "features": ["スマート商店街", "キャッシュレス100%", "配送ロボット"],
+      "annual_visitors": 1345678
+    },
+    {
+      "id": "SD029",
+      "name": "サイエンスパーク商店街",
+      "city": "東桜市",
+      "district": "学園地区",
+      "established": "1998年",
+      "type": "学術商店街",
+      "shops": 67,
+      "features": ["科学グッズ", "実験器具", "専門書店"],
+      "annual_visitors": 456789
+    },
+    {
+      "id": "SD030",
+      "name": "グリーンテック商店街",
+      "city": "東桜市",
+      "district": "エコ地区",
+      "established": "2015年",
+      "type": "環境特化商店街",
+      "shops": 78,
+      "features": ["エコ商品", "オーガニック", "ゼロウェイスト"],
+      "annual_visitors": 567890
+    },
+    {
+      "id": "SD031",
+      "name": "東桜駅前商店街",
+      "city": "東桜市",
+      "district": "駅前地区",
+      "established": "1965年",
+      "type": "駅前商店街",
+      "shops": 145,
+      "features": ["ビジネス向け", "カフェ充実", "コンビニ多数"],
+      "annual_visitors": 1789012
+    },
+    {
+      "id": "SD032",
+      "name": "未来都市商店街",
+      "city": "東桜市",
+      "district": "新都市地区",
+      "established": "2020年",
+      "type": "次世代商店街",
+      "shops": 98,
+      "features": ["AI接客", "ドローン配送", "仮想現実ショップ"],
+      "annual_visitors": 890123
+    },
+    {
+      "id": "SD033",
+      "name": "産学連携プラザ",
+      "city": "東桜市",
+      "district": "大学前地区",
+      "established": "2005年",
+      "type": "産学連携商店街",
+      "shops": 56,
+      "features": ["研究成果展示", "学生起業", "実証実験"],
+      "annual_visitors": 345678
+    },
+    {
+      "id": "SD034",
+      "name": "伝統工芸通り",
+      "city": "西桜市",
+      "district": "旧市街地区",
+      "established": "江戸時代",
+      "type": "伝統工芸商店街",
+      "shops": 89,
+      "length_m": 600,
+      "features": ["伝統工芸品", "職人工房", "体験教室"],
+      "annual_visitors": 765432,
+      "craftsmen_workshops": 45,
+      "key_shops": [
+        {"name": "桜染め工房「花染」", "established": "1789年", "master": "十代目継承"},
+        {"name": "陶芸「桜焼窯元」", "established": "1823年", "specialty": "桜花紋陶器"}
+      ]
+    },
+    {
+      "id": "SD035",
+      "name": "アーティスト横丁",
+      "city": "西桜市",
+      "district": "芸術地区",
+      "established": "1985年",
+      "type": "芸術家商店街",
+      "shops": 67,
+      "features": ["アトリエ併設", "ギャラリー", "画材店"],
+      "annual_visitors": 456789,
+      "artist_residents": 34
+    },
+    {
+      "id": "SD036",
+      "name": "西桜本通り商店街",
+      "city": "西桜市",
+      "district": "中心地区",
+      "established": "1930年",
+      "type": "歴史的商店街",
+      "shops": 123,
+      "features": ["歴史的建造物", "老舗多数", "石畳保存"],
+      "annual_visitors": 890123,
+      "heritage_buildings": 23
+    },
+    {
+      "id": "SD037",
+      "name": "骨董通り",
+      "city": "西桜市",
+      "district": "古物地区",
+      "established": "1950年",
+      "type": "骨董専門商店街",
+      "shops": 45,
+      "features": ["骨董品", "古美術", "蚤の市開催"],
+      "annual_visitors": 234567,
+      "monthly_flea_market": true
+    },
+    {
+      "id": "SD038",
+      "name": "寺町参道商店街",
+      "city": "西桜市",
+      "district": "寺町地区",
+      "established": "室町時代",
+      "type": "参道商店街",
+      "shops": 56,
+      "features": ["仏具", "線香", "精進料理"],
+      "annual_visitors": 345678,
+      "temples_nearby": 12
+    },
+    {
+      "id": "SD039",
+      "name": "温泉街商店街",
+      "city": "南桜市",
+      "district": "温泉地区",
+      "established": "1890年",
+      "type": "温泉街商店街",
+      "shops": 167,
+      "length_m": 1000,
+      "features": ["浴衣での散策", "足湯併設", "温泉まんじゅう"],
+      "annual_visitors": 1234567,
+      "hot_spring_hotels": 45,
+      "key_shops": [
+        {"name": "温泉まんじゅう本舗", "established": "1895年", "daily_production": 5000},
+        {"name": "湯の花工房", "specialty": "入浴剤・化粧品"}
+      ]
+    },
+    {
+      "id": "SD040",
+      "name": "南桜駅前商店街",
+      "city": "南桜市",
+      "district": "駅前地区",
+      "established": "1962年",
+      "type": "観光拠点商店街",
+      "shops": 98,
+      "features": ["観光案内所", "レンタサイクル", "ロッカー完備"],
+      "annual_visitors": 876543
+    },
+    {
+      "id": "SD041",
+      "name": "山麓商店街",
+      "city": "南桜市",
+      "district": "山麓地区",
+      "established": "1975年",
+      "type": "登山口商店街",
+      "shops": 56,
+      "features": ["登山用品", "山小屋予約", "ガイド紹介"],
+      "annual_visitors": 345678,
+      "climbing_season_boost": "4月-11月は来客2倍"
+    },
+    {
+      "id": "SD042",
+      "name": "湯治場通り",
+      "city": "南桜市",
+      "district": "古湯地区",
+      "established": "江戸時代",
+      "type": "伝統的温泉街",
+      "shops": 78,
+      "features": ["昔ながらの湯治宿", "薬湯", "湯治客向け長期滞在"],
+      "annual_visitors": 456789
+    },
+    {
+      "id": "SD043",
+      "name": "農産物直売通り",
+      "city": "北桜市",
+      "district": "中央地区",
+      "established": "1980年",
+      "type": "農産物直売商店街",
+      "shops": 67,
+      "features": ["朝採れ野菜", "農家直送", "季節の果物"],
+      "annual_visitors": 567890,
+      "farmers_market": "毎週土日開催",
+      "participating_farms": 123
+    },
+    {
+      "id": "SD044",
+      "name": "北桜本通り商店街",
+      "city": "北桜市",
+      "district": "市街地区",
+      "established": "1955年",
+      "type": "地域中心商店街",
+      "shops": 89,
+      "features": ["日用品店", "農機具店", "種苗店"],
+      "annual_visitors": 432100,
+      "agricultural_support": true
+    },
+    {
+      "id": "SD045",
+      "name": "里山マルシェ通り",
+      "city": "北桜市",
+      "district": "里山地区",
+      "established": "2010年",
+      "type": "グリーンツーリズム商店街",
+      "shops": 45,
+      "features": ["農業体験", "民泊紹介", "地産地消レストラン"],
+      "annual_visitors": 234567,
+      "eco_tourism": true
+    }
+  ],
+  "statistics": {
+    "average_shops_per_district": 188,
+    "oldest_district": "門前町商店街（江戸時代）",
+    "newest_district": "未来都市商店街（2020年）",
+    "most_shops": "桜花銀座商店街（234店舗）",
+    "longest_street": "桜花銀座商店街（1200m）",
+    "total_employment": 34567,
+    "economic_impact": "年間売上高 約2,345億円"
+  },
+  "support_programs": {
+    "prefecture_subsidy": "商店街活性化補助金（年間予算5億円）",
+    "renovation_support": "空き店舗活用支援事業",
+    "digital_transformation": "キャッシュレス・DX推進支援",
+    "event_support": "イベント開催補助（最大200万円/件）"
+  }
+}
