@@ -1,0 +1,490 @@
+.main {
+  padding: 2rem 0 4rem;
+  min-height: calc(100vh - 200px);
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.pageTitle {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.progressBar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.progressBar::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ddd;
+  z-index: 0;
+}
+
+.progressStep {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.progressStep::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 0.5rem;
+  line-height: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+.progressStep.active::before {
+  background-color: var(--primary-color);
+}
+
+.progressStep.completed::before {
+  background-color: #10b981;
+  content: '✓';
+  line-height: 40px;
+}
+
+.progressStep {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.progressStep.active {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.progressStep.completed {
+  color: #10b981;
+}
+
+.stepSection {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stepSection h2 {
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.typeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.typeCard {
+  background-color: var(--light-gray);
+  border: 2px solid transparent;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.typeCard:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.typeIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.typeCard h3 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.typeCard p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.applicationForm {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.required {
+  color: #dc2626;
+  font-size: 0.9rem;
+  margin-left: 0.25rem;
+}
+
+.formGroup input,
+.formGroup select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.formButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.primaryButton {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.primaryButton:hover {
+  background-color: #ec4899;
+}
+
+.primaryButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.backButton {
+  background-color: white;
+  color: var(--text-color);
+  border: 1px solid #ddd;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: var(--light-gray);
+}
+
+.documentsSection {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.documentsList {
+  background-color: var(--light-gray);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.documentItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.documentItem:last-child {
+  margin-bottom: 0;
+}
+
+.documentItem input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.75rem;
+  cursor: pointer;
+}
+
+.documentItem label {
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.feeInfo {
+  background-color: #fef3c7;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  border: 1px solid #fbbf24;
+}
+
+.feeInfo h3 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.feeAmount {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0.5rem 0;
+}
+
+.feeNote {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.officeInfo {
+  background-color: #e0e7ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  border: 1px solid #6366f1;
+}
+
+.officeInfo h3 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.officeInfo p {
+  margin: 0.25rem 0;
+  color: #333;
+}
+
+.confirmSection {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.confirmSection h3 {
+  color: var(--primary-color);
+  margin: 1.5rem 0 0.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.confirmTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-bottom: 1.5rem;
+}
+
+.confirmTable th,
+.confirmTable td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.confirmTable th {
+  background-color: var(--light-gray);
+  font-weight: 500;
+  width: 40%;
+}
+
+.confirmFee {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0.5rem 0;
+}
+
+.notice {
+  background-color: #fee2e2;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  border: 1px solid #f87171;
+}
+
+.notice h4 {
+  color: #dc2626;
+  margin-bottom: 0.5rem;
+}
+
+.notice ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.notice li {
+  color: #7f1d1d;
+  margin-bottom: 0.25rem;
+}
+
+.completeSection {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.successIcon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.completeSection h2 {
+  color: #10b981;
+  margin-bottom: 2rem;
+}
+
+.applicationInfo {
+  background-color: var(--light-gray);
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.applicationInfo h3 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.applicationNumber {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0.5rem 0;
+  font-family: monospace;
+}
+
+.applicationNote {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.nextSteps {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.nextSteps h3 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.nextSteps ol {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.nextSteps li {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.confirmEmail {
+  margin: 2rem 0;
+}
+
+.confirmEmail p {
+  margin: 0.5rem 0;
+}
+
+.demoNote {
+  color: #666;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.completeButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.printButton {
+  background-color: white;
+  color: var(--text-color);
+  border: 1px solid var(--primary-color);
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.printButton:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  .progressBar {
+    display: none;
+  }
+
+  .typeGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .formButtons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .primaryButton,
+  .backButton {
+    width: 100%;
+  }
+
+  .completeButtons {
+    flex-direction: column;
+  }
+}

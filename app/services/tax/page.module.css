@@ -1,0 +1,498 @@
+.main {
+  padding: 2rem 0 4rem;
+  min-height: calc(100vh - 200px);
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.pageTitle {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.tabContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background-color: var(--light-gray);
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--text-color);
+}
+
+.tab:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.tab.active {
+  background-color: white;
+  color: var(--primary-color);
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tabContent {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tabContent h2 {
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.taxGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.taxCard {
+  background-color: var(--light-gray);
+  border: 2px solid transparent;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.taxCard:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.taxCard h3 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.taxCard p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+}
+
+.dueDate {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.paymentMethods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.paymentCard {
+  background-color: var(--light-gray);
+  border: 2px solid transparent;
+  padding: 2rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.paymentCard:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.paymentIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.paymentCard h3 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.paymentCard p {
+  color: #666;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.paymentInfo {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.paymentSummary h3 {
+  color: var(--primary-color);
+  margin: 1.5rem 0 0.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.paymentInstructions {
+  background-color: #e0e7ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  border: 1px solid #6366f1;
+}
+
+.paymentInstructions h4 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.paymentInstructions ol {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.paymentInstructions li {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.certificateForm {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.required {
+  color: #dc2626;
+  font-size: 0.9rem;
+  margin-left: 0.25rem;
+}
+
+.formGroup input,
+.formGroup select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.confirmSection {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.confirmTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-bottom: 1.5rem;
+}
+
+.confirmTable th,
+.confirmTable td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.confirmTable th {
+  background-color: var(--light-gray);
+  font-weight: 500;
+  width: 40%;
+}
+
+.feeInfo {
+  background-color: #fef3c7;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  border: 1px solid #fbbf24;
+  text-align: center;
+}
+
+.feeInfo h3 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.feeAmount {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0.5rem 0;
+}
+
+.formButtons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.primaryButton {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.primaryButton:hover {
+  background-color: #ec4899;
+}
+
+.backButton {
+  background-color: white;
+  color: var(--text-color);
+  border: 1px solid #ddd;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: var(--light-gray);
+}
+
+.notice {
+  background-color: #fee2e2;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  border: 1px solid #f87171;
+}
+
+.notice h4 {
+  color: #dc2626;
+  margin-bottom: 0.5rem;
+}
+
+.notice ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.notice li {
+  color: #7f1d1d;
+  margin-bottom: 0.25rem;
+}
+
+.completeSection {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.successIcon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.completeSection h2 {
+  color: #10b981;
+  margin-bottom: 2rem;
+}
+
+.applicationInfo {
+  background-color: var(--light-gray);
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.applicationInfo h3 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.applicationNumber {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0.5rem 0;
+  font-family: monospace;
+}
+
+.applicationNote {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.nextSteps {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.nextSteps h3 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.nextSteps ol {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.nextSteps li {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.simulatorForm {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.simulatorNote {
+  background-color: #e0e7ff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  color: #4338ca;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.simulationResult {
+  background-color: #f0fdf4;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  border: 1px solid #86efac;
+}
+
+.simulationResult h3 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.resultTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.resultTable th,
+.resultTable td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.resultTable th {
+  background-color: white;
+  font-weight: 500;
+  width: 60%;
+}
+
+.resultTable td {
+  text-align: right;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.totalRow th,
+.totalRow td {
+  border-top: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.monthlyAmount {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #059669;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  .tabContainer {
+    flex-direction: column;
+  }
+
+  .tab {
+    width: 100%;
+  }
+
+  .taxGrid,
+  .paymentMethods {
+    grid-template-columns: 1fr;
+  }
+
+  .formButtons {
+    flex-direction: column;
+  }
+
+  .primaryButton,
+  .backButton {
+    width: 100%;
+  }
+}

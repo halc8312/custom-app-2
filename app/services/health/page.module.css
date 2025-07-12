@@ -1,0 +1,484 @@
+.main {
+  padding: 2rem 0 4rem;
+  min-height: calc(100vh - 200px);
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.pageTitle {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.serviceSection {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.serviceSection h2 {
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.serviceCard {
+  background-color: var(--light-gray);
+  border: 2px solid transparent;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.serviceCard:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.serviceIcon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.serviceCard h3 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.serviceCard p {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 0.25rem 0;
+}
+
+.serviceNote {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.formSection,
+.infoSection,
+.subsidySection,
+.confirmSection,
+.completeSection {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formSection h2,
+.infoSection h2,
+.subsidySection h2,
+.confirmSection h2 {
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.applicationForm {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.required {
+  color: #dc2626;
+  font-size: 0.9rem;
+  margin-left: 0.25rem;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.formButtons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.primaryButton {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.primaryButton:hover {
+  background-color: #ec4899;
+}
+
+.backButton {
+  background-color: white;
+  color: var(--text-color);
+  border: 1px solid #ddd;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: var(--light-gray);
+}
+
+.procedureGuide {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.procedureCard {
+  background-color: #f0f9ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #bae6fd;
+}
+
+.procedureCard h3 {
+  color: #0369a1;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.procedureCard h4 {
+  color: var(--text-color);
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+}
+
+.procedureCard ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.procedureCard li {
+  color: #334155;
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.officeInfo {
+  background-color: #fef3c7;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  border: 1px solid #fbbf24;
+  text-align: center;
+}
+
+.officeInfo h3 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.officeInfo p {
+  margin: 0.25rem 0;
+  color: #333;
+}
+
+.subsidyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.subsidyCard {
+  background-color: #f0fdf4;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #86efac;
+}
+
+.subsidyCard h3 {
+  color: #15803d;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.targetAge {
+  color: #059669;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subsidyCard h4 {
+  color: var(--text-color);
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+}
+
+.subsidyCard ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.subsidyCard li {
+  color: #334155;
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.applicationNote {
+  background-color: #e0e7ff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.applicationNote p {
+  color: #4338ca;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.confirmContent {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.confirmContent h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.confirmTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+.confirmTable th,
+.confirmTable td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.confirmTable th {
+  background-color: var(--light-gray);
+  font-weight: 500;
+  width: 35%;
+}
+
+.feeInfo {
+  background-color: #fef3c7;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border: 1px solid #fbbf24;
+  text-align: center;
+}
+
+.feeInfo h3 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.feeAmount {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0.5rem 0;
+}
+
+.feeNote {
+  color: #78716c;
+  font-size: 0.9rem;
+}
+
+.completeSection {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.successIcon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.completeSection h2 {
+  color: #10b981;
+  margin-bottom: 2rem;
+}
+
+.applicationInfo {
+  background-color: var(--light-gray);
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.applicationInfo h3 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.applicationNumber {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0.5rem 0;
+  font-family: monospace;
+}
+
+.applicationNote {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.nextSteps {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.nextSteps h3 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.nextSteps ol {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.nextSteps li {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.confirmEmail {
+  margin: 2rem 0;
+}
+
+.confirmEmail p {
+  margin: 0.5rem 0;
+}
+
+.demoNote {
+  color: #666;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.completeButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.printButton {
+  background-color: white;
+  color: var(--text-color);
+  border: 1px solid var(--primary-color);
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.printButton:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  .serviceGrid,
+  .procedureGuide,
+  .subsidyGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .formButtons {
+    flex-direction: column;
+  }
+
+  .primaryButton,
+  .backButton {
+    width: 100%;
+  }
+
+  .completeButtons {
+    flex-direction: column;
+  }
+}
