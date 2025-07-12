@@ -1,11 +1,29 @@
 'use client'
 
 import { useState } from 'react'
+import dynamic from 'next/dynamic'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import SakuraMap from '@/components/SakuraMap'
 import Link from 'next/link'
 import styles from './page.module.css'
+
+// 動的インポートでLeafletMapを読み込む
+const LeafletMap = dynamic(() => import('@/components/LeafletMap'), {
+  ssr: false,
+  loading: () => (
+    <div style={{ 
+      height: '700px', 
+      display: 'flex', 
+      alignItems: 'center', 
+      justifyContent: 'center',
+      backgroundColor: '#f3f4f6',
+      borderRadius: '12px'
+    }}>
+      <p>地図を読み込んでいます...</p>
+    </div>
+  )
+})
 
 export default function MapPage() {
   const [mapType, setMapType] = useState<'svg' | 'geojson'>('svg')
@@ -33,8 +51,6 @@ export default function MapPage() {
             <button
               className={`${styles.typeButton} ${mapType === 'geojson' ? styles.active : ''}`}
               onClick={() => setMapType('geojson')}
-              disabled
-              title="Leafletのインストールが必要です"
             >
               詳細マップ（GeoJSON）
             </button>
@@ -51,7 +67,11 @@ export default function MapPage() {
               </ul>
             </div>
 
-            <SakuraMap height="700px" />
+            {mapType === 'svg' ? (
+              <SakuraMap height="700px" />
+            ) : (
+              <LeafletMap height="700px" />
+            )}
 
             <div className={styles.mapInfo}>
               <h2>桜県について</h2>
