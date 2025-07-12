@@ -53,6 +53,9 @@ export default function Header() {
               <Link href="/economy">{t('navigation.economy')}</Link>
             </li>
             <li>
+              <Link href="/map">{locale === 'ja' ? 'マップ' : 'Map'}</Link>
+            </li>
+            <li>
               <Link href="/access">{t('navigation.access')}</Link>
             </li>
             <li>
