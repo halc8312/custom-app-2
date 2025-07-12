@@ -1,0 +1,423 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.heroSection {
+  background: linear-gradient(135deg, #1a5f7a 0%, #2d7a99 100%);
+  color: white;
+  padding: 60px 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: #1a5f7a;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  color: #999;
+}
+
+.content {
+  margin-bottom: 60px;
+}
+
+.yearSelector {
+  margin-bottom: 40px;
+}
+
+.yearSelector h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.yearButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.yearButton {
+  padding: 10px 20px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.yearButton:hover {
+  border-color: #1a5f7a;
+  color: #1a5f7a;
+}
+
+.yearButton.active {
+  background: #1a5f7a;
+  color: white;
+  border-color: #1a5f7a;
+}
+
+.budgetOverview {
+  margin-bottom: 50px;
+}
+
+.budgetOverview h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.totalBudget {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.totalCard {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #e9ecef;
+}
+
+.totalCard h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.totalAmount {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1a5f7a;
+}
+
+.budgetDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.budgetSection h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.budgetChart {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.budgetItem {
+  margin-bottom: 20px;
+}
+
+.budgetItem:last-child {
+  margin-bottom: 0;
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.itemName {
+  font-weight: 500;
+  color: #333;
+}
+
+.itemAmount {
+  color: #666;
+}
+
+.progressBar {
+  height: 20px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #1a5f7a 0%, #2d7a99 100%);
+  transition: width 0.3s ease;
+}
+
+.percentage {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.financialIndicators {
+  margin-bottom: 50px;
+}
+
+.financialIndicators h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.indicatorGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.indicatorCard {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.indicatorCard h3 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.indicatorValue {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a5f7a;
+}
+
+.trend {
+  font-size: 1.5rem;
+}
+
+.trend.up {
+  color: #28a745;
+}
+
+.trend.down {
+  color: #dc3545;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.majorProjects {
+  margin-bottom: 50px;
+}
+
+.majorProjects h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.projectList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.projectCard {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projectCard h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.projectInfo {
+  margin-bottom: 20px;
+}
+
+.projectDetail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.projectDetail:last-child {
+  border-bottom: none;
+}
+
+.projectDetail span {
+  color: #666;
+}
+
+.projectDetail strong {
+  color: #333;
+}
+
+.projectProgress {
+  margin-top: 15px;
+}
+
+.progressHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.documents {
+  margin-bottom: 50px;
+}
+
+.documents h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.documentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.documentCard {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.documentCard h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.documentList {
+  list-style: none;
+  padding: 0;
+}
+
+.documentList li {
+  margin-bottom: 10px;
+}
+
+.documentList a {
+  color: #1a5f7a;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.documentList a:hover {
+  text-decoration: underline;
+}
+
+.documentList a::before {
+  content: "📄";
+  font-size: 1.1rem;
+}
+
+.contact {
+  background: #f8f9fa;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.contact h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contactInfo p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.contactDetails {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 500px;
+}
+
+.contactDetails h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contactDetails p {
+  margin-bottom: 8px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .totalBudget,
+  .budgetDetails {
+    grid-template-columns: 1fr;
+  }
+  
+  .yearButtons {
+    flex-wrap: wrap;
+  }
+  
+  .indicatorGrid,
+  .projectList,
+  .documentGrid {
+    grid-template-columns: 1fr;
+  }
+}

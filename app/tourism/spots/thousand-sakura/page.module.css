@@ -1,0 +1,509 @@
+.main {
+  min-height: calc(100vh - 200px);
+}
+
+.hero {
+  background: linear-gradient(135deg, #ffb6c1 0%, #ff69b4 100%);
+  padding: 3rem 0;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.heroTitle {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.heroSubtitle {
+  color: white;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.imageSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mainImage {
+  background-color: #ffe0ec;
+  border-radius: 8px;
+  padding: 4rem;
+  text-align: center;
+  font-size: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.subImage {
+  background-color: #ffe0ec;
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content h2 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.content h3 {
+  color: var(--text-color);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.seasons {
+  margin-bottom: 4rem;
+}
+
+.seasons h2 {
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.seasonGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.seasonCard {
+  background-color: white;
+  border: 2px solid #ffb6c1;
+  border-radius: 8px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.seasonCard:hover {
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.2);
+  transform: translateY(-2px);
+}
+
+.seasonIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.seasonCard h3 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.seasonCard p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.seasonInfo {
+  background-color: #ffe0ec;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.areas {
+  background-color: var(--light-gray);
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 4rem;
+}
+
+.areas h2 {
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.areaGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.areaCard {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.areaCard h3 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.areaCard p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.info {
+  margin-bottom: 4rem;
+}
+
+.info h2 {
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.infoCard {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.infoCard h3 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.infoMain {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ff69b4;
+  margin: 0.5rem 0;
+}
+
+.infoSub {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+}
+
+.infoNote {
+  color: #999;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+
+.priceList {
+  margin-top: 1rem;
+}
+
+.priceItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.9rem;
+}
+
+.priceItem:last-child {
+  border-bottom: none;
+}
+
+.priceItem span:last-child {
+  font-weight: bold;
+  color: #ff69b4;
+}
+
+.events {
+  margin-bottom: 4rem;
+}
+
+.events h2 {
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.eventList {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.eventItem {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+  align-items: center;
+}
+
+.eventItem:last-child {
+  border-bottom: none;
+}
+
+.eventMonth {
+  background-color: #ff69b4;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-weight: bold;
+  min-width: 80px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.eventContent {
+  flex: 1;
+}
+
+.eventContent h3 {
+  margin-bottom: 0.25rem;
+  color: var(--text-color);
+}
+
+.eventContent p {
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.facilities {
+  margin-bottom: 4rem;
+}
+
+.facilities h2 {
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.facilityGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.facilityCard {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.facilityCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.facilityIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.facilityCard h3 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.facilityCard p {
+  color: #666;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.tips {
+  margin-bottom: 4rem;
+}
+
+.tips h2 {
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.tipGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.tipCard {
+  background-color: #fff0f5;
+  border: 1px solid #ffb6c1;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.tipCard h3 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.tipCard p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.nearby {
+  margin-bottom: 4rem;
+}
+
+.nearby h2 {
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.nearbyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.nearbyCard {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nearbyCard:hover {
+  border-color: #ff69b4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.nearbyIcon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.nearbyCard h3 {
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.nearbyCard p {
+  color: #666;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.backLink {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.backButton {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .overview {
+    grid-template-columns: 1fr;
+  }
+
+  .imageGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .eventItem {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .seasonGrid,
+  .areaGrid,
+  .infoGrid,
+  .facilityGrid,
+  .tipGrid,
+  .nearbyGrid {
+    grid-template-columns: 1fr;
+  }
+}

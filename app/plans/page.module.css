@@ -1,0 +1,506 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.heroSection {
+  background: linear-gradient(135deg, #5a3f7a 0%, #7a5599 100%);
+  color: white;
+  padding: 60px 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: #5a3f7a;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  color: #999;
+}
+
+.content {
+  margin-bottom: 60px;
+}
+
+.categoryFilter {
+  margin-bottom: 40px;
+}
+
+.categoryFilter h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.categoryButtons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.categoryButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.categoryButton:hover {
+  border-color: #5a3f7a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.categoryButton.active {
+  background: #5a3f7a;
+  color: white;
+  border-color: #5a3f7a;
+}
+
+.categoryIcon {
+  font-size: 1.1rem;
+}
+
+.plansSection {
+  margin-bottom: 50px;
+}
+
+.plansSection h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.plansGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.planCard {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.planCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.planHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.planTitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.statusActive {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.statusDraft {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.statusReview {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.planSubtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.planPeriod {
+  font-size: 0.9rem;
+  color: #5a3f7a;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.planDescription {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.keyPoints {
+  margin-bottom: 20px;
+}
+
+.keyPoints h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.keyPoints ul {
+  list-style: none;
+  padding: 0;
+}
+
+.keyPoints li {
+  padding: 5px 0;
+  padding-left: 20px;
+  position: relative;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.keyPoints li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #5a3f7a;
+}
+
+.planProgress {
+  margin-bottom: 20px;
+}
+
+.progressHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.progressBar {
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #5a3f7a 0%, #7a5599 100%);
+  transition: width 0.3s ease;
+}
+
+.planActions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.detailLink,
+.downloadLink {
+  flex: 1;
+  text-align: center;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.detailLink {
+  background: #5a3f7a;
+  color: white;
+}
+
+.detailLink:hover {
+  background: #4a2f6a;
+}
+
+.downloadLink {
+  background: white;
+  color: #5a3f7a;
+  border: 2px solid #5a3f7a;
+}
+
+.downloadLink:hover {
+  background: #5a3f7a;
+  color: white;
+}
+
+.timeline {
+  margin-bottom: 50px;
+}
+
+.timeline h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.timelineContainer {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timelineContainer::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ddd;
+}
+
+.timelineItem {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.timelineItem::before {
+  content: '';
+  position: absolute;
+  left: -34px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #5a3f7a;
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px #ddd;
+}
+
+.timelineDate {
+  font-weight: bold;
+  color: #5a3f7a;
+  margin-bottom: 5px;
+}
+
+.timelineContent h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.timelineContent p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.participation {
+  margin-bottom: 50px;
+}
+
+.participation h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.participationGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.participationCard {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.participationCard h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.participationCard p {
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.participationLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #5a3f7a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.participationLink:hover {
+  text-decoration: underline;
+}
+
+.participationLink::after {
+  content: "→";
+}
+
+.evaluation {
+  background: #f8f9fa;
+  padding: 40px;
+  border-radius: 12px;
+  margin-bottom: 50px;
+}
+
+.evaluation h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.evaluationInfo p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.evaluationLinks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.evaluationLink {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.evaluationLink:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.linkIcon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.evaluationLink h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.evaluationLink p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.contact {
+  background: #f8f9fa;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.contact h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contactInfo p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.contactDetails {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 500px;
+}
+
+.contactDetails h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contactDetails p {
+  margin-bottom: 8px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .plansGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .planActions {
+    flex-direction: column;
+  }
+  
+  .categoryButtons {
+    justify-content: center;
+  }
+  
+  .participationGrid,
+  .evaluationLinks {
+    grid-template-columns: 1fr;
+  }
+}
