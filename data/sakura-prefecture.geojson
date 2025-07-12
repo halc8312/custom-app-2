@@ -1,0 +1,228 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桜県",
+        "type": "prefecture",
+        "population": 2200000,
+        "area": "5,432 km²"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [139.5, 36.0],
+          [139.8, 36.1],
+          [140.1, 36.0],
+          [140.2, 35.8],
+          [140.1, 35.5],
+          [139.9, 35.3],
+          [139.6, 35.2],
+          [139.3, 35.3],
+          [139.1, 35.5],
+          [139.0, 35.8],
+          [139.1, 35.9],
+          [139.3, 36.0],
+          [139.5, 36.0]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桜花市",
+        "type": "city",
+        "population": 685000,
+        "role": "県庁所在地"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [139.6, 35.65],
+          [139.7, 35.7],
+          [139.75, 35.65],
+          [139.7, 35.6],
+          [139.65, 35.6],
+          [139.6, 35.65]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桜川市",
+        "type": "city",
+        "population": 523000,
+        "role": "港湾都市"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [139.3, 35.7],
+          [139.4, 35.75],
+          [139.45, 35.7],
+          [139.4, 35.65],
+          [139.35, 35.65],
+          [139.3, 35.7]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "東桜市",
+        "type": "city",
+        "population": 412000,
+        "role": "IT産業の中心"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [139.85, 35.7],
+          [139.95, 35.75],
+          [140.0, 35.7],
+          [139.95, 35.65],
+          [139.9, 35.65],
+          [139.85, 35.7]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桜川",
+        "type": "river"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [139.2, 35.9],
+          [139.35, 35.8],
+          [139.5, 35.7],
+          [139.65, 35.65],
+          [139.8, 35.6],
+          [139.95, 35.5]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桜縦貫自動車道",
+        "type": "highway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [139.5, 35.2],
+          [139.55, 35.4],
+          [139.6, 35.6],
+          [139.65, 35.8],
+          [139.7, 36.0]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桜新幹線",
+        "type": "railway",
+        "line": "shinkansen"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [139.3, 35.3],
+          [139.5, 35.5],
+          [139.7, 35.65],
+          [139.9, 35.8],
+          [140.1, 35.95]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桜湖",
+        "type": "lake"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [139.85, 35.45],
+          [139.9, 35.48],
+          [139.93, 35.45],
+          [139.9, 35.42],
+          [139.87, 35.42],
+          [139.85, 35.45]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桜城",
+        "type": "tourist",
+        "category": "castle",
+        "description": "国宝・桜県のシンボル"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.68, 35.66]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "千本桜公園",
+        "type": "tourist",
+        "category": "park",
+        "description": "日本三大桜名所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.65, 35.68]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桜空港",
+        "type": "facility",
+        "category": "airport",
+        "iata": "SKR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.45, 35.55]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桜花駅",
+        "type": "facility",
+        "category": "station",
+        "lines": ["桜新幹線", "JR桜本線", "桜地下鉄"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.67, 35.65]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南桜温泉郷",
+        "type": "tourist",
+        "category": "onsen",
+        "description": "名湯の里"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6, 35.35]
+      }
+    }
+  ]
+}

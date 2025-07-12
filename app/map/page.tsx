@@ -1,3 +1,6 @@
+'use client'
+
+import { useState } from 'react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import SakuraMap from '@/components/SakuraMap'
@@ -5,6 +8,8 @@ import Link from 'next/link'
 import styles from './page.module.css'
 
 export default function MapPage() {
+  const [mapType, setMapType] = useState<'svg' | 'geojson'>('svg')
+
   return (
     <>
       <Header />
@@ -17,6 +22,23 @@ export default function MapPage() {
           </div>
 
           <h1 className={styles.pageTitle}>桜県マップ</h1>
+          
+          <div className={styles.mapTypeSelector}>
+            <button
+              className={`${styles.typeButton} ${mapType === 'svg' ? styles.active : ''}`}
+              onClick={() => setMapType('svg')}
+            >
+              シンプルマップ
+            </button>
+            <button
+              className={`${styles.typeButton} ${mapType === 'geojson' ? styles.active : ''}`}
+              onClick={() => setMapType('geojson')}
+              disabled
+              title="Leafletのインストールが必要です"
+            >
+              詳細マップ（GeoJSON）
+            </button>
+          </div>
           
           <div className={styles.mapSection}>
             <div className={styles.instructions}>
