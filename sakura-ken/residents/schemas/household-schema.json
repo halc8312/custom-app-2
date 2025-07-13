@@ -1,0 +1,192 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "桜県世帯データスキーマ",
+  "description": "桜県の世帯構成と世帯情報のスキーマ",
+  "type": "object",
+  "properties": {
+    "household_id": {
+      "type": "string",
+      "description": "世帯番号（10桁）",
+      "pattern": "^[0-9]{10}$"
+    },
+    "household_type": {
+      "type": "string",
+      "enum": ["単独世帯", "夫婦のみ世帯", "夫婦と子供世帯", "ひとり親と子供世帯", "三世代世帯", "その他の世帯"],
+      "description": "世帯類型"
+    },
+    "head_of_household": {
+      "type": "string",
+      "description": "世帯主の住民番号"
+    },
+    "members": {
+      "type": "array",
+      "description": "世帯構成員",
+      "items": {
+        "type": "object",
+        "properties": {
+          "resident_id": {
+            "type": "string",
+            "description": "住民番号"
+          },
+          "relationship_to_head": {
+            "type": "string",
+            "description": "世帯主との続柄"
+          },
+          "is_dependent": {
+            "type": "boolean",
+            "description": "扶養家族かどうか"
+          }
+        },
+        "required": ["resident_id", "relationship_to_head"]
+      }
+    },
+    "address": {
+      "type": "object",
+      "properties": {
+        "postal_code": {
+          "type": "string",
+          "pattern": "^[0-9]{3}-[0-9]{4}$"
+        },
+        "prefecture": {
+          "type": "string",
+          "const": "桜県"
+        },
+        "city": {
+          "type": "string",
+          "enum": ["桜花市", "桜川市", "東桜市", "西桜市", "南桜市", "北桜市"]
+        },
+        "district": {
+          "type": "string",
+          "description": "地区名"
+        },
+        "block": {
+          "type": "string",
+          "description": "丁目・番地"
+        },
+        "building": {
+          "type": "string",
+          "description": "建物名・部屋番号"
+        }
+      },
+      "required": ["postal_code", "prefecture", "city", "district", "block"]
+    },
+    "housing_info": {
+      "type": "object",
+      "properties": {
+        "housing_type": {
+          "type": "string",
+          "enum": ["一戸建て", "マンション", "アパート", "公営住宅", "社宅", "その他"],
+          "description": "住宅種別"
+        },
+        "ownership": {
+          "type": "string",
+          "enum": ["持ち家", "賃貸", "社宅・寮", "公営", "その他"],
+          "description": "所有形態"
+        },
+        "floor_area": {
+          "type": "number",
+          "description": "床面積（㎡）"
+        },
+        "rooms": {
+          "type": "integer",
+          "description": "部屋数"
+        },
+        "rent": {
+          "type": "integer",
+          "description": "家賃（円/月）※賃貸の場合"
+        },
+        "construction_year": {
+          "type": "integer",
+          "description": "建築年"
+        }
+      }
+    },
+    "economic_info": {
+      "type": "object",
+      "properties": {
+        "household_income": {
+          "type": "string",
+          "enum": ["200万円未満", "200-400万円", "400-600万円", "600-800万円", "800-1000万円", "1000-1500万円", "1500万円以上"],
+          "description": "世帯年収"
+        },
+        "income_sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "source_type": {
+                "type": "string",
+                "enum": ["給与", "事業", "年金", "不動産", "その他"]
+              },
+              "contributor_id": {
+                "type": "string",
+                "description": "収入者の住民番号"
+              }
+            }
+          }
+        },
+        "car_ownership": {
+          "type": "integer",
+          "description": "自動車保有台数"
+        }
+      }
+    },
+    "welfare_status": {
+      "type": "object",
+      "properties": {
+        "receiving_welfare": {
+          "type": "boolean",
+          "description": "生活保護受給"
+        },
+        "elderly_care_needed": {
+          "type": "boolean",
+          "description": "要介護者の有無"
+        },
+        "child_allowance": {
+          "type": "boolean",
+          "description": "児童手当受給"
+        },
+        "disability_support": {
+          "type": "boolean",
+          "description": "障害者支援受給"
+        }
+      }
+    },
+    "household_formation": {
+      "type": "object",
+      "properties": {
+        "formation_date": {
+          "type": "string",
+          "format": "date",
+          "description": "世帯形成日"
+        },
+        "formation_reason": {
+          "type": "string",
+          "enum": ["婚姻", "出生", "転入", "独立", "その他"],
+          "description": "世帯形成理由"
+        },
+        "previous_household_id": {
+          "type": "string",
+          "description": "前世帯番号（分離の場合）"
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "data_version": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": ["household_id", "household_type", "head_of_household", "members", "address", "housing_info"]
+}

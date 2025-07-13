@@ -1,0 +1,353 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "桜県戸籍謄本・抄本テンプレート",
+  "description": "戸籍謄本（全部事項証明書）・戸籍抄本（個人事項証明書）の交付用テンプレート",
+  "type": "object",
+  "properties": {
+    "certificate_info": {
+      "type": "object",
+      "properties": {
+        "certificate_type": {
+          "type": "string",
+          "enum": ["戸籍謄本", "戸籍抄本", "除籍謄本", "改製原戸籍"],
+          "description": "証明書の種類"
+        },
+        "certificate_number": {
+          "type": "string",
+          "description": "証明書番号"
+        },
+        "issue_date": {
+          "type": "string",
+          "format": "date",
+          "description": "交付日"
+        },
+        "issuing_office": {
+          "type": "string",
+          "description": "交付機関"
+        },
+        "issuing_officer": {
+          "type": "string",
+          "description": "交付担当者"
+        }
+      }
+    },
+    "register_info": {
+      "type": "object",
+      "properties": {
+        "本籍": {
+          "type": "string",
+          "description": "本籍地の住所"
+        },
+        "筆頭者": {
+          "type": "object",
+          "properties": {
+            "氏名": {
+              "type": "string"
+            },
+            "氏名よみがな": {
+              "type": "string"
+            }
+          }
+        },
+        "戸籍編製": {
+          "type": "object",
+          "properties": {
+            "編製日": {
+              "type": "string",
+              "format": "date"
+            },
+            "編製事由": {
+              "type": "string",
+              "enum": ["婚姻", "転籍", "分籍", "その他"]
+            },
+            "従前戸籍": {
+              "type": "string",
+              "description": "従前の本籍地"
+            }
+          }
+        }
+      }
+    },
+    "family_members": {
+      "type": "array",
+      "description": "戸籍に記載されている者",
+      "items": {
+        "type": "object",
+        "properties": {
+          "身分事項": {
+            "type": "object",
+            "properties": {
+              "氏名": {
+                "type": "string"
+              },
+              "氏名よみがな": {
+                "type": "string"
+              },
+              "生年月日": {
+                "type": "string"
+              },
+              "性別": {
+                "type": "string",
+                "enum": ["男", "女"]
+              },
+              "続柄": {
+                "type": "string",
+                "description": "筆頭者との続柄"
+              },
+              "配偶者区分": {
+                "type": "string",
+                "enum": ["夫", "妻", ""]
+              }
+            }
+          },
+          "出生事項": {
+            "type": "object",
+            "properties": {
+              "出生日": {
+                "type": "string",
+                "format": "date"
+              },
+              "出生地": {
+                "type": "string"
+              },
+              "届出日": {
+                "type": "string",
+                "format": "date"
+              },
+              "届出人": {
+                "type": "string"
+              }
+            }
+          },
+          "父母との続柄": {
+            "type": "object",
+            "properties": {
+              "父": {
+                "type": "string"
+              },
+              "母": {
+                "type": "string"
+              },
+              "続柄": {
+                "type": "string",
+                "enum": ["長男", "長女", "二男", "二女", "三男", "三女", "その他"]
+              }
+            }
+          },
+          "養子縁組事項": {
+            "type": "object",
+            "properties": {
+              "縁組日": {
+                "type": "string",
+                "format": "date"
+              },
+              "養父": {
+                "type": "string"
+              },
+              "養母": {
+                "type": "string"
+              },
+              "届出日": {
+                "type": "string",
+                "format": "date"
+              }
+            }
+          },
+          "婚姻事項": {
+            "type": "object",
+            "properties": {
+              "婚姻日": {
+                "type": "string",
+                "format": "date"
+              },
+              "配偶者氏名": {
+                "type": "string"
+              },
+              "従前戸籍": {
+                "type": "string"
+              },
+              "届出日": {
+                "type": "string",
+                "format": "date"
+              }
+            }
+          },
+          "離婚事項": {
+            "type": "object",
+            "properties": {
+              "離婚日": {
+                "type": "string",
+                "format": "date"
+              },
+              "離婚の種別": {
+                "type": "string",
+                "enum": ["協議離婚", "調停離婚", "裁判離婚"]
+              },
+              "親権者": {
+                "type": "string"
+              },
+              "届出日": {
+                "type": "string",
+                "format": "date"
+              }
+            }
+          },
+          "死亡事項": {
+            "type": "object",
+            "properties": {
+              "死亡日": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "死亡地": {
+                "type": "string"
+              },
+              "届出日": {
+                "type": "string",
+                "format": "date"
+              },
+              "届出人": {
+                "type": "string"
+              }
+            }
+          },
+          "その他記録事項": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "事項": {
+                  "type": "string"
+                },
+                "日付": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "詳細": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "戸籍事項": {
+      "type": "object",
+      "properties": {
+        "改製": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "改製日": {
+                "type": "string",
+                "format": "date"
+              },
+              "改製事由": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "再製": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "再製日": {
+                "type": "string",
+                "format": "date"
+              },
+              "再製事由": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "消除": {
+          "type": "object",
+          "properties": {
+            "消除日": {
+              "type": "string",
+              "format": "date"
+            },
+            "消除事由": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "certification": {
+      "type": "object",
+      "properties": {
+        "認証文": {
+          "type": "string",
+          "default": "これは、戸籍に記録されている事項の全部（一部）を証明した書面である。"
+        },
+        "発行者": {
+          "type": "object",
+          "properties": {
+            "役職": {
+              "type": "string",
+              "default": "桜県○○市長"
+            },
+            "氏名": {
+              "type": "string"
+            },
+            "印章": {
+              "type": "string",
+              "description": "電子印章ID"
+            }
+          }
+        }
+      }
+    },
+    "附票情報": {
+      "type": "object",
+      "description": "戸籍の附票情報（必要な場合）",
+      "properties": {
+        "住所履歴": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "住所": {
+                "type": "string"
+              },
+              "住定日": {
+                "type": "string",
+                "format": "date"
+              },
+              "届出日": {
+                "type": "string",
+                "format": "date"
+              }
+            }
+          }
+        }
+      }
+    },
+    "usage_info": {
+      "type": "object",
+      "properties": {
+        "有効期限": {
+          "type": "string",
+          "default": "発行日から3ヶ月（パスポート申請は6ヶ月）"
+        },
+        "使用目的": {
+          "type": "string"
+        },
+        "提出先": {
+          "type": "string"
+        },
+        "手数料": {
+          "type": "integer",
+          "default": 450,
+          "description": "円"
+        }
+      }
+    }
+  }
+}
