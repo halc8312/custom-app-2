@@ -12,6 +12,7 @@ on:
 
 jobs:
   claude-code-action:
+    # @claudeが含まれるコメントの時のみ実行
     if: |
       (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude')) ||
       (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@claude')) ||
@@ -25,6 +26,7 @@ jobs:
       pull-requests: write
       issues: write
       id-token: write
+      actions: read
     
     steps:
       - name: Checkout repository
@@ -40,6 +42,36 @@ jobs:
           claude_refresh_token: ${{ secrets.CLAUDE_REFRESH_TOKEN }}
           claude_expires_at: ${{ secrets.CLAUDE_EXPIRES_AT }}
           timeout_minutes: "6000"
-          allowed_tools: "Bash(bun install),Bash(bun test:*),Bash(bun run format),Bash(bun typecheck)"
-          custom_instructions: "You have also been granted tools for editing files and running bun commands (install, run, test, typecheck) for testing your changes: bun install, bun test, bun run format, bun typecheck.ユーザーへの応答は日本語でお願いします"
+          allowed_tools: |
+            Bash(bun install),
+            Bash(bun test:*),
+            Bash(bun run format),
+            Bash(bun typecheck),
+            Bash(git add *),
+            Bash(git commit *),
+            Bash(git push *),
+            Bash(npm install),
+            Bash(npm run *),
+            Bash(npm test:*),
+            Bash(yarn *),
+            mcp__github__create_pull_request,
+            mcp__github__review_pull_request,
+            mcp__github__merge_pull_request,
+            mcp__github_ci__get_ci_status,
+            mcp__github_ci__get_workflow_run_details,
+            mcp__github_ci__download_job_log
+          custom_instructions: |
+            - ユーザーが話しかけた言語で必ず応答してください（日本語なら日本語で、英語なら英語で）。
+            - ファイルやコードを変更する際は、その目的・理由・影響を簡潔に説明してください。
+            - 変更内容がわかるよう、関連するコード・設定・手順には十分なコメントや説明を添えてください。
+            - タスクの実施手順は、必要に応じて「計画」「実行」「検証」といったステップで明示的に進めてください。
+            - 複雑な修正や複数の選択肢がある場合は、まずアプローチ案を示し、最善と思う方法で作業を進めてください。
+            - 必要に応じて、実行結果やテスト結果の要約も添えてください。
+            - You have also been granted tools for editing files and running bun/npm/yarn commands (install, run, test, typecheck) and for creating/reviewing/merging pull requests, and reading CI logs/status.
           model: "claude-opus-4-20250514"
+          
+        env:
+          # 環境変数としても設定（念のため）
+          CLAUDE_ACCESS_TOKEN: ${{ secrets.CLAUDE_ACCESS_TOKEN }}
+          CLAUDE_REFRESH_TOKEN: ${{ secrets.CLAUDE_REFRESH_TOKEN }}
+          CLAUDE_EXPIRES_AT: ${{ secrets.CLAUDE_EXPIRES_AT }}
