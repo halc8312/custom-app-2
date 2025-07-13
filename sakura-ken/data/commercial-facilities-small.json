@@ -1,0 +1,611 @@
+{
+  "convenience_stores": [
+    {
+      "id": "CS001",
+      "name": "セブンイレブン桜花中央駅前店",
+      "chain": "セブンイレブン",
+      "type": "コンビニエンスストア",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区桜花中央駅前1-1-2",
+        "coordinates": {"lat": 35.7105, "lng": 139.8595}
+      },
+      "business_info": {
+        "established": "2010-03-15",
+        "business_hours": "24時間営業",
+        "holidays": "無休",
+        "floor_area_m2": 180,
+        "parking_spaces": 8
+      },
+      "services": [
+        "ATM（セブン銀行）",
+        "コピー・FAX",
+        "チケット販売",
+        "宅配便受付",
+        "公共料金支払い",
+        "Wi-Fi"
+      ],
+      "employees": {
+        "total": 15,
+        "store_manager": {
+          "employee_id": "CS001-M001",
+          "name": "小山田進",
+          "position": "店長",
+          "hire_date": "2015-04-01",
+          "work_schedule": "フルタイム",
+          "annual_salary": 4200000
+        },
+        "shifts": {
+          "morning": {"6:00-14:00": 3},
+          "afternoon": {"14:00-22:00": 3},
+          "night": {"22:00-6:00": 2}
+        },
+        "part_time_staff": 12
+      },
+      "economic_data": {
+        "daily_customers": 1200,
+        "average_spending": 650,
+        "peak_hours": ["7:00-9:00", "12:00-13:00", "18:00-20:00"],
+        "best_selling_items": ["おにぎり", "サンドイッチ", "コーヒー", "スイーツ"]
+      }
+    },
+    {
+      "id": "CS002",
+      "name": "ファミリーマート東桜テクノパーク店",
+      "chain": "ファミリーマート",
+      "type": "コンビニエンスストア",
+      "location": {
+        "city": "東桜市",
+        "district": "テクノ地区",
+        "address": "東桜市テクノ地区イノベーション通り3-4-5",
+        "coordinates": {"lat": 35.7456, "lng": 139.8234}
+      },
+      "business_info": {
+        "established": "2018-06-20",
+        "business_hours": "24時間営業",
+        "holidays": "無休",
+        "floor_area_m2": 200,
+        "parking_spaces": 10
+      },
+      "services": [
+        "ATM（ゆうちょ銀行）",
+        "Famiポート",
+        "宅配便",
+        "コーヒーマシン",
+        "イートインスペース（20席）"
+      ],
+      "employees": {
+        "total": 18,
+        "store_manager": {
+          "employee_id": "CS002-M001",
+          "name": "技術田美咲",
+          "position": "店長",
+          "hire_date": "2018-05-01",
+          "work_schedule": "フルタイム",
+          "annual_salary": 4500000
+        },
+        "part_time_staff": 15
+      },
+      "economic_data": {
+        "daily_customers": 1500,
+        "average_spending": 720,
+        "tech_worker_ratio": 60
+      }
+    },
+    {
+      "id": "CS003",
+      "name": "ローソン桜川港前店",
+      "chain": "ローソン",
+      "type": "コンビニエンスストア",
+      "location": {
+        "city": "桜川市",
+        "district": "港地区",
+        "address": "桜川市港地区港湾道路8-9-10",
+        "coordinates": {"lat": 35.6789, "lng": 139.9012}
+      },
+      "business_info": {
+        "established": "2005-09-01",
+        "business_hours": "24時間営業",
+        "holidays": "無休",
+        "floor_area_m2": 165,
+        "parking_spaces": 12
+      },
+      "employees": {
+        "total": 16,
+        "store_manager": {
+          "employee_id": "CS003-M001",
+          "name": "港田航太",
+          "position": "店長",
+          "hire_date": "2012-04-01",
+          "work_schedule": "フルタイム",
+          "annual_salary": 4100000
+        },
+        "early_morning_staff": 4
+      },
+      "economic_data": {
+        "daily_customers": 980,
+        "average_spending": 580,
+        "fisherman_customers": 25
+      }
+    },
+    {
+      "id": "CS004",
+      "name": "桜花ストア西桜伝統工芸前店",
+      "chain": "桜花ストア（地元チェーン）",
+      "type": "コンビニエンスストア",
+      "location": {
+        "city": "西桜市",
+        "district": "工芸地区",
+        "address": "西桜市工芸地区陶芸の里15-16-17",
+        "coordinates": {"lat": 35.6567, "lng": 139.8123}
+      },
+      "business_info": {
+        "established": "2012-04-01",
+        "business_hours": "7:00-23:00",
+        "holidays": "無休",
+        "floor_area_m2": 150,
+        "parking_spaces": 6
+      },
+      "special_features": [
+        "地元工芸品販売コーナー",
+        "観光案内",
+        "地元産品優先仕入れ"
+      ],
+      "employees": {
+        "total": 12,
+        "store_manager": {
+          "employee_id": "CS004-M001",
+          "name": "工芸田匠",
+          "position": "店長",
+          "hire_date": "2012-03-01",
+          "work_schedule": "フルタイム",
+          "annual_salary": 3800000
+        }
+      },
+      "economic_data": {
+        "daily_customers": 650,
+        "average_spending": 750,
+        "tourist_ratio": 35
+      }
+    },
+    {
+      "id": "CS005",
+      "name": "ミニストップ南桜温泉駅前店",
+      "chain": "ミニストップ",
+      "type": "コンビニエンスストア",
+      "location": {
+        "city": "南桜市",
+        "district": "温泉地区",
+        "address": "南桜市温泉地区南桜温泉駅前20-21-22",
+        "coordinates": {"lat": 35.6234, "lng": 139.7890}
+      },
+      "business_info": {
+        "established": "2008-07-15",
+        "business_hours": "24時間営業",
+        "holidays": "無休",
+        "floor_area_m2": 175,
+        "parking_spaces": 8
+      },
+      "services": [
+        "ソフトクリーム",
+        "ホットスナック充実",
+        "観光案内パンフレット",
+        "温泉入浴券販売"
+      ],
+      "employees": {
+        "total": 14,
+        "store_manager": {
+          "employee_id": "CS005-M001",
+          "name": "温泉田湯美",
+          "position": "店長",
+          "hire_date": "2015-04-01",
+          "work_schedule": "フルタイム",
+          "annual_salary": 4000000
+        }
+      }
+    }
+  ],
+  "individual_shops": [
+    {
+      "id": "IS001",
+      "name": "八百屋「新鮮野菜の田中」",
+      "type": "青果店",
+      "owner": {
+        "name": "田中農一",
+        "age": 58,
+        "experience_years": 35
+      },
+      "location": {
+        "city": "桜花市",
+        "district": "北区",
+        "address": "桜花市北区市民センター前25-26",
+        "coordinates": {"lat": 35.7234, "lng": 139.8456}
+      },
+      "business_info": {
+        "established": "1988-04-01",
+        "business_hours": {
+          "weekday": "9:00-19:00",
+          "saturday": "9:00-18:00",
+          "sunday": "定休日"
+        },
+        "floor_area_m2": 65,
+        "specialties": ["地元野菜", "朝採れ野菜", "珍しい野菜"]
+      },
+      "employees": {
+        "family_members": 2,
+        "part_time": 1
+      },
+      "economic_data": {
+        "annual_revenue": 32000000,
+        "daily_customers": 120,
+        "regular_customers_ratio": 65
+      },
+      "community_role": [
+        "地域の野菜相談窓口",
+        "料理教室開催（月1回）",
+        "子供向け農業体験"
+      ]
+    },
+    {
+      "id": "IS002",
+      "name": "魚屋「港の恵み」",
+      "type": "鮮魚店",
+      "owner": {
+        "name": "漁師崎大漁",
+        "age": 52,
+        "experience_years": 30,
+        "former_occupation": "漁師"
+      },
+      "location": {
+        "city": "桜川市",
+        "district": "港地区",
+        "address": "桜川市港地区魚市場横30-31",
+        "coordinates": {"lat": 35.6789, "lng": 139.9012}
+      },
+      "business_info": {
+        "established": "1995-06-01",
+        "business_hours": {
+          "weekday": "6:00-18:00",
+          "saturday": "6:00-17:00",
+          "sunday": "6:00-15:00"
+        },
+        "floor_area_m2": 80,
+        "specialties": ["朝獲れ地魚", "刺身", "干物"]
+      },
+      "employees": {
+        "family_members": 3,
+        "skilled_workers": 2
+      },
+      "economic_data": {
+        "annual_revenue": 56000000,
+        "daily_customers": 180,
+        "restaurant_customers": 15
+      },
+      "special_services": [
+        "刺身の盛り合わせ注文",
+        "魚のさばき方教室",
+        "飲食店への配達"
+      ]
+    },
+    {
+      "id": "IS003",
+      "name": "肉屋「肉の山田」",
+      "type": "精肉店",
+      "owner": {
+        "name": "山田肉太郎",
+        "age": 45,
+        "experience_years": 20
+      },
+      "location": {
+        "city": "東桜市",
+        "district": "住宅地区",
+        "address": "東桜市住宅地区さくら通り商店街35-36",
+        "coordinates": {"lat": 35.7456, "lng": 139.8234}
+      },
+      "business_info": {
+        "established": "2005-09-01",
+        "business_hours": "10:00-19:30",
+        "holidays": "月曜日",
+        "floor_area_m2": 70,
+        "specialties": ["桜ポーク", "手作りコロッケ", "特製メンチカツ"]
+      },
+      "employees": {
+        "family_members": 2,
+        "part_time": 2
+      },
+      "economic_data": {
+        "annual_revenue": 48000000,
+        "daily_customers": 150,
+        "average_spending": 1000
+      }
+    },
+    {
+      "id": "IS004",
+      "name": "酒屋「地酒の蔵」",
+      "type": "酒販店",
+      "owner": {
+        "name": "酒井醸",
+        "age": 62,
+        "experience_years": 40,
+        "qualifications": ["利き酒師", "焼酎アドバイザー"]
+      },
+      "location": {
+        "city": "西桜市",
+        "district": "旧市街地区",
+        "address": "西桜市旧市街地区古い町並み40-41",
+        "coordinates": {"lat": 35.6567, "lng": 139.8123}
+      },
+      "business_info": {
+        "established": "1983-04-01",
+        "business_hours": "10:00-20:00",
+        "holidays": "日曜日",
+        "floor_area_m2": 95,
+        "specialties": ["地酒", "プレミアム焼酎", "ワイン"]
+      },
+      "inventory": {
+        "sake_brands": 150,
+        "shochu_brands": 80,
+        "wine_selection": 200,
+        "local_brewery_exclusive": 12
+      },
+      "economic_data": {
+        "annual_revenue": 65000000,
+        "daily_customers": 80,
+        "average_spending": 2500
+      },
+      "special_services": [
+        "試飲会（月2回）",
+        "お酒の相談",
+        "ギフト包装",
+        "蔵元ツアー企画"
+      ]
+    },
+    {
+      "id": "IS005",
+      "name": "パン屋「朝焼けベーカリー」",
+      "type": "ベーカリー",
+      "owner": {
+        "name": "小麦田パン子",
+        "age": 38,
+        "experience_years": 15,
+        "training": "フランス修行3年"
+      },
+      "location": {
+        "city": "南桜市",
+        "district": "住宅地区",
+        "address": "南桜市住宅地区朝日通り45-46",
+        "coordinates": {"lat": 35.6234, "lng": 139.7890}
+      },
+      "business_info": {
+        "established": "2010-11-01",
+        "business_hours": {
+          "weekday": "7:00-19:00",
+          "weekend": "7:00-18:00"
+        },
+        "holidays": "火曜日",
+        "floor_area_m2": 85,
+        "baking_capacity": "500個/日"
+      },
+      "products": {
+        "bread_types": 35,
+        "signature_items": ["クロワッサン", "カンパーニュ", "桜あんぱん"],
+        "seasonal_items": 8
+      },
+      "employees": {
+        "bakers": 3,
+        "sales_staff": 2
+      },
+      "economic_data": {
+        "annual_revenue": 42000000,
+        "daily_customers": 250,
+        "morning_rush": "7:00-9:00"
+      }
+    },
+    {
+      "id": "IS006",
+      "name": "理容室「カットハウス鈴木」",
+      "type": "理容店",
+      "owner": {
+        "name": "鈴木理一",
+        "age": 55,
+        "experience_years": 32,
+        "qualifications": ["理容師免許", "管理理容師"]
+      },
+      "location": {
+        "city": "北桜市",
+        "district": "中央地区",
+        "address": "北桜市中央地区市役所通り50-51",
+        "coordinates": {"lat": 35.6789, "lng": 139.8345}
+      },
+      "business_info": {
+        "established": "1993-04-01",
+        "business_hours": {
+          "weekday": "9:00-19:00",
+          "saturday": "8:00-19:00",
+          "sunday": "8:00-18:00"
+        },
+        "holidays": "月曜日、第1・3火曜日",
+        "chairs": 3,
+        "services": ["カット", "顔剃り", "シャンプー", "パーマ", "白髪染め"]
+      },
+      "employees": {
+        "owner": 1,
+        "barbers": 2
+      },
+      "economic_data": {
+        "annual_revenue": 18000000,
+        "daily_customers": 25,
+        "regular_customers": 350,
+        "average_price": 2500
+      },
+      "community_role": [
+        "高齢者訪問カット",
+        "地域の情報交換場所",
+        "子供カット割引"
+      ]
+    },
+    {
+      "id": "IS007",
+      "name": "美容室「ヘアサロン花」",
+      "type": "美容室",
+      "owner": {
+        "name": "美容田花子",
+        "age": 42,
+        "experience_years": 20,
+        "qualifications": ["美容師免許", "カラーリスト"]
+      },
+      "location": {
+        "city": "桜花市",
+        "district": "南区",
+        "address": "桜花市南区桜ヶ丘55-56",
+        "coordinates": {"lat": 35.7012, "lng": 139.8678}
+      },
+      "business_info": {
+        "established": "2005-05-01",
+        "business_hours": "9:00-19:00",
+        "holidays": "月曜日",
+        "seats": 5,
+        "services": ["カット", "カラー", "パーマ", "トリートメント", "着付け"]
+      },
+      "employees": {
+        "stylists": 4,
+        "assistants": 2,
+        "receptionist": 1
+      },
+      "economic_data": {
+        "annual_revenue": 32000000,
+        "daily_customers": 20,
+        "average_price": 5500
+      }
+    },
+    {
+      "id": "IS008",
+      "name": "薬局「健康堂薬局」",
+      "type": "調剤薬局",
+      "owner": {
+        "name": "薬師寺健太",
+        "age": 48,
+        "qualifications": ["薬剤師", "認定薬剤師"]
+      },
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区病院通り60-61",
+        "coordinates": {"lat": 35.7123, "lng": 139.8590}
+      },
+      "business_info": {
+        "established": "2000-04-01",
+        "business_hours": {
+          "weekday": "9:00-19:00",
+          "saturday": "9:00-17:00"
+        },
+        "holidays": "日曜日、祝日",
+        "services": ["調剤", "OTC医薬品", "健康相談", "在宅医療"]
+      },
+      "employees": {
+        "pharmacists": 3,
+        "pharmacy_technicians": 2,
+        "clerks": 1
+      },
+      "economic_data": {
+        "annual_revenue": 85000000,
+        "daily_prescriptions": 120,
+        "otc_sales_ratio": 15
+      },
+      "partnerships": [
+        "桜花総合病院",
+        "地域クリニック5件",
+        "訪問看護ステーション"
+      ]
+    },
+    {
+      "id": "IS009",
+      "name": "文房具店「学習堂」",
+      "type": "文房具店",
+      "owner": {
+        "name": "文具田学",
+        "age": 60,
+        "experience_years": 38
+      },
+      "location": {
+        "city": "東桜市",
+        "district": "研究学園地区",
+        "address": "東桜市研究学園地区大学通り65-66",
+        "coordinates": {"lat": 35.7389, "lng": 139.8301}
+      },
+      "business_info": {
+        "established": "1987-04-01",
+        "business_hours": "9:00-20:00",
+        "holidays": "第2・4日曜日",
+        "floor_area_m2": 120,
+        "specialties": ["専門書", "画材", "実験器具"]
+      },
+      "inventory": {
+        "stationery_items": 3000,
+        "art_supplies": 500,
+        "textbooks": 1200,
+        "specialty_items": 300
+      },
+      "economic_data": {
+        "annual_revenue": 38000000,
+        "daily_customers": 150,
+        "student_customer_ratio": 70
+      },
+      "services": [
+        "教科書取り寄せ",
+        "卒業記念品作成",
+        "学会ポスター印刷"
+      ]
+    },
+    {
+      "id": "IS010",
+      "name": "クリーニング店「白洗舎」",
+      "type": "クリーニング店",
+      "owner": {
+        "name": "洗濯田清子",
+        "age": 50,
+        "experience_years": 25,
+        "qualifications": ["クリーニング師"]
+      },
+      "location": {
+        "city": "桜花市",
+        "district": "東区",
+        "address": "桜花市東区ニュータウン商店街70-71",
+        "coordinates": {"lat": 35.7156, "lng": 139.8534}
+      },
+      "business_info": {
+        "established": "2000-06-01",
+        "business_hours": {
+          "weekday": "8:00-19:00",
+          "saturday": "8:00-18:00",
+          "sunday": "10:00-17:00"
+        },
+        "services": ["ドライクリーニング", "水洗い", "特殊クリーニング", "リフォーム"]
+      },
+      "employees": {
+        "cleaning_staff": 3,
+        "reception": 2
+      },
+      "economic_data": {
+        "annual_revenue": 24000000,
+        "daily_customers": 80,
+        "seasonal_peak": "4月（衣替え）、10月"
+      },
+      "special_services": [
+        "宅配サービス",
+        "着物クリーニング",
+        "革製品クリーニング",
+        "布団クリーニング"
+      ]
+    }
+  ],
+  "metadata": {
+    "created_at": "2025-07-13T18:20:00Z",
+    "updated_at": "2025-07-13T18:20:00Z",
+    "data_version": "1.0.0",
+    "total_convenience_stores": 5,
+    "total_individual_shops": 10,
+    "employment_in_small_businesses": 287
+  }
+}
