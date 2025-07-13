@@ -1,0 +1,477 @@
+{
+  "corporate_rd_centers": [
+    {
+      "id": "RD001",
+      "name": "桜花電機中央研究所",
+      "type": "企業研究所",
+      "company": "桜花電機株式会社",
+      "specialization": "電子デバイス・半導体",
+      "location": {
+        "city": "桜花市",
+        "district": "研究開発地区",
+        "address": "桜花市研究開発地区イノベーション1-1",
+        "coordinates": {"lat": 35.7220, "lng": 139.8570},
+        "area_m2": 65000
+      },
+      "facility_info": {
+        "buildings": 5,
+        "laboratories": 45,
+        "clean_rooms": 12,
+        "testing_facilities": 20,
+        "pilot_production_lines": 3,
+        "conference_center": true
+      },
+      "research_areas": [
+        "次世代半導体", "パワーデバイス", "センサー技術",
+        "量子デバイス", "AI チップ", "通信モジュール"
+      ],
+      "employees": {
+        "total": 890,
+        "researchers": 567,
+        "engineers": 234,
+        "technicians": 56,
+        "administrative": 33,
+        "management": [
+          {
+            "employee_id": "RD001-M001",
+            "name": "所長田研究",
+            "position": "研究所長",
+            "department": "研究統括部",
+            "specialization": "半導体物理学",
+            "phd": "東京大学",
+            "hire_date": "2018-04-01",
+            "annual_salary": 25000000
+          },
+          {
+            "employee_id": "RD001-M002",
+            "name": "副所長田開発",
+            "position": "副所長",
+            "department": "開発統括部",
+            "specialization": "材料工学",
+            "phd": "京都大学",
+            "hire_date": "2019-04-01",
+            "annual_salary": 20000000
+          }
+        ],
+        "sample_researchers": [
+          {
+            "employee_id": "RD001-R001",
+            "name": "研究員田量子",
+            "position": "主任研究員",
+            "department": "量子デバイス研究部",
+            "specialization": "量子物理学",
+            "phd": "東北大学",
+            "hire_date": "2015-04-01",
+            "annual_salary": 12000000
+          }
+        ]
+      },
+      "equipment": {
+        "electron_microscopes": 8,
+        "x_ray_diffractometers": 5,
+        "mass_spectrometers": 6,
+        "clean_room_class": 10
+      },
+      "achievements": {
+        "patents_annually": 234,
+        "papers_annually": 156,
+        "products_commercialized": 23
+      }
+    },
+    {
+      "id": "RD002",
+      "name": "桜製薬研究開発センター",
+      "type": "製薬研究所",
+      "company": "桜製薬株式会社",
+      "specialization": "創薬・バイオ医薬品",
+      "location": {
+        "city": "桜花市",
+        "district": "バイオパーク",
+        "address": "桜花市バイオパーク創薬通り2-2"
+      },
+      "facility_info": {
+        "laboratories": 38,
+        "animal_facility": true,
+        "cell_culture_rooms": 15,
+        "biosafety_level": "BSL-3"
+      },
+      "research_areas": [
+        "がん治療薬", "免疫療法", "遺伝子治療", "再生医療", "感染症薬"
+      ],
+      "employees": {
+        "total": 678,
+        "researchers": 456,
+        "lab_technicians": 156,
+        "clinical_trial_staff": 45,
+        "administrative": 21
+      },
+      "pipeline_drugs": 34
+    },
+    {
+      "id": "RD003",
+      "name": "桜自動車技術センター",
+      "type": "自動車研究所",
+      "company": "桜自動車工業",
+      "specialization": "電動化・自動運転",
+      "location": {
+        "city": "桜川市",
+        "district": "モビリティ地区",
+        "address": "桜川市モビリティ地区テストコース1-1"
+      },
+      "facility_info": {
+        "test_tracks": 3,
+        "wind_tunnel": true,
+        "crash_test_facility": true,
+        "battery_lab": true
+      },
+      "employees": {
+        "total": 567,
+        "engineers": 345,
+        "test_drivers": 45,
+        "technicians": 134,
+        "administrative": 43
+      }
+    }
+  ],
+  "government_research_institutes": [
+    {
+      "id": "GR001",
+      "name": "桜県産業技術総合研究所",
+      "type": "公設研究機関",
+      "jurisdiction": "桜県",
+      "specialization": "産業技術全般",
+      "location": {
+        "city": "桜花市",
+        "district": "産業研究地区",
+        "address": "桜花市産業研究地区技術通り1-1"
+      },
+      "research_divisions": [
+        "材料技術部", "機械電子部", "化学技術部", "食品バイオ部", "環境技術部"
+      ],
+      "employees": {
+        "total": 234,
+        "researchers": 156,
+        "technicians": 45,
+        "administrative": 33,
+        "management": [
+          {
+            "employee_id": "GR001-M001",
+            "name": "所長田公設",
+            "position": "所長",
+            "specialization": "材料工学",
+            "hire_date": "2017-04-01",
+            "annual_salary": 15000000
+          }
+        ]
+      },
+      "services": {
+        "technical_consultation": true,
+        "testing_analysis": true,
+        "joint_research": true,
+        "equipment_rental": true
+      },
+      "annual_support_cases": 1234
+    },
+    {
+      "id": "GR002",
+      "name": "桜県農業研究センター",
+      "type": "農業研究機関",
+      "jurisdiction": "桜県",
+      "location": {
+        "city": "桜川市",
+        "district": "農業地区",
+        "address": "桜川市農業地区研究農場1-1"
+      },
+      "facility_info": {
+        "experimental_fields_ha": 50,
+        "greenhouses": 20,
+        "laboratories": 12
+      },
+      "research_areas": [
+        "品種改良", "栽培技術", "病害虫防除", "スマート農業"
+      ],
+      "employees": {
+        "total": 123,
+        "researchers": 67,
+        "field_technicians": 34,
+        "administrative": 22
+      }
+    }
+  ],
+  "university_research_centers": [
+    {
+      "id": "UR001",
+      "name": "桜花大学先端科学研究センター",
+      "type": "大学研究施設",
+      "university": "桜花大学",
+      "specialization": "基礎科学・応用研究",
+      "location": {
+        "city": "桜花市",
+        "district": "大学町",
+        "address": "桜花市大学町学術研究1-1"
+      },
+      "research_groups": 45,
+      "employees": {
+        "total": 345,
+        "professors": 56,
+        "researchers": 123,
+        "graduate_students": 134,
+        "technicians": 32
+      },
+      "major_projects": [
+        "量子コンピューティング", "再生可能エネルギー", "AIロボティクス"
+      ],
+      "annual_research_budget_million_yen": 2345
+    },
+    {
+      "id": "UR002",
+      "name": "桜花医科大学附属研究所",
+      "type": "医学研究施設",
+      "university": "桜花医科大学",
+      "location": {
+        "city": "桜花市",
+        "district": "医学部地区",
+        "address": "桜花市医学部地区研究棟2-2"
+      },
+      "research_areas": [
+        "がん研究", "再生医療", "脳科学", "感染症"
+      ],
+      "employees": {
+        "total": 234,
+        "faculty": 45,
+        "postdocs": 67,
+        "technicians": 89,
+        "administrative": 33
+      }
+    }
+  ],
+  "private_research_labs": [
+    {
+      "id": "PR001",
+      "name": "桜花バイオテクノロジー研究所",
+      "type": "民間研究所",
+      "specialization": "遺伝子工学・創薬",
+      "location": {
+        "city": "桜花市",
+        "district": "バイオパーク",
+        "address": "桜花市バイオパーク遺伝子通り1-1"
+      },
+      "facility_info": {
+        "biosafety_level": "BSL-2",
+        "sequencing_center": true,
+        "protein_analysis": true
+      },
+      "employees": {
+        "total": 156,
+        "researchers": 89,
+        "bioinformaticians": 34,
+        "lab_technicians": 23,
+        "administrative": 10
+      },
+      "partnerships": ["理化学研究所", "産総研", "東京大学"]
+    },
+    {
+      "id": "PR002",
+      "name": "桜AIラボラトリー",
+      "type": "AI研究所",
+      "specialization": "深層学習・自然言語処理",
+      "location": {
+        "city": "桜花市",
+        "district": "AIバレー",
+        "address": "桜花市AIバレー機械学習通り2-2"
+      },
+      "infrastructure": {
+        "gpu_clusters": 5,
+        "total_computing_power_pflops": 2.5
+      },
+      "employees": {
+        "total": 89,
+        "ai_researchers": 56,
+        "data_scientists": 23,
+        "engineers": 10
+      }
+    }
+  ],
+  "incubation_facilities": [
+    {
+      "id": "IF001",
+      "name": "桜花イノベーションセンター",
+      "type": "インキュベーション施設",
+      "operator": "桜県",
+      "location": {
+        "city": "桜花市",
+        "district": "起業支援地区",
+        "address": "桜花市起業支援地区スタートアップ通り1-1"
+      },
+      "facility_info": {
+        "office_spaces": 50,
+        "wet_labs": 12,
+        "shared_equipment_rooms": 8,
+        "conference_rooms": 10
+      },
+      "tenant_companies": 34,
+      "employees": {
+        "total": 23,
+        "incubation_managers": 8,
+        "technical_advisors": 10,
+        "administrative": 5
+      },
+      "success_stories": 45
+    }
+  ],
+  "testing_facilities": [
+    {
+      "id": "TF001",
+      "name": "桜花試験評価センター",
+      "type": "試験認証機関",
+      "specialization": "電気製品・EMC試験",
+      "location": {
+        "city": "桜花市",
+        "district": "品質管理地区",
+        "address": "桜花市品質管理地区試験通り1-1"
+      },
+      "facility_info": {
+        "anechoic_chambers": 3,
+        "environmental_test_chambers": 12,
+        "safety_test_labs": 8
+      },
+      "certifications": ["ISO/IEC 17025", "JIS認定"],
+      "employees": {
+        "total": 78,
+        "test_engineers": 45,
+        "quality_inspectors": 23,
+        "administrative": 10
+      },
+      "annual_tests": 4567
+    }
+  ],
+  "think_tanks": [
+    {
+      "id": "TT001",
+      "name": "桜花総合研究所",
+      "type": "シンクタンク",
+      "specialization": "経済・社会政策",
+      "location": {
+        "city": "桜花市",
+        "district": "政策研究地区",
+        "address": "桜花市政策研究地区分析通り1-1"
+      },
+      "research_areas": [
+        "地域経済", "産業政策", "環境政策", "社会保障", "都市計画"
+      ],
+      "employees": {
+        "total": 89,
+        "researchers": 56,
+        "economists": 23,
+        "data_analysts": 10
+      },
+      "annual_reports": 45,
+      "policy_recommendations": 123
+    }
+  ],
+  "specialized_labs": [
+    {
+      "id": "SL001",
+      "name": "桜花ナノテクノロジーセンター",
+      "type": "専門研究施設",
+      "specialization": "ナノ材料・ナノデバイス",
+      "location": {
+        "city": "桜花市",
+        "district": "先端技術地区",
+        "address": "桜花市先端技術地区ナノ通り1-1"
+      },
+      "equipment": {
+        "electron_beam_lithography": 2,
+        "atomic_force_microscopes": 5,
+        "clean_room_class": 100
+      },
+      "employees": {
+        "total": 67,
+        "researchers": 45,
+        "technicians": 15,
+        "administrative": 7
+      }
+    },
+    {
+      "id": "SL002",
+      "name": "桜花環境分析センター",
+      "type": "環境研究施設",
+      "specialization": "環境モニタリング・分析",
+      "location": {
+        "city": "桜花市",
+        "district": "環境地区",
+        "address": "桜花市環境地区グリーン通り2-2"
+      },
+      "services": [
+        "大気質分析", "水質検査", "土壌分析", "騒音測定"
+      ],
+      "employees": {
+        "total": 56,
+        "environmental_scientists": 34,
+        "lab_technicians": 15,
+        "administrative": 7
+      }
+    }
+  ],
+  "collaborative_spaces": [
+    {
+      "id": "CS001",
+      "name": "桜花オープンイノベーションラボ",
+      "type": "共創施設",
+      "location": {
+        "city": "桜花市",
+        "district": "コラボ地区",
+        "address": "桜花市コラボ地区共創通り1-1"
+      },
+      "facility_info": {
+        "project_spaces": 20,
+        "fab_lab": true,
+        "prototype_workshop": true,
+        "vr_studio": true
+      },
+      "member_organizations": 67,
+      "employees": {
+        "total": 34,
+        "facilitators": 12,
+        "technical_support": 15,
+        "administrative": 7
+      }
+    }
+  ],
+  "clinical_research": [
+    {
+      "id": "CR001",
+      "name": "桜花臨床研究センター",
+      "type": "臨床研究施設",
+      "affiliated_hospital": "桜県立中央病院",
+      "location": {
+        "city": "桜花市",
+        "district": "医療センター地区",
+        "address": "桜花市医療センター地区臨床研究1-1"
+      },
+      "trial_capabilities": {
+        "phase_1_beds": 20,
+        "phase_2_3_capacity": 200,
+        "outpatient_facilities": true
+      },
+      "employees": {
+        "total": 123,
+        "principal_investigators": 23,
+        "clinical_research_coordinators": 45,
+        "data_managers": 34,
+        "administrative": 21
+      },
+      "active_trials": 67
+    }
+  ],
+  "summary": {
+    "total_rd_employees": 5678,
+    "corporate_rd": 2345,
+    "government_research": 567,
+    "university_research": 890,
+    "private_labs": 678,
+    "support_facilities": 1198,
+    "annual_patents": 1234,
+    "rd_coverage": "最先端の研究開発施設で技術革新を推進"
+  }
+}

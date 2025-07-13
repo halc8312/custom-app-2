@@ -1,0 +1,557 @@
+{
+  "luxury_hotels": [
+    {
+      "id": "LH001",
+      "name": "桜花グランドホテル",
+      "type": "ラグジュアリーホテル",
+      "rating": "5つ星",
+      "chain": "独立系",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区ホテル通り1-1",
+        "coordinates": {"lat": 35.7075, "lng": 139.8435},
+        "area_m2": 35000
+      },
+      "facility_info": {
+        "floors": 30,
+        "rooms": 450,
+        "suites": 50,
+        "restaurants": 6,
+        "bars": 3,
+        "spa": true,
+        "fitness_center": true,
+        "swimming_pools": 2,
+        "conference_rooms": 12,
+        "ballrooms": 3,
+        "parking_spaces": 500
+      },
+      "room_types": {
+        "standard": 300,
+        "deluxe": 100,
+        "executive": 40,
+        "suites": 10
+      },
+      "employees": {
+        "total": 567,
+        "front_desk": 45,
+        "concierge": 12,
+        "housekeeping": 156,
+        "food_beverage": 189,
+        "spa_fitness": 34,
+        "engineering": 45,
+        "security": 23,
+        "administrative": 63,
+        "management": [
+          {
+            "employee_id": "LH001-M001",
+            "name": "総支配人田接客",
+            "position": "総支配人",
+            "department": "ホテル運営部",
+            "hire_date": "2018-04-01",
+            "annual_salary": 20000000
+          },
+          {
+            "employee_id": "LH001-M002",
+            "name": "料飲田美食",
+            "position": "料飲部長",
+            "department": "料飲部",
+            "hire_date": "2019-04-01",
+            "annual_salary": 12000000
+          }
+        ]
+      },
+      "annual_occupancy_rate": 0.85,
+      "annual_guests": 250000
+    },
+    {
+      "id": "LH002",
+      "name": "ホテル桜花パレス",
+      "type": "ラグジュアリーホテル",
+      "rating": "5つ星",
+      "chain": "インターコンチネンタル",
+      "location": {
+        "city": "桜花市",
+        "district": "湾岸地区",
+        "address": "桜花市湾岸地区オーシャンビュー通り2-2"
+      },
+      "facility_info": {
+        "floors": 25,
+        "rooms": 380,
+        "suites": 40
+      },
+      "employees": {
+        "total": 456,
+        "front_office": 67,
+        "housekeeping": 134,
+        "food_beverage": 156,
+        "administrative": 99
+      }
+    }
+  ],
+  "business_hotels": [
+    {
+      "id": "BH001",
+      "name": "桜花ビジネスホテル",
+      "type": "ビジネスホテル",
+      "rating": "3つ星",
+      "chain": "東横イン",
+      "location": {
+        "city": "桜花市",
+        "district": "駅前地区",
+        "address": "桜花市駅前地区ビジネス通り1-1"
+      },
+      "facility_info": {
+        "floors": 12,
+        "rooms": 250,
+        "restaurant": 1,
+        "meeting_rooms": 3,
+        "parking_spaces": 80
+      },
+      "employees": {
+        "total": 89,
+        "front_desk": 15,
+        "housekeeping": 45,
+        "restaurant": 20,
+        "administrative": 9
+      },
+      "annual_occupancy_rate": 0.78
+    },
+    {
+      "id": "BH002",
+      "name": "アパホテル桜花駅前",
+      "type": "ビジネスホテル",
+      "chain": "アパホテル",
+      "location": {
+        "city": "桜花市",
+        "district": "駅前地区",
+        "address": "桜花市駅前地区アクセス通り2-2"
+      },
+      "facility_info": {
+        "rooms": 320,
+        "floors": 15
+      },
+      "employees": {
+        "total": 78,
+        "front_desk": 12,
+        "housekeeping": 50,
+        "administrative": 16
+      }
+    }
+  ],
+  "resort_hotels": [
+    {
+      "id": "RH001",
+      "name": "桜花温泉リゾート",
+      "type": "温泉リゾートホテル",
+      "rating": "4つ星",
+      "location": {
+        "city": "桜花市",
+        "district": "温泉地区",
+        "address": "桜花市温泉地区湯の里1-1",
+        "area_m2": 80000
+      },
+      "facility_info": {
+        "buildings": 5,
+        "rooms": 180,
+        "japanese_rooms": 120,
+        "western_rooms": 60,
+        "hot_springs": 8,
+        "private_baths": 12,
+        "restaurants": 4,
+        "gardens_m2": 30000
+      },
+      "employees": {
+        "total": 234,
+        "front_desk": 20,
+        "room_attendants": 67,
+        "spa_staff": 34,
+        "chefs": 45,
+        "gardeners": 12,
+        "administrative": 56
+      },
+      "amenities": ["露天風呂", "岩盤浴", "エステ", "マッサージ", "カラオケ", "ゲームコーナー"]
+    }
+  ],
+  "ryokans": [
+    {
+      "id": "RY001",
+      "name": "老舗旅館 桜花荘",
+      "type": "高級旅館",
+      "established": "1850年",
+      "location": {
+        "city": "桜花市",
+        "district": "歴史地区",
+        "address": "桜花市歴史地区伝統通り1-1"
+      },
+      "facility_info": {
+        "buildings": 3,
+        "rooms": 25,
+        "all_japanese_style": true,
+        "private_hot_springs": 5,
+        "tea_ceremony_room": true,
+        "japanese_garden": true
+      },
+      "employees": {
+        "total": 56,
+        "nakai": 20,
+        "chefs": 12,
+        "front_desk": 6,
+        "maintenance": 8,
+        "administrative": 10,
+        "management": [
+          {
+            "employee_id": "RY001-M001",
+            "name": "女将田伝統",
+            "position": "女将",
+            "hire_date": "1995-04-01",
+            "annual_salary": 15000000
+          }
+        ]
+      },
+      "kaiseki_dining": true
+    }
+  ],
+  "capsule_hotels": [
+    {
+      "id": "CH001",
+      "name": "カプセルイン桜花",
+      "type": "カプセルホテル",
+      "location": {
+        "city": "桜花市",
+        "district": "繁華街",
+        "address": "桜花市繁華街夜通り1-1"
+      },
+      "facility_info": {
+        "capsules": 180,
+        "male_capsules": 120,
+        "female_capsules": 60,
+        "lounge": true,
+        "spa": true
+      },
+      "employees": {
+        "total": 23,
+        "reception": 8,
+        "cleaning": 10,
+        "security": 3,
+        "administrative": 2
+      }
+    }
+  ],
+  "guest_houses": [
+    {
+      "id": "GH001",
+      "name": "ゲストハウス桜花",
+      "type": "ゲストハウス",
+      "location": {
+        "city": "桜花市",
+        "district": "バックパッカー地区",
+        "address": "桜花市バックパッカー地区国際通り1-1"
+      },
+      "facility_info": {
+        "beds": 80,
+        "dormitory_rooms": 10,
+        "private_rooms": 5,
+        "common_kitchen": true,
+        "lounge": true
+      },
+      "employees": {
+        "total": 8,
+        "reception": 4,
+        "cleaning": 3,
+        "administrative": 1
+      }
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "RT001",
+      "name": "桜花料亭",
+      "type": "高級料亭",
+      "cuisine": "懐石料理",
+      "location": {
+        "city": "桜花市",
+        "district": "料亭街",
+        "address": "桜花市料亭街美食通り1-1"
+      },
+      "facility_info": {
+        "seats": 80,
+        "private_rooms": 12,
+        "tea_rooms": 3,
+        "garden_view": true
+      },
+      "employees": {
+        "total": 45,
+        "head_chef": 1,
+        "chefs": 12,
+        "service_staff": 20,
+        "administrative": 12
+      },
+      "michelin_stars": 2
+    },
+    {
+      "id": "RT002",
+      "name": "桜花ビストロ",
+      "type": "カジュアルレストラン",
+      "cuisine": "フレンチ",
+      "location": {
+        "city": "桜花市",
+        "district": "グルメ地区",
+        "address": "桜花市グルメ地区洋食通り2-2"
+      },
+      "facility_info": {
+        "seats": 120,
+        "bar_counter": 15,
+        "terrace": true
+      },
+      "employees": {
+        "total": 34,
+        "chefs": 8,
+        "service_staff": 18,
+        "bartenders": 3,
+        "administrative": 5
+      }
+    }
+  ],
+  "cafes": [
+    {
+      "id": "CF001",
+      "name": "カフェ桜花",
+      "type": "カフェ",
+      "chain": "独立系",
+      "location": {
+        "city": "桜花市",
+        "district": "文化地区",
+        "address": "桜花市文化地区カフェ通り1-1"
+      },
+      "facility_info": {
+        "seats": 60,
+        "terrace_seats": 20,
+        "wifi": true,
+        "power_outlets": true
+      },
+      "employees": {
+        "total": 12,
+        "baristas": 6,
+        "kitchen": 3,
+        "service": 3
+      },
+      "specialties": ["自家焙煎コーヒー", "手作りケーキ", "サンドイッチ"]
+    },
+    {
+      "id": "CF002",
+      "name": "スターバックス桜花駅前店",
+      "type": "カフェ",
+      "chain": "スターバックス",
+      "location": {
+        "city": "桜花市",
+        "district": "駅前地区",
+        "address": "桜花市駅前地区コーヒー通り2-2"
+      },
+      "employees": {
+        "total": 23,
+        "shift_supervisors": 4,
+        "baristas": 16,
+        "administrative": 3
+      }
+    }
+  ],
+  "bars": [
+    {
+      "id": "BR001",
+      "name": "バー桜花",
+      "type": "高級バー",
+      "location": {
+        "city": "桜花市",
+        "district": "夜の街",
+        "address": "桜花市夜の街カクテル通り1-1"
+      },
+      "facility_info": {
+        "seats": 40,
+        "private_rooms": 2,
+        "wine_cellar": true
+      },
+      "employees": {
+        "total": 8,
+        "bartenders": 4,
+        "sommelier": 1,
+        "service": 3
+      },
+      "specialties": ["クラフトカクテル", "ウイスキー", "ワイン"]
+    }
+  ],
+  "izakayas": [
+    {
+      "id": "IZ001",
+      "name": "居酒屋 桜花横丁",
+      "type": "居酒屋",
+      "chain": "独立系",
+      "location": {
+        "city": "桜花市",
+        "district": "飲食街",
+        "address": "桜花市飲食街横丁通り1-1"
+      },
+      "facility_info": {
+        "seats": 80,
+        "counter_seats": 20,
+        "tatami_rooms": 4
+      },
+      "employees": {
+        "total": 23,
+        "chefs": 6,
+        "service_staff": 12,
+        "administrative": 5
+      }
+    }
+  ],
+  "food_courts": [
+    {
+      "id": "FC001",
+      "name": "桜花駅フードコート",
+      "type": "フードコート",
+      "location": {
+        "city": "桜花市",
+        "district": "駅構内",
+        "address": "桜花市駅構内グルメ広場"
+      },
+      "tenants": 12,
+      "total_seats": 400,
+      "employees": {
+        "total": 156,
+        "tenant_staff": 120,
+        "cleaning": 20,
+        "security": 10,
+        "administrative": 6
+      }
+    }
+  ],
+  "catering_services": [
+    {
+      "id": "CS001",
+      "name": "桜花ケータリングサービス",
+      "type": "ケータリング会社",
+      "location": {
+        "city": "桜花市",
+        "district": "産業地区",
+        "address": "桜花市産業地区配送センター通り1-1"
+      },
+      "services": ["企業イベント", "結婚式", "パーティー", "会議"],
+      "employees": {
+        "total": 78,
+        "chefs": 23,
+        "service_staff": 34,
+        "drivers": 12,
+        "administrative": 9
+      },
+      "annual_events": 890
+    }
+  ],
+  "wedding_venues": [
+    {
+      "id": "WV001",
+      "name": "桜花ウェディングパレス",
+      "type": "結婚式場",
+      "location": {
+        "city": "桜花市",
+        "district": "ブライダル地区",
+        "address": "桜花市ブライダル地区幸せ通り1-1"
+      },
+      "facility_info": {
+        "chapels": 2,
+        "banquet_halls": 4,
+        "max_capacity": 500,
+        "gardens": true,
+        "photo_studios": 2
+      },
+      "employees": {
+        "total": 89,
+        "wedding_planners": 23,
+        "service_staff": 34,
+        "chefs": 20,
+        "photographers": 6,
+        "administrative": 6
+      },
+      "annual_weddings": 456
+    }
+  ],
+  "convention_centers": [
+    {
+      "id": "CC001",
+      "name": "桜花国際会議場",
+      "type": "コンベンションセンター",
+      "location": {
+        "city": "桜花市",
+        "district": "国際地区",
+        "address": "桜花市国際地区会議通り1-1"
+      },
+      "facility_info": {
+        "main_hall_capacity": 3000,
+        "meeting_rooms": 20,
+        "exhibition_space_m2": 10000,
+        "simultaneous_interpretation": true
+      },
+      "employees": {
+        "total": 123,
+        "event_coordinators": 34,
+        "technical_staff": 45,
+        "security": 23,
+        "administrative": 21
+      },
+      "annual_events": 234
+    }
+  ],
+  "travel_agencies": [
+    {
+      "id": "TA001",
+      "name": "桜花トラベル",
+      "type": "旅行代理店",
+      "chain": "JTB",
+      "location": {
+        "city": "桜花市",
+        "district": "駅前地区",
+        "address": "桜花市駅前地区旅行通り1-1"
+      },
+      "employees": {
+        "total": 34,
+        "travel_consultants": 23,
+        "tour_conductors": 6,
+        "administrative": 5
+      },
+      "annual_customers": 45000
+    }
+  ],
+  "tour_operators": [
+    {
+      "id": "TO001",
+      "name": "桜花観光",
+      "type": "観光会社",
+      "specialization": "市内観光・日帰りツアー",
+      "location": {
+        "city": "桜花市",
+        "district": "観光地区",
+        "address": "桜花市観光地区ツアー通り1-1"
+      },
+      "fleet": {
+        "tour_buses": 12,
+        "vans": 8
+      },
+      "employees": {
+        "total": 45,
+        "tour_guides": 20,
+        "drivers": 15,
+        "administrative": 10
+      },
+      "annual_tourists": 89000
+    }
+  ],
+  "summary": {
+    "total_hospitality_employees": 4567,
+    "hotels": 145,
+    "restaurants_cafes": 890,
+    "bars_izakayas": 234,
+    "wedding_event_venues": 45,
+    "travel_tourism": 123,
+    "total_guest_rooms": 8900,
+    "hospitality_coverage": "充実した宿泊・飲食施設で観光とビジネスをサポート"
+  }
+}

@@ -1,0 +1,521 @@
+{
+  "law_firms": [
+    {
+      "id": "LF001",
+      "name": "桜花総合法律事務所",
+      "type": "総合法律事務所",
+      "specialization": "企業法務・M&A・知的財産",
+      "location": {
+        "city": "桜花市",
+        "district": "司法地区",
+        "address": "桜花市司法地区法律通り1-1",
+        "coordinates": {"lat": 35.7110, "lng": 139.8470},
+        "area_m2": 3500
+      },
+      "facility_info": {
+        "floors": 5,
+        "conference_rooms": 12,
+        "library": true,
+        "mock_courtroom": true
+      },
+      "practice_areas": [
+        "企業法務", "M&A", "知的財産", "労働法", "不動産",
+        "金融法務", "国際取引", "訴訟・紛争解決"
+      ],
+      "employees": {
+        "total": 234,
+        "partners": 23,
+        "associates": 67,
+        "paralegals": 89,
+        "administrative": 55,
+        "management": [
+          {
+            "employee_id": "LF001-M001",
+            "name": "代表田弁護",
+            "position": "代表弁護士",
+            "specialization": "M&A・企業再編",
+            "bar_admission": "1995-04-01",
+            "hire_date": "2010-04-01",
+            "annual_salary": 50000000
+          },
+          {
+            "employee_id": "LF001-M002",
+            "name": "管理田法務",
+            "position": "マネージングパートナー",
+            "specialization": "知的財産法",
+            "bar_admission": "1998-04-01",
+            "hire_date": "2012-04-01",
+            "annual_salary": 40000000
+          }
+        ],
+        "sample_lawyers": [
+          {
+            "employee_id": "LF001-L001",
+            "name": "弁護士田企業",
+            "position": "パートナー弁護士",
+            "specialization": "企業法務",
+            "bar_admission": "2005-04-01",
+            "annual_salary": 25000000
+          },
+          {
+            "employee_id": "LF001-L002",
+            "name": "弁護士田知財",
+            "position": "シニアアソシエイト",
+            "specialization": "特許・商標",
+            "bar_admission": "2015-04-01",
+            "annual_salary": 12000000
+          }
+        ]
+      },
+      "clients": {
+        "corporate": 450,
+        "individual": 890,
+        "government": 23
+      }
+    },
+    {
+      "id": "LF002",
+      "name": "さくら法律事務所",
+      "type": "中規模法律事務所",
+      "specialization": "民事・家事・刑事",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区弁護士通り2-2"
+      },
+      "employees": {
+        "total": 45,
+        "partners": 5,
+        "associates": 12,
+        "paralegals": 18,
+        "administrative": 10
+      }
+    },
+    {
+      "id": "LF003",
+      "name": "桜川法律事務所",
+      "type": "地域密着型法律事務所",
+      "specialization": "交通事故・債務整理",
+      "location": {
+        "city": "桜川市",
+        "district": "中央地区",
+        "address": "桜川市中央地区法律相談通り1-1"
+      },
+      "employees": {
+        "total": 23,
+        "lawyers": 8,
+        "paralegals": 10,
+        "administrative": 5
+      }
+    }
+  ],
+  "patent_offices": [
+    {
+      "id": "PO001",
+      "name": "桜花国際特許事務所",
+      "type": "特許事務所",
+      "specialization": "特許・意匠・商標",
+      "location": {
+        "city": "桜花市",
+        "district": "知財地区",
+        "address": "桜花市知財地区特許通り1-1"
+      },
+      "employees": {
+        "total": 89,
+        "patent_attorneys": 34,
+        "technical_staff": 23,
+        "translators": 12,
+        "administrative": 20,
+        "management": [
+          {
+            "employee_id": "PO001-M001",
+            "name": "所長田特許",
+            "position": "所長弁理士",
+            "specialization": "電子・ソフトウェア特許",
+            "registration": "弁理士登録第12345号",
+            "hire_date": "2008-04-01",
+            "annual_salary": 20000000
+          }
+        ]
+      },
+      "services": {
+        "patent_applications": true,
+        "pct_applications": true,
+        "trademark_registration": true,
+        "ip_litigation": true
+      },
+      "annual_filings": 1234
+    }
+  ],
+  "judicial_scrivener_offices": [
+    {
+      "id": "JS001",
+      "name": "桜花司法書士事務所",
+      "type": "司法書士事務所",
+      "specialization": "不動産登記・商業登記",
+      "location": {
+        "city": "桜花市",
+        "district": "登記地区",
+        "address": "桜花市登記地区司法書士通り1-1"
+      },
+      "employees": {
+        "total": 34,
+        "judicial_scriveners": 12,
+        "assistants": 15,
+        "administrative": 7
+      },
+      "services": {
+        "real_estate_registration": true,
+        "commercial_registration": true,
+        "inheritance_procedures": true,
+        "debt_consolidation": true
+      }
+    }
+  ],
+  "administrative_scrivener_offices": [
+    {
+      "id": "AS001",
+      "name": "桜花行政書士事務所",
+      "type": "行政書士事務所",
+      "specialization": "許認可・在留資格",
+      "location": {
+        "city": "桜花市",
+        "district": "行政地区",
+        "address": "桜花市行政地区許可通り1-1"
+      },
+      "employees": {
+        "total": 23,
+        "administrative_scriveners": 8,
+        "assistants": 10,
+        "administrative": 5
+      },
+      "services": {
+        "business_permits": true,
+        "visa_applications": true,
+        "incorporation": true,
+        "inheritance_division": true
+      }
+    }
+  ],
+  "consulting_firms": [
+    {
+      "id": "CF001",
+      "name": "桜花経営コンサルティング",
+      "type": "経営コンサルティング",
+      "specialization": "戦略・組織・デジタル変革",
+      "location": {
+        "city": "桜花市",
+        "district": "ビジネス街",
+        "address": "桜花市ビジネス街戦略通り1-1",
+        "area_m2": 2800
+      },
+      "practice_areas": [
+        "経営戦略", "組織変革", "デジタルトランスフォーメーション",
+        "M&A アドバイザリー", "業務改善", "人事戦略"
+      ],
+      "employees": {
+        "total": 345,
+        "partners": 34,
+        "managers": 67,
+        "consultants": 156,
+        "analysts": 56,
+        "administrative": 32,
+        "management": [
+          {
+            "employee_id": "CF001-M001",
+            "name": "代表田戦略",
+            "position": "代表パートナー",
+            "specialization": "企業戦略",
+            "hire_date": "2015-04-01",
+            "annual_salary": 35000000
+          }
+        ]
+      },
+      "clients": {
+        "fortune500": 23,
+        "large_domestic": 89,
+        "sme": 234,
+        "government": 12
+      }
+    },
+    {
+      "id": "CF002",
+      "name": "マッキンゼー・アンド・カンパニー桜花オフィス",
+      "type": "外資系コンサルティング",
+      "location": {
+        "city": "桜花市",
+        "district": "国際ビジネス街",
+        "address": "桜花市国際ビジネス街グローバル通り2-2"
+      },
+      "employees": {
+        "total": 123,
+        "partners": 8,
+        "managers": 23,
+        "consultants": 56,
+        "analysts": 36
+      }
+    },
+    {
+      "id": "CF003",
+      "name": "桜花人事コンサルティング",
+      "type": "人事コンサルティング",
+      "specialization": "人事制度・組織開発",
+      "location": {
+        "city": "桜花市",
+        "district": "ビジネス街",
+        "address": "桜花市ビジネス街人材通り3-3"
+      },
+      "employees": {
+        "total": 67,
+        "consultants": 45,
+        "researchers": 12,
+        "administrative": 10
+      }
+    }
+  ],
+  "marketing_agencies": [
+    {
+      "id": "MA001",
+      "name": "桜花広告代理店",
+      "type": "総合広告代理店",
+      "location": {
+        "city": "桜花市",
+        "district": "メディア地区",
+        "address": "桜花市メディア地区広告通り1-1"
+      },
+      "services": [
+        "テレビCM制作", "デジタルマーケティング", "イベントプロモーション",
+        "ブランディング", "PR戦略"
+      ],
+      "employees": {
+        "total": 456,
+        "account_executives": 123,
+        "creative_directors": 45,
+        "copywriters": 67,
+        "designers": 89,
+        "digital_marketers": 78,
+        "administrative": 54
+      },
+      "annual_billings_million_yen": 12000
+    },
+    {
+      "id": "MA002",
+      "name": "桜デジタルエージェンシー",
+      "type": "デジタル専門広告代理店",
+      "location": {
+        "city": "桜花市",
+        "district": "デジタル地区",
+        "address": "桜花市デジタル地区オンライン通り2-2"
+      },
+      "employees": {
+        "total": 89,
+        "digital_strategists": 34,
+        "performance_marketers": 23,
+        "data_analysts": 20,
+        "administrative": 12
+      }
+    }
+  ],
+  "pr_firms": [
+    {
+      "id": "PR001",
+      "name": "桜花パブリックリレーションズ",
+      "type": "PR会社",
+      "specialization": "企業広報・危機管理",
+      "location": {
+        "city": "桜花市",
+        "district": "メディア地区",
+        "address": "桜花市メディア地区PR通り1-1"
+      },
+      "employees": {
+        "total": 78,
+        "pr_consultants": 45,
+        "media_relations": 23,
+        "administrative": 10
+      },
+      "clients": 156
+    }
+  ],
+  "design_studios": [
+    {
+      "id": "DS001",
+      "name": "桜花デザインスタジオ",
+      "type": "デザイン事務所",
+      "specialization": "ブランドデザイン・UI/UX",
+      "location": {
+        "city": "桜花市",
+        "district": "クリエイティブ地区",
+        "address": "桜花市クリエイティブ地区デザイン通り1-1"
+      },
+      "employees": {
+        "total": 56,
+        "creative_directors": 5,
+        "designers": 34,
+        "ux_researchers": 12,
+        "administrative": 5
+      }
+    }
+  ],
+  "architecture_firms": [
+    {
+      "id": "AF001",
+      "name": "桜花建築設計事務所",
+      "type": "建築設計事務所",
+      "specialization": "商業施設・公共建築",
+      "location": {
+        "city": "桜花市",
+        "district": "建築地区",
+        "address": "桜花市建築地区設計通り1-1"
+      },
+      "employees": {
+        "total": 123,
+        "architects": 67,
+        "structural_engineers": 23,
+        "cad_operators": 20,
+        "administrative": 13,
+        "management": [
+          {
+            "employee_id": "AF001-M001",
+            "name": "所長田建築",
+            "position": "代表建築士",
+            "license": "一級建築士第123456号",
+            "hire_date": "2010-04-01",
+            "annual_salary": 18000000
+          }
+        ]
+      },
+      "projects_annually": 45,
+      "awards": 12
+    }
+  ],
+  "translation_companies": [
+    {
+      "id": "TR001",
+      "name": "桜花翻訳センター",
+      "type": "翻訳会社",
+      "specialization": "技術翻訳・ビジネス翻訳",
+      "location": {
+        "city": "桜花市",
+        "district": "国際地区",
+        "address": "桜花市国際地区翻訳通り1-1"
+      },
+      "languages": ["英語", "中国語", "韓国語", "スペイン語", "フランス語"],
+      "employees": {
+        "total": 89,
+        "translators": 56,
+        "interpreters": 23,
+        "project_managers": 10
+      },
+      "annual_projects": 3456
+    }
+  ],
+  "recruitment_agencies": [
+    {
+      "id": "RA001",
+      "name": "桜花人材紹介",
+      "type": "人材紹介会社",
+      "specialization": "エグゼクティブサーチ",
+      "location": {
+        "city": "桜花市",
+        "district": "ビジネス街",
+        "address": "桜花市ビジネス街採用通り1-1"
+      },
+      "employees": {
+        "total": 156,
+        "recruiters": 89,
+        "researchers": 34,
+        "career_consultants": 23,
+        "administrative": 10
+      },
+      "placements_annually": 2345
+    },
+    {
+      "id": "RA002",
+      "name": "桜花スタッフサービス",
+      "type": "人材派遣会社",
+      "location": {
+        "city": "桜花市",
+        "district": "雇用地区",
+        "address": "桜花市雇用地区派遣通り2-2"
+      },
+      "employees": {
+        "total": 234,
+        "coordinators": 123,
+        "sales": 67,
+        "administrative": 44
+      },
+      "registered_staff": 8900
+    }
+  ],
+  "real_estate_agencies": [
+    {
+      "id": "RE001",
+      "name": "桜花不動産",
+      "type": "総合不動産会社",
+      "location": {
+        "city": "桜花市",
+        "district": "不動産街",
+        "address": "桜花市不動産街物件通り1-1"
+      },
+      "services": ["売買仲介", "賃貸仲介", "不動産管理", "開発事業"],
+      "employees": {
+        "total": 234,
+        "sales_agents": 123,
+        "property_managers": 56,
+        "appraisers": 23,
+        "administrative": 32
+      },
+      "managed_properties": 4567
+    }
+  ],
+  "insurance_brokers": [
+    {
+      "id": "IB001",
+      "name": "桜花保険代理店",
+      "type": "総合保険代理店",
+      "location": {
+        "city": "桜花市",
+        "district": "保険街",
+        "address": "桜花市保険街代理店通り1-1"
+      },
+      "employees": {
+        "total": 78,
+        "insurance_agents": 56,
+        "claims_support": 12,
+        "administrative": 10
+      },
+      "contracts": 12000
+    }
+  ],
+  "event_planning": [
+    {
+      "id": "EP001",
+      "name": "桜花イベントプランニング",
+      "type": "イベント企画会社",
+      "specialization": "企業イベント・展示会",
+      "location": {
+        "city": "桜花市",
+        "district": "イベント地区",
+        "address": "桜花市イベント地区企画通り1-1"
+      },
+      "employees": {
+        "total": 67,
+        "event_planners": 34,
+        "producers": 12,
+        "coordinators": 15,
+        "administrative": 6
+      },
+      "annual_events": 234
+    }
+  ],
+  "summary": {
+    "total_professional_employees": 4567,
+    "law_related": 456,
+    "consulting": 789,
+    "marketing_pr": 890,
+    "architecture_design": 234,
+    "hr_recruitment": 567,
+    "other_professional": 1631,
+    "professional_coverage": "高度な専門サービスでビジネスを支援"
+  }
+}

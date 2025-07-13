@@ -1,0 +1,571 @@
+{
+  "major_banks": [
+    {
+      "id": "MB001",
+      "name": "桜花銀行本店",
+      "type": "地方銀行本店",
+      "bank_name": "桜花銀行",
+      "location": {
+        "city": "桜花市",
+        "district": "金融街",
+        "address": "桜花市金融街1-1-1",
+        "coordinates": {"lat": 35.7090, "lng": 139.8440},
+        "area_m2": 15000
+      },
+      "facility_info": {
+        "established": "1878-05-01",
+        "floors": 20,
+        "underground_floors": 3,
+        "atm_count": 25,
+        "meeting_rooms": 30,
+        "safe_deposit_boxes": 5000
+      },
+      "services": {
+        "retail_banking": true,
+        "corporate_banking": true,
+        "investment_banking": true,
+        "private_banking": true,
+        "foreign_exchange": true,
+        "loan_center": true
+      },
+      "employees": {
+        "total": 1234,
+        "bankers": 567,
+        "tellers": 234,
+        "loan_officers": 123,
+        "investment_advisors": 89,
+        "it_staff": 78,
+        "administrative": 143,
+        "management": [
+          {
+            "employee_id": "MB001-M001",
+            "name": "頭取田金融",
+            "position": "頭取",
+            "department": "経営企画部",
+            "hire_date": "2019-06-01",
+            "annual_salary": 35000000
+          },
+          {
+            "employee_id": "MB001-M002",
+            "name": "専務田経営",
+            "position": "専務取締役",
+            "department": "経営企画部",
+            "hire_date": "2020-06-01",
+            "annual_salary": 25000000
+          },
+          {
+            "employee_id": "MB001-M003",
+            "name": "常務田営業",
+            "position": "常務取締役",
+            "department": "営業統括部",
+            "hire_date": "2020-06-01",
+            "annual_salary": 20000000
+          }
+        ]
+      },
+      "financial_data": {
+        "total_assets_billion_yen": 2500,
+        "branches": 85,
+        "customers": 1200000
+      }
+    },
+    {
+      "id": "MB002",
+      "name": "みずほ銀行桜花支店",
+      "type": "都市銀行支店",
+      "bank_name": "みずほ銀行",
+      "location": {
+        "city": "桜花市",
+        "district": "駅前地区",
+        "address": "桜花市駅前地区銀行通り2-2-2",
+        "coordinates": {"lat": 35.7070, "lng": 139.8430}
+      },
+      "facility_info": {
+        "floors": 8,
+        "atm_count": 12,
+        "consultation_booths": 15
+      },
+      "employees": {
+        "total": 234,
+        "bankers": 89,
+        "tellers": 56,
+        "loan_officers": 34,
+        "administrative": 55
+      },
+      "services": {
+        "retail_banking": true,
+        "corporate_banking": true,
+        "foreign_exchange": true
+      }
+    },
+    {
+      "id": "MB003",
+      "name": "三菱UFJ銀行桜花支店",
+      "type": "都市銀行支店",
+      "bank_name": "三菱UFJ銀行",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区金融通り3-3-3"
+      },
+      "employees": {
+        "total": 198,
+        "bankers": 78,
+        "tellers": 45,
+        "loan_officers": 30,
+        "administrative": 45
+      }
+    },
+    {
+      "id": "MB004",
+      "name": "桜川信用金庫本店",
+      "type": "信用金庫本店",
+      "bank_name": "桜川信用金庫",
+      "location": {
+        "city": "桜川市",
+        "district": "中央地区",
+        "address": "桜川市中央地区信金通り1-1"
+      },
+      "employees": {
+        "total": 456,
+        "bankers": 234,
+        "tellers": 123,
+        "administrative": 99
+      },
+      "financial_data": {
+        "total_assets_billion_yen": 450,
+        "branches": 25,
+        "members": 85000
+      }
+    }
+  ],
+  "regional_banks": [
+    {
+      "id": "RB001",
+      "name": "桜花銀行中央支店",
+      "type": "地方銀行支店",
+      "bank_name": "桜花銀行",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区商店街2-3"
+      },
+      "employees": {
+        "total": 45,
+        "bankers": 20,
+        "tellers": 15,
+        "administrative": 10
+      }
+    },
+    {
+      "id": "RB002",
+      "name": "桜花銀行東支店",
+      "type": "地方銀行支店",
+      "bank_name": "桜花銀行",
+      "location": {
+        "city": "桜花市",
+        "district": "東区",
+        "address": "桜花市東区東通り3-4"
+      },
+      "employees": {
+        "total": 38,
+        "bankers": 18,
+        "tellers": 12,
+        "administrative": 8
+      }
+    }
+  ],
+  "securities_companies": [
+    {
+      "id": "SC001",
+      "name": "桜花証券本社",
+      "type": "証券会社本社",
+      "company_name": "桜花証券株式会社",
+      "location": {
+        "city": "桜花市",
+        "district": "金融街",
+        "address": "桜花市金融街2-2-2",
+        "coordinates": {"lat": 35.7095, "lng": 139.8445}
+      },
+      "facility_info": {
+        "floors": 15,
+        "trading_floor": true,
+        "seminar_rooms": 8,
+        "vip_lounges": 3
+      },
+      "employees": {
+        "total": 567,
+        "traders": 123,
+        "analysts": 89,
+        "brokers": 156,
+        "compliance": 45,
+        "it_staff": 67,
+        "administrative": 87,
+        "management": [
+          {
+            "employee_id": "SC001-M001",
+            "name": "社長田投資",
+            "position": "代表取締役社長",
+            "department": "経営企画部",
+            "hire_date": "2018-04-01",
+            "annual_salary": 30000000
+          }
+        ]
+      },
+      "services": {
+        "stock_trading": true,
+        "bond_trading": true,
+        "investment_trust": true,
+        "ipo_underwriting": true,
+        "wealth_management": true
+      },
+      "trading_volume_daily_billion_yen": 150
+    },
+    {
+      "id": "SC002",
+      "name": "野村證券桜花支店",
+      "type": "証券会社支店",
+      "company_name": "野村證券",
+      "location": {
+        "city": "桜花市",
+        "district": "駅前地区",
+        "address": "桜花市駅前地区証券通り1-2"
+      },
+      "employees": {
+        "total": 89,
+        "brokers": 45,
+        "analysts": 12,
+        "administrative": 32
+      }
+    }
+  ],
+  "insurance_companies": [
+    {
+      "id": "IC001",
+      "name": "桜花生命保険本社",
+      "type": "生命保険会社本社",
+      "company_name": "桜花生命保険相互会社",
+      "location": {
+        "city": "桜花市",
+        "district": "保険街",
+        "address": "桜花市保険街1-1-1",
+        "coordinates": {"lat": 35.7110, "lng": 139.8460}
+      },
+      "facility_info": {
+        "floors": 25,
+        "customer_service_center": true,
+        "medical_examination_center": true,
+        "conference_halls": 5
+      },
+      "employees": {
+        "total": 2345,
+        "sales_agents": 1234,
+        "underwriters": 234,
+        "actuaries": 45,
+        "claims_processors": 156,
+        "customer_service": 345,
+        "it_staff": 123,
+        "administrative": 208,
+        "management": [
+          {
+            "employee_id": "IC001-M001",
+            "name": "社長田保険",
+            "position": "代表取締役社長",
+            "department": "経営企画部",
+            "hire_date": "2017-04-01",
+            "annual_salary": 28000000
+          }
+        ]
+      },
+      "business_data": {
+        "policies_in_force": 850000,
+        "annual_premium_billion_yen": 320,
+        "branches": 45
+      }
+    },
+    {
+      "id": "IC002",
+      "name": "桜花損害保険本社",
+      "type": "損害保険会社本社",
+      "company_name": "桜花損害保険株式会社",
+      "location": {
+        "city": "桜花市",
+        "district": "保険街",
+        "address": "桜花市保険街2-2-2"
+      },
+      "employees": {
+        "total": 1567,
+        "sales_agents": 789,
+        "underwriters": 189,
+        "claims_adjusters": 234,
+        "administrative": 355
+      },
+      "business_data": {
+        "auto_insurance_policies": 450000,
+        "property_insurance_policies": 280000,
+        "annual_premium_billion_yen": 180
+      }
+    },
+    {
+      "id": "IC003",
+      "name": "日本生命桜花支社",
+      "type": "生命保険会社支社",
+      "company_name": "日本生命保険",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区保険通り3-3"
+      },
+      "employees": {
+        "total": 156,
+        "sales_agents": 89,
+        "customer_service": 34,
+        "administrative": 33
+      }
+    }
+  ],
+  "credit_unions": [
+    {
+      "id": "CU001",
+      "name": "桜花市職員信用組合",
+      "type": "職域信用組合",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区市役所通り2-3"
+      },
+      "employees": {
+        "total": 23,
+        "loan_officers": 8,
+        "tellers": 10,
+        "administrative": 5
+      },
+      "members": 3500
+    },
+    {
+      "id": "CU002",
+      "name": "桜県医師信用組合",
+      "type": "職域信用組合",
+      "location": {
+        "city": "桜花市",
+        "district": "医療地区",
+        "address": "桜花市医療地区組合通り1-1"
+      },
+      "employees": {
+        "total": 34,
+        "loan_officers": 12,
+        "tellers": 15,
+        "administrative": 7
+      },
+      "members": 2800
+    }
+  ],
+  "consumer_finance": [
+    {
+      "id": "CF001",
+      "name": "桜花ファイナンス本店",
+      "type": "消費者金融",
+      "company_name": "桜花ファイナンス株式会社",
+      "location": {
+        "city": "桜花市",
+        "district": "駅前地区",
+        "address": "桜花市駅前地区ローン通り1-1"
+      },
+      "employees": {
+        "total": 67,
+        "loan_officers": 34,
+        "customer_service": 23,
+        "administrative": 10
+      },
+      "branches": 8
+    }
+  ],
+  "credit_card_companies": [
+    {
+      "id": "CC001",
+      "name": "桜花カード本社",
+      "type": "クレジットカード会社",
+      "company_name": "桜花カード株式会社",
+      "location": {
+        "city": "桜花市",
+        "district": "金融街",
+        "address": "桜花市金融街3-3-3"
+      },
+      "employees": {
+        "total": 456,
+        "customer_service": 234,
+        "it_staff": 89,
+        "fraud_prevention": 45,
+        "marketing": 34,
+        "administrative": 54
+      },
+      "card_holders": 680000
+    }
+  ],
+  "asset_management": [
+    {
+      "id": "AM001",
+      "name": "桜花アセットマネジメント",
+      "type": "資産運用会社",
+      "location": {
+        "city": "桜花市",
+        "district": "金融街",
+        "address": "桜花市金融街4-4-4"
+      },
+      "employees": {
+        "total": 234,
+        "fund_managers": 45,
+        "analysts": 67,
+        "traders": 34,
+        "compliance": 23,
+        "administrative": 65
+      },
+      "assets_under_management_billion_yen": 1200
+    }
+  ],
+  "fintech_companies": [
+    {
+      "id": "FT001",
+      "name": "桜花ペイメント株式会社",
+      "type": "フィンテック企業",
+      "specialization": "決済サービス",
+      "location": {
+        "city": "桜花市",
+        "district": "IT地区",
+        "address": "桜花市IT地区テクノロジー通り1-1"
+      },
+      "employees": {
+        "total": 345,
+        "engineers": 234,
+        "product_managers": 34,
+        "sales": 45,
+        "administrative": 32
+      },
+      "users": 2500000,
+      "daily_transactions": 1200000
+    },
+    {
+      "id": "FT002",
+      "name": "桜花ロボアドバイザー",
+      "type": "フィンテック企業",
+      "specialization": "自動資産運用",
+      "location": {
+        "city": "桜花市",
+        "district": "IT地区",
+        "address": "桜花市IT地区AI通り2-2"
+      },
+      "employees": {
+        "total": 89,
+        "engineers": 56,
+        "data_scientists": 23,
+        "administrative": 10
+      }
+    }
+  ],
+  "accounting_firms": [
+    {
+      "id": "AF001",
+      "name": "桜花監査法人",
+      "type": "監査法人",
+      "location": {
+        "city": "桜花市",
+        "district": "ビジネス街",
+        "address": "桜花市ビジネス街会計通り1-1"
+      },
+      "employees": {
+        "total": 456,
+        "cpas": 234,
+        "junior_accountants": 156,
+        "administrative": 66,
+        "management": [
+          {
+            "employee_id": "AF001-M001",
+            "name": "代表田監査",
+            "position": "代表社員",
+            "qualification": "公認会計士",
+            "hire_date": "2015-07-01",
+            "annual_salary": 20000000
+          }
+        ]
+      },
+      "clients": 450
+    },
+    {
+      "id": "AF002",
+      "name": "EY新日本有限責任監査法人桜花事務所",
+      "type": "監査法人事務所",
+      "location": {
+        "city": "桜花市",
+        "district": "ビジネス街",
+        "address": "桜花市ビジネス街監査通り2-2"
+      },
+      "employees": {
+        "total": 123,
+        "cpas": 67,
+        "junior_accountants": 45,
+        "administrative": 11
+      }
+    }
+  ],
+  "tax_accounting_offices": [
+    {
+      "id": "TA001",
+      "name": "桜花税理士法人",
+      "type": "税理士法人",
+      "location": {
+        "city": "桜花市",
+        "district": "ビジネス街",
+        "address": "桜花市ビジネス街税務通り1-1"
+      },
+      "employees": {
+        "total": 89,
+        "tax_accountants": 34,
+        "assistants": 45,
+        "administrative": 10
+      },
+      "clients": 1200
+    }
+  ],
+  "financial_consultants": [
+    {
+      "id": "FC001",
+      "name": "桜花ファイナンシャルプランナーズ",
+      "type": "FP事務所",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区相談通り1-1"
+      },
+      "employees": {
+        "total": 34,
+        "certified_fps": 23,
+        "assistants": 8,
+        "administrative": 3
+      }
+    }
+  ],
+  "atm_locations": [
+    {
+      "id": "ATM001",
+      "name": "桜花駅前ATMコーナー",
+      "type": "ATM設置場所",
+      "location": {
+        "city": "桜花市",
+        "district": "駅前地区",
+        "address": "桜花市駅前地区駅構内"
+      },
+      "atm_count": 15,
+      "banks": ["桜花銀行", "みずほ銀行", "三菱UFJ銀行", "ゆうちょ銀行"],
+      "24h_service": true
+    }
+  ],
+  "summary": {
+    "total_financial_employees": 12890,
+    "banks": 145,
+    "securities_companies": 23,
+    "insurance_companies": 34,
+    "other_financial": 67,
+    "atm_total": 2345,
+    "financial_coverage": "充実した金融サービスで地域経済を支援"
+  }
+}

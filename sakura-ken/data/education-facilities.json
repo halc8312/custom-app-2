@@ -1,0 +1,558 @@
+{
+  "universities": [
+    {
+      "id": "UN001",
+      "name": "桜花大学",
+      "type": "国立大学",
+      "category": "総合大学",
+      "location": {
+        "city": "桜花市",
+        "district": "大学町",
+        "address": "桜花市大学町1-1",
+        "coordinates": {"lat": 35.7250, "lng": 139.8700},
+        "campus_area_m2": 450000
+      },
+      "facility_info": {
+        "established": "1920-04-01",
+        "campuses": 3,
+        "buildings": 45,
+        "libraries": 5,
+        "research_centers": 12,
+        "dormitories": 8,
+        "sports_facilities": 15
+      },
+      "faculties": [
+        "法学部", "経済学部", "文学部", "理学部", "工学部", "医学部",
+        "薬学部", "農学部", "教育学部", "情報科学部"
+      ],
+      "students": {
+        "undergraduate": 15000,
+        "graduate": 3500,
+        "doctoral": 800,
+        "international": 1200
+      },
+      "employees": {
+        "total": 3456,
+        "professors": 456,
+        "associate_professors": 567,
+        "assistant_professors": 678,
+        "lecturers": 345,
+        "administrative": 1234,
+        "technical": 176,
+        "management": [
+          {
+            "employee_id": "UN001-M001",
+            "name": "学長田教育",
+            "position": "学長",
+            "department": "大学本部",
+            "specialization": "教育学",
+            "hire_date": "2020-04-01",
+            "annual_salary": 20000000
+          },
+          {
+            "employee_id": "UN001-M002",
+            "name": "副学長田研究",
+            "position": "副学長（研究担当）",
+            "department": "研究推進部",
+            "specialization": "物理学",
+            "hire_date": "2019-04-01",
+            "annual_salary": 15000000
+          }
+        ],
+        "sample_faculty": [
+          {
+            "employee_id": "UN001-F001",
+            "name": "教授田法律",
+            "position": "教授",
+            "department": "法学部",
+            "specialization": "憲法学",
+            "hire_date": "2005-04-01",
+            "annual_salary": 12000000
+          },
+          {
+            "employee_id": "UN001-F002",
+            "name": "准教授田経済",
+            "position": "准教授",
+            "department": "経済学部",
+            "specialization": "マクロ経済学",
+            "hire_date": "2012-04-01",
+            "annual_salary": 8000000
+          }
+        ]
+      },
+      "research": {
+        "annual_budget_million_yen": 8500,
+        "patents_annually": 234,
+        "international_collaborations": 156
+      }
+    },
+    {
+      "id": "UN002",
+      "name": "桜川工科大学",
+      "type": "公立大学",
+      "category": "工科大学",
+      "location": {
+        "city": "桜川市",
+        "district": "学園都市",
+        "address": "桜川市学園都市2-3-4",
+        "coordinates": {"lat": 35.6900, "lng": 139.9200},
+        "campus_area_m2": 280000
+      },
+      "facility_info": {
+        "established": "1965-04-01",
+        "buildings": 25,
+        "laboratories": 80,
+        "clean_rooms": 12
+      },
+      "faculties": [
+        "機械工学科", "電気電子工学科", "情報工学科", "建築学科", "環境工学科"
+      ],
+      "students": {
+        "undergraduate": 8000,
+        "graduate": 2000,
+        "doctoral": 400
+      },
+      "employees": {
+        "total": 1234,
+        "professors": 156,
+        "associate_professors": 234,
+        "assistant_professors": 289,
+        "administrative": 456,
+        "technical": 99
+      }
+    },
+    {
+      "id": "UN003",
+      "name": "桜花女子大学",
+      "type": "私立大学",
+      "category": "女子大学",
+      "location": {
+        "city": "桜花市",
+        "district": "文教地区",
+        "address": "桜花市文教地区5-6-7"
+      },
+      "faculties": [
+        "文学部", "家政学部", "看護学部", "国際教養学部"
+      ],
+      "students": {
+        "undergraduate": 4500,
+        "graduate": 500
+      },
+      "employees": {
+        "total": 567,
+        "faculty": 234,
+        "administrative": 333
+      }
+    }
+  ],
+  "vocational_schools": [
+    {
+      "id": "VS001",
+      "name": "桜県立職業能力開発大学校",
+      "type": "職業能力開発大学校",
+      "location": {
+        "city": "桜花市",
+        "district": "産業地区",
+        "address": "桜花市産業地区職業訓練通り1-1"
+      },
+      "courses": [
+        "機械システム工学科", "電気エネルギー制御科", "電子情報技術科", "建築科"
+      ],
+      "students": 1200,
+      "employees": {
+        "total": 156,
+        "instructors": 89,
+        "administrative": 67
+      }
+    },
+    {
+      "id": "VS002",
+      "name": "桜花医療専門学校",
+      "type": "専門学校",
+      "specialization": "医療系",
+      "location": {
+        "city": "桜花市",
+        "district": "医療地区",
+        "address": "桜花市医療地区専門学校通り2-3"
+      },
+      "courses": [
+        "看護学科", "理学療法学科", "作業療法学科", "臨床検査学科"
+      ],
+      "students": 800,
+      "employees": {
+        "total": 89,
+        "instructors": 56,
+        "administrative": 33
+      }
+    }
+  ],
+  "high_schools": [
+    {
+      "id": "HS001",
+      "name": "桜県立桜花高等学校",
+      "type": "公立高等学校",
+      "category": "進学校",
+      "location": {
+        "city": "桜花市",
+        "district": "文教地区",
+        "address": "桜花市文教地区学園通り1-1-1"
+      },
+      "facility_info": {
+        "established": "1901-04-01",
+        "buildings": 5,
+        "classrooms": 45,
+        "laboratories": 12,
+        "gymnasium": 2,
+        "sports_grounds": 3
+      },
+      "students": {
+        "total": 1200,
+        "first_year": 400,
+        "second_year": 400,
+        "third_year": 400
+      },
+      "employees": {
+        "total": 98,
+        "teachers": 67,
+        "administrative": 21,
+        "support_staff": 10,
+        "management": [
+          {
+            "employee_id": "HS001-M001",
+            "name": "校長田教育",
+            "position": "校長",
+            "subject": "数学",
+            "hire_date": "2018-04-01",
+            "annual_salary": 8500000
+          },
+          {
+            "employee_id": "HS001-M002",
+            "name": "教頭田指導",
+            "position": "教頭",
+            "subject": "英語",
+            "hire_date": "2020-04-01",
+            "annual_salary": 7500000
+          }
+        ]
+      },
+      "academic_performance": {
+        "university_advancement_rate": 0.95,
+        "national_university_rate": 0.45
+      }
+    },
+    {
+      "id": "HS002",
+      "name": "桜川市立第一高等学校",
+      "type": "公立高等学校",
+      "category": "総合高校",
+      "location": {
+        "city": "桜川市",
+        "district": "教育地区",
+        "address": "桜川市教育地区高校通り2-3-4"
+      },
+      "students": 900,
+      "employees": {
+        "total": 78,
+        "teachers": 56,
+        "administrative": 22
+      }
+    },
+    {
+      "id": "HS003",
+      "name": "私立桜花学園高等学校",
+      "type": "私立高等学校",
+      "category": "中高一貫校",
+      "location": {
+        "city": "桜花市",
+        "district": "南区",
+        "address": "桜花市南区私学の森3-4-5"
+      },
+      "students": 1800,
+      "employees": {
+        "total": 145,
+        "teachers": 105,
+        "administrative": 40
+      }
+    }
+  ],
+  "junior_high_schools": [
+    {
+      "id": "JH001",
+      "name": "桜花市立第一中学校",
+      "type": "公立中学校",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区中学校通り1-1"
+      },
+      "students": 600,
+      "employees": {
+        "total": 45,
+        "teachers": 34,
+        "administrative": 11
+      }
+    },
+    {
+      "id": "JH002",
+      "name": "桜花市立第二中学校",
+      "type": "公立中学校",
+      "location": {
+        "city": "桜花市",
+        "district": "東区",
+        "address": "桜花市東区学校通り2-2"
+      },
+      "students": 550,
+      "employees": {
+        "total": 42,
+        "teachers": 32,
+        "administrative": 10
+      }
+    }
+  ],
+  "elementary_schools": [
+    {
+      "id": "ES001",
+      "name": "桜花市立中央小学校",
+      "type": "公立小学校",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区小学校通り1-1"
+      },
+      "facility_info": {
+        "classrooms": 24,
+        "special_rooms": 8,
+        "playground_area_m2": 5000
+      },
+      "students": 720,
+      "employees": {
+        "total": 38,
+        "teachers": 28,
+        "administrative": 6,
+        "support_staff": 4,
+        "management": [
+          {
+            "employee_id": "ES001-M001",
+            "name": "小学田校長",
+            "position": "校長",
+            "hire_date": "2019-04-01",
+            "annual_salary": 7000000
+          }
+        ]
+      }
+    },
+    {
+      "id": "ES002",
+      "name": "桜花市立東小学校",
+      "type": "公立小学校",
+      "location": {
+        "city": "桜花市",
+        "district": "東区",
+        "address": "桜花市東区桜通り2-2"
+      },
+      "students": 650,
+      "employees": {
+        "total": 35,
+        "teachers": 26,
+        "administrative": 9
+      }
+    },
+    {
+      "id": "ES003",
+      "name": "桜花市立西小学校",
+      "type": "公立小学校",
+      "location": {
+        "city": "桜花市",
+        "district": "西区",
+        "address": "桜花市西区学園通り3-3"
+      },
+      "students": 580,
+      "employees": {
+        "total": 32,
+        "teachers": 24,
+        "administrative": 8
+      }
+    }
+  ],
+  "kindergartens": [
+    {
+      "id": "KG001",
+      "name": "桜花市立中央幼稚園",
+      "type": "公立幼稚園",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区子供の森1-1"
+      },
+      "capacity": 180,
+      "employees": {
+        "total": 18,
+        "teachers": 12,
+        "support_staff": 6
+      }
+    },
+    {
+      "id": "KG002",
+      "name": "私立さくら幼稚園",
+      "type": "私立幼稚園",
+      "location": {
+        "city": "桜花市",
+        "district": "南区",
+        "address": "桜花市南区花園通り2-2"
+      },
+      "capacity": 200,
+      "employees": {
+        "total": 22,
+        "teachers": 15,
+        "support_staff": 7
+      }
+    }
+  ],
+  "nursery_schools": [
+    {
+      "id": "NS001",
+      "name": "桜花市立第一保育園",
+      "type": "公立保育園",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区保育園通り1-1"
+      },
+      "capacity": 120,
+      "age_groups": ["0歳児", "1歳児", "2歳児", "3歳児", "4歳児", "5歳児"],
+      "employees": {
+        "total": 28,
+        "nursery_teachers": 20,
+        "nutritionists": 2,
+        "nurses": 2,
+        "administrative": 4
+      }
+    }
+  ],
+  "cram_schools": [
+    {
+      "id": "CS001",
+      "name": "桜花進学塾",
+      "type": "学習塾",
+      "chain": "桜花教育グループ",
+      "location": {
+        "city": "桜花市",
+        "district": "駅前地区",
+        "address": "桜花市駅前地区教育ビル3F"
+      },
+      "courses": ["小学生", "中学生", "高校生", "大学受験"],
+      "students": 450,
+      "employees": {
+        "total": 34,
+        "instructors": 25,
+        "administrative": 9
+      }
+    }
+  ],
+  "language_schools": [
+    {
+      "id": "LS001",
+      "name": "桜花国際言語学院",
+      "type": "語学学校",
+      "specialization": "英語・中国語・韓国語",
+      "location": {
+        "city": "桜花市",
+        "district": "国際地区",
+        "address": "桜花市国際地区グローバル通り1-1"
+      },
+      "students": 800,
+      "employees": {
+        "total": 45,
+        "instructors": 32,
+        "native_speakers": 20,
+        "administrative": 13
+      }
+    }
+  ],
+  "training_centers": [
+    {
+      "id": "TC001",
+      "name": "桜県職業訓練センター",
+      "type": "職業訓練施設",
+      "location": {
+        "city": "桜花市",
+        "district": "産業地区",
+        "address": "桜花市産業地区スキルアップ通り1-1"
+      },
+      "courses": [
+        "IT基礎", "CAD/CAM", "電気工事", "介護職員初任者研修", "フォークリフト運転"
+      ],
+      "annual_trainees": 2400,
+      "employees": {
+        "total": 56,
+        "instructors": 38,
+        "administrative": 18
+      }
+    }
+  ],
+  "libraries": [
+    {
+      "id": "LB001",
+      "name": "桜県立中央図書館",
+      "type": "公立図書館",
+      "location": {
+        "city": "桜花市",
+        "district": "文化地区",
+        "address": "桜花市文化地区図書館通り1-1"
+      },
+      "facility_info": {
+        "floors": 5,
+        "collection_size": 1200000,
+        "reading_seats": 500,
+        "study_rooms": 20,
+        "computer_terminals": 100
+      },
+      "employees": {
+        "total": 78,
+        "librarians": 45,
+        "technical_staff": 12,
+        "administrative": 21,
+        "management": [
+          {
+            "employee_id": "LB001-M001",
+            "name": "図書田管理",
+            "position": "館長",
+            "specialization": "図書館情報学",
+            "hire_date": "2015-04-01",
+            "annual_salary": 8000000
+          }
+        ]
+      },
+      "annual_visitors": 850000
+    }
+  ],
+  "research_institutes": [
+    {
+      "id": "RI001",
+      "name": "桜県産業技術研究所",
+      "type": "研究機関",
+      "specialization": "工業技術・材料科学",
+      "location": {
+        "city": "桜花市",
+        "district": "研究開発地区",
+        "address": "桜花市研究開発地区イノベーション通り1-1"
+      },
+      "employees": {
+        "total": 234,
+        "researchers": 156,
+        "technicians": 45,
+        "administrative": 33
+      }
+    }
+  ],
+  "summary": {
+    "total_education_employees": 12456,
+    "universities": 8,
+    "high_schools": 45,
+    "junior_high_schools": 78,
+    "elementary_schools": 156,
+    "kindergartens_nurseries": 234,
+    "total_students": 380000,
+    "education_coverage": "充実した教育体制で全年齢層に対応"
+  }
+}
