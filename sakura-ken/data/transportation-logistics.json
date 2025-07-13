@@ -1,0 +1,490 @@
+{
+  "railway_companies": [
+    {
+      "id": "RC001",
+      "name": "JR東日本桜花支社",
+      "type": "鉄道会社支社",
+      "company_name": "東日本旅客鉄道株式会社",
+      "location": {
+        "city": "桜花市",
+        "district": "駅前地区",
+        "address": "桜花市駅前地区鉄道ビル1-1",
+        "coordinates": {"lat": 35.7060, "lng": 139.8425}
+      },
+      "facility_info": {
+        "offices_floors": 8,
+        "control_center": true,
+        "training_center": true,
+        "maintenance_depot": true
+      },
+      "operations": {
+        "lines": ["東北新幹線", "桜花線", "桜川線"],
+        "stations_managed": 45,
+        "daily_passengers": 850000
+      },
+      "employees": {
+        "total": 2345,
+        "drivers": 456,
+        "conductors": 345,
+        "station_staff": 789,
+        "maintenance": 456,
+        "administrative": 299,
+        "management": [
+          {
+            "employee_id": "RC001-M001",
+            "name": "支社長田鉄道",
+            "position": "支社長",
+            "department": "支社統括部",
+            "hire_date": "2019-04-01",
+            "annual_salary": 15000000
+          },
+          {
+            "employee_id": "RC001-M002",
+            "name": "運輸田管理",
+            "position": "運輸部長",
+            "department": "運輸部",
+            "hire_date": "2020-04-01",
+            "annual_salary": 10000000
+          }
+        ]
+      }
+    },
+    {
+      "id": "RC002",
+      "name": "桜花電鉄本社",
+      "type": "私鉄本社",
+      "company_name": "桜花電鉄株式会社",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区私鉄通り2-2-2"
+      },
+      "operations": {
+        "lines": ["桜花本線", "空港線", "臨海線"],
+        "stations": 67,
+        "daily_passengers": 450000
+      },
+      "employees": {
+        "total": 1456,
+        "drivers": 234,
+        "conductors": 189,
+        "station_staff": 567,
+        "maintenance": 289,
+        "administrative": 177
+      }
+    }
+  ],
+  "bus_companies": [
+    {
+      "id": "BC001",
+      "name": "桜花市営バス営業所",
+      "type": "市営バス",
+      "location": {
+        "city": "桜花市",
+        "district": "交通地区",
+        "address": "桜花市交通地区バス基地1-1",
+        "area_m2": 35000
+      },
+      "facility_info": {
+        "bus_depots": 3,
+        "maintenance_bays": 20,
+        "fuel_stations": 5,
+        "washing_stations": 8
+      },
+      "fleet": {
+        "regular_buses": 234,
+        "articulated_buses": 12,
+        "electric_buses": 45,
+        "hybrid_buses": 89
+      },
+      "operations": {
+        "routes": 78,
+        "daily_passengers": 180000,
+        "stops": 1234
+      },
+      "employees": {
+        "total": 789,
+        "drivers": 456,
+        "mechanics": 123,
+        "dispatchers": 67,
+        "administrative": 143,
+        "management": [
+          {
+            "employee_id": "BC001-M001",
+            "name": "所長田運行",
+            "position": "営業所長",
+            "department": "運行管理部",
+            "hire_date": "2018-04-01",
+            "annual_salary": 8500000
+          }
+        ]
+      }
+    },
+    {
+      "id": "BC002",
+      "name": "桜花観光バス",
+      "type": "観光バス会社",
+      "location": {
+        "city": "桜花市",
+        "district": "観光地区",
+        "address": "桜花市観光地区バス通り2-2"
+      },
+      "fleet": {
+        "large_coaches": 45,
+        "medium_buses": 23,
+        "minibuses": 12
+      },
+      "employees": {
+        "total": 156,
+        "drivers": 89,
+        "guides": 23,
+        "mechanics": 20,
+        "administrative": 24
+      }
+    }
+  ],
+  "taxi_companies": [
+    {
+      "id": "TC001",
+      "name": "桜花タクシー本社",
+      "type": "タクシー会社",
+      "location": {
+        "city": "桜花市",
+        "district": "駅前地区",
+        "address": "桜花市駅前地区タクシー通り1-1"
+      },
+      "fleet": {
+        "regular_taxis": 234,
+        "premium_taxis": 23,
+        "wheelchair_accessible": 12,
+        "electric_taxis": 34
+      },
+      "employees": {
+        "total": 567,
+        "drivers": 456,
+        "dispatchers": 45,
+        "mechanics": 34,
+        "administrative": 32
+      },
+      "operations": {
+        "daily_rides": 4500,
+        "app_users": 89000
+      }
+    },
+    {
+      "id": "TC002",
+      "name": "さくら交通",
+      "type": "タクシー会社",
+      "location": {
+        "city": "桜川市",
+        "district": "中央地区",
+        "address": "桜川市中央地区交通通り2-2"
+      },
+      "fleet": {
+        "regular_taxis": 123,
+        "wheelchair_accessible": 8
+      },
+      "employees": {
+        "total": 234,
+        "drivers": 189,
+        "dispatchers": 23,
+        "administrative": 22
+      }
+    }
+  ],
+  "logistics_companies": [
+    {
+      "id": "LC001",
+      "name": "桜花物流センター",
+      "type": "物流センター",
+      "company_name": "桜花物流株式会社",
+      "location": {
+        "city": "桜花市",
+        "district": "物流地区",
+        "address": "桜花市物流地区配送センター1-1",
+        "area_m2": 85000
+      },
+      "facility_info": {
+        "warehouses": 5,
+        "total_storage_m2": 65000,
+        "loading_docks": 45,
+        "cold_storage": true,
+        "automated_sorting": true
+      },
+      "operations": {
+        "daily_packages": 125000,
+        "delivery_trucks": 156,
+        "service_area": "桜県全域"
+      },
+      "employees": {
+        "total": 1234,
+        "drivers": 456,
+        "warehouse_workers": 567,
+        "sorters": 123,
+        "administrative": 88,
+        "management": [
+          {
+            "employee_id": "LC001-M001",
+            "name": "センター長田物流",
+            "position": "センター長",
+            "department": "物流管理部",
+            "hire_date": "2017-04-01",
+            "annual_salary": 12000000
+          }
+        ]
+      }
+    },
+    {
+      "id": "LC002",
+      "name": "ヤマト運輸桜花主管支店",
+      "type": "宅配便営業所",
+      "company_name": "ヤマト運輸",
+      "location": {
+        "city": "桜花市",
+        "district": "配送地区",
+        "address": "桜花市配送地区宅配通り2-2"
+      },
+      "employees": {
+        "total": 345,
+        "drivers": 234,
+        "warehouse_workers": 67,
+        "administrative": 44
+      },
+      "operations": {
+        "daily_deliveries": 45000,
+        "delivery_vehicles": 89
+      }
+    },
+    {
+      "id": "LC003",
+      "name": "佐川急便桜花営業所",
+      "type": "宅配便営業所",
+      "company_name": "佐川急便",
+      "location": {
+        "city": "桜花市",
+        "district": "物流地区",
+        "address": "桜花市物流地区急便通り3-3"
+      },
+      "employees": {
+        "total": 289,
+        "drivers": 189,
+        "warehouse_workers": 67,
+        "administrative": 33
+      }
+    }
+  ],
+  "freight_companies": [
+    {
+      "id": "FC001",
+      "name": "桜花貨物ターミナル",
+      "type": "貨物駅",
+      "company_name": "JR貨物",
+      "location": {
+        "city": "桜花市",
+        "district": "貨物地区",
+        "address": "桜花市貨物地区ターミナル1-1",
+        "area_m2": 120000
+      },
+      "facility_info": {
+        "rail_tracks": 12,
+        "container_yard_m2": 80000,
+        "cranes": 8,
+        "warehouse_m2": 25000
+      },
+      "employees": {
+        "total": 234,
+        "operators": 123,
+        "crane_operators": 34,
+        "administrative": 77
+      },
+      "daily_containers": 1200
+    }
+  ],
+  "trucking_companies": [
+    {
+      "id": "TR001",
+      "name": "桜花運送本社",
+      "type": "運送会社",
+      "location": {
+        "city": "桜川市",
+        "district": "工業地区",
+        "address": "桜川市工業地区運送通り1-1"
+      },
+      "fleet": {
+        "large_trucks": 89,
+        "medium_trucks": 123,
+        "small_trucks": 156
+      },
+      "employees": {
+        "total": 456,
+        "drivers": 345,
+        "mechanics": 45,
+        "dispatchers": 34,
+        "administrative": 32
+      }
+    }
+  ],
+  "airports": [
+    {
+      "id": "AP001",
+      "name": "桜花国際空港",
+      "type": "国際空港",
+      "location": {
+        "city": "桜花市",
+        "district": "空港地区",
+        "address": "桜花市空港地区空港1-1",
+        "area_m2": 1500000
+      },
+      "facility_info": {
+        "terminals": 2,
+        "runways": 2,
+        "gates": 45,
+        "parking_spaces": 8000
+      },
+      "operations": {
+        "annual_passengers": 12000000,
+        "daily_flights": 234,
+        "cargo_tons_annually": 450000
+      },
+      "employees": {
+        "total": 3456,
+        "airport_operations": 789,
+        "security": 567,
+        "ground_staff": 890,
+        "air_traffic_control": 123,
+        "administrative": 1087
+      }
+    }
+  ],
+  "ports": [
+    {
+      "id": "PT001",
+      "name": "桜花港",
+      "type": "商業港",
+      "location": {
+        "city": "桜花市",
+        "district": "臨海地区",
+        "address": "桜花市臨海地区港湾1-1"
+      },
+      "facility_info": {
+        "berths": 15,
+        "container_terminals": 3,
+        "warehouses": 20,
+        "cranes": 25
+      },
+      "operations": {
+        "annual_containers_teu": 850000,
+        "annual_cargo_tons": 12000000
+      },
+      "employees": {
+        "total": 1567,
+        "dock_workers": 890,
+        "crane_operators": 234,
+        "customs": 123,
+        "administrative": 320
+      }
+    }
+  ],
+  "parking_facilities": [
+    {
+      "id": "PK001",
+      "name": "桜花駅前立体駐車場",
+      "type": "立体駐車場",
+      "operator": "桜花市",
+      "location": {
+        "city": "桜花市",
+        "district": "駅前地区",
+        "address": "桜花市駅前地区駐車場通り1-1"
+      },
+      "facility_info": {
+        "floors": 6,
+        "capacity": 1200,
+        "ev_charging": 50,
+        "disabled_spaces": 30
+      },
+      "employees": {
+        "total": 23,
+        "attendants": 15,
+        "security": 5,
+        "administrative": 3
+      }
+    }
+  ],
+  "car_rental": [
+    {
+      "id": "CR001",
+      "name": "トヨタレンタカー桜花駅前店",
+      "type": "レンタカー営業所",
+      "company_name": "トヨタレンタカー",
+      "location": {
+        "city": "桜花市",
+        "district": "駅前地区",
+        "address": "桜花市駅前地区レンタカー通り1-1"
+      },
+      "fleet": {
+        "compact_cars": 45,
+        "standard_cars": 34,
+        "luxury_cars": 12,
+        "vans": 23,
+        "trucks": 8
+      },
+      "employees": {
+        "total": 18,
+        "counter_staff": 8,
+        "drivers": 5,
+        "maintenance": 3,
+        "administrative": 2
+      }
+    }
+  ],
+  "gas_stations": [
+    {
+      "id": "GS001",
+      "name": "ENEOS桜花中央SS",
+      "type": "ガソリンスタンド",
+      "company_name": "ENEOS",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区給油通り1-1"
+      },
+      "facility_info": {
+        "fuel_pumps": 12,
+        "car_wash": true,
+        "convenience_store": true,
+        "ev_charging": 4
+      },
+      "employees": {
+        "total": 15,
+        "attendants": 10,
+        "shop_staff": 3,
+        "administrative": 2
+      }
+    }
+  ],
+  "bike_sharing": [
+    {
+      "id": "BS001",
+      "name": "桜花シェアサイクル",
+      "type": "自転車シェアリング",
+      "operator": "桜花市",
+      "stations": 123,
+      "bikes": 2345,
+      "employees": {
+        "total": 45,
+        "maintenance": 34,
+        "operations": 8,
+        "administrative": 3
+      }
+    }
+  ],
+  "summary": {
+    "total_transportation_employees": 18956,
+    "railway_employees": 3801,
+    "bus_taxi_employees": 1746,
+    "logistics_employees": 7234,
+    "airport_port_employees": 5023,
+    "other_transport": 1152,
+    "transportation_coverage": "総合的な交通・物流網で地域を支援"
+  }
+}

@@ -1,0 +1,585 @@
+{
+  "television_stations": [
+    {
+      "id": "TV001",
+      "name": "桜花テレビ放送",
+      "type": "地方テレビ局",
+      "network": "日本テレビ系列",
+      "location": {
+        "city": "桜花市",
+        "district": "放送センター地区",
+        "address": "桜花市放送センター地区テレビ通り1-1",
+        "coordinates": {"lat": 35.7150, "lng": 139.8500},
+        "area_m2": 25000
+      },
+      "facility_info": {
+        "studios": 6,
+        "control_rooms": 4,
+        "editing_suites": 12,
+        "newsroom": true,
+        "transmission_tower_height_m": 250
+      },
+      "broadcasting": {
+        "coverage_area": "桜県全域",
+        "households_reached": 850000,
+        "programming_hours_daily": 24
+      },
+      "employees": {
+        "total": 456,
+        "announcers": 23,
+        "reporters": 67,
+        "producers": 89,
+        "directors": 45,
+        "camera_operators": 56,
+        "editors": 78,
+        "technical_staff": 65,
+        "administrative": 33,
+        "management": [
+          {
+            "employee_id": "TV001-M001",
+            "name": "社長田放送",
+            "position": "代表取締役社長",
+            "department": "経営企画部",
+            "hire_date": "2018-04-01",
+            "annual_salary": 20000000
+          },
+          {
+            "employee_id": "TV001-M002",
+            "name": "局長田報道",
+            "position": "報道局長",
+            "department": "報道局",
+            "hire_date": "2019-04-01",
+            "annual_salary": 12000000
+          }
+        ]
+      },
+      "programs": {
+        "news": 8,
+        "variety": 12,
+        "drama": 5,
+        "sports": 6,
+        "educational": 4
+      }
+    },
+    {
+      "id": "TV002",
+      "name": "さくらケーブルテレビ",
+      "type": "ケーブルテレビ局",
+      "location": {
+        "city": "桜花市",
+        "district": "通信地区",
+        "address": "桜花市通信地区ケーブル通り2-2"
+      },
+      "services": ["地上波再送信", "CS放送", "インターネット", "電話"],
+      "employees": {
+        "total": 234,
+        "technical_staff": 123,
+        "customer_service": 67,
+        "sales": 23,
+        "administrative": 21
+      },
+      "subscribers": 234000
+    }
+  ],
+  "radio_stations": [
+    {
+      "id": "RD001",
+      "name": "FM桜花",
+      "type": "FMラジオ局",
+      "frequency": "79.5MHz",
+      "location": {
+        "city": "桜花市",
+        "district": "放送センター地区",
+        "address": "桜花市放送センター地区ラジオ通り1-1"
+      },
+      "facility_info": {
+        "studios": 3,
+        "transmission_power_kw": 5,
+        "coverage_radius_km": 80
+      },
+      "employees": {
+        "total": 78,
+        "djs": 12,
+        "producers": 15,
+        "engineers": 20,
+        "sales": 18,
+        "administrative": 13
+      },
+      "programs": {
+        "music": 16,
+        "talk": 8,
+        "news": 6,
+        "local_content": 10
+      },
+      "listeners_daily": 345000
+    },
+    {
+      "id": "RD002",
+      "name": "桜花コミュニティFM",
+      "type": "コミュニティFM",
+      "frequency": "88.8MHz",
+      "location": {
+        "city": "桜花市",
+        "district": "市民地区",
+        "address": "桜花市市民地区コミュニティ通り2-2"
+      },
+      "employees": {
+        "total": 23,
+        "djs": 8,
+        "technical": 5,
+        "volunteers": 10
+      }
+    }
+  ],
+  "newspapers": [
+    {
+      "id": "NP001",
+      "name": "桜花新聞社",
+      "type": "地方新聞社",
+      "location": {
+        "city": "桜花市",
+        "district": "メディア地区",
+        "address": "桜花市メディア地区新聞通り1-1",
+        "area_m2": 15000
+      },
+      "facility_info": {
+        "printing_presses": 4,
+        "newsroom_floors": 3,
+        "distribution_centers": 8
+      },
+      "publication": {
+        "daily_circulation": 450000,
+        "morning_edition": true,
+        "evening_edition": true,
+        "digital_subscribers": 89000
+      },
+      "employees": {
+        "total": 678,
+        "journalists": 234,
+        "editors": 89,
+        "photographers": 45,
+        "printing_staff": 123,
+        "distribution": 156,
+        "administrative": 31,
+        "management": [
+          {
+            "employee_id": "NP001-M001",
+            "name": "社長田新聞",
+            "position": "代表取締役社長",
+            "department": "経営企画部",
+            "hire_date": "2017-04-01",
+            "annual_salary": 18000000
+          }
+        ]
+      },
+      "bureaus": 12
+    },
+    {
+      "id": "NP002",
+      "name": "桜川タイムズ",
+      "type": "地域新聞社",
+      "location": {
+        "city": "桜川市",
+        "district": "中央地区",
+        "address": "桜川市中央地区地域新聞通り1-1"
+      },
+      "employees": {
+        "total": 56,
+        "journalists": 23,
+        "editors": 12,
+        "administrative": 21
+      },
+      "circulation": 78000
+    }
+  ],
+  "publishing_companies": [
+    {
+      "id": "PB001",
+      "name": "桜花出版",
+      "type": "総合出版社",
+      "specialization": "書籍・雑誌",
+      "location": {
+        "city": "桜花市",
+        "district": "出版地区",
+        "address": "桜花市出版地区書籍通り1-1"
+      },
+      "publications": {
+        "books_annually": 234,
+        "magazines": 12,
+        "manga": 23
+      },
+      "employees": {
+        "total": 234,
+        "editors": 89,
+        "designers": 45,
+        "marketing": 34,
+        "sales": 45,
+        "administrative": 21
+      }
+    },
+    {
+      "id": "PB002",
+      "name": "さくらコミックス",
+      "type": "漫画出版社",
+      "location": {
+        "city": "桜花市",
+        "district": "クリエイティブ地区",
+        "address": "桜花市クリエイティブ地区漫画通り2-2"
+      },
+      "employees": {
+        "total": 78,
+        "editors": 45,
+        "designers": 20,
+        "administrative": 13
+      },
+      "manga_titles": 156
+    }
+  ],
+  "movie_theaters": [
+    {
+      "id": "MT001",
+      "name": "桜花シネマコンプレックス",
+      "type": "シネコン",
+      "chain": "TOHOシネマズ",
+      "location": {
+        "city": "桜花市",
+        "district": "エンタメ地区",
+        "address": "桜花市エンタメ地区映画通り1-1"
+      },
+      "facility_info": {
+        "screens": 12,
+        "total_seats": 2345,
+        "imax": true,
+        "4dx": true,
+        "dolby_atmos": true
+      },
+      "employees": {
+        "total": 89,
+        "projectionists": 12,
+        "ticket_staff": 34,
+        "concession": 23,
+        "cleaning": 15,
+        "administrative": 5
+      },
+      "annual_visitors": 890000
+    },
+    {
+      "id": "MT002",
+      "name": "桜花アートシアター",
+      "type": "ミニシアター",
+      "specialization": "アート映画",
+      "location": {
+        "city": "桜花市",
+        "district": "文化地区",
+        "address": "桜花市文化地区芸術通り2-2"
+      },
+      "facility_info": {
+        "screens": 2,
+        "total_seats": 180
+      },
+      "employees": {
+        "total": 12,
+        "staff": 10,
+        "administrative": 2
+      }
+    }
+  ],
+  "theaters": [
+    {
+      "id": "TH001",
+      "name": "桜花市民劇場",
+      "type": "公立劇場",
+      "location": {
+        "city": "桜花市",
+        "district": "文化地区",
+        "address": "桜花市文化地区劇場通り1-1"
+      },
+      "facility_info": {
+        "main_hall_seats": 1200,
+        "small_hall_seats": 300,
+        "rehearsal_rooms": 5,
+        "dressing_rooms": 12
+      },
+      "employees": {
+        "total": 56,
+        "technical_staff": 23,
+        "stage_managers": 8,
+        "box_office": 10,
+        "administrative": 15
+      },
+      "annual_performances": 234
+    },
+    {
+      "id": "TH002",
+      "name": "さくら歌舞伎座",
+      "type": "歌舞伎劇場",
+      "location": {
+        "city": "桜花市",
+        "district": "伝統芸能地区",
+        "address": "桜花市伝統芸能地区歌舞伎通り1-1"
+      },
+      "employees": {
+        "total": 45,
+        "technical": 20,
+        "customer_service": 15,
+        "administrative": 10
+      }
+    }
+  ],
+  "concert_halls": [
+    {
+      "id": "CH001",
+      "name": "桜花音楽ホール",
+      "type": "コンサートホール",
+      "location": {
+        "city": "桜花市",
+        "district": "音楽地区",
+        "address": "桜花市音楽地区交響通り1-1"
+      },
+      "facility_info": {
+        "main_hall_seats": 2000,
+        "chamber_hall_seats": 500,
+        "acoustics": "世界クラス",
+        "pipe_organ": true
+      },
+      "employees": {
+        "total": 78,
+        "technical_staff": 34,
+        "stage_crew": 20,
+        "box_office": 12,
+        "administrative": 12
+      },
+      "annual_concerts": 345
+    }
+  ],
+  "live_music_venues": [
+    {
+      "id": "LV001",
+      "name": "桜花ライブハウス",
+      "type": "ライブハウス",
+      "capacity": 800,
+      "location": {
+        "city": "桜花市",
+        "district": "音楽地区",
+        "address": "桜花市音楽地区ライブ通り1-1"
+      },
+      "employees": {
+        "total": 23,
+        "sound_engineers": 8,
+        "security": 8,
+        "bar_staff": 5,
+        "administrative": 2
+      },
+      "annual_shows": 234
+    }
+  ],
+  "museums": [
+    {
+      "id": "MU001",
+      "name": "桜県立美術館",
+      "type": "美術館",
+      "location": {
+        "city": "桜花市",
+        "district": "文化地区",
+        "address": "桜花市文化地区美術館通り1-1"
+      },
+      "facility_info": {
+        "exhibition_spaces": 8,
+        "permanent_collection": 12000,
+        "storage_area_m2": 3000,
+        "restoration_lab": true
+      },
+      "employees": {
+        "total": 89,
+        "curators": 23,
+        "conservators": 12,
+        "educators": 15,
+        "security": 20,
+        "administrative": 19
+      },
+      "annual_visitors": 450000
+    },
+    {
+      "id": "MU002",
+      "name": "桜花科学博物館",
+      "type": "科学博物館",
+      "location": {
+        "city": "桜花市",
+        "district": "教育地区",
+        "address": "桜花市教育地区科学通り2-2"
+      },
+      "employees": {
+        "total": 67,
+        "researchers": 20,
+        "educators": 23,
+        "technical": 15,
+        "administrative": 9
+      },
+      "features": ["プラネタリウム", "体験型展示", "実験室"]
+    }
+  ],
+  "amusement_parks": [
+    {
+      "id": "AP001",
+      "name": "桜花ランド",
+      "type": "遊園地",
+      "location": {
+        "city": "桜花市",
+        "district": "レジャー地区",
+        "address": "桜花市レジャー地区遊園地通り1-1",
+        "area_m2": 150000
+      },
+      "attractions": {
+        "roller_coasters": 5,
+        "water_rides": 3,
+        "family_rides": 20,
+        "shows": 4
+      },
+      "employees": {
+        "total": 456,
+        "ride_operators": 234,
+        "entertainers": 45,
+        "maintenance": 89,
+        "food_service": 56,
+        "administrative": 32
+      },
+      "annual_visitors": 1200000
+    }
+  ],
+  "sports_facilities": [
+    {
+      "id": "SF001",
+      "name": "桜花スタジアム",
+      "type": "総合スポーツ施設",
+      "location": {
+        "city": "桜花市",
+        "district": "スポーツ地区",
+        "address": "桜花市スポーツ地区競技場通り1-1"
+      },
+      "facility_info": {
+        "main_stadium_capacity": 45000,
+        "athletics_track": true,
+        "indoor_arena_capacity": 8000,
+        "swimming_pools": 3
+      },
+      "employees": {
+        "total": 234,
+        "facility_management": 89,
+        "security": 67,
+        "maintenance": 45,
+        "administrative": 33
+      }
+    }
+  ],
+  "game_centers": [
+    {
+      "id": "GC001",
+      "name": "桜花ゲームセンター",
+      "type": "アミューズメント施設",
+      "chain": "セガ",
+      "location": {
+        "city": "桜花市",
+        "district": "繁華街",
+        "address": "桜花市繁華街ゲーム通り1-1"
+      },
+      "facility_info": {
+        "floors": 4,
+        "game_machines": 350,
+        "vr_zones": 2,
+        "prize_corners": 3
+      },
+      "employees": {
+        "total": 34,
+        "floor_staff": 20,
+        "maintenance": 8,
+        "administrative": 6
+      }
+    }
+  ],
+  "karaoke_boxes": [
+    {
+      "id": "KB001",
+      "name": "カラオケ桜花",
+      "type": "カラオケボックス",
+      "chain": "ビッグエコー",
+      "location": {
+        "city": "桜花市",
+        "district": "繁華街",
+        "address": "桜花市繁華街歌通り1-1"
+      },
+      "facility_info": {
+        "rooms": 45,
+        "party_rooms": 5,
+        "kids_rooms": 3
+      },
+      "employees": {
+        "total": 23,
+        "reception": 8,
+        "service_staff": 10,
+        "kitchen": 3,
+        "administrative": 2
+      }
+    }
+  ],
+  "production_companies": [
+    {
+      "id": "PC001",
+      "name": "桜花映像制作",
+      "type": "映像制作会社",
+      "specialization": "CM・ドラマ・映画",
+      "location": {
+        "city": "桜花市",
+        "district": "制作地区",
+        "address": "桜花市制作地区プロダクション通り1-1"
+      },
+      "facility_info": {
+        "studios": 3,
+        "editing_suites": 8,
+        "color_grading": true,
+        "sound_studios": 2
+      },
+      "employees": {
+        "total": 123,
+        "producers": 23,
+        "directors": 15,
+        "camera_operators": 34,
+        "editors": 28,
+        "sound_engineers": 12,
+        "administrative": 11
+      }
+    }
+  ],
+  "talent_agencies": [
+    {
+      "id": "TA001",
+      "name": "桜花芸能事務所",
+      "type": "芸能事務所",
+      "location": {
+        "city": "桜花市",
+        "district": "芸能地区",
+        "address": "桜花市芸能地区タレント通り1-1"
+      },
+      "talent": {
+        "actors": 89,
+        "musicians": 45,
+        "comedians": 23,
+        "models": 67
+      },
+      "employees": {
+        "total": 67,
+        "managers": 34,
+        "pr_staff": 15,
+        "administrative": 18
+      }
+    }
+  ],
+  "summary": {
+    "total_media_entertainment_employees": 5678,
+    "broadcasting": 768,
+    "print_media": 968,
+    "theaters_venues": 890,
+    "amusement_facilities": 1567,
+    "production_agencies": 1485,
+    "entertainment_coverage": "多様なメディア・エンターテインメントで文化生活を豊かに"
+  }
+}

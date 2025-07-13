@@ -1,0 +1,437 @@
+{
+  "software_companies": [
+    {
+      "id": "SC001",
+      "name": "桜花ソフトウェア株式会社",
+      "type": "ソフトウェア開発企業",
+      "specialization": "エンタープライズソリューション",
+      "location": {
+        "city": "桜花市",
+        "district": "ITパーク",
+        "address": "桜花市ITパーク開発通り1-1",
+        "coordinates": {"lat": 35.7200, "lng": 139.8550},
+        "area_m2": 12000
+      },
+      "facility_info": {
+        "floors": 15,
+        "development_floors": 10,
+        "meeting_rooms": 25,
+        "server_rooms": 3,
+        "recreation_areas": 5
+      },
+      "business_info": {
+        "established": "1995-04-01",
+        "products": ["ERP システム", "CRM ソリューション", "ビジネスインテリジェンス", "クラウドサービス"],
+        "clients": 450,
+        "annual_revenue_million_yen": 8500
+      },
+      "employees": {
+        "total": 1234,
+        "engineers": 890,
+        "product_managers": 78,
+        "designers": 56,
+        "qa_testers": 89,
+        "sales": 67,
+        "administrative": 54,
+        "management": [
+          {
+            "employee_id": "SC001-M001",
+            "name": "社長田開発",
+            "position": "代表取締役社長",
+            "department": "経営企画部",
+            "specialization": "ソフトウェア工学",
+            "hire_date": "2018-04-01",
+            "annual_salary": 25000000
+          },
+          {
+            "employee_id": "SC001-M002",
+            "name": "CTO田技術",
+            "position": "最高技術責任者",
+            "department": "技術統括部",
+            "specialization": "クラウドアーキテクチャ",
+            "hire_date": "2019-04-01",
+            "annual_salary": 20000000
+          }
+        ],
+        "sample_engineers": [
+          {
+            "employee_id": "SC001-E001",
+            "name": "開発田太郎",
+            "position": "シニアエンジニア",
+            "department": "プラットフォーム開発部",
+            "skills": ["Java", "Spring", "AWS", "Kubernetes"],
+            "hire_date": "2015-04-01",
+            "annual_salary": 9000000
+          },
+          {
+            "employee_id": "SC001-E002",
+            "name": "プログラム田花子",
+            "position": "リードエンジニア",
+            "department": "フロントエンド開発部",
+            "skills": ["React", "TypeScript", "Node.js", "GraphQL"],
+            "hire_date": "2017-04-01",
+            "annual_salary": 8500000
+          }
+        ]
+      },
+      "certifications": ["ISO27001", "ISO9001", "CMMI Level 3"]
+    },
+    {
+      "id": "SC002",
+      "name": "桜AIテクノロジー",
+      "type": "AI開発企業",
+      "specialization": "人工知能・機械学習",
+      "location": {
+        "city": "桜花市",
+        "district": "AIバレー",
+        "address": "桜花市AIバレー知能通り2-2"
+      },
+      "business_info": {
+        "products": ["画像認識AI", "自然言語処理", "予測分析", "自動運転技術"],
+        "patents": 67,
+        "research_papers": 234
+      },
+      "employees": {
+        "total": 456,
+        "researchers": 234,
+        "engineers": 156,
+        "data_scientists": 45,
+        "administrative": 21
+      }
+    },
+    {
+      "id": "SC003",
+      "name": "サクラゲームスタジオ",
+      "type": "ゲーム開発会社",
+      "specialization": "モバイル・コンソールゲーム",
+      "location": {
+        "city": "桜花市",
+        "district": "クリエイティブ地区",
+        "address": "桜花市クリエイティブ地区ゲーム通り3-3"
+      },
+      "employees": {
+        "total": 345,
+        "programmers": 123,
+        "game_designers": 67,
+        "artists": 89,
+        "sound_engineers": 23,
+        "qa_testers": 34,
+        "administrative": 9
+      },
+      "released_titles": 45
+    }
+  ],
+  "web_companies": [
+    {
+      "id": "WC001",
+      "name": "桜花ウェブサービス",
+      "type": "Webサービス企業",
+      "specialization": "EC・メディアプラットフォーム",
+      "location": {
+        "city": "桜花市",
+        "district": "デジタル地区",
+        "address": "桜花市デジタル地区Web通り1-1"
+      },
+      "services": ["ECプラットフォーム", "ニュースポータル", "動画配信", "SNS"],
+      "employees": {
+        "total": 567,
+        "engineers": 345,
+        "content_creators": 89,
+        "marketing": 67,
+        "customer_support": 45,
+        "administrative": 21
+      },
+      "monthly_active_users": 5000000
+    },
+    {
+      "id": "WC002",
+      "name": "桜デジタルマーケティング",
+      "type": "デジタルマーケティング",
+      "specialization": "SEO・広告運用",
+      "location": {
+        "city": "桜花市",
+        "district": "ビジネス街",
+        "address": "桜花市ビジネス街マーケティング通り2-2"
+      },
+      "employees": {
+        "total": 123,
+        "marketers": 67,
+        "data_analysts": 34,
+        "designers": 12,
+        "administrative": 10
+      },
+      "clients": 890
+    }
+  ],
+  "it_services": [
+    {
+      "id": "IT001",
+      "name": "桜花システムインテグレーション",
+      "type": "システムインテグレーター",
+      "specialization": "ITインフラ・クラウド移行",
+      "location": {
+        "city": "桜花市",
+        "district": "ITパーク",
+        "address": "桜花市ITパークインフラ通り2-2"
+      },
+      "employees": {
+        "total": 789,
+        "system_engineers": 456,
+        "network_engineers": 123,
+        "cloud_architects": 89,
+        "project_managers": 67,
+        "sales": 34,
+        "administrative": 20
+      },
+      "certifications": ["AWS Partner", "Microsoft Gold Partner", "Google Cloud Partner"]
+    },
+    {
+      "id": "IT002",
+      "name": "桜ITコンサルティング",
+      "type": "ITコンサルティング",
+      "specialization": "DX推進・業務改革",
+      "location": {
+        "city": "桜花市",
+        "district": "ビジネス街",
+        "address": "桜花市ビジネス街コンサル通り3-3"
+      },
+      "employees": {
+        "total": 234,
+        "consultants": 156,
+        "analysts": 45,
+        "administrative": 33
+      }
+    }
+  ],
+  "cybersecurity_companies": [
+    {
+      "id": "CS001",
+      "name": "桜花サイバーセキュリティ",
+      "type": "セキュリティ企業",
+      "specialization": "脅威対策・SOC運用",
+      "location": {
+        "city": "桜花市",
+        "district": "セキュリティ地区",
+        "address": "桜花市セキュリティ地区防御通り1-1"
+      },
+      "facility_info": {
+        "soc_center": true,
+        "forensics_lab": true,
+        "training_rooms": 5
+      },
+      "employees": {
+        "total": 345,
+        "security_analysts": 189,
+        "incident_responders": 67,
+        "penetration_testers": 45,
+        "researchers": 23,
+        "administrative": 21
+      },
+      "services": ["24時間SOC", "インシデント対応", "脆弱性診断", "セキュリティ教育"]
+    }
+  ],
+  "data_centers": [
+    {
+      "id": "DC001",
+      "name": "桜花データセンター",
+      "type": "データセンター",
+      "operator": "桜花クラウドサービス",
+      "location": {
+        "city": "桜花市",
+        "district": "データパーク",
+        "address": "桜花市データパークサーバー通り1-1",
+        "area_m2": 25000
+      },
+      "facility_info": {
+        "server_racks": 2000,
+        "power_capacity_mw": 20,
+        "cooling_capacity": "N+1冗長",
+        "tier_level": "Tier III",
+        "security_level": "最高レベル"
+      },
+      "employees": {
+        "total": 156,
+        "data_center_engineers": 89,
+        "security": 34,
+        "network_engineers": 23,
+        "administrative": 10
+      },
+      "clients": 234
+    }
+  ],
+  "telecom_companies": [
+    {
+      "id": "TC001",
+      "name": "桜花通信株式会社",
+      "type": "通信事業者",
+      "specialization": "固定・モバイル通信",
+      "location": {
+        "city": "桜花市",
+        "district": "通信地区",
+        "address": "桜花市通信地区ネットワーク通り1-1"
+      },
+      "services": ["光ファイバー", "5Gモバイル", "企業向け専用線", "IoTソリューション"],
+      "employees": {
+        "total": 1567,
+        "network_engineers": 567,
+        "field_technicians": 456,
+        "customer_service": 345,
+        "sales": 123,
+        "administrative": 76
+      },
+      "subscribers": {
+        "fiber": 450000,
+        "mobile": 890000,
+        "enterprise": 3400
+      }
+    }
+  ],
+  "hardware_manufacturers": [
+    {
+      "id": "HM001",
+      "name": "桜花コンピュータ製造",
+      "type": "ハードウェア製造",
+      "specialization": "サーバー・ストレージ",
+      "location": {
+        "city": "桜川市",
+        "district": "ハイテク工業団地",
+        "address": "桜川市ハイテク工業団地製造通り1-1"
+      },
+      "facility_info": {
+        "factory_area_m2": 45000,
+        "clean_rooms": 8,
+        "production_lines": 6
+      },
+      "employees": {
+        "total": 890,
+        "engineers": 234,
+        "production": 456,
+        "quality_control": 89,
+        "administrative": 111
+      },
+      "annual_production": {
+        "servers": 45000,
+        "storage_units": 67000
+      }
+    }
+  ],
+  "tech_support_companies": [
+    {
+      "id": "TS001",
+      "name": "桜花テクニカルサポート",
+      "type": "技術サポート企業",
+      "specialization": "ヘルプデスク・現地サポート",
+      "location": {
+        "city": "桜花市",
+        "district": "サポート地区",
+        "address": "桜花市サポート地区ヘルプ通り1-1"
+      },
+      "services": ["24時間ヘルプデスク", "オンサイトサポート", "リモートサポート"],
+      "employees": {
+        "total": 456,
+        "support_engineers": 345,
+        "call_center": 89,
+        "administrative": 22
+      },
+      "support_contracts": 1234
+    }
+  ],
+  "research_labs": [
+    {
+      "id": "RL001",
+      "name": "桜花先端技術研究所",
+      "type": "民間研究所",
+      "specialization": "量子コンピューティング・バイオインフォマティクス",
+      "location": {
+        "city": "桜花市",
+        "district": "研究都市",
+        "address": "桜花市研究都市イノベーション通り1-1"
+      },
+      "facility_info": {
+        "laboratories": 12,
+        "clean_rooms": 5,
+        "supercomputer": true
+      },
+      "employees": {
+        "total": 234,
+        "researchers": 156,
+        "technicians": 45,
+        "administrative": 33
+      },
+      "patents_annually": 45,
+      "partnerships": ["東京大学", "理化学研究所", "産総研"]
+    }
+  ],
+  "startups": [
+    {
+      "id": "ST001",
+      "name": "桜花フィンテック",
+      "type": "スタートアップ",
+      "specialization": "ブロックチェーン決済",
+      "location": {
+        "city": "桜花市",
+        "district": "スタートアップ地区",
+        "address": "桜花市スタートアップ地区ベンチャー通り1-1"
+      },
+      "employees": {
+        "total": 45,
+        "engineers": 32,
+        "business": 10,
+        "administrative": 3
+      },
+      "funding_stage": "Series B",
+      "valuation_million_yen": 5000
+    },
+    {
+      "id": "ST002",
+      "name": "サクラヘルステック",
+      "type": "スタートアップ",
+      "specialization": "医療AI診断",
+      "location": {
+        "city": "桜花市",
+        "district": "バイオパーク",
+        "address": "桜花市バイオパークヘルス通り2-2"
+      },
+      "employees": {
+        "total": 34,
+        "researchers": 15,
+        "engineers": 12,
+        "medical_advisors": 4,
+        "administrative": 3
+      }
+    }
+  ],
+  "coworking_spaces": [
+    {
+      "id": "CW001",
+      "name": "桜花イノベーションハブ",
+      "type": "コワーキングスペース",
+      "location": {
+        "city": "桜花市",
+        "district": "起業家地区",
+        "address": "桜花市起業家地区シェア通り1-1"
+      },
+      "facility_info": {
+        "desks": 200,
+        "private_offices": 30,
+        "meeting_rooms": 10,
+        "event_space": true
+      },
+      "employees": {
+        "total": 12,
+        "community_managers": 6,
+        "reception": 4,
+        "administrative": 2
+      },
+      "members": 450
+    }
+  ],
+  "summary": {
+    "total_it_employees": 12345,
+    "software_companies": 156,
+    "it_services": 234,
+    "startups": 89,
+    "research_labs": 23,
+    "technology_coverage": "先進的なIT産業で地域のデジタル化を推進"
+  }
+}

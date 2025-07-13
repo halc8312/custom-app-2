@@ -1,0 +1,606 @@
+{
+  "prefectural_government": [
+    {
+      "id": "PG001",
+      "name": "桜県庁本庁舎",
+      "type": "県庁",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区県庁通り1-1",
+        "coordinates": {"lat": 35.7050, "lng": 139.8400},
+        "area_m2": 45000
+      },
+      "facility_info": {
+        "established": "1871-04-01",
+        "current_building": "1985-03-15",
+        "floors": 15,
+        "underground_floors": 3,
+        "meeting_rooms": 45,
+        "auditorium_capacity": 500
+      },
+      "departments": [
+        "知事室", "総務部", "企画政策部", "財政部", "県民生活部",
+        "環境部", "健康福祉部", "商工労働部", "農林水産部", "建設部",
+        "都市整備部", "教育委員会", "警察本部"
+      ],
+      "employees": {
+        "total": 3456,
+        "administrative": 2345,
+        "technical": 789,
+        "executive": 45,
+        "support": 277,
+        "management": [
+          {
+            "employee_id": "PG001-M001",
+            "name": "知事田行政",
+            "position": "知事",
+            "department": "知事室",
+            "hire_date": "2020-04-01",
+            "term_end": "2024-03-31",
+            "annual_salary": 25000000
+          },
+          {
+            "employee_id": "PG001-M002",
+            "name": "副知事田補佐",
+            "position": "副知事",
+            "department": "知事室",
+            "hire_date": "2020-04-01",
+            "annual_salary": 18000000
+          },
+          {
+            "employee_id": "PG001-M003",
+            "name": "総務田管理",
+            "position": "総務部長",
+            "department": "総務部",
+            "hire_date": "2018-04-01",
+            "annual_salary": 12000000
+          }
+        ]
+      },
+      "services": {
+        "public_counters": 25,
+        "online_services": 150,
+        "annual_visitors": 450000
+      }
+    },
+    {
+      "id": "PG002",
+      "name": "桜県庁別館",
+      "type": "県庁別館",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区県庁通り1-2"
+      },
+      "departments": [
+        "監査委員事務局", "人事委員会", "労働委員会", "選挙管理委員会"
+      ],
+      "employees": {
+        "total": 234,
+        "administrative": 189,
+        "support": 45
+      }
+    }
+  ],
+  "city_halls": [
+    {
+      "id": "CH001",
+      "name": "桜花市役所",
+      "type": "市役所",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区市役所通り2-2",
+        "coordinates": {"lat": 35.7080, "lng": 139.8420}
+      },
+      "facility_info": {
+        "floors": 10,
+        "public_service_floors": 3,
+        "parking_spaces": 500
+      },
+      "departments": [
+        "市長室", "総務課", "市民課", "税務課", "福祉課", "子育て支援課",
+        "環境課", "都市計画課", "建設課", "教育委員会"
+      ],
+      "employees": {
+        "total": 1234,
+        "administrative": 890,
+        "technical": 234,
+        "executive": 20,
+        "support": 90,
+        "management": [
+          {
+            "employee_id": "CH001-M001",
+            "name": "市長田地方",
+            "position": "市長",
+            "department": "市長室",
+            "hire_date": "2019-04-01",
+            "annual_salary": 18000000
+          }
+        ]
+      },
+      "services": {
+        "resident_registration": true,
+        "tax_payment": true,
+        "welfare_consultation": true,
+        "daily_visitors": 1200
+      }
+    },
+    {
+      "id": "CH002",
+      "name": "桜川市役所",
+      "type": "市役所",
+      "location": {
+        "city": "桜川市",
+        "district": "中央地区",
+        "address": "桜川市中央地区市民通り1-1"
+      },
+      "employees": {
+        "total": 890,
+        "administrative": 678,
+        "technical": 156,
+        "support": 56
+      }
+    }
+  ],
+  "ward_offices": [
+    {
+      "id": "WO001",
+      "name": "桜花市中央区役所",
+      "type": "区役所",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区区役所通り1-1"
+      },
+      "employees": {
+        "total": 234,
+        "administrative": 189,
+        "support": 45
+      },
+      "services": {
+        "resident_services": true,
+        "community_center": true,
+        "daily_visitors": 500
+      }
+    },
+    {
+      "id": "WO002",
+      "name": "桜花市東区役所",
+      "type": "区役所",
+      "location": {
+        "city": "桜花市",
+        "district": "東区",
+        "address": "桜花市東区行政通り2-2"
+      },
+      "employees": {
+        "total": 198,
+        "administrative": 156,
+        "support": 42
+      }
+    }
+  ],
+  "police_stations": [
+    {
+      "id": "PS001",
+      "name": "桜花中央警察署",
+      "type": "警察署",
+      "jurisdiction": "桜花市中央区・西区",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区警察通り1-1",
+        "coordinates": {"lat": 35.7100, "lng": 139.8450}
+      },
+      "facility_info": {
+        "floors": 6,
+        "detention_cells": 20,
+        "parking_spaces": 150,
+        "helipad": true
+      },
+      "employees": {
+        "total": 456,
+        "police_officers": 345,
+        "detectives": 67,
+        "administrative": 44,
+        "management": [
+          {
+            "employee_id": "PS001-M001",
+            "name": "署長田治安",
+            "position": "警察署長",
+            "rank": "警視",
+            "hire_date": "2019-04-01",
+            "annual_salary": 10000000
+          },
+          {
+            "employee_id": "PS001-M002",
+            "name": "副署長田捜査",
+            "position": "副署長",
+            "rank": "警部",
+            "hire_date": "2020-04-01",
+            "annual_salary": 8000000
+          }
+        ]
+      },
+      "equipment": {
+        "patrol_cars": 45,
+        "motorcycles": 20,
+        "bicycles": 50
+      },
+      "jurisdiction_population": 450000
+    },
+    {
+      "id": "PS002",
+      "name": "桜花東警察署",
+      "type": "警察署",
+      "jurisdiction": "桜花市東区・南区",
+      "location": {
+        "city": "桜花市",
+        "district": "東区",
+        "address": "桜花市東区安全通り2-2"
+      },
+      "employees": {
+        "total": 389,
+        "police_officers": 298,
+        "detectives": 56,
+        "administrative": 35
+      }
+    }
+  ],
+  "fire_stations": [
+    {
+      "id": "FS001",
+      "name": "桜花市消防本部",
+      "type": "消防本部",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区消防通り1-1",
+        "coordinates": {"lat": 35.7120, "lng": 139.8480}
+      },
+      "facility_info": {
+        "floors": 5,
+        "training_tower": true,
+        "command_center": true,
+        "garage_bays": 20
+      },
+      "employees": {
+        "total": 678,
+        "firefighters": 523,
+        "paramedics": 89,
+        "administrative": 66,
+        "management": [
+          {
+            "employee_id": "FS001-M001",
+            "name": "消防田防災",
+            "position": "消防長",
+            "rank": "消防司監",
+            "hire_date": "2018-04-01",
+            "annual_salary": 11000000
+          }
+        ]
+      },
+      "equipment": {
+        "fire_engines": 25,
+        "ladder_trucks": 8,
+        "rescue_vehicles": 10,
+        "ambulances": 15
+      },
+      "response_area_population": 600000
+    },
+    {
+      "id": "FS002",
+      "name": "桜花市東消防署",
+      "type": "消防署",
+      "location": {
+        "city": "桜花市",
+        "district": "東区",
+        "address": "桜花市東区防災通り2-2"
+      },
+      "employees": {
+        "total": 156,
+        "firefighters": 120,
+        "paramedics": 24,
+        "administrative": 12
+      }
+    }
+  ],
+  "tax_offices": [
+    {
+      "id": "TO001",
+      "name": "桜花税務署",
+      "type": "税務署",
+      "jurisdiction": "桜花市全域",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区税務通り3-3"
+      },
+      "employees": {
+        "total": 234,
+        "tax_officers": 178,
+        "administrative": 56,
+        "management": [
+          {
+            "employee_id": "TO001-M001",
+            "name": "税務田徴収",
+            "position": "署長",
+            "hire_date": "2019-07-01",
+            "annual_salary": 9000000
+          }
+        ]
+      },
+      "services": {
+        "individual_tax": true,
+        "corporate_tax": true,
+        "consultation_rooms": 10
+      }
+    }
+  ],
+  "employment_offices": [
+    {
+      "id": "EO001",
+      "name": "ハローワーク桜花",
+      "type": "公共職業安定所",
+      "location": {
+        "city": "桜花市",
+        "district": "駅前地区",
+        "address": "桜花市駅前地区雇用通り1-1"
+      },
+      "facility_info": {
+        "consultation_booths": 20,
+        "seminar_rooms": 5,
+        "computer_terminals": 50
+      },
+      "employees": {
+        "total": 89,
+        "counselors": 56,
+        "administrative": 33
+      },
+      "services": {
+        "job_placement": true,
+        "unemployment_benefits": true,
+        "career_counseling": true,
+        "daily_visitors": 800
+      }
+    }
+  ],
+  "pension_offices": [
+    {
+      "id": "PO001",
+      "name": "桜花年金事務所",
+      "type": "年金事務所",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区年金通り4-4"
+      },
+      "employees": {
+        "total": 78,
+        "counselors": 45,
+        "administrative": 33
+      },
+      "services": {
+        "pension_consultation": true,
+        "record_management": true,
+        "daily_visitors": 450
+      }
+    }
+  ],
+  "legal_affairs_offices": [
+    {
+      "id": "LA001",
+      "name": "桜花地方法務局",
+      "type": "法務局",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区法務通り5-5"
+      },
+      "employees": {
+        "total": 156,
+        "legal_officers": 89,
+        "registrars": 45,
+        "administrative": 22
+      },
+      "services": {
+        "real_estate_registration": true,
+        "commercial_registration": true,
+        "nationality_affairs": true
+      }
+    }
+  ],
+  "courts": [
+    {
+      "id": "CT001",
+      "name": "桜花地方裁判所",
+      "type": "地方裁判所",
+      "location": {
+        "city": "桜花市",
+        "district": "司法地区",
+        "address": "桜花市司法地区裁判所通り1-1"
+      },
+      "facility_info": {
+        "courtrooms": 15,
+        "judges_chambers": 25,
+        "mediation_rooms": 10
+      },
+      "employees": {
+        "total": 234,
+        "judges": 25,
+        "court_clerks": 156,
+        "administrative": 53
+      }
+    },
+    {
+      "id": "CT002",
+      "name": "桜花家庭裁判所",
+      "type": "家庭裁判所",
+      "location": {
+        "city": "桜花市",
+        "district": "司法地区",
+        "address": "桜花市司法地区裁判所通り1-2"
+      },
+      "employees": {
+        "total": 89,
+        "judges": 8,
+        "court_clerks": 56,
+        "family_court_investigators": 25
+      }
+    }
+  ],
+  "public_prosecutors_offices": [
+    {
+      "id": "PP001",
+      "name": "桜花地方検察庁",
+      "type": "地方検察庁",
+      "location": {
+        "city": "桜花市",
+        "district": "司法地区",
+        "address": "桜花市司法地区検察通り2-1"
+      },
+      "employees": {
+        "total": 156,
+        "prosecutors": 45,
+        "assistant_prosecutors": 67,
+        "administrative": 44
+      }
+    }
+  ],
+  "immigration_offices": [
+    {
+      "id": "IO001",
+      "name": "桜花出入国在留管理局",
+      "type": "入管局支局",
+      "location": {
+        "city": "桜花市",
+        "district": "国際地区",
+        "address": "桜花市国際地区入管通り1-1"
+      },
+      "employees": {
+        "total": 89,
+        "immigration_officers": 56,
+        "administrative": 33
+      },
+      "services": {
+        "visa_applications": true,
+        "residence_permits": true,
+        "daily_visitors": 300
+      }
+    }
+  ],
+  "community_centers": [
+    {
+      "id": "CC001",
+      "name": "桜花市中央公民館",
+      "type": "公民館",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区市民活動通り1-1"
+      },
+      "facility_info": {
+        "meeting_rooms": 12,
+        "multipurpose_hall": 1,
+        "kitchen": 2,
+        "library": 1
+      },
+      "employees": {
+        "total": 12,
+        "coordinators": 6,
+        "administrative": 4,
+        "maintenance": 2
+      },
+      "activities": {
+        "courses": 45,
+        "annual_users": 65000
+      }
+    }
+  ],
+  "social_welfare_offices": [
+    {
+      "id": "SW001",
+      "name": "桜花市社会福祉事務所",
+      "type": "福祉事務所",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区福祉通り2-2"
+      },
+      "employees": {
+        "total": 123,
+        "social_workers": 78,
+        "counselors": 34,
+        "administrative": 11
+      },
+      "services": {
+        "welfare_consultation": true,
+        "child_welfare": true,
+        "disability_support": true
+      }
+    }
+  ],
+  "health_centers": [
+    {
+      "id": "HC001",
+      "name": "桜花市保健所",
+      "type": "保健所",
+      "location": {
+        "city": "桜花市",
+        "district": "健康地区",
+        "address": "桜花市健康地区保健通り1-1"
+      },
+      "employees": {
+        "total": 145,
+        "public_health_doctors": 12,
+        "public_health_nurses": 67,
+        "inspectors": 34,
+        "administrative": 32
+      },
+      "services": {
+        "health_consultation": true,
+        "vaccination": true,
+        "food_safety_inspection": true
+      }
+    }
+  ],
+  "driver_license_centers": [
+    {
+      "id": "DL001",
+      "name": "桜県運転免許センター",
+      "type": "運転免許センター",
+      "location": {
+        "city": "桜花市",
+        "district": "交通地区",
+        "address": "桜花市交通地区免許通り1-1"
+      },
+      "facility_info": {
+        "testing_rooms": 10,
+        "driving_course": true,
+        "photo_booths": 20
+      },
+      "employees": {
+        "total": 234,
+        "examiners": 89,
+        "instructors": 56,
+        "administrative": 89
+      },
+      "services": {
+        "license_renewal": true,
+        "written_tests": true,
+        "driving_tests": true,
+        "daily_visitors": 1500
+      }
+    }
+  ],
+  "summary": {
+    "total_public_employees": 14567,
+    "prefectural_employees": 3690,
+    "municipal_employees": 6234,
+    "police_officers": 1890,
+    "firefighters": 1567,
+    "judicial_employees": 1186,
+    "service_coverage": "包括的な行政サービスで全住民に対応"
+  }
+}

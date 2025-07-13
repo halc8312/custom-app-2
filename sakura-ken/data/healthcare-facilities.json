@@ -1,0 +1,494 @@
+{
+  "hospitals": [
+    {
+      "id": "HP001",
+      "name": "桜県立中央病院",
+      "type": "総合病院",
+      "specialization": "三次救急医療機関",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区医療センター街1-1",
+        "coordinates": {"lat": 35.7100, "lng": 139.8500},
+        "area_m2": 85000
+      },
+      "facility_info": {
+        "established": "1950-04-01",
+        "buildings": 6,
+        "floors": 12,
+        "beds": 850,
+        "emergency_rooms": 15,
+        "operating_rooms": 24,
+        "icu_beds": 60,
+        "parking_spaces": 1200
+      },
+      "departments": [
+        "内科", "外科", "小児科", "産婦人科", "整形外科", "脳神経外科",
+        "心臓血管外科", "皮膚科", "眼科", "耳鼻咽喉科", "精神科", "救急科"
+      ],
+      "equipment": {
+        "mri": 4,
+        "ct_scanners": 6,
+        "surgical_robots": 2,
+        "dialysis_units": 30
+      },
+      "employees": {
+        "total": 2456,
+        "doctors": 425,
+        "nurses": 1234,
+        "technicians": 234,
+        "administrative": 456,
+        "management": [
+          {
+            "employee_id": "HP001-M001",
+            "name": "医療田総合",
+            "position": "院長",
+            "department": "病院管理部",
+            "specialization": "循環器内科",
+            "hire_date": "2010-04-01",
+            "annual_salary": 25000000
+          },
+          {
+            "employee_id": "HP001-M002",
+            "name": "看護田管理",
+            "position": "看護部長",
+            "department": "看護部",
+            "hire_date": "2005-04-01",
+            "annual_salary": 12000000
+          }
+        ],
+        "sample_doctors": [
+          {
+            "employee_id": "HP001-D001",
+            "name": "心臓田健康",
+            "position": "主任医師",
+            "department": "循環器内科",
+            "specialization": "心臓カテーテル治療",
+            "hire_date": "2015-04-01",
+            "annual_salary": 18000000
+          },
+          {
+            "employee_id": "HP001-D002",
+            "name": "脳田神経",
+            "position": "部長",
+            "department": "脳神経外科",
+            "specialization": "脳腫瘍手術",
+            "hire_date": "2012-04-01",
+            "annual_salary": 20000000
+          }
+        ]
+      },
+      "services": {
+        "24h_emergency": true,
+        "helicopter_pad": true,
+        "ambulance_fleet": 12,
+        "telemedicine": true,
+        "international_clinic": true
+      },
+      "annual_patients": 450000,
+      "annual_operations": 12000
+    },
+    {
+      "id": "HP002",
+      "name": "桜花市立総合医療センター",
+      "type": "地域中核病院",
+      "specialization": "二次救急医療機関",
+      "location": {
+        "city": "桜花市",
+        "district": "西区",
+        "address": "桜花市西区健康の森2-3-4",
+        "coordinates": {"lat": 35.6950, "lng": 139.8200},
+        "area_m2": 55000
+      },
+      "facility_info": {
+        "established": "1965-06-01",
+        "buildings": 4,
+        "floors": 8,
+        "beds": 520,
+        "emergency_rooms": 8,
+        "operating_rooms": 12,
+        "icu_beds": 24,
+        "parking_spaces": 800
+      },
+      "departments": [
+        "内科", "外科", "小児科", "産婦人科", "整形外科",
+        "皮膚科", "眼科", "耳鼻咽喉科", "リハビリテーション科"
+      ],
+      "employees": {
+        "total": 1567,
+        "doctors": 234,
+        "nurses": 789,
+        "technicians": 156,
+        "administrative": 345,
+        "management": [
+          {
+            "employee_id": "HP002-M001",
+            "name": "地域田医療",
+            "position": "院長",
+            "department": "病院管理部",
+            "specialization": "消化器内科",
+            "hire_date": "2012-04-01",
+            "annual_salary": 20000000
+          }
+        ]
+      },
+      "annual_patients": 280000,
+      "annual_operations": 6500
+    },
+    {
+      "id": "HP003",
+      "name": "さくら川市民病院",
+      "type": "市民病院",
+      "specialization": "二次救急医療機関",
+      "location": {
+        "city": "桜川市",
+        "district": "中央地区",
+        "address": "桜川市中央地区健康通り5-6-7",
+        "coordinates": {"lat": 35.6800, "lng": 139.9100},
+        "area_m2": 42000
+      },
+      "facility_info": {
+        "established": "1970-04-01",
+        "buildings": 3,
+        "floors": 7,
+        "beds": 380,
+        "emergency_rooms": 6,
+        "operating_rooms": 8,
+        "parking_spaces": 600
+      },
+      "employees": {
+        "total": 1234,
+        "doctors": 178,
+        "nurses": 623,
+        "technicians": 123,
+        "administrative": 267
+      },
+      "annual_patients": 210000
+    }
+  ],
+  "specialized_hospitals": [
+    {
+      "id": "SH001",
+      "name": "桜県立がんセンター",
+      "type": "専門病院",
+      "specialization": "がん治療",
+      "location": {
+        "city": "桜花市",
+        "district": "北区",
+        "address": "桜花市北区医療研究地区3-2-1",
+        "coordinates": {"lat": 35.7300, "lng": 139.8600},
+        "area_m2": 38000
+      },
+      "facility_info": {
+        "established": "1985-04-01",
+        "beds": 300,
+        "radiation_therapy_units": 6,
+        "chemotherapy_chairs": 50
+      },
+      "employees": {
+        "total": 856,
+        "doctors": 145,
+        "nurses": 432,
+        "researchers": 89,
+        "management": [
+          {
+            "employee_id": "SH001-M001",
+            "name": "癌田治療",
+            "position": "センター長",
+            "specialization": "腫瘍内科",
+            "hire_date": "2008-04-01",
+            "annual_salary": 22000000
+          }
+        ]
+      },
+      "annual_patients": 85000
+    },
+    {
+      "id": "SH002",
+      "name": "桜県立こども医療センター",
+      "type": "専門病院",
+      "specialization": "小児医療",
+      "location": {
+        "city": "桜花市",
+        "district": "東区",
+        "address": "桜花市東区こども健康街4-5-6",
+        "coordinates": {"lat": 35.7150, "lng": 139.8800}
+      },
+      "facility_info": {
+        "established": "1990-04-01",
+        "beds": 200,
+        "nicu_beds": 30,
+        "picu_beds": 20
+      },
+      "employees": {
+        "total": 678,
+        "doctors": 123,
+        "nurses": 345,
+        "child_life_specialists": 15
+      },
+      "annual_patients": 120000
+    }
+  ],
+  "clinics": [
+    {
+      "id": "CL001",
+      "name": "さくら内科クリニック",
+      "type": "診療所",
+      "specialization": "内科・循環器内科",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区駅前通り2-3-4",
+        "coordinates": {"lat": 35.7080, "lng": 139.8450}
+      },
+      "facility_info": {
+        "established": "2005-05-01",
+        "examination_rooms": 4,
+        "parking_spaces": 20
+      },
+      "employees": {
+        "total": 12,
+        "doctors": 2,
+        "nurses": 5,
+        "administrative": 5,
+        "management": [
+          {
+            "employee_id": "CL001-M001",
+            "name": "診療田健康",
+            "position": "院長",
+            "specialization": "循環器内科",
+            "hire_date": "2005-05-01",
+            "annual_salary": 15000000
+          }
+        ]
+      },
+      "services": ["健康診断", "予防接種", "生活習慣病管理"],
+      "annual_patients": 18000
+    },
+    {
+      "id": "CL002",
+      "name": "桜花ファミリークリニック",
+      "type": "診療所",
+      "specialization": "家庭医療",
+      "location": {
+        "city": "桜花市",
+        "district": "南区",
+        "address": "桜花市南区住宅街3-4-5"
+      },
+      "employees": {
+        "total": 15,
+        "doctors": 3,
+        "nurses": 6,
+        "administrative": 6
+      },
+      "annual_patients": 22000
+    },
+    {
+      "id": "CL003",
+      "name": "さくら皮膚科クリニック",
+      "type": "診療所",
+      "specialization": "皮膚科・美容皮膚科",
+      "location": {
+        "city": "桜花市",
+        "district": "東区",
+        "address": "桜花市東区美容通り1-2-3"
+      },
+      "employees": {
+        "total": 10,
+        "doctors": 2,
+        "nurses": 4,
+        "administrative": 4
+      },
+      "annual_patients": 15000
+    }
+  ],
+  "dental_clinics": [
+    {
+      "id": "DC001",
+      "name": "桜花デンタルクリニック",
+      "type": "歯科診療所",
+      "specialization": "一般歯科・矯正歯科",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区歯科通り1-1-1"
+      },
+      "facility_info": {
+        "treatment_chairs": 8,
+        "ct_scanner": true,
+        "cad_cam": true
+      },
+      "employees": {
+        "total": 18,
+        "dentists": 5,
+        "dental_hygienists": 8,
+        "administrative": 5
+      },
+      "annual_patients": 12000
+    }
+  ],
+  "pharmacies": [
+    {
+      "id": "PH001",
+      "name": "さくら薬局本店",
+      "type": "調剤薬局",
+      "chain": "さくら薬局グループ",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区医療センター街1-2"
+      },
+      "facility_info": {
+        "24h_service": true,
+        "drive_through": true,
+        "otc_section": true
+      },
+      "employees": {
+        "total": 24,
+        "pharmacists": 12,
+        "pharmacy_technicians": 8,
+        "administrative": 4,
+        "management": [
+          {
+            "employee_id": "PH001-M001",
+            "name": "薬田調剤",
+            "position": "管理薬剤師",
+            "license": "薬剤師免許第123456号",
+            "hire_date": "2010-04-01",
+            "annual_salary": 8000000
+          }
+        ]
+      },
+      "prescriptions_per_day": 450
+    },
+    {
+      "id": "PH002",
+      "name": "健康堂薬局桜花店",
+      "type": "調剤薬局・ドラッグストア",
+      "chain": "健康堂",
+      "location": {
+        "city": "桜花市",
+        "district": "西区",
+        "address": "桜花市西区ショッピング街2-3"
+      },
+      "employees": {
+        "total": 18,
+        "pharmacists": 6,
+        "registered_sellers": 8,
+        "administrative": 4
+      },
+      "prescriptions_per_day": 280
+    }
+  ],
+  "elderly_care_facilities": [
+    {
+      "id": "EC001",
+      "name": "桜花園特別養護老人ホーム",
+      "type": "特別養護老人ホーム",
+      "location": {
+        "city": "桜花市",
+        "district": "北区",
+        "address": "桜花市北区福祉の丘1-1"
+      },
+      "facility_info": {
+        "capacity": 120,
+        "private_rooms": 80,
+        "shared_rooms": 20,
+        "day_service_capacity": 40
+      },
+      "employees": {
+        "total": 145,
+        "care_workers": 78,
+        "nurses": 24,
+        "nutritionists": 4,
+        "physical_therapists": 6,
+        "social_workers": 8,
+        "administrative": 25
+      }
+    }
+  ],
+  "rehabilitation_centers": [
+    {
+      "id": "RC001",
+      "name": "桜県リハビリテーションセンター",
+      "type": "リハビリテーション施設",
+      "location": {
+        "city": "桜花市",
+        "district": "南区",
+        "address": "桜花市南区健康増進地区2-1"
+      },
+      "facility_info": {
+        "therapy_rooms": 15,
+        "pool_therapy": true,
+        "robotic_therapy_units": 4
+      },
+      "employees": {
+        "total": 89,
+        "physical_therapists": 34,
+        "occupational_therapists": 28,
+        "speech_therapists": 12,
+        "doctors": 5,
+        "administrative": 10
+      },
+      "daily_patients": 200
+    }
+  ],
+  "medical_laboratories": [
+    {
+      "id": "ML001",
+      "name": "桜県臨床検査センター",
+      "type": "臨床検査施設",
+      "location": {
+        "city": "桜花市",
+        "district": "東区",
+        "address": "桜花市東区バイオパーク3-1"
+      },
+      "facility_info": {
+        "laboratory_floors": 3,
+        "clean_rooms": 8,
+        "automated_analyzers": 25
+      },
+      "employees": {
+        "total": 234,
+        "clinical_technologists": 156,
+        "pathologists": 12,
+        "administrative": 45,
+        "logistics": 21
+      },
+      "daily_tests": 15000
+    }
+  ],
+  "emergency_services": [
+    {
+      "id": "ES001",
+      "name": "桜花市消防局救急センター",
+      "type": "救急サービス",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区緊急通り1-1"
+      },
+      "facility_info": {
+        "ambulance_stations": 8,
+        "ambulances": 45,
+        "rapid_response_vehicles": 12
+      },
+      "employees": {
+        "total": 456,
+        "paramedics": 234,
+        "emergency_medical_technicians": 156,
+        "drivers": 45,
+        "administrative": 21
+      },
+      "annual_calls": 65000
+    }
+  ],
+  "summary": {
+    "total_healthcare_employees": 18234,
+    "total_hospitals": 6,
+    "total_clinics": 150,
+    "total_pharmacies": 234,
+    "total_beds": 3500,
+    "population_coverage": "十分な医療体制で200万人以上の人口に対応"
+  }
+}
