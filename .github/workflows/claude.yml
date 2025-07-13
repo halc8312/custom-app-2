@@ -43,6 +43,7 @@ jobs:
           claude_expires_at: ${{ secrets.CLAUDE_EXPIRES_AT }}
           timeout_minutes: "6000"
           allowed_tools: |
+            Bash,
             Bash(bun install),
             Bash(bun test:*),
             Bash(bun run format),
