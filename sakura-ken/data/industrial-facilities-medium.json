@@ -1,0 +1,427 @@
+{
+  "local_industry_factories": [
+    {
+      "id": "LF001",
+      "name": "桜花食品工業株式会社",
+      "type": "食品加工工場",
+      "products": ["桜餅", "和菓子", "地域特産品"],
+      "location": {
+        "city": "桜花市",
+        "district": "北区",
+        "address": "桜花市北区食品工業団地1-2-3",
+        "coordinates": {"lat": 35.7234, "lng": 139.8456},
+        "area_m2": 8900
+      },
+      "facility_info": {
+        "established": "1978-04-01",
+        "production_lines": 5,
+        "cold_storage_m3": 500,
+        "haccp_certified": true
+      },
+      "production_capacity": {
+        "sakura_mochi_daily": 10000,
+        "wagashi_daily": 5000,
+        "seasonal_products": 3000
+      },
+      "employees": {
+        "total": 156,
+        "management": [
+          {
+            "employee_id": "LF001-M001",
+            "name": "和菓子田伝統",
+            "position": "代表取締役社長",
+            "department": "経営",
+            "hire_date": "1995-04-01",
+            "annual_salary": 8000000
+          },
+          {
+            "employee_id": "LF001-M002",
+            "name": "製造田品質",
+            "position": "工場長",
+            "department": "製造部",
+            "hire_date": "2000-04-01",
+            "annual_salary": 6000000
+          }
+        ],
+        "departments": {
+          "production": 89,
+          "quality_control": 23,
+          "packaging": 20,
+          "logistics": 12,
+          "administration": 12
+        }
+      },
+      "distribution": {
+        "retail_partners": 234,
+        "online_sales_ratio": 25,
+        "export_countries": ["台湾", "香港", "シンガポール"]
+      },
+      "economic_data": {
+        "annual_revenue": 1890000000,
+        "growth_rate": 5.6,
+        "local_ingredients_ratio": 75
+      }
+    },
+    {
+      "id": "LF002",
+      "name": "さくら醸造株式会社",
+      "type": "日本酒醸造所",
+      "products": ["日本酒", "焼酎", "リキュール"],
+      "location": {
+        "city": "西桜市",
+        "district": "旧市街地区",
+        "address": "西桜市旧市街地区酒蔵通り5-6-7",
+        "coordinates": {"lat": 35.6567, "lng": 139.8123},
+        "area_m2": 12000
+      },
+      "facility_info": {
+        "established": "1856-01-01",
+        "brewing_tanks": 23,
+        "storage_capacity_liters": 500000,
+        "traditional_methods": true
+      },
+      "production": {
+        "annual_sake_liters": 800000,
+        "premium_sake_ratio": 40,
+        "brands": ["桜花", "千本桜", "花見酒"]
+      },
+      "employees": {
+        "total": 67,
+        "key_personnel": [
+          {
+            "employee_id": "LF002-M001",
+            "name": "杜氏田醸",
+            "position": "杜氏（とうじ）",
+            "department": "醸造部",
+            "experience_years": 35,
+            "annual_salary": 7000000
+          }
+        ],
+        "departments": {
+          "brewing": 34,
+          "bottling": 15,
+          "sales": 10,
+          "administration": 8
+        }
+      },
+      "awards": [
+        "全国新酒鑑評会金賞（5年連続）",
+        "IWC2024シルバーメダル"
+      ]
+    },
+    {
+      "id": "LF003",
+      "name": "桜川水産加工株式会社",
+      "type": "水産加工工場",
+      "products": ["干物", "練り製品", "冷凍食品"],
+      "location": {
+        "city": "桜川市",
+        "district": "港地区",
+        "address": "桜川市港地区水産加工団地10-11-12",
+        "coordinates": {"lat": 35.6789, "lng": 139.9012},
+        "area_m2": 15600
+      },
+      "facility_info": {
+        "established": "1985-05-01",
+        "processing_lines": 8,
+        "freezing_capacity_tons": 50,
+        "direct_from_port": true
+      },
+      "employees": {
+        "total": 234,
+        "departments": {
+          "processing": 156,
+          "quality_inspection": 34,
+          "packaging": 28,
+          "administration": 16
+        },
+        "seasonal_workers": 45
+      },
+      "products_detail": {
+        "dried_fish_types": 23,
+        "kamaboko_daily": 5000,
+        "frozen_products": 45
+      },
+      "economic_data": {
+        "annual_revenue": 2340000000,
+        "local_fish_ratio": 85,
+        "export_ratio": 20
+      }
+    },
+    {
+      "id": "LF004",
+      "name": "東桜精密工業株式会社",
+      "type": "精密部品製造",
+      "products": ["医療機器部品", "光学部品", "精密金型"],
+      "location": {
+        "city": "東桜市",
+        "district": "テクノ地区",
+        "address": "東桜市テクノ地区精密工業エリア15-16-17",
+        "coordinates": {"lat": 35.7456, "lng": 139.8234},
+        "area_m2": 6700
+      },
+      "facility_info": {
+        "established": "1995-10-01",
+        "cnc_machines": 23,
+        "clean_rooms": 3,
+        "measurement_equipment": 45
+      },
+      "employees": {
+        "total": 123,
+        "skilled_technicians": 67,
+        "engineers": 34,
+        "quality_control": 12,
+        "administration": 10
+      },
+      "certifications": [
+        "ISO9001",
+        "ISO13485（医療機器）",
+        "AS9100（航空宇宙）"
+      ],
+      "major_clients": [
+        "オリンパス",
+        "ニコン",
+        "テルモ"
+      ]
+    },
+    {
+      "id": "LF005",
+      "name": "北桜アグリビジネス加工センター",
+      "type": "農産物加工施設",
+      "products": ["カット野菜", "冷凍野菜", "ドライフルーツ"],
+      "location": {
+        "city": "北桜市",
+        "district": "東部農業地区",
+        "address": "北桜市東部農業地区農産加工団地20-21-22",
+        "coordinates": {"lat": 35.6890, "lng": 139.8345},
+        "area_m2": 18900
+      },
+      "facility_info": {
+        "established": "2008-06-01",
+        "processing_capacity_tons_daily": 30,
+        "cold_chain_system": true,
+        "solar_panels_kw": 500
+      },
+      "employees": {
+        "total": 189,
+        "departments": {
+          "processing": 123,
+          "quality_control": 28,
+          "logistics": 23,
+          "administration": 15
+        }
+      },
+      "partnerships": {
+        "contract_farmers": 156,
+        "retail_chains": 45,
+        "school_lunch_programs": 23
+      }
+    }
+  ],
+  "logistics_facilities": [
+    {
+      "id": "LG001",
+      "name": "桜花物流センター",
+      "operator": "桜花ロジスティクス株式会社",
+      "type": "総合物流センター",
+      "location": {
+        "city": "桜花市",
+        "district": "西区",
+        "address": "桜花市西区西部物流センター1-1",
+        "coordinates": {"lat": 35.7012, "lng": 139.8456},
+        "area_m2": 45000
+      },
+      "facility_info": {
+        "established": "2012-04-01",
+        "warehouse_floors": 5,
+        "loading_docks": 45,
+        "automated_sorting_systems": 3,
+        "storage_capacity_pallets": 50000
+      },
+      "capabilities": {
+        "daily_throughput_packages": 100000,
+        "temperature_controlled": true,
+        "cross_docking": true,
+        "customs_clearance": true
+      },
+      "employees": {
+        "total": 456,
+        "management": [
+          {
+            "employee_id": "LG001-M001",
+            "name": "物流田配送",
+            "position": "センター長",
+            "department": "センター管理部",
+            "hire_date": "2012-03-01",
+            "annual_salary": 8500000
+          }
+        ],
+        "departments": {
+          "warehouse_operations": 234,
+          "transportation": 123,
+          "systems": 45,
+          "administration": 54
+        },
+        "shifts": {
+          "day": 200,
+          "evening": 156,
+          "night": 100
+        }
+      },
+      "clients": {
+        "e_commerce": 45,
+        "manufacturers": 67,
+        "retailers": 89
+      },
+      "technology": {
+        "wms_system": "最新型",
+        "robotics": 23,
+        "ai_optimization": true
+      }
+    },
+    {
+      "id": "LG002",
+      "name": "桜川港国際物流ターミナル",
+      "operator": "桜川港湾株式会社",
+      "type": "港湾物流施設",
+      "location": {
+        "city": "桜川市",
+        "district": "港地区",
+        "address": "桜川市港地区国際ターミナル2-3-4",
+        "coordinates": {"lat": 35.6789, "lng": 139.9012},
+        "area_m2": 89000
+      },
+      "facility_info": {
+        "established": "1998-07-01",
+        "container_yards": 5,
+        "gantry_cranes": 8,
+        "warehouse_m2": 34000,
+        "reefer_plugs": 500
+      },
+      "capacity": {
+        "annual_teu": 500000,
+        "storage_teu": 20000,
+        "vessel_calls_annual": 1200
+      },
+      "employees": {
+        "total": 567,
+        "departments": {
+          "port_operations": 345,
+          "customs": 67,
+          "logistics": 89,
+          "administration": 66
+        }
+      },
+      "connections": {
+        "shipping_lines": 23,
+        "destinations": 45,
+        "rail_connected": true
+      }
+    },
+    {
+      "id": "LG003",
+      "name": "東桜ECフルフィルメントセンター",
+      "operator": "イーコマース物流株式会社",
+      "type": "EC特化型物流センター",
+      "location": {
+        "city": "東桜市",
+        "district": "商業地区",
+        "address": "東桜市商業地区物流パーク5-6-7",
+        "coordinates": {"lat": 35.7456, "lng": 139.8234},
+        "area_m2": 34000
+      },
+      "facility_info": {
+        "established": "2018-10-01",
+        "automated_storage_retrieval": true,
+        "picking_robots": 45,
+        "packing_stations": 89
+      },
+      "performance": {
+        "orders_per_day": 50000,
+        "same_day_delivery_coverage": 85,
+        "accuracy_rate": 99.8
+      },
+      "employees": {
+        "total": 234,
+        "departments": {
+          "operations": 156,
+          "it_systems": 34,
+          "customer_service": 23,
+          "administration": 21
+        }
+      }
+    },
+    {
+      "id": "LG004",
+      "name": "南桜観光物流センター",
+      "operator": "南桜観光物流株式会社",
+      "type": "観光商品物流",
+      "location": {
+        "city": "南桜市",
+        "district": "観光地区",
+        "address": "南桜市観光地区物流団地10-11-12",
+        "coordinates": {"lat": 35.6234, "lng": 139.7890},
+        "area_m2": 23000
+      },
+      "specialization": {
+        "souvenir_handling": true,
+        "hotel_supplies": true,
+        "event_logistics": true,
+        "seasonal_storage": true
+      },
+      "employees": {
+        "total": 123,
+        "seasonal_variation": {
+          "peak_season": 180,
+          "off_season": 90
+        }
+      }
+    },
+    {
+      "id": "LG005",
+      "name": "北桜農産物流通センター",
+      "operator": "JA桜県物流",
+      "type": "農産物専門物流",
+      "location": {
+        "city": "北桜市",
+        "district": "中央地区",
+        "address": "北桜市中央地区農産物流通団地15-16-17",
+        "coordinates": {"lat": 35.6890, "lng": 139.8345},
+        "area_m2": 28000
+      },
+      "facility_info": {
+        "cold_storage_m3": 10000,
+        "pre_cooling_facilities": 5,
+        "sorting_lines": 8,
+        "packing_facilities": 12
+      },
+      "throughput": {
+        "vegetables_tons_daily": 200,
+        "fruits_tons_daily": 100,
+        "distribution_points": 456
+      },
+      "employees": {
+        "total": 167,
+        "departments": {
+          "receiving": 45,
+          "sorting_packing": 67,
+          "cold_chain": 34,
+          "administration": 21
+        }
+      },
+      "quality_control": {
+        "inspection_rate": 100,
+        "traceability_system": true,
+        "organic_certified": true
+      }
+    }
+  ],
+  "metadata": {
+    "created_at": "2025-07-13T18:40:00Z",
+    "updated_at": "2025-07-13T18:40:00Z",
+    "data_version": "1.0.0",
+    "total_local_factories": 5,
+    "total_logistics_facilities": 5,
+    "total_employees": 2869
+  }
+}

@@ -1,0 +1,512 @@
+{
+  "manufacturing_plants": [
+    {
+      "id": "MP001",
+      "name": "桜電機株式会社 桜川工場",
+      "parent_company": "桜電機株式会社",
+      "type": "電子部品製造工場",
+      "location": {
+        "city": "桜川市",
+        "district": "臨海地区",
+        "address": "桜川市臨海地区工業団地1-1",
+        "coordinates": {"lat": 35.6780, "lng": 139.9020},
+        "area_m2": 125000
+      },
+      "facility_info": {
+        "established": "1975-04-01",
+        "buildings": 8,
+        "production_lines": 12,
+        "clean_rooms": 5,
+        "warehouse_capacity_m3": 50000
+      },
+      "production": {
+        "main_products": ["半導体", "電子部品", "センサー", "通信モジュール"],
+        "annual_capacity": {
+          "semiconductors": "1200万個",
+          "sensors": "3000万個",
+          "modules": "800万個"
+        },
+        "certifications": ["ISO9001", "ISO14001", "IATF16949"]
+      },
+      "employees": {
+        "total": 2456,
+        "management": [
+          {
+            "employee_id": "MP001-M001",
+            "name": "工場田製造",
+            "position": "工場長",
+            "department": "工場管理部",
+            "hire_date": "1995-04-01",
+            "annual_salary": 15000000
+          },
+          {
+            "employee_id": "MP001-M002",
+            "name": "生産田効率",
+            "position": "生産管理部長",
+            "department": "生産管理部",
+            "hire_date": "2000-04-01",
+            "annual_salary": 10000000
+          },
+          {
+            "employee_id": "MP001-M003",
+            "name": "品質田保証",
+            "position": "品質保証部長",
+            "department": "品質保証部",
+            "hire_date": "1998-04-01",
+            "annual_salary": 9500000
+          }
+        ],
+        "departments": {
+          "production": 1234,
+          "quality_control": 234,
+          "maintenance": 156,
+          "logistics": 189,
+          "administration": 123,
+          "r_and_d": 345
+        },
+        "shifts": {
+          "day_shift": {"6:00-14:00": 800},
+          "evening_shift": {"14:00-22:00": 800},
+          "night_shift": {"22:00-6:00": 600}
+        }
+      },
+      "economic_data": {
+        "annual_revenue": 45600000000,
+        "export_ratio": 65,
+        "major_clients": ["トヨタ", "ソニー", "パナソニック", "日立"],
+        "investment_2024": 3450000000
+      },
+      "environmental": {
+        "co2_reduction_target": "2030年までに50%削減",
+        "renewable_energy_ratio": 35,
+        "water_recycling_rate": 85,
+        "waste_recycling_rate": 92
+      }
+    },
+    {
+      "id": "MP002",
+      "name": "桜テック株式会社 東桜イノベーションセンター",
+      "parent_company": "桜テック株式会社",
+      "type": "IT機器製造・研究開発",
+      "location": {
+        "city": "東桜市",
+        "district": "テクノ地区",
+        "address": "東桜市テクノ地区テクノパーク中央2-3-4",
+        "coordinates": {"lat": 35.7456, "lng": 139.8234},
+        "area_m2": 89000
+      },
+      "facility_info": {
+        "established": "2010-10-01",
+        "buildings": 5,
+        "laboratories": 23,
+        "server_rooms": 8,
+        "conference_rooms": 45
+      },
+      "production": {
+        "main_products": ["サーバー", "ネットワーク機器", "AIチップ", "量子コンピュータ部品"],
+        "r_and_d_focus": ["AI", "量子コンピューティング", "6G通信", "サイバーセキュリティ"]
+      },
+      "employees": {
+        "total": 1890,
+        "management": [
+          {
+            "employee_id": "MP002-M001",
+            "name": "研究田開発",
+            "position": "センター長",
+            "department": "センター管理部",
+            "hire_date": "2010-09-01",
+            "annual_salary": 18000000
+          }
+        ],
+        "departments": {
+          "research": 890,
+          "development": 567,
+          "production": 234,
+          "testing": 123,
+          "administration": 76
+        },
+        "education_level": {
+          "phd": 234,
+          "masters": 567,
+          "bachelors": 890,
+          "others": 199
+        }
+      },
+      "partnerships": [
+        "桜県工業大学",
+        "東京大学",
+        "MIT",
+        "スタンフォード大学"
+      ],
+      "patents": {
+        "total": 456,
+        "filed_2024": 78,
+        "international": 234
+      }
+    },
+    {
+      "id": "MP003",
+      "name": "トヨタ自動車 桜花工場",
+      "parent_company": "トヨタ自動車株式会社",
+      "type": "自動車製造工場",
+      "location": {
+        "city": "桜花市",
+        "district": "西区",
+        "address": "桜花市西区桜花工業団地5-6-7",
+        "coordinates": {"lat": 35.7012, "lng": 139.8456},
+        "area_m2": 234000
+      },
+      "facility_info": {
+        "established": "1985-05-01",
+        "assembly_lines": 4,
+        "daily_production_capacity": 1200,
+        "robot_count": 456
+      },
+      "production": {
+        "main_products": ["ハイブリッド車", "電気自動車", "燃料電池車"],
+        "models": ["プリウス", "カローラHV", "MIRAI"],
+        "annual_production": 285000
+      },
+      "employees": {
+        "total": 3456,
+        "management": [
+          {
+            "employee_id": "MP003-M001",
+            "name": "自動車田組立",
+            "position": "工場長",
+            "department": "工場管理部",
+            "hire_date": "2005-04-01",
+            "annual_salary": 16000000
+          }
+        ],
+        "departments": {
+          "assembly": 1890,
+          "quality_inspection": 456,
+          "logistics": 345,
+          "maintenance": 234,
+          "administration": 531
+        }
+      },
+      "suppliers": {
+        "tier1": 45,
+        "local_suppliers": 123,
+        "just_in_time_partners": 67
+      },
+      "environmental": {
+        "carbon_neutral_target": "2035年",
+        "hydrogen_usage": true,
+        "solar_panels_kw": 5000
+      }
+    },
+    {
+      "id": "MP004",
+      "name": "桜川重工業 造船所",
+      "parent_company": "桜川重工業株式会社",
+      "type": "造船所",
+      "location": {
+        "city": "桜川市",
+        "district": "港地区",
+        "address": "桜川市港地区造船ドック1-2-3",
+        "coordinates": {"lat": 35.6789, "lng": 139.9012},
+        "area_m2": 345000
+      },
+      "facility_info": {
+        "established": "1952-06-01",
+        "dry_docks": 3,
+        "cranes": 12,
+        "max_ship_size": "30万トン級"
+      },
+      "production": {
+        "ship_types": ["コンテナ船", "タンカー", "客船", "特殊船"],
+        "annual_capacity": 12,
+        "current_orders": 8
+      },
+      "employees": {
+        "total": 2345,
+        "departments": {
+          "shipbuilding": 1234,
+          "design": 234,
+          "welding": 456,
+          "electrical": 234,
+          "administration": 187
+        },
+        "specialized_skills": {
+          "welders": 456,
+          "electricians": 234,
+          "marine_engineers": 123
+        }
+      },
+      "major_projects": [
+        {
+          "name": "次世代エコシップ",
+          "client": "日本郵船",
+          "completion": "2026年3月"
+        }
+      ]
+    },
+    {
+      "id": "MP005",
+      "name": "桜花化学工業 北桜プラント",
+      "parent_company": "桜花化学工業株式会社",
+      "type": "化学プラント",
+      "location": {
+        "city": "北桜市",
+        "district": "東部農業地区",
+        "address": "北桜市東部農業地区工業エリア10-11-12",
+        "coordinates": {"lat": 35.6890, "lng": 139.8123},
+        "area_m2": 156000
+      },
+      "facility_info": {
+        "established": "1990-09-01",
+        "reactors": 23,
+        "storage_tanks": 45,
+        "pipeline_km": 12
+      },
+      "production": {
+        "main_products": ["農業用肥料", "工業用化学品", "医薬品原料", "高機能材料"],
+        "annual_capacity": {
+          "fertilizers": "50万トン",
+          "chemicals": "30万トン",
+          "pharmaceuticals": "5000トン"
+        }
+      },
+      "employees": {
+        "total": 1567,
+        "departments": {
+          "production": 890,
+          "quality_control": 234,
+          "safety": 123,
+          "r_and_d": 156,
+          "administration": 164
+        }
+      },
+      "safety": {
+        "certifications": ["ISO45001", "OHSAS18001"],
+        "accident_free_days": 1234,
+        "emergency_response_team": 45
+      }
+    }
+  ],
+  "research_facilities": [
+    {
+      "id": "RF001",
+      "name": "桜県先端技術研究所",
+      "type": "公立研究機関",
+      "location": {
+        "city": "東桜市",
+        "district": "研究学園地区",
+        "address": "東桜市研究学園地区サイエンスパーク1-1",
+        "coordinates": {"lat": 35.7389, "lng": 139.8301},
+        "area_m2": 67000
+      },
+      "facility_info": {
+        "established": "2005-04-01",
+        "buildings": 6,
+        "laboratories": 45,
+        "clean_rooms": 12,
+        "supercomputer": "桜（10ペタフロップス）"
+      },
+      "research_areas": [
+        "人工知能",
+        "バイオテクノロジー",
+        "新材料",
+        "環境技術",
+        "医療機器"
+      ],
+      "employees": {
+        "total": 567,
+        "researchers": {
+          "principal_investigators": 45,
+          "senior_researchers": 89,
+          "researchers": 156,
+          "post_docs": 78,
+          "technicians": 123,
+          "administration": 76
+        },
+        "notable_researchers": [
+          {
+            "name": "科学田博士",
+            "position": "所長",
+            "specialty": "AI・機械学習",
+            "publications": 234,
+            "h_index": 45
+          }
+        ]
+      },
+      "achievements": {
+        "papers_2024": 345,
+        "patents_filed": 67,
+        "technology_transfers": 23,
+        "startup_spinoffs": 8
+      },
+      "collaborations": [
+        "理化学研究所",
+        "産業技術総合研究所",
+        "Google Research",
+        "Microsoft Research"
+      ]
+    },
+    {
+      "id": "RF002",
+      "name": "桜バイオサイエンスパーク",
+      "type": "バイオテクノロジー研究施設",
+      "location": {
+        "city": "南桜市",
+        "district": "山麓地区",
+        "address": "南桜市山麓地区バイオバレー2-3-4",
+        "coordinates": {"lat": 35.6234, "lng": 139.7890},
+        "area_m2": 89000
+      },
+      "facility_info": {
+        "established": "2012-10-01",
+        "bio_safety_level": "BSL-3",
+        "laboratories": 34,
+        "animal_facility": true,
+        "greenhouse_m2": 5000
+      },
+      "research_areas": [
+        "創薬",
+        "再生医療",
+        "農業バイオ",
+        "環境バイオ"
+      ],
+      "tenant_companies": [
+        {
+          "name": "桜製薬研究所",
+          "employees": 123,
+          "focus": "抗がん剤開発"
+        },
+        {
+          "name": "バイオベンチャーA",
+          "employees": 45,
+          "focus": "遺伝子治療"
+        }
+      ],
+      "employees": {
+        "total": 890,
+        "by_company": {
+          "facility_management": 56,
+          "tenant_companies": 834
+        }
+      },
+      "incubation": {
+        "startups": 23,
+        "success_rate": 65,
+        "total_funding_raised": 4560000000
+      }
+    },
+    {
+      "id": "RF003",
+      "name": "日立製作所 東桜研究所",
+      "parent_company": "株式会社日立製作所",
+      "type": "企業研究所",
+      "location": {
+        "city": "東桜市",
+        "district": "テクノ地区",
+        "address": "東桜市テクノ地区イノベーション通り5-6-7",
+        "coordinates": {"lat": 35.7456, "lng": 139.8234},
+        "area_m2": 56000
+      },
+      "research_focus": [
+        "人工知能",
+        "量子コンピュータ",
+        "IoT",
+        "エネルギーシステム"
+      ],
+      "employees": {
+        "total": 456,
+        "researchers": 345,
+        "support_staff": 111,
+        "average_age": 38,
+        "phd_ratio": 78
+      },
+      "achievements": {
+        "nobel_laureates": 1,
+        "major_breakthroughs": 12,
+        "industry_awards": 45
+      }
+    },
+    {
+      "id": "RF004",
+      "name": "桜県農業研究センター",
+      "type": "農業研究施設",
+      "location": {
+        "city": "北桜市",
+        "district": "東部農業地区",
+        "address": "北桜市東部農業地区研究農場15-16-17",
+        "coordinates": {"lat": 35.6789, "lng": 139.8345},
+        "area_m2": 234000
+      },
+      "facility_info": {
+        "established": "1965-04-01",
+        "experimental_fields_ha": 45,
+        "greenhouses": 23,
+        "laboratories": 12
+      },
+      "research_areas": [
+        "品種改良",
+        "スマート農業",
+        "病害虫防除",
+        "土壌改良"
+      ],
+      "employees": {
+        "total": 234,
+        "researchers": 89,
+        "field_technicians": 78,
+        "administration": 67
+      },
+      "achievements": {
+        "new_varieties_developed": 34,
+        "patents": 12,
+        "farmer_training_programs": 156
+      }
+    },
+    {
+      "id": "RF005",
+      "name": "桜エネルギー研究所",
+      "type": "エネルギー研究施設",
+      "location": {
+        "city": "桜川市",
+        "district": "臨海地区",
+        "address": "桜川市臨海地区エネルギーパーク20-21-22",
+        "coordinates": {"lat": 35.6780, "lng": 139.9020},
+        "area_m2": 123000
+      },
+      "facility_info": {
+        "established": "2015-07-01",
+        "solar_test_field_mw": 10,
+        "wind_turbines": 5,
+        "battery_test_facility": true
+      },
+      "research_focus": [
+        "太陽光発電",
+        "風力発電",
+        "蓄電技術",
+        "水素エネルギー",
+        "核融合"
+      ],
+      "employees": {
+        "total": 345,
+        "departments": {
+          "renewable_energy": 156,
+          "storage_systems": 89,
+          "hydrogen": 67,
+          "fusion": 33
+        }
+      },
+      "partnerships": [
+        "東京電力",
+        "NEDO",
+        "国際エネルギー機関"
+      ]
+    }
+  ],
+  "metadata": {
+    "created_at": "2025-07-13T18:30:00Z",
+    "updated_at": "2025-07-13T18:30:00Z",
+    "data_version": "1.0.0",
+    "total_manufacturing_plants": 5,
+    "total_research_facilities": 5,
+    "total_employees": 17234
+  }
+}

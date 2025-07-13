@@ -1,0 +1,548 @@
+{
+  "traditional_craft_workshops": [
+    {
+      "id": "TC001",
+      "name": "桜染工房 花紋",
+      "type": "染物工房",
+      "craft": "桜染",
+      "master": {
+        "name": "染谷桜太郎",
+        "age": 68,
+        "experience_years": 50,
+        "title": "伝統工芸士",
+        "awards": ["人間国宝候補", "県無形文化財保持者"]
+      },
+      "location": {
+        "city": "西桜市",
+        "district": "工芸地区",
+        "address": "西桜市工芸地区伝統工芸の里1-2-3",
+        "coordinates": {"lat": 35.6567, "lng": 139.8123},
+        "area_m2": 450
+      },
+      "workshop_info": {
+        "established": "1890年",
+        "building_type": "築150年古民家",
+        "dyeing_vats": 12,
+        "drying_space_m2": 200
+      },
+      "products": {
+        "types": ["着物", "帯", "風呂敷", "のれん", "タペストリー"],
+        "price_range": "5,000円～500,000円",
+        "annual_production": 200,
+        "custom_orders": true
+      },
+      "employees": {
+        "total": 8,
+        "craftsmen": [
+          {
+            "name": "染谷花子",
+            "position": "後継者",
+            "relationship": "娘",
+            "experience_years": 25
+          },
+          {
+            "name": "弟子田学",
+            "position": "弟子",
+            "experience_years": 10
+          },
+          {
+            "name": "見習田初",
+            "position": "見習い",
+            "experience_years": 2
+          }
+        ],
+        "support_staff": 3
+      },
+      "techniques": {
+        "traditional": ["桜花弁染", "桜樹皮染", "桜葉染"],
+        "patterns": 156,
+        "secret_techniques": true
+      },
+      "economic_data": {
+        "annual_revenue": 45000000,
+        "export_ratio": 30,
+        "workshop_tours": "月50名限定"
+      }
+    },
+    {
+      "id": "TC002",
+      "name": "桜焼窯元 古今窯",
+      "type": "陶芸工房",
+      "craft": "桜焼",
+      "master": {
+        "name": "陶山源左衛門",
+        "age": 72,
+        "generation": "十五代目",
+        "title": "重要無形文化財保持者"
+      },
+      "location": {
+        "city": "西桜市",
+        "district": "工芸地区",
+        "address": "西桜市工芸地区陶芸の里5-6-7",
+        "coordinates": {"lat": 35.6578, "lng": 139.8134}
+      },
+      "workshop_info": {
+        "established": "1650年",
+        "kilns": 3,
+        "kiln_types": ["登り窯", "ガス窯", "電気窯"],
+        "gallery_m2": 120
+      },
+      "products": {
+        "types": ["茶器", "花器", "食器", "美術品"],
+        "signature_glaze": "桜花灰釉",
+        "price_range": "3,000円～3,000,000円"
+      },
+      "employees": {
+        "total": 12,
+        "family_members": 4,
+        "disciples": 5,
+        "support_staff": 3
+      },
+      "achievements": {
+        "exhibitions": 234,
+        "museum_collections": 45,
+        "international_awards": 12
+      }
+    },
+    {
+      "id": "TC003",
+      "name": "桜細工工房 匠",
+      "type": "木工工房",
+      "craft": "桜細工",
+      "master": {
+        "name": "木工田匠介",
+        "age": 58,
+        "experience_years": 40,
+        "specialties": ["組子細工", "指物", "彫刻"]
+      },
+      "location": {
+        "city": "西桜市",
+        "district": "工芸地区",
+        "address": "西桜市工芸地区木工通り10-11-12",
+        "coordinates": {"lat": 35.6589, "lng": 139.8145}
+      },
+      "workshop_info": {
+        "tools": 234,
+        "wood_storage": "桜材専用倉庫",
+        "machinery": ["traditional_only", true]
+      },
+      "products": {
+        "types": ["茶道具", "箱物", "家具", "建具"],
+        "custom_furniture": true,
+        "restoration_services": true
+      },
+      "employees": {
+        "total": 6,
+        "craftsmen": 4,
+        "apprentices": 2
+      }
+    },
+    {
+      "id": "TC004",
+      "name": "桜和紙工房 紙音",
+      "type": "和紙工房",
+      "craft": "桜和紙",
+      "master": {
+        "name": "紙谷和代",
+        "age": 65,
+        "experience_years": 45,
+        "unesco_recognition": "申請中"
+      },
+      "location": {
+        "city": "北桜市",
+        "district": "北部山間地区",
+        "address": "北桜市北部山間地区和紙の里15-16-17",
+        "coordinates": {"lat": 35.6901, "lng": 139.8356}
+      },
+      "materials": {
+        "main": "楮（こうぞ）",
+        "special": "桜の樹皮",
+        "water_source": "清流山水"
+      },
+      "products": {
+        "types": ["書道用紙", "版画用紙", "工芸用紙", "修復用紙"],
+        "special_orders": ["文化財修復", "美術作品"]
+      },
+      "employees": {
+        "total": 5,
+        "family_operation": true
+      }
+    },
+    {
+      "id": "TC005",
+      "name": "桜ガラス工房 硝音",
+      "type": "ガラス工房",
+      "craft": "桜ガラス",
+      "master": {
+        "name": "硝子田透",
+        "age": 48,
+        "training": "ベネチア修行5年"
+      },
+      "location": {
+        "city": "南桜市",
+        "district": "観光地区",
+        "address": "南桜市観光地区工芸村20-21-22",
+        "coordinates": {"lat": 35.6245, "lng": 139.7901}
+      },
+      "specialties": {
+        "technique": "桜花封入ガラス",
+        "colors": "桜色グラデーション",
+        "products": ["グラス", "花瓶", "アクセサリー", "オブジェ"]
+      },
+      "employees": {
+        "total": 7,
+        "glass_blowers": 4,
+        "designers": 2,
+        "shop_staff": 1
+      },
+      "visitor_experience": {
+        "workshop_tours": true,
+        "glass_blowing_experience": "予約制",
+        "gallery_shop": true
+      }
+    }
+  ],
+  "small_factories": [
+    {
+      "id": "SF001",
+      "name": "精密加工サトウ",
+      "type": "金属加工",
+      "owner": {
+        "name": "佐藤精一",
+        "age": 55,
+        "experience_years": 35,
+        "previous": "大手メーカー技術者"
+      },
+      "location": {
+        "city": "桜花市",
+        "district": "西区",
+        "address": "桜花市西区町工場通り25-26",
+        "coordinates": {"lat": 35.7023, "lng": 139.8467},
+        "area_m2": 280
+      },
+      "equipment": {
+        "cnc_lathes": 3,
+        "milling_machines": 2,
+        "measuring_instruments": 8
+      },
+      "specialties": {
+        "precision": "±0.001mm",
+        "materials": ["ステンレス", "アルミ", "真鍮", "チタン"],
+        "industries": ["医療機器", "航空宇宙", "半導体"]
+      },
+      "employees": {
+        "total": 5,
+        "owner": 1,
+        "skilled_workers": 3,
+        "office": 1
+      },
+      "clients": {
+        "major": ["桜電機", "東京精密", "医療機器メーカー"],
+        "repeat_rate": 95
+      },
+      "economic_data": {
+        "annual_revenue": 85000000,
+        "operating_margin": 15
+      }
+    },
+    {
+      "id": "SF002",
+      "name": "電子工業タナカ",
+      "type": "電子基板製造",
+      "owner": {
+        "name": "田中電子",
+        "age": 48,
+        "background": "電子工学修士"
+      },
+      "location": {
+        "city": "東桜市",
+        "district": "テクノ地区",
+        "address": "東桜市テクノ地区スタートアップ通り30-31",
+        "coordinates": {"lat": 35.7467, "lng": 139.8245}
+      },
+      "capabilities": {
+        "pcb_assembly": true,
+        "prototype_development": true,
+        "small_lot_production": true
+      },
+      "employees": {
+        "total": 8,
+        "engineers": 4,
+        "technicians": 3,
+        "office": 1
+      },
+      "specialization": {
+        "iot_devices": true,
+        "medical_electronics": true,
+        "custom_solutions": true
+      }
+    },
+    {
+      "id": "SF003",
+      "name": "樹脂成形ヤマダ",
+      "type": "プラスチック成形",
+      "owner": {
+        "name": "山田成形",
+        "age": 62,
+        "family_business": "二代目"
+      },
+      "location": {
+        "city": "桜川市",
+        "district": "臨海地区",
+        "address": "桜川市臨海地区中小企業団地35-36",
+        "coordinates": {"lat": 35.6790, "lng": 139.9023}
+      },
+      "equipment": {
+        "injection_molding_machines": 5,
+        "mold_storage": 234,
+        "3d_printer": 1
+      },
+      "products": {
+        "automotive_parts": true,
+        "household_items": true,
+        "custom_molding": true
+      },
+      "employees": {
+        "total": 12,
+        "production": 8,
+        "quality_control": 2,
+        "administration": 2
+      }
+    },
+    {
+      "id": "SF004",
+      "name": "織物工房スズキ",
+      "type": "繊維加工",
+      "owner": {
+        "name": "鈴木織江",
+        "age": 52,
+        "specialties": ["ジャカード織", "特殊繊維"]
+      },
+      "location": {
+        "city": "西桜市",
+        "district": "新市街地区",
+        "address": "西桜市新市街地区繊維工業通り40-41",
+        "coordinates": {"lat": 35.6578, "lng": 139.8134}
+      },
+      "equipment": {
+        "looms": 8,
+        "computer_controlled": 4,
+        "traditional": 4
+      },
+      "products": {
+        "fashion_textiles": true,
+        "industrial_textiles": true,
+        "custom_weaving": true
+      },
+      "employees": {
+        "total": 7,
+        "weavers": 5,
+        "designers": 1,
+        "office": 1
+      },
+      "partnerships": {
+        "fashion_brands": 12,
+        "interior_designers": 8
+      }
+    },
+    {
+      "id": "SF005",
+      "name": "板金加工イトウ",
+      "type": "板金加工",
+      "owner": {
+        "name": "伊藤板金",
+        "age": 45,
+        "certifications": ["溶接技能者", "板金技能士1級"]
+      },
+      "location": {
+        "city": "北桜市",
+        "district": "中央地区",
+        "address": "北桜市中央地区工業エリア45-46",
+        "coordinates": {"lat": 35.6901, "lng": 139.8356}
+      },
+      "services": {
+        "custom_fabrication": true,
+        "prototype_development": true,
+        "small_lot_production": true,
+        "installation": true
+      },
+      "equipment": {
+        "laser_cutting": 1,
+        "press_brakes": 2,
+        "welding_stations": 4
+      },
+      "employees": {
+        "total": 6,
+        "skilled_workers": 4,
+        "apprentice": 1,
+        "office": 1
+      }
+    },
+    {
+      "id": "SF006",
+      "name": "自動車整備カワサキ",
+      "type": "自動車整備工場",
+      "owner": {
+        "name": "川崎整備",
+        "age": 58,
+        "certifications": ["一級自動車整備士"]
+      },
+      "location": {
+        "city": "桜花市",
+        "district": "北区",
+        "address": "桜花市北区自動車街50-51",
+        "coordinates": {"lat": 35.7245, "lng": 139.8467}
+      },
+      "services": {
+        "general_maintenance": true,
+        "specialized_repair": ["ハイブリッド", "EV", "輸入車"],
+        "custom_tuning": true
+      },
+      "facilities": {
+        "service_bays": 4,
+        "diagnostic_equipment": "最新型",
+        "paint_booth": 1
+      },
+      "employees": {
+        "total": 8,
+        "mechanics": 5,
+        "front_desk": 2,
+        "parts": 1
+      }
+    },
+    {
+      "id": "SF007",
+      "name": "印刷工房オオタ",
+      "type": "印刷業",
+      "owner": {
+        "name": "太田印刷",
+        "age": 50,
+        "experience_years": 30
+      },
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区印刷通り55-56",
+        "coordinates": {"lat": 35.7112, "lng": 139.8592}
+      },
+      "equipment": {
+        "offset_printers": 2,
+        "digital_printers": 3,
+        "binding_equipment": 4
+      },
+      "services": {
+        "commercial_printing": true,
+        "packaging": true,
+        "design_services": true,
+        "small_lot_books": true
+      },
+      "employees": {
+        "total": 9,
+        "printers": 5,
+        "designers": 2,
+        "office": 2
+      }
+    },
+    {
+      "id": "SF008",
+      "name": "食品加工コバヤシ",
+      "type": "食品製造",
+      "owner": {
+        "name": "小林食品",
+        "age": 43,
+        "specialties": ["惣菜", "弁当", "仕出し"]
+      },
+      "location": {
+        "city": "南桜市",
+        "district": "住宅地区",
+        "address": "南桜市住宅地区食品工業通り60-61",
+        "coordinates": {"lat": 35.6256, "lng": 139.7912}
+      },
+      "products": {
+        "daily_bento": 500,
+        "catering": true,
+        "local_specialties": true
+      },
+      "certifications": {
+        "haccp": true,
+        "organic": "一部商品"
+      },
+      "employees": {
+        "total": 15,
+        "kitchen": 10,
+        "delivery": 3,
+        "office": 2
+      }
+    },
+    {
+      "id": "SF009",
+      "name": "木工製作所モリ",
+      "type": "家具製造",
+      "owner": {
+        "name": "森木工",
+        "age": 60,
+        "training": "伝統建築修行10年"
+      },
+      "location": {
+        "city": "西桜市",
+        "district": "工芸地区",
+        "address": "西桜市工芸地区家具工房通り65-66",
+        "coordinates": {"lat": 35.6590, "lng": 139.8146}
+      },
+      "specialties": {
+        "custom_furniture": true,
+        "restoration": true,
+        "traditional_techniques": true
+      },
+      "materials": {
+        "preferred": "地元産材",
+        "specialty": "桜材加工"
+      },
+      "employees": {
+        "total": 4,
+        "craftsmen": 3,
+        "apprentice": 1
+      }
+    },
+    {
+      "id": "SF010",
+      "name": "縫製工場ワタナベ",
+      "type": "縫製業",
+      "owner": {
+        "name": "渡辺縫子",
+        "age": 55,
+        "background": "アパレルメーカー出身"
+      },
+      "location": {
+        "city": "桜花市",
+        "district": "東区",
+        "address": "桜花市東区縫製工業通り70-71",
+        "coordinates": {"lat": 35.7167, "lng": 139.8545}
+      },
+      "capabilities": {
+        "garment_types": ["婦人服", "子供服", "ユニフォーム"],
+        "small_lot": true,
+        "quick_turnaround": true
+      },
+      "equipment": {
+        "sewing_machines": 12,
+        "special_machines": 5,
+        "cad_system": 1
+      },
+      "employees": {
+        "total": 10,
+        "sewers": 7,
+        "pattern_makers": 2,
+        "office": 1
+      }
+    }
+  ],
+  "metadata": {
+    "created_at": "2025-07-13T18:50:00Z",
+    "updated_at": "2025-07-13T18:50:00Z",
+    "data_version": "1.0.0",
+    "total_craft_workshops": 5,
+    "total_small_factories": 10,
+    "total_employees": 175
+  }
+}

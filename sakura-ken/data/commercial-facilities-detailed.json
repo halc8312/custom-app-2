@@ -1,0 +1,653 @@
+{
+  "large_shopping_malls": [
+    {
+      "id": "SM001",
+      "name": "イオンモール桜花東",
+      "type": "大型ショッピングモール",
+      "location": {
+        "city": "桜花市",
+        "district": "東区",
+        "address": "桜花市東区さくら東1-2-3",
+        "coordinates": {"lat": 35.7234, "lng": 139.8765}
+      },
+      "business_info": {
+        "established": "2015-03-15",
+        "business_hours": {
+          "weekday": "10:00-21:00",
+          "weekend": "10:00-22:00"
+        },
+        "holidays": "年中無休",
+        "floor_area_m2": 89000,
+        "parking_spaces": 3456,
+        "floors": 4
+      },
+      "tenants": {
+        "total": 234,
+        "anchor_tenants": ["イオン", "ユニクロ", "無印良品", "TOHOシネマズ"],
+        "categories": {
+          "fashion": 78,
+          "food_beverage": 45,
+          "lifestyle": 34,
+          "entertainment": 12,
+          "services": 65
+        }
+      },
+      "employees": {
+        "total": 2345,
+        "management": [
+          {
+            "employee_id": "SM001-M001",
+            "name": "田中太郎",
+            "position": "モール館長",
+            "department": "運営管理部",
+            "hire_date": "2015-01-15",
+            "work_schedule": "フルタイム",
+            "annual_salary": 12000000
+          },
+          {
+            "employee_id": "SM001-M002",
+            "name": "佐藤花子",
+            "position": "副館長",
+            "department": "運営管理部",
+            "hire_date": "2015-02-01",
+            "work_schedule": "フルタイム",
+            "annual_salary": 9000000
+          },
+          {
+            "employee_id": "SM001-M003",
+            "name": "山田次郎",
+            "position": "営業部長",
+            "department": "営業部",
+            "hire_date": "2015-01-20",
+            "work_schedule": "フルタイム",
+            "annual_salary": 8000000
+          }
+        ],
+        "department_heads": [
+          {
+            "employee_id": "SM001-D001",
+            "name": "鈴木一郎",
+            "position": "施設管理課長",
+            "department": "施設管理部",
+            "hire_date": "2015-02-15",
+            "work_schedule": "フルタイム",
+            "annual_salary": 6000000
+          },
+          {
+            "employee_id": "SM001-D002",
+            "name": "高橋美咲",
+            "position": "販促課長",
+            "department": "販促部",
+            "hire_date": "2015-03-01",
+            "work_schedule": "フルタイム",
+            "annual_salary": 5500000
+          }
+        ],
+        "regular_staff": {
+          "security": 45,
+          "cleaning": 67,
+          "customer_service": 34,
+          "parking": 23,
+          "maintenance": 18
+        }
+      },
+      "economic_data": {
+        "annual_revenue": 45670000000,
+        "annual_visitors": 12345678,
+        "average_spending_per_visitor": 3700,
+        "tenant_sales_total": 38900000000
+      },
+      "special_features": [
+        "県内最大級のフードコート（1000席）",
+        "屋上庭園「スカイガーデン」",
+        "子供向け室内遊園地",
+        "ペット同伴可能エリア",
+        "EV充電ステーション50基"
+      ]
+    },
+    {
+      "id": "SM002",
+      "name": "ららぽーと東桜",
+      "type": "大型ショッピングモール",
+      "location": {
+        "city": "東桜市",
+        "district": "住宅地区",
+        "address": "東桜市住宅地区ニュータウン中央4-5-6",
+        "coordinates": {"lat": 35.7456, "lng": 139.8234}
+      },
+      "business_info": {
+        "established": "2018-04-20",
+        "business_hours": {
+          "weekday": "10:00-20:00",
+          "weekend": "10:00-21:00"
+        },
+        "holidays": "年中無休",
+        "floor_area_m2": 67890,
+        "parking_spaces": 2800,
+        "floors": 3
+      },
+      "tenants": {
+        "total": 212,
+        "anchor_tenants": ["キッザニア東桜", "スポーツデポ", "ニトリ"],
+        "categories": {
+          "fashion": 65,
+          "food_beverage": 38,
+          "lifestyle": 42,
+          "entertainment": 15,
+          "services": 52
+        }
+      },
+      "employees": {
+        "total": 1890,
+        "management": [
+          {
+            "employee_id": "SM002-M001",
+            "name": "伊藤健一",
+            "position": "モール館長",
+            "department": "運営管理部",
+            "hire_date": "2018-03-01",
+            "work_schedule": "フルタイム",
+            "annual_salary": 11000000
+          },
+          {
+            "employee_id": "SM002-M002",
+            "name": "渡辺美穂",
+            "position": "副館長",
+            "department": "運営管理部",
+            "hire_date": "2018-03-15",
+            "work_schedule": "フルタイム",
+            "annual_salary": 8500000
+          }
+        ],
+        "department_heads": [
+          {
+            "employee_id": "SM002-D001",
+            "name": "小林修",
+            "position": "テナント管理課長",
+            "department": "テナント管理部",
+            "hire_date": "2018-04-01",
+            "work_schedule": "フルタイム",
+            "annual_salary": 5800000
+          }
+        ],
+        "regular_staff": {
+          "security": 38,
+          "cleaning": 54,
+          "customer_service": 28,
+          "parking": 19,
+          "maintenance": 15
+        }
+      },
+      "economic_data": {
+        "annual_revenue": 38900000000,
+        "annual_visitors": 10234567,
+        "average_spending_per_visitor": 3800,
+        "tenant_sales_total": 32100000000
+      },
+      "special_features": [
+        "体験型エデュテインメント施設「キッザニア」",
+        "アウトドア専門ゾーン",
+        "大型書店併設",
+        "ファミリー向けレストランフロア",
+        "無料Wi-Fi完備"
+      ]
+    },
+    {
+      "id": "SM003",
+      "name": "桜川シーサイドモール",
+      "type": "大型ショッピングモール",
+      "location": {
+        "city": "桜川市",
+        "district": "南部地区",
+        "address": "桜川市南部地区ビーチ前7-8-9",
+        "coordinates": {"lat": 35.6789, "lng": 139.9012}
+      },
+      "business_info": {
+        "established": "2016-06-01",
+        "business_hours": {
+          "weekday": "10:00-20:00",
+          "weekend": "10:00-21:00",
+          "summer": "10:00-22:00"
+        },
+        "holidays": "年中無休",
+        "floor_area_m2": 45678,
+        "parking_spaces": 2000,
+        "floors": 3
+      },
+      "tenants": {
+        "total": 156,
+        "anchor_tenants": ["西友", "しまむら", "スポーツオーソリティ"],
+        "categories": {
+          "fashion": 48,
+          "food_beverage": 32,
+          "lifestyle": 28,
+          "marine_sports": 20,
+          "services": 28
+        }
+      },
+      "employees": {
+        "total": 1456,
+        "management": [
+          {
+            "employee_id": "SM003-M001",
+            "name": "中村誠",
+            "position": "モール館長",
+            "department": "運営管理部",
+            "hire_date": "2016-05-01",
+            "work_schedule": "フルタイム",
+            "annual_salary": 10000000
+          }
+        ],
+        "regular_staff": {
+          "security": 32,
+          "cleaning": 45,
+          "customer_service": 24,
+          "parking": 16,
+          "maintenance": 12
+        }
+      },
+      "economic_data": {
+        "annual_revenue": 28900000000,
+        "annual_visitors": 8234567,
+        "average_spending_per_visitor": 3500,
+        "tenant_sales_total": 23400000000
+      },
+      "special_features": [
+        "オーシャンビューレストラン",
+        "マリンスポーツ用品専門フロア",
+        "海の見えるフードコート",
+        "サーフショップ集積",
+        "ビーチ直結通路"
+      ]
+    },
+    {
+      "id": "SM004",
+      "name": "南桜アウトレットパーク",
+      "type": "アウトレットモール",
+      "location": {
+        "city": "南桜市",
+        "district": "観光地区",
+        "address": "南桜市観光地区テーマパーク前10-11-12",
+        "coordinates": {"lat": 35.6234, "lng": 139.7890}
+      },
+      "business_info": {
+        "established": "2019-11-15",
+        "business_hours": {
+          "weekday": "10:00-20:00",
+          "weekend": "10:00-21:00"
+        },
+        "holidays": "年中無休（2月第3木曜日を除く）",
+        "floor_area_m2": 78901,
+        "parking_spaces": 4000,
+        "floors": 2
+      },
+      "tenants": {
+        "total": 267,
+        "brands": 156,
+        "categories": {
+          "luxury_fashion": 45,
+          "sports_outdoor": 38,
+          "fashion": 78,
+          "accessories": 34,
+          "home_goods": 28,
+          "food_beverage": 44
+        }
+      },
+      "employees": {
+        "total": 2234,
+        "management": [
+          {
+            "employee_id": "SM004-M001",
+            "name": "木村洋平",
+            "position": "総支配人",
+            "department": "運営管理部",
+            "hire_date": "2019-10-01",
+            "work_schedule": "フルタイム",
+            "annual_salary": 13000000
+          },
+          {
+            "employee_id": "SM004-M002",
+            "name": "斉藤由美",
+            "position": "営業部長",
+            "department": "営業部",
+            "hire_date": "2019-10-15",
+            "work_schedule": "フルタイム",
+            "annual_salary": 8500000
+          }
+        ],
+        "regular_staff": {
+          "security": 56,
+          "cleaning": 78,
+          "customer_service": 45,
+          "parking": 34,
+          "maintenance": 23
+        }
+      },
+      "economic_data": {
+        "annual_revenue": 56780000000,
+        "annual_visitors": 15678900,
+        "average_spending_per_visitor": 3600,
+        "average_discount_rate": 45
+      },
+      "special_features": [
+        "県内最大のアウトレット",
+        "高級ブランド専門エリア",
+        "観光バス専用駐車場",
+        "免税店サービス",
+        "季節ごとの大型セール",
+        "富士山ビューテラス"
+      ]
+    },
+    {
+      "id": "SM005",
+      "name": "桜花パルコ",
+      "type": "ファッションビル",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区県庁前2-3-4",
+        "coordinates": {"lat": 35.7123, "lng": 139.8567}
+      },
+      "business_info": {
+        "established": "1998-09-01",
+        "business_hours": {
+          "shopping": "10:00-21:00",
+          "restaurants": "11:00-23:00"
+        },
+        "holidays": "年中無休",
+        "floor_area_m2": 56789,
+        "parking_spaces": 800,
+        "floors": 10
+      },
+      "tenants": {
+        "total": 189,
+        "target": "20-30代の若者",
+        "categories": {
+          "fashion": 98,
+          "cosmetics": 23,
+          "accessories": 28,
+          "restaurants": 25,
+          "services": 15
+        }
+      },
+      "employees": {
+        "total": 1567,
+        "management": [
+          {
+            "employee_id": "SM005-M001",
+            "name": "松本健太",
+            "position": "店長",
+            "department": "店舗運営部",
+            "hire_date": "2015-04-01",
+            "work_schedule": "フルタイム",
+            "annual_salary": 9500000
+          }
+        ],
+        "regular_staff": {
+          "floor_staff": 45,
+          "security": 23,
+          "cleaning": 34,
+          "customer_service": 18,
+          "maintenance": 12
+        }
+      },
+      "economic_data": {
+        "annual_revenue": 34560000000,
+        "annual_visitors": 9876543,
+        "average_spending_per_visitor": 3500,
+        "tenant_sales_total": 28900000000
+      },
+      "special_features": [
+        "最新ファッショントレンド発信地",
+        "アート展示スペース",
+        "屋上ビアガーデン（夏季）",
+        "若手デザイナーブランド集積",
+        "インスタ映えスポット多数"
+      ]
+    }
+  ],
+  "department_stores": [
+    {
+      "id": "DS001",
+      "name": "桜花高島屋",
+      "type": "百貨店",
+      "location": {
+        "city": "桜花市",
+        "district": "中央区",
+        "address": "桜花市中央区桜花中央駅前1-1-1",
+        "coordinates": {"lat": 35.7100, "lng": 139.8600}
+      },
+      "business_info": {
+        "established": "1952-10-01",
+        "business_hours": {
+          "store": "10:00-20:00",
+          "restaurant_floor": "11:00-22:00"
+        },
+        "holidays": "1月1日",
+        "floor_area_m2": 45678,
+        "floors": 12,
+        "basement_floors": 2
+      },
+      "departments": {
+        "B2F": "食品売場（デパ地下）",
+        "B1F": "食品・スイーツ",
+        "1F": "化粧品・アクセサリー",
+        "2F": "婦人服飾雑貨",
+        "3F": "婦人服",
+        "4F": "婦人服・フォーマル",
+        "5F": "紳士服・スポーツ",
+        "6F": "子供服・玩具",
+        "7F": "インテリア・寝具",
+        "8F": "催事場",
+        "9F": "レストラン街",
+        "10F": "特別食堂・カフェ",
+        "11F": "文化教室",
+        "RF": "屋上庭園"
+      },
+      "employees": {
+        "total": 1234,
+        "management": [
+          {
+            "employee_id": "DS001-M001",
+            "name": "前田正志",
+            "position": "店長",
+            "department": "店舗運営本部",
+            "hire_date": "2010-04-01",
+            "work_schedule": "フルタイム",
+            "annual_salary": 15000000
+          },
+          {
+            "employee_id": "DS001-M002",
+            "name": "後藤恵子",
+            "position": "副店長",
+            "department": "店舗運営本部",
+            "hire_date": "2012-04-01",
+            "work_schedule": "フルタイム",
+            "annual_salary": 11000000
+          }
+        ],
+        "floor_managers": [
+          {
+            "employee_id": "DS001-F001",
+            "name": "青木誠司",
+            "position": "婦人服フロアマネージャー",
+            "department": "婦人服部",
+            "hire_date": "2015-04-01",
+            "work_schedule": "フルタイム",
+            "annual_salary": 7000000
+          },
+          {
+            "employee_id": "DS001-F002",
+            "name": "白石美代子",
+            "position": "食品フロアマネージャー",
+            "department": "食品部",
+            "hire_date": "2013-04-01",
+            "work_schedule": "フルタイム",
+            "annual_salary": 7500000
+          }
+        ],
+        "sales_staff": {
+          "cosmetics": 45,
+          "fashion": 123,
+          "food": 89,
+          "home_goods": 34,
+          "customer_service": 23
+        }
+      },
+      "economic_data": {
+        "annual_revenue": 45600000000,
+        "annual_visitors": 8765432,
+        "average_spending_per_visitor": 5200,
+        "luxury_brand_sales_ratio": 35
+      },
+      "special_features": [
+        "県内最古の百貨店",
+        "高級ブランド集積",
+        "充実したデパ地下",
+        "外商部門あり",
+        "文化催事頻繁開催",
+        "屋上庭園・神社"
+      ]
+    },
+    {
+      "id": "DS002",
+      "name": "桜花三越",
+      "type": "百貨店",
+      "location": {
+        "city": "桜花市",
+        "district": "花見区",
+        "address": "桜花市花見区花見駅前3-4-5",
+        "coordinates": {"lat": 35.7050, "lng": 139.8520}
+      },
+      "business_info": {
+        "established": "1965-04-15",
+        "business_hours": {
+          "store": "10:00-20:00",
+          "restaurant_floor": "11:00-21:30"
+        },
+        "holidays": "1月1日",
+        "floor_area_m2": 38900,
+        "floors": 10,
+        "basement_floors": 2
+      },
+      "departments": {
+        "B2F": "食品売場",
+        "B1F": "スイーツ・ベーカリー",
+        "1F": "化粧品・宝飾品",
+        "2F": "ハンドバッグ・婦人靴",
+        "3F": "婦人服",
+        "4F": "婦人服・ランジェリー",
+        "5F": "紳士服",
+        "6F": "スポーツ・ゴルフ",
+        "7F": "リビング・美術",
+        "8F": "催事場",
+        "9F": "レストラン街"
+      },
+      "employees": {
+        "total": 987,
+        "management": [
+          {
+            "employee_id": "DS002-M001",
+            "name": "藤田康之",
+            "position": "店長",
+            "department": "店舗運営本部",
+            "hire_date": "2011-04-01",
+            "work_schedule": "フルタイム",
+            "annual_salary": 14000000
+          }
+        ],
+        "sales_staff": {
+          "cosmetics": 38,
+          "fashion": 98,
+          "food": 67,
+          "home_goods": 28,
+          "customer_service": 19
+        }
+      },
+      "economic_data": {
+        "annual_revenue": 38900000000,
+        "annual_visitors": 7654321,
+        "average_spending_per_visitor": 5100,
+        "luxury_brand_count": 89
+      },
+      "special_features": [
+        "高級ブランド多数",
+        "美術画廊併設",
+        "月5回以上の文化イベント",
+        "会員制ラウンジ",
+        "パーソナルショッピングサービス"
+      ]
+    },
+    {
+      "id": "DS003",
+      "name": "そごう桜川",
+      "type": "百貨店",
+      "location": {
+        "city": "桜川市",
+        "district": "中央地区",
+        "address": "桜川市中央地区桜川中央駅前5-6-7",
+        "coordinates": {"lat": 35.6890, "lng": 139.8901}
+      },
+      "business_info": {
+        "established": "1978-09-20",
+        "business_hours": {
+          "store": "10:00-19:30",
+          "restaurant_floor": "11:00-22:00"
+        },
+        "holidays": "1月1日",
+        "floor_area_m2": 32100,
+        "floors": 8,
+        "basement_floors": 1
+      },
+      "departments": {
+        "B1F": "食品売場・海産物特設",
+        "1F": "化粧品・アクセサリー",
+        "2F": "婦人服飾",
+        "3F": "婦人服",
+        "4F": "紳士服・スポーツ",
+        "5F": "子供用品・文具",
+        "6F": "インテリア・催事場",
+        "7F": "レストラン街",
+        "8F": "カルチャーセンター"
+      },
+      "employees": {
+        "total": 765,
+        "management": [
+          {
+            "employee_id": "DS003-M001",
+            "name": "岡田浩二",
+            "position": "店長",
+            "department": "店舗運営本部",
+            "hire_date": "2013-04-01",
+            "work_schedule": "フルタイム",
+            "annual_salary": 12000000
+          }
+        ],
+        "special_section": {
+          "marine_products": 23,
+          "local_crafts": 12
+        }
+      },
+      "economic_data": {
+        "annual_revenue": 28900000000,
+        "annual_visitors": 6543210,
+        "average_spending_per_visitor": 4400,
+        "marine_products_sales_ratio": 15
+      },
+      "special_features": [
+        "海産物専門フロア",
+        "地元工芸品コーナー",
+        "港町ならではの品揃え",
+        "魚市場直送の鮮魚売場",
+        "海の見えるレストラン"
+      ]
+    }
+  ],
+  "metadata": {
+    "created_at": "2025-07-13T18:00:00Z",
+    "updated_at": "2025-07-13T18:00:00Z",
+    "data_version": "1.0.0",
+    "total_facilities": 8,
+    "total_employees": 13733
+  }
+}
