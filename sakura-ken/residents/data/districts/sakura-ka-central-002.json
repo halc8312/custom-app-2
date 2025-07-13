@@ -1,0 +1,350 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2025-07-13T20:15:00.000Z",
+    "district": {
+      "city": "桜花市",
+      "name": "中央地区",
+      "code": "central",
+      "type": "central"
+    },
+    "statistics": {
+      "totalResidents": 256,
+      "households": 92,
+      "averageAge": 41,
+      "employmentRate": 0.73
+    }
+  },
+  "households": [
+    {
+      "householdId": "central-H00001",
+      "type": "nuclear",
+      "members": [
+        {
+          "residentId": "SKK-central-2025-000001",
+          "name": {
+            "lastName": "佐藤",
+            "firstName": "健太",
+            "lastNameKana": "サトウ",
+            "firstNameKana": "ケンタ"
+          },
+          "age": 42,
+          "gender": "male",
+          "relationship": "head",
+          "occupation": "営業",
+          "education": "大学卒業",
+          "employer": "桜商事株式会社",
+          "income": 580,
+          "address": "桜県桜花市中央地区3丁目15番8号",
+          "registeredDate": "1983-04-01T00:00:00.000Z",
+          "updatedAt": "2025-07-13T20:15:00.000Z"
+        },
+        {
+          "residentId": "SKK-central-2025-000002",
+          "name": {
+            "lastName": "佐藤",
+            "firstName": "美咲",
+            "lastNameKana": "サトウ",
+            "firstNameKana": "ミサキ"
+          },
+          "age": 39,
+          "gender": "female",
+          "relationship": "spouse",
+          "occupation": "事務員",
+          "education": "専門学校卒業",
+          "employer": "桜県銀行",
+          "income": 320,
+          "address": "桜県桜花市中央地区3丁目15番8号",
+          "registeredDate": "2008-10-15T00:00:00.000Z",
+          "updatedAt": "2025-07-13T20:15:00.000Z"
+        },
+        {
+          "residentId": "SKK-central-2025-000003",
+          "name": {
+            "lastName": "佐藤",
+            "firstName": "陽太",
+            "lastNameKana": "サトウ",
+            "firstNameKana": "ヨウタ"
+          },
+          "age": 14,
+          "gender": "male",
+          "relationship": "child",
+          "occupation": "学生",
+          "education": "中学校在学",
+          "employer": "",
+          "income": 0,
+          "address": "桜県桜花市中央地区3丁目15番8号",
+          "registeredDate": "2011-03-20T00:00:00.000Z",
+          "updatedAt": "2025-07-13T20:15:00.000Z"
+        },
+        {
+          "residentId": "SKK-central-2025-000004",
+          "name": {
+            "lastName": "佐藤",
+            "firstName": "結衣",
+            "lastNameKana": "サトウ",
+            "firstNameKana": "ユイ"
+          },
+          "age": 11,
+          "gender": "female",
+          "relationship": "child",
+          "occupation": "学生",
+          "education": "小学校在学",
+          "employer": "",
+          "income": 0,
+          "address": "桜県桜花市中央地区3丁目15番8号",
+          "registeredDate": "2014-05-12T00:00:00.000Z",
+          "updatedAt": "2025-07-13T20:15:00.000Z"
+        }
+      ],
+      "address": "桜県桜花市中央地区3丁目15番8号",
+      "phoneNumber": "0547-234-5678",
+      "createdAt": "2025-07-13T20:15:00.000Z"
+    },
+    {
+      "householdId": "central-H00002",
+      "type": "single",
+      "members": [
+        {
+          "residentId": "SKK-central-2025-000005",
+          "name": {
+            "lastName": "鈴木",
+            "firstName": "翔太",
+            "lastNameKana": "スズキ",
+            "firstNameKana": "ショウタ"
+          },
+          "age": 28,
+          "gender": "male",
+          "relationship": "head",
+          "occupation": "プログラマー",
+          "education": "大学卒業",
+          "employer": "サクラ情報システム",
+          "income": 420,
+          "address": "桜県桜花市中央地区5丁目22番 サニーマンション305号室",
+          "registeredDate": "2019-04-01T00:00:00.000Z",
+          "updatedAt": "2025-07-13T20:15:00.000Z"
+        }
+      ],
+      "address": "桜県桜花市中央地区5丁目22番 サニーマンション305号室",
+      "phoneNumber": "0547-345-6789",
+      "createdAt": "2025-07-13T20:15:00.000Z"
+    },
+    {
+      "householdId": "central-H00003",
+      "type": "couple",
+      "members": [
+        {
+          "residentId": "SKK-central-2025-000006",
+          "name": {
+            "lastName": "高橋",
+            "firstName": "誠",
+            "lastNameKana": "タカハシ",
+            "firstNameKana": "マコト"
+          },
+          "age": 67,
+          "gender": "male",
+          "relationship": "head",
+          "occupation": "無職",
+          "education": "高等学校卒業",
+          "employer": "",
+          "income": 180,
+          "address": "桜県桜花市中央地区2丁目8番12号",
+          "registeredDate": "1958-03-15T00:00:00.000Z",
+          "updatedAt": "2025-07-13T20:15:00.000Z"
+        },
+        {
+          "residentId": "SKK-central-2025-000007",
+          "name": {
+            "lastName": "高橋",
+            "firstName": "和子",
+            "lastNameKana": "タカハシ",
+            "firstNameKana": "カズコ"
+          },
+          "age": 65,
+          "gender": "female",
+          "relationship": "spouse",
+          "occupation": "無職",
+          "education": "専門学校卒業",
+          "employer": "",
+          "income": 150,
+          "address": "桜県桜花市中央地区2丁目8番12号",
+          "registeredDate": "1982-06-20T00:00:00.000Z",
+          "updatedAt": "2025-07-13T20:15:00.000Z"
+        }
+      ],
+      "address": "桜県桜花市中央地区2丁目8番12号",
+      "phoneNumber": "0547-456-7890",
+      "createdAt": "2025-07-13T20:15:00.000Z"
+    },
+    {
+      "householdId": "central-H00004",
+      "type": "extended",
+      "members": [
+        {
+          "residentId": "SKK-central-2025-000008",
+          "name": {
+            "lastName": "田中",
+            "firstName": "大輝",
+            "lastNameKana": "タナカ",
+            "firstNameKana": "ダイキ"
+          },
+          "age": 45,
+          "gender": "male",
+          "relationship": "head",
+          "occupation": "医師",
+          "education": "大学院修了",
+          "employer": "桜医療センター",
+          "income": 1200,
+          "address": "桜県桜花市中央地区7丁目3番5号",
+          "registeredDate": "1980-04-10T00:00:00.000Z",
+          "updatedAt": "2025-07-13T20:15:00.000Z"
+        },
+        {
+          "residentId": "SKK-central-2025-000009",
+          "name": {
+            "lastName": "田中",
+            "firstName": "愛",
+            "lastNameKana": "タナカ",
+            "firstNameKana": "アイ"
+          },
+          "age": 43,
+          "gender": "female",
+          "relationship": "spouse",
+          "occupation": "看護師",
+          "education": "専門学校卒業",
+          "employer": "桜医療センター",
+          "income": 450,
+          "address": "桜県桜花市中央地区7丁目3番5号",
+          "registeredDate": "2005-08-15T00:00:00.000Z",
+          "updatedAt": "2025-07-13T20:15:00.000Z"
+        },
+        {
+          "residentId": "SKK-central-2025-000010",
+          "name": {
+            "lastName": "田中",
+            "firstName": "蓮",
+            "lastNameKana": "タナカ",
+            "firstNameKana": "レン"
+          },
+          "age": 18,
+          "gender": "male",
+          "relationship": "child",
+          "occupation": "学生",
+          "education": "大学在学",
+          "employer": "",
+          "income": 0,
+          "address": "桜県桜花市中央地区7丁目3番5号",
+          "registeredDate": "2007-02-28T00:00:00.000Z",
+          "updatedAt": "2025-07-13T20:15:00.000Z"
+        },
+        {
+          "residentId": "SKK-central-2025-000011",
+          "name": {
+            "lastName": "田中",
+            "firstName": "さくら",
+            "lastNameKana": "タナカ",
+            "firstNameKana": "サクラ"
+          },
+          "age": 16,
+          "gender": "female",
+          "relationship": "child",
+          "occupation": "学生",
+          "education": "高等学校在学",
+          "employer": "",
+          "income": 0,
+          "address": "桜県桜花市中央地区7丁目3番5号",
+          "registeredDate": "2009-04-15T00:00:00.000Z",
+          "updatedAt": "2025-07-13T20:15:00.000Z"
+        },
+        {
+          "residentId": "SKK-central-2025-000012",
+          "name": {
+            "lastName": "田中",
+            "firstName": "正雄",
+            "lastNameKana": "タナカ",
+            "firstNameKana": "マサオ"
+          },
+          "age": 72,
+          "gender": "male",
+          "relationship": "parent",
+          "occupation": "無職",
+          "education": "大学卒業",
+          "employer": "",
+          "income": 200,
+          "address": "桜県桜花市中央地区7丁目3番5号",
+          "registeredDate": "1953-06-10T00:00:00.000Z",
+          "updatedAt": "2025-07-13T20:15:00.000Z"
+        }
+      ],
+      "address": "桜県桜花市中央地区7丁目3番5号",
+      "phoneNumber": "0547-567-8901",
+      "createdAt": "2025-07-13T20:15:00.000Z"
+    },
+    {
+      "householdId": "central-H00005",
+      "type": "single_parent",
+      "members": [
+        {
+          "residentId": "SKK-central-2025-000013",
+          "name": {
+            "lastName": "渡辺",
+            "firstName": "美香",
+            "lastNameKana": "ワタナベ",
+            "firstNameKana": "ミカ"
+          },
+          "age": 38,
+          "gender": "female",
+          "relationship": "head",
+          "occupation": "販売員",
+          "education": "高等学校卒業",
+          "employer": "桜スーパーマーケット",
+          "income": 280,
+          "address": "桜県桜花市中央地区4丁目18番 グリーンアパート203号室",
+          "registeredDate": "2015-09-01T00:00:00.000Z",
+          "updatedAt": "2025-07-13T20:15:00.000Z"
+        },
+        {
+          "residentId": "SKK-central-2025-000014",
+          "name": {
+            "lastName": "渡辺",
+            "firstName": "優花",
+            "lastNameKana": "ワタナベ",
+            "firstNameKana": "ユウカ"
+          },
+          "age": 12,
+          "gender": "female",
+          "relationship": "child",
+          "occupation": "学生",
+          "education": "中学校在学",
+          "employer": "",
+          "income": 0,
+          "address": "桜県桜花市中央地区4丁目18番 グリーンアパート203号室",
+          "registeredDate": "2015-09-01T00:00:00.000Z",
+          "updatedAt": "2025-07-13T20:15:00.000Z"
+        },
+        {
+          "residentId": "SKK-central-2025-000015",
+          "name": {
+            "lastName": "渡辺",
+            "firstName": "悠斗",
+            "lastNameKana": "ワタナベ",
+            "firstNameKana": "ユウト"
+          },
+          "age": 8,
+          "gender": "male",
+          "relationship": "child",
+          "occupation": "学生",
+          "education": "小学校在学",
+          "employer": "",
+          "income": 0,
+          "address": "桜県桜花市中央地区4丁目18番 グリーンアパート203号室",
+          "registeredDate": "2017-03-15T00:00:00.000Z",
+          "updatedAt": "2025-07-13T20:15:00.000Z"
+        }
+      ],
+      "address": "桜県桜花市中央地区4丁目18番 グリーンアパート203号室",
+      "phoneNumber": "0547-678-9012",
+      "createdAt": "2025-07-13T20:15:00.000Z"
+    }
+  ]
+}
