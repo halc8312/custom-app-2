@@ -1,0 +1,216 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "桜県住民票テンプレート",
+  "description": "住民票の写し交付用テンプレート",
+  "type": "object",
+  "properties": {
+    "certificate_info": {
+      "type": "object",
+      "properties": {
+        "certificate_number": {
+          "type": "string",
+          "description": "証明書番号"
+        },
+        "issue_date": {
+          "type": "string",
+          "format": "date",
+          "description": "交付日"
+        },
+        "issuing_office": {
+          "type": "string",
+          "description": "交付機関"
+        },
+        "issuing_officer": {
+          "type": "string",
+          "description": "交付担当者"
+        },
+        "certificate_type": {
+          "type": "string",
+          "enum": ["住民票の写し", "住民票記載事項証明書", "除票"],
+          "description": "証明書種別"
+        }
+      }
+    },
+    "resident_info": {
+      "type": "object",
+      "properties": {
+        "氏名": {
+          "type": "string"
+        },
+        "通称": {
+          "type": "string",
+          "description": "外国人住民の場合"
+        },
+        "生年月日": {
+          "type": "string"
+        },
+        "性別": {
+          "type": "string"
+        },
+        "住所": {
+          "type": "object",
+          "properties": {
+            "現住所": {
+              "type": "string"
+            },
+            "方書": {
+              "type": "string",
+              "description": "建物名・部屋番号等"
+            }
+          }
+        },
+        "住民となった日": {
+          "type": "string",
+          "format": "date"
+        },
+        "住所を定めた日": {
+          "type": "string",
+          "format": "date"
+        },
+        "前住所": {
+          "type": "string"
+        },
+        "転出予定地": {
+          "type": "string",
+          "description": "転出届が出されている場合"
+        },
+        "世帯主": {
+          "type": "object",
+          "properties": {
+            "氏名": {
+              "type": "string"
+            },
+            "続柄": {
+              "type": "string"
+            }
+          }
+        },
+        "本籍": {
+          "type": "string",
+          "description": "日本人住民の場合"
+        },
+        "筆頭者": {
+          "type": "string",
+          "description": "日本人住民の場合"
+        },
+        "国籍・地域": {
+          "type": "string",
+          "description": "外国人住民の場合"
+        },
+        "在留資格": {
+          "type": "string",
+          "description": "外国人住民の場合"
+        },
+        "在留期間": {
+          "type": "string",
+          "description": "外国人住民の場合"
+        },
+        "住民票コード": {
+          "type": "string",
+          "description": "11桁の番号"
+        },
+        "個人番号": {
+          "type": "string",
+          "description": "マイナンバー（要請があった場合のみ記載）"
+        }
+      }
+    },
+    "household_info": {
+      "type": "object",
+      "properties": {
+        "世帯構成員": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "氏名": {
+                "type": "string"
+              },
+              "続柄": {
+                "type": "string"
+              },
+              "生年月日": {
+                "type": "string"
+              },
+              "性別": {
+                "type": "string"
+              }
+            }
+          },
+          "description": "世帯全員の住民票の場合"
+        }
+      }
+    },
+    "additional_info": {
+      "type": "object",
+      "properties": {
+        "備考": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "その他の記載事項"
+        },
+        "履歴": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "日付": {
+                "type": "string",
+                "format": "date"
+              },
+              "事由": {
+                "type": "string"
+              },
+              "詳細": {
+                "type": "string"
+              }
+            }
+          },
+          "description": "住所変更履歴等"
+        }
+      }
+    },
+    "certification": {
+      "type": "object",
+      "properties": {
+        "認証文": {
+          "type": "string",
+          "default": "上記のとおり相違ないことを証明する。"
+        },
+        "発行者": {
+          "type": "object",
+          "properties": {
+            "役職": {
+              "type": "string",
+              "default": "桜県○○市長"
+            },
+            "氏名": {
+              "type": "string"
+            },
+            "印章": {
+              "type": "string",
+              "description": "電子印章ID"
+            }
+          }
+        }
+      }
+    },
+    "usage_info": {
+      "type": "object",
+      "properties": {
+        "有効期限": {
+          "type": "string",
+          "default": "発行日から3ヶ月"
+        },
+        "使用目的": {
+          "type": "string"
+        },
+        "提出先": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

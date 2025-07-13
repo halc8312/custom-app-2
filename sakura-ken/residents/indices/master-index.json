@@ -1,0 +1,376 @@
+{
+  "city_index": {
+    "桜花市": {
+      "total_residents": 892456,
+      "districts": {
+        "中央地区": {
+          "resident_count": 125340,
+          "data_files": [
+            "districts/sakura-ka-central-001.json",
+            "districts/sakura-ka-central-002.json",
+            "districts/sakura-ka-central-003.json"
+          ]
+        },
+        "東地区": {
+          "resident_count": 98765,
+          "data_files": [
+            "districts/sakura-ka-east-001.json",
+            "districts/sakura-ka-east-002.json"
+          ]
+        },
+        "西地区": {
+          "resident_count": 87234,
+          "data_files": [
+            "districts/sakura-ka-west-001.json",
+            "districts/sakura-ka-west-002.json"
+          ]
+        },
+        "南地区": {
+          "resident_count": 76543,
+          "data_files": [
+            "districts/sakura-ka-south-001.json"
+          ]
+        },
+        "北地区": {
+          "resident_count": 89234,
+          "data_files": [
+            "districts/sakura-ka-north-001.json",
+            "districts/sakura-ka-north-002.json"
+          ]
+        },
+        "ビジネス地区": {
+          "resident_count": 45678,
+          "data_files": [
+            "districts/sakura-ka-business-001.json"
+          ]
+        }
+      }
+    },
+    "桜川市": {
+      "total_residents": 524189,
+      "districts": {
+        "港地区": {
+          "resident_count": 156789,
+          "data_files": [
+            "districts/sakura-gawa-port-001.json",
+            "districts/sakura-gawa-port-002.json"
+          ]
+        },
+        "工業地区": {
+          "resident_count": 134567,
+          "data_files": [
+            "districts/sakura-gawa-industrial-001.json",
+            "districts/sakura-gawa-industrial-002.json"
+          ]
+        },
+        "商業地区": {
+          "resident_count": 98765,
+          "data_files": [
+            "districts/sakura-gawa-commercial-001.json"
+          ]
+        },
+        "住宅地区": {
+          "resident_count": 134068,
+          "data_files": [
+            "districts/sakura-gawa-residential-001.json",
+            "districts/sakura-gawa-residential-002.json"
+          ]
+        }
+      }
+    },
+    "東桜市": {
+      "total_residents": 412567,
+      "districts": {
+        "テクノパーク": {
+          "resident_count": 98765,
+          "data_files": [
+            "districts/higashi-sakura-techno-001.json"
+          ]
+        },
+        "ITパーク": {
+          "resident_count": 87654,
+          "data_files": [
+            "districts/higashi-sakura-it-001.json"
+          ]
+        },
+        "研究学園地区": {
+          "resident_count": 76543,
+          "data_files": [
+            "districts/higashi-sakura-research-001.json"
+          ]
+        },
+        "新市街地": {
+          "resident_count": 149605,
+          "data_files": [
+            "districts/higashi-sakura-new-001.json",
+            "districts/higashi-sakura-new-002.json"
+          ]
+        }
+      }
+    },
+    "西桜市": {
+      "total_residents": 198347,
+      "districts": {
+        "歴史地区": {
+          "resident_count": 67890,
+          "data_files": [
+            "districts/nishi-sakura-history-001.json"
+          ]
+        },
+        "文化地区": {
+          "resident_count": 54321,
+          "data_files": [
+            "districts/nishi-sakura-culture-001.json"
+          ]
+        },
+        "観光地区": {
+          "resident_count": 43210,
+          "data_files": [
+            "districts/nishi-sakura-tourism-001.json"
+          ]
+        },
+        "伝統工芸地区": {
+          "resident_count": 32926,
+          "data_files": [
+            "districts/nishi-sakura-craft-001.json"
+          ]
+        }
+      }
+    },
+    "南桜市": {
+      "total_residents": 285632,
+      "districts": {
+        "温泉地区": {
+          "resident_count": 98765,
+          "data_files": [
+            "districts/minami-sakura-onsen-001.json"
+          ]
+        },
+        "リゾート地区": {
+          "resident_count": 76543,
+          "data_files": [
+            "districts/minami-sakura-resort-001.json"
+          ]
+        },
+        "山麓地区": {
+          "resident_count": 65432,
+          "data_files": [
+            "districts/minami-sakura-mountain-001.json"
+          ]
+        },
+        "観光商業地区": {
+          "resident_count": 44892,
+          "data_files": [
+            "districts/minami-sakura-commercial-001.json"
+          ]
+        }
+      }
+    },
+    "北桜市": {
+      "total_residents": 541136,
+      "districts": {
+        "農業地区": {
+          "resident_count": 187654,
+          "data_files": [
+            "districts/kita-sakura-agricultural-001.json",
+            "districts/kita-sakura-agricultural-002.json"
+          ]
+        },
+        "産業団地": {
+          "resident_count": 123456,
+          "data_files": [
+            "districts/kita-sakura-industrial-001.json"
+          ]
+        },
+        "新興住宅地": {
+          "resident_count": 154321,
+          "data_files": [
+            "districts/kita-sakura-residential-001.json",
+            "districts/kita-sakura-residential-002.json"
+          ]
+        },
+        "自然公園地区": {
+          "resident_count": 75705,
+          "data_files": [
+            "districts/kita-sakura-park-001.json"
+          ]
+        }
+      }
+    }
+  },
+  "family_name_index": {
+    "common_names": [
+      { "family_name": "佐藤", "count": 89234, "percentage": 3.12 },
+      { "family_name": "鈴木", "count": 87654, "percentage": 3.07 },
+      { "family_name": "高橋", "count": 76543, "percentage": 2.68 },
+      { "family_name": "田中", "count": 74321, "percentage": 2.60 },
+      { "family_name": "渡辺", "count": 69876, "percentage": 2.45 },
+      { "family_name": "伊藤", "count": 65432, "percentage": 2.29 },
+      { "family_name": "山本", "count": 62345, "percentage": 2.18 },
+      { "family_name": "中村", "count": 58765, "percentage": 2.06 },
+      { "family_name": "小林", "count": 56789, "percentage": 1.99 },
+      { "family_name": "加藤", "count": 54321, "percentage": 1.90 },
+      { "family_name": "桜田", "count": 23456, "percentage": 0.82 },
+      { "family_name": "桜井", "count": 21234, "percentage": 0.74 },
+      { "family_name": "桜木", "count": 19876, "percentage": 0.70 },
+      { "family_name": "桜沢", "count": 18765, "percentage": 0.66 },
+      { "family_name": "桜庭", "count": 17654, "percentage": 0.62 }
+    ]
+  },
+  "age_group_index": {
+    "groups": [
+      { "age_range": "0-4歳", "resident_count": 108234, "male_count": 55520, "female_count": 52714 },
+      { "age_range": "5-9歳", "resident_count": 118965, "male_count": 60972, "female_count": 57993 },
+      { "age_range": "10-14歳", "resident_count": 135719, "male_count": 69546, "female_count": 66173 },
+      { "age_range": "15-19歳", "resident_count": 142856, "male_count": 73145, "female_count": 69711 },
+      { "age_range": "20-24歳", "resident_count": 165432, "male_count": 85123, "female_count": 80309 },
+      { "age_range": "25-29歳", "resident_count": 178654, "male_count": 91456, "female_count": 87198 },
+      { "age_range": "30-34歳", "resident_count": 189234, "male_count": 96543, "female_count": 92691 },
+      { "age_range": "35-39歳", "resident_count": 198765, "male_count": 100876, "female_count": 97889 },
+      { "age_range": "40-44歳", "resident_count": 224567, "male_count": 113234, "female_count": 111333 },
+      { "age_range": "45-49歳", "resident_count": 212345, "male_count": 106789, "female_count": 105556 },
+      { "age_range": "50-54歳", "resident_count": 189234, "male_count": 94567, "female_count": 94667 },
+      { "age_range": "55-59歳", "resident_count": 176543, "male_count": 87654, "female_count": 88889 },
+      { "age_range": "60-64歳", "resident_count": 168234, "male_count": 82765, "female_count": 85469 },
+      { "age_range": "65-69歳", "resident_count": 201234, "male_count": 97654, "female_count": 103580 },
+      { "age_range": "70-74歳", "resident_count": 189765, "male_count": 89234, "female_count": 100531 },
+      { "age_range": "75-79歳", "resident_count": 156432, "male_count": 71234, "female_count": 85198 },
+      { "age_range": "80-84歳", "resident_count": 98765, "male_count": 42345, "female_count": 56420 },
+      { "age_range": "85-89歳", "resident_count": 54321, "male_count": 21234, "female_count": 33087 },
+      { "age_range": "90歳以上", "resident_count": 15002, "male_count": 4924, "female_count": 10078 }
+    ]
+  },
+  "occupation_index": {
+    "会社員": {
+      "count": 856234,
+      "percentage": 30.0,
+      "average_age": 42.3,
+      "gender_ratio": { "male": 58.5, "female": 41.5 }
+    },
+    "公務員": {
+      "count": 142345,
+      "percentage": 5.0,
+      "average_age": 44.7,
+      "gender_ratio": { "male": 62.3, "female": 37.7 }
+    },
+    "自営業": {
+      "count": 199876,
+      "percentage": 7.0,
+      "average_age": 52.1,
+      "gender_ratio": { "male": 67.8, "female": 32.2 }
+    },
+    "農業": {
+      "count": 85432,
+      "percentage": 3.0,
+      "average_age": 58.9,
+      "gender_ratio": { "male": 71.2, "female": 28.8 }
+    },
+    "漁業": {
+      "count": 28543,
+      "percentage": 1.0,
+      "average_age": 54.3,
+      "gender_ratio": { "male": 85.6, "female": 14.4 }
+    },
+    "医療従事者": {
+      "count": 71234,
+      "percentage": 2.5,
+      "average_age": 38.7,
+      "gender_ratio": { "male": 28.9, "female": 71.1 }
+    },
+    "教育関係者": {
+      "count": 85678,
+      "percentage": 3.0,
+      "average_age": 41.2,
+      "gender_ratio": { "male": 35.4, "female": 64.6 }
+    },
+    "サービス業": {
+      "count": 256789,
+      "percentage": 9.0,
+      "average_age": 36.8,
+      "gender_ratio": { "male": 42.1, "female": 57.9 }
+    },
+    "IT関連": {
+      "count": 114234,
+      "percentage": 4.0,
+      "average_age": 34.2,
+      "gender_ratio": { "male": 73.4, "female": 26.6 }
+    },
+    "学生": {
+      "count": 342567,
+      "percentage": 12.0,
+      "average_age": 16.8,
+      "gender_ratio": { "male": 51.2, "female": 48.8 }
+    },
+    "主婦・主夫": {
+      "count": 285432,
+      "percentage": 10.0,
+      "average_age": 45.6,
+      "gender_ratio": { "male": 2.3, "female": 97.7 }
+    },
+    "無職": {
+      "count": 485678,
+      "percentage": 17.0,
+      "average_age": 68.9,
+      "gender_ratio": { "male": 45.6, "female": 54.4 }
+    }
+  },
+  "household_index": {
+    "total_households": 1198563,
+    "by_type": {
+      "単独世帯": 456234,
+      "夫婦のみ世帯": 298765,
+      "夫婦と子供世帯": 312456,
+      "ひとり親と子供世帯": 78234,
+      "三世代世帯": 32456,
+      "その他の世帯": 20418
+    },
+    "by_size": {
+      "single": 456234,
+      "two_members": 387654,
+      "three_members": 198765,
+      "four_members": 123456,
+      "five_or_more": 32454
+    }
+  },
+  "data_file_manifest": [
+    {
+      "file_id": "SKC-001",
+      "file_path": "districts/sakura-ka-central-001.json",
+      "city": "桜花市",
+      "district": "中央地区",
+      "resident_count": 89,
+      "household_count": 35,
+      "created_date": "2025-01-13",
+      "file_size": 28456,
+      "checksum": "a1b2c3d4e5f6"
+    }
+  ],
+  "search_indices": {
+    "phonetic_index": {
+      "description": "カナ読みによる高速検索用インデックス"
+    },
+    "birth_year_index": {
+      "description": "生年による年齢層検索用インデックス"
+    },
+    "postal_code_index": {
+      "description": "郵便番号による地域検索用インデックス"
+    }
+  },
+  "statistics_summary": {
+    "last_updated": "2025-01-13T00:00:00Z",
+    "total_residents": 2854327,
+    "total_households": 1198563,
+    "average_household_size": 2.38,
+    "gender_ratio": {
+      "male": 49.4,
+      "female": 50.6
+    }
+  },
+  "metadata": {
+    "created_at": "2025-01-13T00:00:00Z",
+    "updated_at": "2025-01-13T00:00:00Z",
+    "data_version": "1.0.0",
+    "index_type": "master",
+    "coverage": "全県"
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "family_id": "F001",
+  "family_name": "桜田家",
+  "origin": {
+    "prefecture": "桜県",
+    "city": "桜花市",
+    "district": "西地区",
+    "established_year": 1890,
+    "notes": "明治時代より桜花市に定住。代々地域の発展に貢献。"
+  },
+  "generations": [
+    {
+      "generation": 1,
+      "period": "1890-1920",
+      "members": [
+        {
+          "name": "桜田権兵衛",
+          "birth_year": 1865,
+          "death_year": 1935,
+          "occupation": "農業・地主",
+          "spouse": {
+            "name": "桜田とめ",
+            "birth_year": 1868,
+            "death_year": 1940,
+            "maiden_name": "山田"
+          },
+          "children": ["桜田源太郎", "桜田きよ", "桜田次郎"]
+        }
+      ]
+    },
+    {
+      "generation": 2,
+      "period": "1920-1950",
+      "members": [
+        {
+          "name": "桜田源太郎",
+          "birth_year": 1895,
+          "death_year": 1970,
+          "occupation": "商店経営",
+          "spouse": {
+            "name": "桜田はる",
+            "birth_year": 1900,
+            "death_year": 1975,
+            "maiden_name": "佐藤"
+          },
+          "children": ["桜田正男", "桜田洋子", "桜田健一"]
+        },
+        {
+          "name": "桜田きよ",
+          "birth_year": 1898,
+          "death_year": 1980,
+          "occupation": "主婦",
+          "married_out": true,
+          "married_to": "田中家"
+        },
+        {
+          "name": "桜田次郎",
+          "birth_year": 1902,
+          "death_year": 1985,
+          "occupation": "教員",
+          "spouse": {
+            "name": "桜田みつ",
+            "birth_year": 1905,
+            "death_year": 1990,
+            "maiden_name": "鈴木"
+          },
+          "children": ["桜田太郎", "桜田良子"]
+        }
+      ]
+    },
+    {
+      "generation": 3,
+      "period": "1950-1980",
+      "members": [
+        {
+          "name": "桜田正男",
+          "birth_year": 1925,
+          "death_year": 2000,
+          "occupation": "会社員",
+          "spouse": {
+            "name": "桜田節子",
+            "birth_year": 1928,
+            "death_year": 2005,
+            "maiden_name": "高橋"
+          },
+          "children": ["桜田浩司", "桜田美智子"]
+        },
+        {
+          "name": "桜田太郎",
+          "birth_year": 1930,
+          "death_year": 2010,
+          "occupation": "県庁職員",
+          "spouse": {
+            "name": "桜田幸子",
+            "birth_year": 1935,
+            "death_year": 2015,
+            "maiden_name": "小林"
+          },
+          "children": ["桜田一郎", "桜田二郎", "桜田さゆり"],
+          "resident_id": "280100000001"
+        }
+      ]
+    },
+    {
+      "generation": 4,
+      "period": "1980-2010",
+      "members": [
+        {
+          "name": "桜田一郎",
+          "birth_year": 1978,
+          "occupation": "会社員（桜電機株式会社）",
+          "spouse": {
+            "name": "桜田花子",
+            "birth_year": 1980,
+            "maiden_name": "花田"
+          },
+          "children": ["桜田太郎", "桜田美咲"],
+          "resident_id": "280100000101"
+        },
+        {
+          "name": "桜田二郎",
+          "birth_year": 1980,
+          "occupation": "医師",
+          "spouse": {
+            "name": "桜田理恵",
+            "birth_year": 1982,
+            "maiden_name": "渡辺"
+          },
+          "children": ["桜田健太", "桜田あい"],
+          "residence": "東京都"
+        },
+        {
+          "name": "桜田さゆり",
+          "birth_year": 1983,
+          "occupation": "教員",
+          "married_out": true,
+          "married_to": "中村家",
+          "residence": "桜県北桜市"
+        }
+      ]
+    },
+    {
+      "generation": 5,
+      "period": "2010-現在",
+      "members": [
+        {
+          "name": "桜田太郎",
+          "birth_year": 2010,
+          "occupation": "中学生",
+          "parents": {
+            "father": "桜田一郎",
+            "mother": "桜田花子"
+          },
+          "resident_id": "280100000103"
+        },
+        {
+          "name": "桜田美咲",
+          "birth_year": 2013,
+          "occupation": "小学生",
+          "parents": {
+            "father": "桜田一郎",
+            "mother": "桜田花子"
+          },
+          "resident_id": "280100000104"
+        },
+        {
+          "name": "桜田健太",
+          "birth_year": 2012,
+          "occupation": "小学生",
+          "parents": {
+            "father": "桜田二郎",
+            "mother": "桜田理恵"
+          },
+          "residence": "東京都"
+        },
+        {
+          "name": "桜田あい",
+          "birth_year": 2015,
+          "occupation": "幼稚園児",
+          "parents": {
+            "father": "桜田二郎",
+            "mother": "桜田理恵"
+          },
+          "residence": "東京都"
+        }
+      ]
+    }
+  ],
+  "family_assets": {
+    "ancestral_home": {
+      "location": "桜花市西地区2-3-4",
+      "built_year": 1920,
+      "current_owner": "桜田浩司（分家）",
+      "status": "保存状態良好"
+    },
+    "family_grave": {
+      "location": "桜花市営墓地",
+      "established": 1900
+    },
+    "family_shrine": {
+      "deity": "桜神社",
+      "location": "桜花市中央地区"
+    }
+  },
+  "family_traditions": {
+    "annual_gatherings": [
+      {
+        "event": "正月",
+        "location": "本家または長男宅",
+        "participants": "全家族"
+      },
+      {
+        "event": "お盆",
+        "location": "本家",
+        "activities": ["墓参り", "法要"]
+      },
+      {
+        "event": "桜祭り",
+        "location": "桜神社",
+        "role": "祭りの世話役を代々務める"
+      }
+    ],
+    "heirlooms": [
+      {
+        "item": "家紋入り着物",
+        "age": "江戸時代後期",
+        "keeper": "長男家"
+      },
+      {
+        "item": "先祖の書",
+        "description": "初代権兵衛の書いた家訓",
+        "keeper": "本家"
+      }
+    ]
+  },
+  "notable_achievements": [
+    {
+      "person": "桜田権兵衛",
+      "achievement": "明治時代の地域開発に貢献",
+      "year": 1905
+    },
+    {
+      "person": "桜田源太郎",
+      "achievement": "戦後の商店街復興に尽力",
+      "year": 1946
+    },
+    {
+      "person": "桜田太郎",
+      "achievement": "県庁部長として地域振興政策を推進",
+      "year": 1985
+    },
+    {
+      "person": "桜田一郎",
+      "achievement": "桜電機にて営業成績優秀賞受賞",
+      "year": 2020
+    }
+  ],
+  "family_connections": {
+    "related_families": [
+      {
+        "family_name": "花田家",
+        "connection": "桜田一郎の妻の実家",
+        "location": "東京都"
+      },
+      {
+        "family_name": "田中家",
+        "connection": "桜田きよ嫁ぎ先",
+        "location": "桜県桜川市"
+      },
+      {
+        "family_name": "中村家",
+        "connection": "桜田さゆり嫁ぎ先",
+        "location": "桜県北桜市"
+      }
+    ],
+    "business_connections": [
+      {
+        "company": "桜電機株式会社",
+        "connection": "一郎勤務先",
+        "since": 2000
+      },
+      {
+        "organization": "桜県庁",
+        "connection": "太郎（3代目）勤務先",
+        "period": "1955-1990"
+      }
+    ]
+  },
+  "metadata": {
+    "compiled_date": "2025-01-13",
+    "compiler": "桜県住民データベースシステム",
+    "sources": ["戸籍", "住民基本台帳", "家族聞き取り調査"],
+    "last_updated": "2025-01-13",
+    "data_version": "1.0.0"
+  }
+}

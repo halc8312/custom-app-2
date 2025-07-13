@@ -1,0 +1,278 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "桜県職業詳細スキーマ",
+  "description": "桜県の職業分類と詳細情報のスキーマ",
+  "type": "object",
+  "properties": {
+    "occupation_categories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category_id": {
+            "type": "string",
+            "description": "職業分類ID"
+          },
+          "category_name": {
+            "type": "string",
+            "description": "職業分類名"
+          },
+          "subcategories": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "subcategory_id": {
+                  "type": "string"
+                },
+                "subcategory_name": {
+                  "type": "string"
+                },
+                "typical_positions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "典型的な職位・役職"
+                },
+                "required_qualifications": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "必要な資格・免許"
+                },
+                "average_income_range": {
+                  "type": "object",
+                  "properties": {
+                    "min": {
+                      "type": "integer"
+                    },
+                    "max": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "major_employers": {
+      "type": "array",
+      "description": "主要雇用主リスト",
+      "items": {
+        "type": "object",
+        "properties": {
+          "employer_id": {
+            "type": "string"
+          },
+          "company_name": {
+            "type": "string"
+          },
+          "industry": {
+            "type": "string"
+          },
+          "employee_count": {
+            "type": "integer"
+          },
+          "locations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "city": {
+                  "type": "string"
+                },
+                "district": {
+                  "type": "string"
+                },
+                "facility_type": {
+                  "type": "string",
+                  "enum": ["本社", "支社", "工場", "研究所", "営業所", "店舗", "その他"]
+                }
+              }
+            }
+          },
+          "departments": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "department_name": {
+                  "type": "string"
+                },
+                "typical_positions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "self_employment_types": {
+      "type": "array",
+      "description": "自営業種別",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type_id": {
+            "type": "string"
+          },
+          "type_name": {
+            "type": "string"
+          },
+          "common_businesses": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "required_licenses": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "agricultural_occupations": {
+      "type": "object",
+      "description": "農業関連職業",
+      "properties": {
+        "farming_types": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["稲作", "野菜", "果樹", "花卉", "畜産", "その他"]
+              },
+              "specialties": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "typical_scale": {
+                "type": "string",
+                "description": "典型的な経営規模"
+              }
+            }
+          }
+        }
+      }
+    },
+    "traditional_occupations": {
+      "type": "array",
+      "description": "伝統的職業",
+      "items": {
+        "type": "object",
+        "properties": {
+          "occupation_name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "apprenticeship_period": {
+            "type": "string"
+          },
+          "certification_body": {
+            "type": "string"
+          },
+          "estimated_practitioners": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "modern_tech_occupations": {
+      "type": "array",
+      "description": "現代技術関連職業",
+      "items": {
+        "type": "object",
+        "properties": {
+          "field": {
+            "type": "string",
+            "enum": ["IT", "AI・機械学習", "ロボティクス", "バイオテクノロジー", "環境技術", "その他"]
+          },
+          "positions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "position_name": {
+                  "type": "string"
+                },
+                "required_skills": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "typical_education": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "public_sector_positions": {
+      "type": "object",
+      "description": "公務員職",
+      "properties": {
+        "prefectural_government": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "department": {
+                "type": "string"
+              },
+              "positions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "city_government": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "city": {
+                "type": "string"
+              },
+              "departments": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "special_positions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "特別職（警察、消防、教員等）"
+        }
+      }
+    }
+  }
+}

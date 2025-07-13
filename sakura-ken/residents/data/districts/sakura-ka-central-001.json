@@ -1,0 +1,832 @@
+{
+  "district_info": {
+    "city": "桜花市",
+    "district": "中央地区",
+    "file_id": "SKC-001",
+    "total_residents": 89,
+    "total_households": 35
+  },
+  "households": [
+    {
+      "household_id": "2801000001",
+      "household_type": "夫婦と子供世帯",
+      "head_of_household": "280100000101",
+      "members": [
+        {
+          "resident_id": "280100000101",
+          "relationship_to_head": "世帯主",
+          "is_dependent": false
+        },
+        {
+          "resident_id": "280100000102",
+          "relationship_to_head": "配偶者",
+          "is_dependent": false
+        },
+        {
+          "resident_id": "280100000103",
+          "relationship_to_head": "子",
+          "is_dependent": true
+        },
+        {
+          "resident_id": "280100000104",
+          "relationship_to_head": "子",
+          "is_dependent": true
+        }
+      ],
+      "address": {
+        "postal_code": "280-0001",
+        "prefecture": "桜県",
+        "city": "桜花市",
+        "district": "中央地区",
+        "block": "1丁目1番1号",
+        "building": ""
+      },
+      "housing_info": {
+        "housing_type": "一戸建て",
+        "ownership": "持ち家",
+        "floor_area": 120.5,
+        "rooms": 4,
+        "construction_year": 2010
+      },
+      "economic_info": {
+        "household_income": "800-1000万円",
+        "income_sources": [
+          {
+            "source_type": "給与",
+            "contributor_id": "280100000101"
+          },
+          {
+            "source_type": "給与",
+            "contributor_id": "280100000102"
+          }
+        ],
+        "car_ownership": 2
+      },
+      "welfare_status": {
+        "receiving_welfare": false,
+        "elderly_care_needed": false,
+        "child_allowance": true,
+        "disability_support": false
+      },
+      "household_formation": {
+        "formation_date": "2008-10-15",
+        "formation_reason": "婚姻"
+      }
+    },
+    {
+      "household_id": "2801000002",
+      "household_type": "単独世帯",
+      "head_of_household": "280100000201",
+      "members": [
+        {
+          "resident_id": "280100000201",
+          "relationship_to_head": "世帯主",
+          "is_dependent": false
+        }
+      ],
+      "address": {
+        "postal_code": "280-0001",
+        "prefecture": "桜県",
+        "city": "桜花市",
+        "district": "中央地区",
+        "block": "1丁目2番3号",
+        "building": "桜マンション301号"
+      },
+      "housing_info": {
+        "housing_type": "マンション",
+        "ownership": "賃貸",
+        "floor_area": 45.2,
+        "rooms": 1,
+        "rent": 85000,
+        "construction_year": 2018
+      },
+      "economic_info": {
+        "household_income": "400-600万円",
+        "income_sources": [
+          {
+            "source_type": "給与",
+            "contributor_id": "280100000201"
+          }
+        ],
+        "car_ownership": 0
+      },
+      "welfare_status": {
+        "receiving_welfare": false,
+        "elderly_care_needed": false,
+        "child_allowance": false,
+        "disability_support": false
+      },
+      "household_formation": {
+        "formation_date": "2022-04-01",
+        "formation_reason": "独立"
+      }
+    },
+    {
+      "household_id": "2801000003",
+      "household_type": "高齢夫婦世帯",
+      "head_of_household": "280100000301",
+      "members": [
+        {
+          "resident_id": "280100000301",
+          "relationship_to_head": "世帯主",
+          "is_dependent": false
+        },
+        {
+          "resident_id": "280100000302",
+          "relationship_to_head": "配偶者",
+          "is_dependent": false
+        }
+      ],
+      "address": {
+        "postal_code": "280-0001",
+        "prefecture": "桜県",
+        "city": "桜花市",
+        "district": "中央地区",
+        "block": "2丁目5番7号",
+        "building": ""
+      },
+      "housing_info": {
+        "housing_type": "一戸建て",
+        "ownership": "持ち家",
+        "floor_area": 98.3,
+        "rooms": 3,
+        "construction_year": 1985
+      },
+      "economic_info": {
+        "household_income": "200-400万円",
+        "income_sources": [
+          {
+            "source_type": "年金",
+            "contributor_id": "280100000301"
+          },
+          {
+            "source_type": "年金",
+            "contributor_id": "280100000302"
+          }
+        ],
+        "car_ownership": 1
+      },
+      "welfare_status": {
+        "receiving_welfare": false,
+        "elderly_care_needed": false,
+        "child_allowance": false,
+        "disability_support": false
+      },
+      "household_formation": {
+        "formation_date": "1970-06-20",
+        "formation_reason": "婚姻"
+      }
+    }
+  ],
+  "residents": [
+    {
+      "resident_id": "280100000101",
+      "basic_info": {
+        "family_name": "桜田",
+        "given_name": "一郎",
+        "family_name_kana": "サクラダ",
+        "given_name_kana": "イチロウ",
+        "gender": "男性",
+        "birth_date": "1978-03-15",
+        "birthplace": "桜県桜花市",
+        "nationality": "日本",
+        "blood_type": "A"
+      },
+      "residence_record": {
+        "household_id": "2801000001",
+        "relationship": "世帯主",
+        "current_address": {
+          "postal_code": "280-0001",
+          "prefecture": "桜県",
+          "city": "桜花市",
+          "district": "中央地区",
+          "block": "1丁目1番1号",
+          "building": ""
+        },
+        "move_in_date": "2008-10-15",
+        "previous_address": {
+          "prefecture": "桜県",
+          "city": "桜花市",
+          "address": "東地区3丁目"
+        },
+        "residence_history": [
+          {
+            "from_date": "1978-03-15",
+            "to_date": "2000-03-31",
+            "address": {
+              "prefecture": "桜県",
+              "city": "桜花市",
+              "district": "西地区"
+            },
+            "reason": "出生"
+          },
+          {
+            "from_date": "2000-04-01",
+            "to_date": "2008-10-14",
+            "address": {
+              "prefecture": "桜県",
+              "city": "桜花市",
+              "district": "東地区"
+            },
+            "reason": "就職"
+          }
+        ]
+      },
+      "family_register": {
+        "register_number": "桜花-0012345",
+        "permanent_address": {
+          "prefecture": "桜県",
+          "city": "桜花市",
+          "address": "中央地区1丁目1番1号"
+        },
+        "head_of_register": "280100000101",
+        "father_id": "280100000001",
+        "mother_id": "280100000002",
+        "spouse_id": "280100000102",
+        "marriage_date": "2008-10-15",
+        "children_ids": ["280100000103", "280100000104"],
+        "siblings_ids": []
+      },
+      "occupation_info": {
+        "occupation_category": "会社員",
+        "occupation_detail": "営業部課長",
+        "employer": {
+          "company_name": "桜電機株式会社",
+          "department": "営業部",
+          "position": "課長",
+          "employment_type": "正社員",
+          "work_location": {
+            "city": "桜川市",
+            "district": "工業地区"
+          },
+          "employment_date": "2000-04-01"
+        },
+        "income_bracket": "600-800万円",
+        "education": {
+          "highest_degree": "大学卒",
+          "school_name": "桜県立大学",
+          "major": "経営学部",
+          "graduation_year": 2000
+        }
+      },
+      "personal_attributes": {
+        "hobbies": ["ゴルフ", "読書", "料理"],
+        "skills": ["普通自動車免許", "TOEIC 750点", "簿記2級"],
+        "health_status": "良好",
+        "disability_status": {
+          "has_disability": false
+        }
+      },
+      "metadata": {
+        "created_at": "2025-01-13T00:00:00Z",
+        "updated_at": "2025-01-13T00:00:00Z",
+        "data_version": "1.0.0"
+      }
+    },
+    {
+      "resident_id": "280100000102",
+      "basic_info": {
+        "family_name": "桜田",
+        "given_name": "花子",
+        "family_name_kana": "サクラダ",
+        "given_name_kana": "ハナコ",
+        "gender": "女性",
+        "birth_date": "1980-07-22",
+        "birthplace": "東京都",
+        "nationality": "日本",
+        "blood_type": "O"
+      },
+      "residence_record": {
+        "household_id": "2801000001",
+        "relationship": "配偶者",
+        "current_address": {
+          "postal_code": "280-0001",
+          "prefecture": "桜県",
+          "city": "桜花市",
+          "district": "中央地区",
+          "block": "1丁目1番1号",
+          "building": ""
+        },
+        "move_in_date": "2008-10-15",
+        "previous_address": {
+          "prefecture": "東京都",
+          "city": "世田谷区",
+          "address": "三軒茶屋"
+        },
+        "residence_history": [
+          {
+            "from_date": "1980-07-22",
+            "to_date": "2002-03-31",
+            "address": {
+              "prefecture": "東京都",
+              "city": "世田谷区"
+            },
+            "reason": "出生"
+          },
+          {
+            "from_date": "2002-04-01",
+            "to_date": "2008-10-14",
+            "address": {
+              "prefecture": "東京都",
+              "city": "渋谷区"
+            },
+            "reason": "就職"
+          }
+        ]
+      },
+      "family_register": {
+        "register_number": "桜花-0012345",
+        "permanent_address": {
+          "prefecture": "桜県",
+          "city": "桜花市",
+          "address": "中央地区1丁目1番1号"
+        },
+        "head_of_register": "280100000101",
+        "father_id": "130000000001",
+        "mother_id": "130000000002",
+        "spouse_id": "280100000101",
+        "marriage_date": "2008-10-15",
+        "children_ids": ["280100000103", "280100000104"],
+        "siblings_ids": ["130000000003"]
+      },
+      "occupation_info": {
+        "occupation_category": "会社員",
+        "occupation_detail": "人事部主任",
+        "employer": {
+          "company_name": "桜花市役所",
+          "department": "総務部人事課",
+          "position": "主任",
+          "employment_type": "正社員",
+          "work_location": {
+            "city": "桜花市",
+            "district": "中央地区"
+          },
+          "employment_date": "2009-04-01"
+        },
+        "income_bracket": "400-600万円",
+        "education": {
+          "highest_degree": "大学卒",
+          "school_name": "慶應義塾大学",
+          "major": "文学部",
+          "graduation_year": 2002
+        }
+      },
+      "personal_attributes": {
+        "hobbies": ["ヨガ", "園芸", "旅行"],
+        "skills": ["普通自動車免許", "社会保険労務士", "秘書検定1級"],
+        "health_status": "良好",
+        "disability_status": {
+          "has_disability": false
+        }
+      },
+      "metadata": {
+        "created_at": "2025-01-13T00:00:00Z",
+        "updated_at": "2025-01-13T00:00:00Z",
+        "data_version": "1.0.0"
+      }
+    },
+    {
+      "resident_id": "280100000103",
+      "basic_info": {
+        "family_name": "桜田",
+        "given_name": "太郎",
+        "family_name_kana": "サクラダ",
+        "given_name_kana": "タロウ",
+        "gender": "男性",
+        "birth_date": "2010-09-05",
+        "birthplace": "桜県桜花市",
+        "nationality": "日本",
+        "blood_type": "A"
+      },
+      "residence_record": {
+        "household_id": "2801000001",
+        "relationship": "子",
+        "current_address": {
+          "postal_code": "280-0001",
+          "prefecture": "桜県",
+          "city": "桜花市",
+          "district": "中央地区",
+          "block": "1丁目1番1号",
+          "building": ""
+        },
+        "move_in_date": "2010-09-05",
+        "previous_address": null,
+        "residence_history": []
+      },
+      "family_register": {
+        "register_number": "桜花-0012345",
+        "permanent_address": {
+          "prefecture": "桜県",
+          "city": "桜花市",
+          "address": "中央地区1丁目1番1号"
+        },
+        "head_of_register": "280100000101",
+        "father_id": "280100000101",
+        "mother_id": "280100000102",
+        "spouse_id": null,
+        "children_ids": [],
+        "siblings_ids": ["280100000104"]
+      },
+      "occupation_info": {
+        "occupation_category": "学生",
+        "occupation_detail": "中学3年生",
+        "employer": {
+          "company_name": "桜花市立中央中学校",
+          "department": "3年2組",
+          "position": "生徒",
+          "employment_type": "学生",
+          "work_location": {
+            "city": "桜花市",
+            "district": "中央地区"
+          },
+          "employment_date": "2023-04-01"
+        },
+        "income_bracket": "200万円未満",
+        "education": {
+          "highest_degree": "中学校在学中",
+          "school_name": "桜花市立中央中学校",
+          "major": "",
+          "graduation_year": 2026
+        }
+      },
+      "personal_attributes": {
+        "hobbies": ["サッカー", "ゲーム", "プログラミング"],
+        "skills": ["英検3級"],
+        "health_status": "良好",
+        "disability_status": {
+          "has_disability": false
+        }
+      },
+      "metadata": {
+        "created_at": "2025-01-13T00:00:00Z",
+        "updated_at": "2025-01-13T00:00:00Z",
+        "data_version": "1.0.0"
+      }
+    },
+    {
+      "resident_id": "280100000104",
+      "basic_info": {
+        "family_name": "桜田",
+        "given_name": "美咲",
+        "family_name_kana": "サクラダ",
+        "given_name_kana": "ミサキ",
+        "gender": "女性",
+        "birth_date": "2013-04-12",
+        "birthplace": "桜県桜花市",
+        "nationality": "日本",
+        "blood_type": "O"
+      },
+      "residence_record": {
+        "household_id": "2801000001",
+        "relationship": "子",
+        "current_address": {
+          "postal_code": "280-0001",
+          "prefecture": "桜県",
+          "city": "桜花市",
+          "district": "中央地区",
+          "block": "1丁目1番1号",
+          "building": ""
+        },
+        "move_in_date": "2013-04-12",
+        "previous_address": null,
+        "residence_history": []
+      },
+      "family_register": {
+        "register_number": "桜花-0012345",
+        "permanent_address": {
+          "prefecture": "桜県",
+          "city": "桜花市",
+          "address": "中央地区1丁目1番1号"
+        },
+        "head_of_register": "280100000101",
+        "father_id": "280100000101",
+        "mother_id": "280100000102",
+        "spouse_id": null,
+        "children_ids": [],
+        "siblings_ids": ["280100000103"]
+      },
+      "occupation_info": {
+        "occupation_category": "学生",
+        "occupation_detail": "小学6年生",
+        "employer": {
+          "company_name": "桜花市立中央小学校",
+          "department": "6年1組",
+          "position": "児童",
+          "employment_type": "学生",
+          "work_location": {
+            "city": "桜花市",
+            "district": "中央地区"
+          },
+          "employment_date": "2019-04-01"
+        },
+        "income_bracket": "200万円未満",
+        "education": {
+          "highest_degree": "小学校在学中",
+          "school_name": "桜花市立中央小学校",
+          "major": "",
+          "graduation_year": 2025
+        }
+      },
+      "personal_attributes": {
+        "hobbies": ["ピアノ", "読書", "絵画"],
+        "skills": ["そろばん3級", "ピアノグレード6級"],
+        "health_status": "良好",
+        "disability_status": {
+          "has_disability": false
+        }
+      },
+      "metadata": {
+        "created_at": "2025-01-13T00:00:00Z",
+        "updated_at": "2025-01-13T00:00:00Z",
+        "data_version": "1.0.0"
+      }
+    },
+    {
+      "resident_id": "280100000201",
+      "basic_info": {
+        "family_name": "山田",
+        "given_name": "健太",
+        "family_name_kana": "ヤマダ",
+        "given_name_kana": "ケンタ",
+        "gender": "男性",
+        "birth_date": "1995-11-28",
+        "birthplace": "大阪府",
+        "nationality": "日本",
+        "blood_type": "B"
+      },
+      "residence_record": {
+        "household_id": "2801000002",
+        "relationship": "世帯主",
+        "current_address": {
+          "postal_code": "280-0001",
+          "prefecture": "桜県",
+          "city": "桜花市",
+          "district": "中央地区",
+          "block": "1丁目2番3号",
+          "building": "桜マンション301号"
+        },
+        "move_in_date": "2022-04-01",
+        "previous_address": {
+          "prefecture": "大阪府",
+          "city": "大阪市",
+          "address": "北区"
+        },
+        "residence_history": [
+          {
+            "from_date": "1995-11-28",
+            "to_date": "2018-03-31",
+            "address": {
+              "prefecture": "大阪府",
+              "city": "豊中市"
+            },
+            "reason": "出生"
+          },
+          {
+            "from_date": "2018-04-01",
+            "to_date": "2022-03-31",
+            "address": {
+              "prefecture": "大阪府",
+              "city": "大阪市",
+              "district": "北区"
+            },
+            "reason": "就職"
+          }
+        ]
+      },
+      "family_register": {
+        "register_number": "大阪-0098765",
+        "permanent_address": {
+          "prefecture": "大阪府",
+          "city": "豊中市",
+          "address": "千里中央"
+        },
+        "head_of_register": "270000000001",
+        "father_id": "270000000001",
+        "mother_id": "270000000002",
+        "spouse_id": null,
+        "children_ids": [],
+        "siblings_ids": ["270000000003"]
+      },
+      "occupation_info": {
+        "occupation_category": "IT関連",
+        "occupation_detail": "Webエンジニア",
+        "employer": {
+          "company_name": "桜テック株式会社",
+          "department": "開発部",
+          "position": "エンジニア",
+          "employment_type": "正社員",
+          "work_location": {
+            "city": "東桜市",
+            "district": "ITパーク"
+          },
+          "employment_date": "2022-04-01"
+        },
+        "income_bracket": "400-600万円",
+        "education": {
+          "highest_degree": "大学卒",
+          "school_name": "大阪大学",
+          "major": "工学部情報科学科",
+          "graduation_year": 2018
+        }
+      },
+      "personal_attributes": {
+        "hobbies": ["プログラミング", "アニメ", "ジョギング"],
+        "skills": ["普通自動車免許", "基本情報技術者", "AWS認定"],
+        "health_status": "良好",
+        "disability_status": {
+          "has_disability": false
+        }
+      },
+      "metadata": {
+        "created_at": "2025-01-13T00:00:00Z",
+        "updated_at": "2025-01-13T00:00:00Z",
+        "data_version": "1.0.0"
+      }
+    },
+    {
+      "resident_id": "280100000301",
+      "basic_info": {
+        "family_name": "鈴木",
+        "given_name": "正夫",
+        "family_name_kana": "スズキ",
+        "given_name_kana": "マサオ",
+        "gender": "男性",
+        "birth_date": "1948-12-03",
+        "birthplace": "桜県桜花市",
+        "nationality": "日本",
+        "blood_type": "AB"
+      },
+      "residence_record": {
+        "household_id": "2801000003",
+        "relationship": "世帯主",
+        "current_address": {
+          "postal_code": "280-0001",
+          "prefecture": "桜県",
+          "city": "桜花市",
+          "district": "中央地区",
+          "block": "2丁目5番7号",
+          "building": ""
+        },
+        "move_in_date": "1970-06-20",
+        "previous_address": {
+          "prefecture": "桜県",
+          "city": "桜花市",
+          "address": "南地区"
+        },
+        "residence_history": [
+          {
+            "from_date": "1948-12-03",
+            "to_date": "1970-06-19",
+            "address": {
+              "prefecture": "桜県",
+              "city": "桜花市",
+              "district": "南地区"
+            },
+            "reason": "出生"
+          }
+        ]
+      },
+      "family_register": {
+        "register_number": "桜花-0001234",
+        "permanent_address": {
+          "prefecture": "桜県",
+          "city": "桜花市",
+          "address": "中央地区2丁目5番7号"
+        },
+        "head_of_register": "280100000301",
+        "father_id": "280000000001",
+        "mother_id": "280000000002",
+        "spouse_id": "280100000302",
+        "marriage_date": "1970-06-20",
+        "children_ids": ["280100000401", "280100000402"],
+        "siblings_ids": ["280000000003"]
+      },
+      "occupation_info": {
+        "occupation_category": "無職",
+        "occupation_detail": "定年退職者",
+        "employer": {
+          "company_name": "元桜県庁職員",
+          "department": "退職",
+          "position": "元部長",
+          "employment_type": "退職",
+          "work_location": {
+            "city": "桜花市",
+            "district": "中央地区"
+          },
+          "employment_date": "1971-04-01"
+        },
+        "income_bracket": "200-400万円",
+        "education": {
+          "highest_degree": "大学卒",
+          "school_name": "桜県立大学",
+          "major": "法学部",
+          "graduation_year": 1971
+        }
+      },
+      "personal_attributes": {
+        "hobbies": ["盆栽", "囲碁", "散歩"],
+        "skills": ["普通自動車免許", "行政書士"],
+        "health_status": "通院中",
+        "disability_status": {
+          "has_disability": false
+        }
+      },
+      "metadata": {
+        "created_at": "2025-01-13T00:00:00Z",
+        "updated_at": "2025-01-13T00:00:00Z",
+        "data_version": "1.0.0"
+      }
+    },
+    {
+      "resident_id": "280100000302",
+      "basic_info": {
+        "family_name": "鈴木",
+        "given_name": "和子",
+        "family_name_kana": "スズキ",
+        "given_name_kana": "カズコ",
+        "gender": "女性",
+        "birth_date": "1950-05-15",
+        "birthplace": "桜県西桜市",
+        "nationality": "日本",
+        "blood_type": "A"
+      },
+      "residence_record": {
+        "household_id": "2801000003",
+        "relationship": "配偶者",
+        "current_address": {
+          "postal_code": "280-0001",
+          "prefecture": "桜県",
+          "city": "桜花市",
+          "district": "中央地区",
+          "block": "2丁目5番7号",
+          "building": ""
+        },
+        "move_in_date": "1970-06-20",
+        "previous_address": {
+          "prefecture": "桜県",
+          "city": "西桜市",
+          "address": "歴史地区"
+        },
+        "residence_history": [
+          {
+            "from_date": "1950-05-15",
+            "to_date": "1970-06-19",
+            "address": {
+              "prefecture": "桜県",
+              "city": "西桜市",
+              "district": "歴史地区"
+            },
+            "reason": "出生"
+          }
+        ]
+      },
+      "family_register": {
+        "register_number": "桜花-0001234",
+        "permanent_address": {
+          "prefecture": "桜県",
+          "city": "桜花市",
+          "address": "中央地区2丁目5番7号"
+        },
+        "head_of_register": "280100000301",
+        "father_id": "280400000001",
+        "mother_id": "280400000002",
+        "spouse_id": "280100000301",
+        "marriage_date": "1970-06-20",
+        "children_ids": ["280100000401", "280100000402"],
+        "siblings_ids": []
+      },
+      "occupation_info": {
+        "occupation_category": "主婦・主夫",
+        "occupation_detail": "専業主婦",
+        "employer": null,
+        "income_bracket": "200万円未満",
+        "education": {
+          "highest_degree": "短期大学卒",
+          "school_name": "桜県立女子短期大学",
+          "major": "家政科",
+          "graduation_year": 1970
+        }
+      },
+      "personal_attributes": {
+        "hobbies": ["生け花", "茶道", "料理"],
+        "skills": ["普通自動車免許", "華道師範", "茶道表千家"],
+        "health_status": "良好",
+        "disability_status": {
+          "has_disability": false
+        }
+      },
+      "metadata": {
+        "created_at": "2025-01-13T00:00:00Z",
+        "updated_at": "2025-01-13T00:00:00Z",
+        "data_version": "1.0.0"
+      }
+    }
+  ],
+  "metadata": {
+    "created_at": "2025-01-13T00:00:00Z",
+    "updated_at": "2025-01-13T00:00:00Z",
+    "data_version": "1.0.0",
+    "file_size": 28456,
+    "checksum": "a1b2c3d4e5f6"
+  }
+}

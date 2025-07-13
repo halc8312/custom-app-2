@@ -1,0 +1,245 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "桜県住民データインデックススキーマ",
+  "description": "効率的な住民データ検索のためのインデックス構造",
+  "type": "object",
+  "properties": {
+    "city_index": {
+      "type": "object",
+      "description": "市別住民インデックス",
+      "patternProperties": {
+        "^(桜花市|桜川市|東桜市|西桜市|南桜市|北桜市)$": {
+          "type": "object",
+          "properties": {
+            "total_residents": {
+              "type": "integer"
+            },
+            "districts": {
+              "type": "object",
+              "patternProperties": {
+                ".*": {
+                  "type": "object",
+                  "properties": {
+                    "resident_count": {
+                      "type": "integer"
+                    },
+                    "data_files": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "description": "データファイルパス"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "family_name_index": {
+      "type": "object",
+      "description": "姓の索引（頻出姓）",
+      "properties": {
+        "common_names": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "family_name": {
+                "type": "string"
+              },
+              "count": {
+                "type": "integer"
+              },
+              "percentage": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    },
+    "age_group_index": {
+      "type": "object",
+      "description": "年齢層別索引",
+      "properties": {
+        "groups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "age_range": {
+                "type": "string"
+              },
+              "resident_count": {
+                "type": "integer"
+              },
+              "male_count": {
+                "type": "integer"
+              },
+              "female_count": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "occupation_index": {
+      "type": "object",
+      "description": "職業別索引",
+      "patternProperties": {
+        ".*": {
+          "type": "object",
+          "properties": {
+            "count": {
+              "type": "integer"
+            },
+            "percentage": {
+              "type": "number"
+            },
+            "average_age": {
+              "type": "number"
+            },
+            "gender_ratio": {
+              "type": "object",
+              "properties": {
+                "male": {
+                  "type": "number"
+                },
+                "female": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "household_index": {
+      "type": "object",
+      "description": "世帯索引",
+      "properties": {
+        "total_households": {
+          "type": "integer"
+        },
+        "by_type": {
+          "type": "object",
+          "patternProperties": {
+            ".*": {
+              "type": "integer"
+            }
+          }
+        },
+        "by_size": {
+          "type": "object",
+          "properties": {
+            "single": {
+              "type": "integer"
+            },
+            "two_members": {
+              "type": "integer"
+            },
+            "three_members": {
+              "type": "integer"
+            },
+            "four_members": {
+              "type": "integer"
+            },
+            "five_or_more": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    },
+    "data_file_manifest": {
+      "type": "array",
+      "description": "データファイルマニフェスト",
+      "items": {
+        "type": "object",
+        "properties": {
+          "file_id": {
+            "type": "string"
+          },
+          "file_path": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "district": {
+            "type": "string"
+          },
+          "resident_count": {
+            "type": "integer"
+          },
+          "household_count": {
+            "type": "integer"
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "file_size": {
+            "type": "integer",
+            "description": "ファイルサイズ（バイト）"
+          },
+          "checksum": {
+            "type": "string",
+            "description": "ファイルチェックサム"
+          }
+        }
+      }
+    },
+    "search_indices": {
+      "type": "object",
+      "description": "検索用インデックス",
+      "properties": {
+        "phonetic_index": {
+          "type": "object",
+          "description": "読み仮名索引"
+        },
+        "birth_year_index": {
+          "type": "object",
+          "description": "生年索引"
+        },
+        "postal_code_index": {
+          "type": "object",
+          "description": "郵便番号索引"
+        }
+      }
+    },
+    "statistics_summary": {
+      "type": "object",
+      "properties": {
+        "last_updated": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "total_residents": {
+          "type": "integer"
+        },
+        "total_households": {
+          "type": "integer"
+        },
+        "average_household_size": {
+          "type": "number"
+        },
+        "gender_ratio": {
+          "type": "object",
+          "properties": {
+            "male": {
+              "type": "number"
+            },
+            "female": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,479 @@
+{
+  "occupation_categories": [
+    {
+      "category_id": "01",
+      "category_name": "会社員",
+      "subcategories": [
+        {
+          "subcategory_id": "01-01",
+          "subcategory_name": "製造業",
+          "typical_positions": ["工場長", "生産管理", "品質管理", "技術者", "作業員"],
+          "required_qualifications": ["技能士", "危険物取扱者", "フォークリフト免許"],
+          "average_income_range": { "min": 3000000, "max": 8000000 }
+        },
+        {
+          "subcategory_id": "01-02",
+          "subcategory_name": "営業・販売",
+          "typical_positions": ["営業部長", "営業課長", "営業主任", "営業担当", "販売員"],
+          "required_qualifications": ["販売士", "宅地建物取引士"],
+          "average_income_range": { "min": 3500000, "max": 10000000 }
+        },
+        {
+          "subcategory_id": "01-03",
+          "subcategory_name": "事務・管理",
+          "typical_positions": ["総務部長", "人事課長", "経理主任", "一般事務", "受付"],
+          "required_qualifications": ["簿記", "秘書検定", "社会保険労務士"],
+          "average_income_range": { "min": 2800000, "max": 7000000 }
+        },
+        {
+          "subcategory_id": "01-04",
+          "subcategory_name": "技術・開発",
+          "typical_positions": ["開発部長", "主任技師", "設計担当", "研究員"],
+          "required_qualifications": ["技術士", "各種エンジニア資格"],
+          "average_income_range": { "min": 4000000, "max": 12000000 }
+        }
+      ]
+    },
+    {
+      "category_id": "02",
+      "category_name": "公務員",
+      "subcategories": [
+        {
+          "subcategory_id": "02-01",
+          "subcategory_name": "県職員",
+          "typical_positions": ["部長", "課長", "係長", "主任", "主事"],
+          "required_qualifications": ["公務員試験合格"],
+          "average_income_range": { "min": 3200000, "max": 9000000 }
+        },
+        {
+          "subcategory_id": "02-02",
+          "subcategory_name": "市職員",
+          "typical_positions": ["部長", "課長", "係長", "主任", "主事"],
+          "required_qualifications": ["公務員試験合格"],
+          "average_income_range": { "min": 3000000, "max": 8500000 }
+        },
+        {
+          "subcategory_id": "02-03",
+          "subcategory_name": "警察官",
+          "typical_positions": ["警視", "警部", "警部補", "巡査部長", "巡査"],
+          "required_qualifications": ["警察官採用試験合格", "柔道・剣道段位"],
+          "average_income_range": { "min": 3500000, "max": 10000000 }
+        },
+        {
+          "subcategory_id": "02-04",
+          "subcategory_name": "消防士",
+          "typical_positions": ["消防司令", "消防司令補", "消防士長", "消防副士長", "消防士"],
+          "required_qualifications": ["消防士採用試験合格", "救急救命士"],
+          "average_income_range": { "min": 3300000, "max": 9000000 }
+        },
+        {
+          "subcategory_id": "02-05",
+          "subcategory_name": "教員",
+          "typical_positions": ["校長", "教頭", "主幹教諭", "教諭", "講師"],
+          "required_qualifications": ["教員免許", "教員採用試験合格"],
+          "average_income_range": { "min": 3500000, "max": 8000000 }
+        }
+      ]
+    },
+    {
+      "category_id": "03",
+      "category_name": "自営業",
+      "subcategories": [
+        {
+          "subcategory_id": "03-01",
+          "subcategory_name": "小売業",
+          "typical_positions": ["店主", "店長", "仕入担当"],
+          "required_qualifications": ["食品衛生責任者", "防火管理者"],
+          "average_income_range": { "min": 2000000, "max": 10000000 }
+        },
+        {
+          "subcategory_id": "03-02",
+          "subcategory_name": "飲食業",
+          "typical_positions": ["オーナーシェフ", "店主", "料理長"],
+          "required_qualifications": ["調理師免許", "食品衛生責任者", "防火管理者"],
+          "average_income_range": { "min": 2500000, "max": 15000000 }
+        },
+        {
+          "subcategory_id": "03-03",
+          "subcategory_name": "理容・美容業",
+          "typical_positions": ["店主", "スタイリスト"],
+          "required_qualifications": ["理容師免許", "美容師免許"],
+          "average_income_range": { "min": 2300000, "max": 8000000 }
+        },
+        {
+          "subcategory_id": "03-04",
+          "subcategory_name": "建設業",
+          "typical_positions": ["経営者", "現場監督", "職人"],
+          "required_qualifications": ["建設業許可", "施工管理技士"],
+          "average_income_range": { "min": 3000000, "max": 12000000 }
+        }
+      ]
+    },
+    {
+      "category_id": "04",
+      "category_name": "農業",
+      "subcategories": [
+        {
+          "subcategory_id": "04-01",
+          "subcategory_name": "稲作農家",
+          "typical_positions": ["農業経営者", "後継者", "農業従事者"],
+          "required_qualifications": ["大型特殊免許", "農業機械免許"],
+          "average_income_range": { "min": 2000000, "max": 6000000 }
+        },
+        {
+          "subcategory_id": "04-02",
+          "subcategory_name": "野菜農家",
+          "typical_positions": ["農業経営者", "栽培管理者"],
+          "required_qualifications": ["農業技術検定"],
+          "average_income_range": { "min": 2500000, "max": 8000000 }
+        },
+        {
+          "subcategory_id": "04-03",
+          "subcategory_name": "果樹農家",
+          "typical_positions": ["農園経営者", "栽培責任者"],
+          "required_qualifications": ["果樹栽培技能"],
+          "average_income_range": { "min": 3000000, "max": 10000000 }
+        },
+        {
+          "subcategory_id": "04-04",
+          "subcategory_name": "畜産農家",
+          "typical_positions": ["畜産経営者", "飼育管理者"],
+          "required_qualifications": ["家畜人工授精師", "獣医師"],
+          "average_income_range": { "min": 3500000, "max": 12000000 }
+        }
+      ]
+    },
+    {
+      "category_id": "05",
+      "category_name": "漁業",
+      "subcategories": [
+        {
+          "subcategory_id": "05-01",
+          "subcategory_name": "沿岸漁業",
+          "typical_positions": ["漁船船長", "漁師", "網元"],
+          "required_qualifications": ["小型船舶操縦士", "海技士"],
+          "average_income_range": { "min": 2500000, "max": 7000000 }
+        },
+        {
+          "subcategory_id": "05-02",
+          "subcategory_name": "養殖業",
+          "typical_positions": ["養殖場経営者", "養殖管理者"],
+          "required_qualifications": ["養殖技術資格"],
+          "average_income_range": { "min": 3000000, "max": 9000000 }
+        }
+      ]
+    },
+    {
+      "category_id": "06",
+      "category_name": "医療従事者",
+      "subcategories": [
+        {
+          "subcategory_id": "06-01",
+          "subcategory_name": "医師",
+          "typical_positions": ["院長", "部長", "医長", "医師"],
+          "required_qualifications": ["医師免許", "専門医資格"],
+          "average_income_range": { "min": 8000000, "max": 30000000 }
+        },
+        {
+          "subcategory_id": "06-02",
+          "subcategory_name": "看護師",
+          "typical_positions": ["看護部長", "看護師長", "主任看護師", "看護師"],
+          "required_qualifications": ["看護師免許", "認定看護師"],
+          "average_income_range": { "min": 3500000, "max": 7000000 }
+        },
+        {
+          "subcategory_id": "06-03",
+          "subcategory_name": "薬剤師",
+          "typical_positions": ["薬局長", "管理薬剤師", "薬剤師"],
+          "required_qualifications": ["薬剤師免許"],
+          "average_income_range": { "min": 4500000, "max": 8000000 }
+        },
+        {
+          "subcategory_id": "06-04",
+          "subcategory_name": "医療技術者",
+          "typical_positions": ["技師長", "主任技師", "放射線技師", "検査技師", "理学療法士"],
+          "required_qualifications": ["各種医療技術者免許"],
+          "average_income_range": { "min": 3800000, "max": 6500000 }
+        }
+      ]
+    },
+    {
+      "category_id": "07",
+      "category_name": "教育関係者",
+      "subcategories": [
+        {
+          "subcategory_id": "07-01",
+          "subcategory_name": "大学教員",
+          "typical_positions": ["教授", "准教授", "講師", "助教"],
+          "required_qualifications": ["博士号", "修士号"],
+          "average_income_range": { "min": 5000000, "max": 12000000 }
+        },
+        {
+          "subcategory_id": "07-02",
+          "subcategory_name": "塾講師",
+          "typical_positions": ["塾長", "教室長", "講師"],
+          "required_qualifications": ["教員免許（推奨）"],
+          "average_income_range": { "min": 3000000, "max": 6000000 }
+        },
+        {
+          "subcategory_id": "07-03",
+          "subcategory_name": "保育士",
+          "typical_positions": ["園長", "主任保育士", "保育士"],
+          "required_qualifications": ["保育士資格"],
+          "average_income_range": { "min": 2800000, "max": 5500000 }
+        }
+      ]
+    },
+    {
+      "category_id": "08",
+      "category_name": "サービス業",
+      "subcategories": [
+        {
+          "subcategory_id": "08-01",
+          "subcategory_name": "宿泊業",
+          "typical_positions": ["支配人", "フロント長", "コンシェルジュ", "客室係"],
+          "required_qualifications": ["ホテル実務技能認定"],
+          "average_income_range": { "min": 2800000, "max": 7000000 }
+        },
+        {
+          "subcategory_id": "08-02",
+          "subcategory_name": "観光業",
+          "typical_positions": ["ツアーコンダクター", "観光ガイド", "企画担当"],
+          "required_qualifications": ["旅行業務取扱管理者", "通訳案内士"],
+          "average_income_range": { "min": 3000000, "max": 6000000 }
+        },
+        {
+          "subcategory_id": "08-03",
+          "subcategory_name": "介護・福祉",
+          "typical_positions": ["施設長", "ケアマネージャー", "介護福祉士", "ヘルパー"],
+          "required_qualifications": ["介護福祉士", "社会福祉士", "ケアマネージャー"],
+          "average_income_range": { "min": 2600000, "max": 5500000 }
+        }
+      ]
+    },
+    {
+      "category_id": "09",
+      "category_name": "IT関連",
+      "subcategories": [
+        {
+          "subcategory_id": "09-01",
+          "subcategory_name": "システム開発",
+          "typical_positions": ["プロジェクトマネージャー", "システムエンジニア", "プログラマー"],
+          "required_qualifications": ["情報処理技術者", "プロジェクトマネージメント資格"],
+          "average_income_range": { "min": 4000000, "max": 15000000 }
+        },
+        {
+          "subcategory_id": "09-02",
+          "subcategory_name": "Web開発",
+          "typical_positions": ["Webディレクター", "Webデザイナー", "フロントエンドエンジニア"],
+          "required_qualifications": ["Webデザイン技能検定"],
+          "average_income_range": { "min": 3500000, "max": 10000000 }
+        },
+        {
+          "subcategory_id": "09-03",
+          "subcategory_name": "AI・データサイエンス",
+          "typical_positions": ["データサイエンティスト", "機械学習エンジニア", "AIリサーチャー"],
+          "required_qualifications": ["統計検定", "機械学習関連資格"],
+          "average_income_range": { "min": 5000000, "max": 20000000 }
+        }
+      ]
+    },
+    {
+      "category_id": "10",
+      "category_name": "伝統工芸",
+      "subcategories": [
+        {
+          "subcategory_id": "10-01",
+          "subcategory_name": "桜染め職人",
+          "typical_positions": ["親方", "職人", "見習い"],
+          "required_qualifications": ["伝統工芸士認定"],
+          "average_income_range": { "min": 2500000, "max": 6000000 }
+        },
+        {
+          "subcategory_id": "10-02",
+          "subcategory_name": "桜焼陶芸家",
+          "typical_positions": ["窯元", "陶芸家", "弟子"],
+          "required_qualifications": ["伝統工芸士認定"],
+          "average_income_range": { "min": 2000000, "max": 8000000 }
+        },
+        {
+          "subcategory_id": "10-03",
+          "subcategory_name": "桜細工師",
+          "typical_positions": ["棟梁", "職人", "見習い"],
+          "required_qualifications": ["伝統工芸士認定", "木工技能士"],
+          "average_income_range": { "min": 2800000, "max": 7000000 }
+        }
+      ]
+    }
+  ],
+  "major_employers": [
+    {
+      "employer_id": "E001",
+      "company_name": "桜県庁",
+      "industry": "行政",
+      "employee_count": 8500,
+      "locations": [
+        {
+          "city": "桜花市",
+          "district": "中央地区",
+          "facility_type": "本社"
+        }
+      ],
+      "departments": [
+        { "department_name": "総務部", "typical_positions": ["部長", "課長", "係長", "主事"] },
+        { "department_name": "企画財政部", "typical_positions": ["部長", "課長", "主任", "主事"] },
+        { "department_name": "福祉保健部", "typical_positions": ["部長", "課長", "保健師", "福祉指導員"] },
+        { "department_name": "産業労働部", "typical_positions": ["部長", "課長", "産業振興専門員"] },
+        { "department_name": "土木建築部", "typical_positions": ["部長", "課長", "技師", "技術職員"] }
+      ]
+    },
+    {
+      "employer_id": "E002",
+      "company_name": "桜電機株式会社",
+      "industry": "製造業",
+      "employee_count": 12000,
+      "locations": [
+        {
+          "city": "桜川市",
+          "district": "工業地区",
+          "facility_type": "本社"
+        },
+        {
+          "city": "東桜市",
+          "district": "テクノパーク",
+          "facility_type": "研究所"
+        },
+        {
+          "city": "北桜市",
+          "district": "産業団地",
+          "facility_type": "工場"
+        }
+      ],
+      "departments": [
+        { "department_name": "研究開発部", "typical_positions": ["部長", "主任研究員", "研究員"] },
+        { "department_name": "製造部", "typical_positions": ["工場長", "課長", "班長", "技術者"] },
+        { "department_name": "営業部", "typical_positions": ["部長", "課長", "営業担当"] }
+      ]
+    },
+    {
+      "employer_id": "E003",
+      "company_name": "桜花総合病院",
+      "industry": "医療",
+      "employee_count": 2800,
+      "locations": [
+        {
+          "city": "桜花市",
+          "district": "医療センター地区",
+          "facility_type": "本社"
+        }
+      ],
+      "departments": [
+        { "department_name": "内科", "typical_positions": ["部長", "医長", "医師"] },
+        { "department_name": "外科", "typical_positions": ["部長", "医長", "医師"] },
+        { "department_name": "看護部", "typical_positions": ["看護部長", "看護師長", "看護師"] },
+        { "department_name": "薬剤部", "typical_positions": ["薬剤部長", "薬剤師"] }
+      ]
+    },
+    {
+      "employer_id": "E004",
+      "company_name": "桜テック株式会社",
+      "industry": "IT",
+      "employee_count": 3500,
+      "locations": [
+        {
+          "city": "東桜市",
+          "district": "ITパーク",
+          "facility_type": "本社"
+        },
+        {
+          "city": "桜花市",
+          "district": "ビジネス地区",
+          "facility_type": "支社"
+        }
+      ],
+      "departments": [
+        { "department_name": "開発部", "typical_positions": ["部長", "プロジェクトマネージャー", "エンジニア"] },
+        { "department_name": "AI研究所", "typical_positions": ["所長", "主任研究員", "データサイエンティスト"] },
+        { "department_name": "営業部", "typical_positions": ["部長", "営業課長", "営業担当"] }
+      ]
+    },
+    {
+      "employer_id": "E005",
+      "company_name": "JA桜県",
+      "industry": "農業協同組合",
+      "employee_count": 1200,
+      "locations": [
+        {
+          "city": "北桜市",
+          "district": "農業センター",
+          "facility_type": "本社"
+        },
+        {
+          "city": "各市",
+          "district": "各地",
+          "facility_type": "支社"
+        }
+      ],
+      "departments": [
+        { "department_name": "営農指導部", "typical_positions": ["部長", "営農指導員"] },
+        { "department_name": "販売部", "typical_positions": ["部長", "販売担当"] },
+        { "department_name": "金融部", "typical_positions": ["部長", "融資担当"] }
+      ]
+    }
+  ],
+  "self_employment_types": [
+    {
+      "type_id": "S001",
+      "type_name": "個人商店",
+      "common_businesses": ["八百屋", "魚屋", "肉屋", "酒屋", "雑貨店", "文房具店"],
+      "required_licenses": ["食品衛生責任者", "酒類販売免許"]
+    },
+    {
+      "type_id": "S002",
+      "type_name": "専門サービス",
+      "common_businesses": ["税理士事務所", "弁護士事務所", "建築設計事務所", "不動産業"],
+      "required_licenses": ["各種士業資格", "宅地建物取引士"]
+    },
+    {
+      "type_id": "S003",
+      "type_name": "クリエイティブ",
+      "common_businesses": ["写真スタジオ", "デザイン事務所", "音楽教室", "画家"],
+      "required_licenses": ["特になし（技能による）"]
+    }
+  ],
+  "traditional_occupations": [
+    {
+      "occupation_name": "桜染め伝承者",
+      "description": "桜の花びらを使った伝統的な染色技術の継承者",
+      "apprenticeship_period": "最低5年",
+      "certification_body": "桜県伝統工芸協会",
+      "estimated_practitioners": 45
+    },
+    {
+      "occupation_name": "桜焼窯元",
+      "description": "桜県独自の陶芸技法を受け継ぐ陶芸家",
+      "apprenticeship_period": "最低7年",
+      "certification_body": "桜焼保存会",
+      "estimated_practitioners": 28
+    },
+    {
+      "occupation_name": "桜細工師",
+      "description": "桜の木を使った伝統的な木工細工の職人",
+      "apprenticeship_period": "最低5年",
+      "certification_body": "桜県木工芸術協会",
+      "estimated_practitioners": 62
+    },
+    {
+      "occupation_name": "桜守",
+      "description": "桜の名所や古木の保護・管理を行う専門家",
+      "apprenticeship_period": "3年以上の実務経験",
+      "certification_body": "桜県桜守協会",
+      "estimated_practitioners": 120
+    }
+  ],
+  "metadata": {
+    "created_at": "2025-01-13T00:00:00Z",
+    "updated_at": "2025-01-13T00:00:00Z",
+    "data_version": "1.0.0"
+  }
+}

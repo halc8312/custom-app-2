@@ -1,0 +1,336 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "桜県住民データスキーマ",
+  "description": "桜県の住民基本情報、住民票、戸籍データの統合スキーマ",
+  "type": "object",
+  "properties": {
+    "resident_id": {
+      "type": "string",
+      "description": "住民番号（12桁）",
+      "pattern": "^[0-9]{12}$"
+    },
+    "basic_info": {
+      "type": "object",
+      "properties": {
+        "family_name": {
+          "type": "string",
+          "description": "姓"
+        },
+        "given_name": {
+          "type": "string",
+          "description": "名"
+        },
+        "family_name_kana": {
+          "type": "string",
+          "description": "姓（カナ）"
+        },
+        "given_name_kana": {
+          "type": "string",
+          "description": "名（カナ）"
+        },
+        "gender": {
+          "type": "string",
+          "enum": ["男性", "女性"],
+          "description": "性別"
+        },
+        "birth_date": {
+          "type": "string",
+          "format": "date",
+          "description": "生年月日"
+        },
+        "birthplace": {
+          "type": "string",
+          "description": "出生地"
+        },
+        "nationality": {
+          "type": "string",
+          "description": "国籍",
+          "default": "日本"
+        },
+        "blood_type": {
+          "type": "string",
+          "enum": ["A", "B", "O", "AB"],
+          "description": "血液型"
+        }
+      },
+      "required": ["family_name", "given_name", "family_name_kana", "given_name_kana", "gender", "birth_date"]
+    },
+    "residence_record": {
+      "type": "object",
+      "properties": {
+        "household_id": {
+          "type": "string",
+          "description": "世帯番号"
+        },
+        "relationship": {
+          "type": "string",
+          "description": "続柄",
+          "enum": ["世帯主", "配偶者", "子", "父", "母", "祖父", "祖母", "孫", "兄弟姉妹", "その他"]
+        },
+        "current_address": {
+          "type": "object",
+          "properties": {
+            "postal_code": {
+              "type": "string",
+              "pattern": "^[0-9]{3}-[0-9]{4}$"
+            },
+            "prefecture": {
+              "type": "string",
+              "const": "桜県"
+            },
+            "city": {
+              "type": "string",
+              "enum": ["桜花市", "桜川市", "東桜市", "西桜市", "南桜市", "北桜市"]
+            },
+            "district": {
+              "type": "string",
+              "description": "地区名"
+            },
+            "block": {
+              "type": "string",
+              "description": "丁目・番地"
+            },
+            "building": {
+              "type": "string",
+              "description": "建物名・部屋番号"
+            }
+          },
+          "required": ["postal_code", "prefecture", "city", "district", "block"]
+        },
+        "move_in_date": {
+          "type": "string",
+          "format": "date",
+          "description": "住民となった日"
+        },
+        "previous_address": {
+          "type": "object",
+          "properties": {
+            "prefecture": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            }
+          }
+        },
+        "residence_history": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "from_date": {
+                "type": "string",
+                "format": "date"
+              },
+              "to_date": {
+                "type": "string",
+                "format": "date"
+              },
+              "address": {
+                "type": "object"
+              },
+              "reason": {
+                "type": "string",
+                "description": "転居理由"
+              }
+            }
+          }
+        }
+      },
+      "required": ["household_id", "current_address", "move_in_date"]
+    },
+    "family_register": {
+      "type": "object",
+      "properties": {
+        "register_number": {
+          "type": "string",
+          "description": "戸籍番号"
+        },
+        "permanent_address": {
+          "type": "object",
+          "description": "本籍地",
+          "properties": {
+            "prefecture": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            }
+          }
+        },
+        "head_of_register": {
+          "type": "string",
+          "description": "筆頭者の住民番号"
+        },
+        "father_id": {
+          "type": "string",
+          "description": "父の住民番号"
+        },
+        "mother_id": {
+          "type": "string",
+          "description": "母の住民番号"
+        },
+        "spouse_id": {
+          "type": "string",
+          "description": "配偶者の住民番号"
+        },
+        "marriage_date": {
+          "type": "string",
+          "format": "date",
+          "description": "婚姻日"
+        },
+        "divorce_date": {
+          "type": "string",
+          "format": "date",
+          "description": "離婚日"
+        },
+        "children_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "子の住民番号リスト"
+        },
+        "siblings_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "兄弟姉妹の住民番号リスト"
+        }
+      },
+      "required": ["register_number", "permanent_address"]
+    },
+    "occupation_info": {
+      "type": "object",
+      "properties": {
+        "occupation_category": {
+          "type": "string",
+          "enum": ["会社員", "公務員", "自営業", "農業", "漁業", "医療従事者", "教育関係者", "サービス業", "製造業", "IT関連", "建設業", "運輸業", "金融業", "学生", "主婦・主夫", "無職", "その他"]
+        },
+        "occupation_detail": {
+          "type": "string",
+          "description": "職業詳細"
+        },
+        "employer": {
+          "type": "object",
+          "properties": {
+            "company_name": {
+              "type": "string",
+              "description": "勤務先名"
+            },
+            "department": {
+              "type": "string",
+              "description": "部署"
+            },
+            "position": {
+              "type": "string",
+              "description": "役職"
+            },
+            "employment_type": {
+              "type": "string",
+              "enum": ["正社員", "契約社員", "派遣社員", "パート・アルバイト", "役員", "個人事業主"]
+            },
+            "work_location": {
+              "type": "object",
+              "description": "勤務地"
+            },
+            "employment_date": {
+              "type": "string",
+              "format": "date",
+              "description": "入社日"
+            }
+          }
+        },
+        "income_bracket": {
+          "type": "string",
+          "enum": ["200万円未満", "200-400万円", "400-600万円", "600-800万円", "800-1000万円", "1000-1500万円", "1500万円以上"],
+          "description": "年収階層"
+        },
+        "education": {
+          "type": "object",
+          "properties": {
+            "highest_degree": {
+              "type": "string",
+              "enum": ["中学校卒", "高等学校卒", "専門学校卒", "短期大学卒", "大学卒", "大学院修士卒", "大学院博士卒"]
+            },
+            "school_name": {
+              "type": "string",
+              "description": "最終学歴学校名"
+            },
+            "major": {
+              "type": "string",
+              "description": "専攻"
+            },
+            "graduation_year": {
+              "type": "integer",
+              "description": "卒業年"
+            }
+          }
+        }
+      },
+      "required": ["occupation_category"]
+    },
+    "personal_attributes": {
+      "type": "object",
+      "properties": {
+        "hobbies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "趣味"
+        },
+        "skills": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "特技・資格"
+        },
+        "health_status": {
+          "type": "string",
+          "enum": ["良好", "通院中", "要介護", "その他"],
+          "description": "健康状態"
+        },
+        "disability_status": {
+          "type": "object",
+          "properties": {
+            "has_disability": {
+              "type": "boolean"
+            },
+            "disability_type": {
+              "type": "string"
+            },
+            "disability_grade": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "data_version": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": ["resident_id", "basic_info", "residence_record", "family_register", "occupation_info"]
+}
